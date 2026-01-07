@@ -1,0 +1,17 @@
+---
+export interface Props {
+  children?: any;
+}
+
+const { children } = Astro.props;
+---
+
+<div class="tabs-container">
+  <slot />
+</div>
+
+<style>
+  .tabs-container {
+    margin: 2rem 0;
+  }
+</style>

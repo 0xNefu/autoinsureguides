@@ -1,0 +1,80 @@
+---
+// src/pages/blog/[...slug].astro - COMPLETE GATING VERSION
+
+import Base from "@/layouts/Base.astro";
+import PostSingle from "@/partials/PostSingle.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts", ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+// Get raw slug from URL
+const rawSlug = Astro.params.slug || '';
+
+// Strip .md if present
+const cleanSlug = rawSlug.endsWith('.md') ? rawSlug.slice(0, -3) : rawSlug;
+
+// Load all posts
+const allPosts = await getCollection("posts", ({ data }) => !data.draft);
+
+// Find post by clean slug first
+let post = allPosts.find((p) => p.slug === cleanSlug);
+
+// Fallback to exact match
+if (!post) {
+  post = allPosts.find((p) => p.slug === rawSlug);
+}
+
+if (!post) {
+  if (rawSlug.endsWith('.md')) {
+    const redirectSlug = rawSlug.slice(0, -3);
+    throw Astro.redirect(`/blog/${redirectSlug}`, 301);
+  }
+  throw Astro.redirect('/404');
+}
+
+// GET ALL PROPS INCLUDING GATING FIELDS
+const { 
+  title, 
+  meta_title, 
+  image, 
+  description, 
+  hasGatedContent,
+  isFullyGated,
+  noindex,
+  canonical 
+} = post.data;
+
+// === FIX: Escape HTML in description ===
+const escapeHtml = (text) => {
+  if (!text) return '';
+  return text.toString()
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;')
+    .trim();
+};
+
+const postImage = image || `/images/posts/default-og.jpg`;
+const escapedDescription = escapeHtml(description);
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  image={String(postImage)}
+  description={escapedDescription}
+  hasGatedContent={hasGatedContent}
+  isFullyGated={isFullyGated}
+  noindex={noindex}
+  canonical={canonical}
+>
+  <PostSingle post={post} />
+</Base>

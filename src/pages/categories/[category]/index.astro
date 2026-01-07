@@ -1,0 +1,95 @@
+﻿---
+import { getCollection } from 'astro:content';
+import PostCard from '@/components/PostCard.astro';
+import BaseLayout from '@/layouts/Base.astro';
+import { CATEGORY_HIERARCHY } from '@/lib/categories';
+
+// Prerender all category pages
+export const prerender = true;
+
+// 1. REQUIRED: Generate paths for all 11 categories
+export async function getStaticPaths() {
+  const categories = Object.keys(CATEGORY_HIERARCHY);
+  
+  console.log("DEBUG: Generating paths for categories:", categories);
+  
+  return categories.map(category => ({
+    params: { category }
+  }));
+}
+
+// 2. Get the current category from URL
+const { category } = Astro.params;
+console.log("DEBUG: Current category param:", category);
+
+// 3. Get all posts (drafts already filtered out in config.ts)
+const allPosts = await getCollection('posts');
+console.log("DEBUG: Total posts loaded:", allPosts.length);
+
+// 4. Filter posts for this category (WITH DRAFT FILTER)
+const categoryPosts = allPosts
+  .filter(post => {
+    // FIRST: Check if it's a draft - if yes, skip it
+    if (post.data.draft) {
+      console.log(`Post: ${post.id} is a DRAFT - skipping`);
+      return false;
+    }
+    
+    // THEN: Check category match
+    const postCategory = post.data.category;
+    const matches = postCategory === category;
+    
+    console.log(`Post: ${post.id}, Category: "${postCategory}", Looking for: "${category}", Matches: ${matches}`);
+    
+    return matches;
+  })
+  .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+
+console.log(`DEBUG: Found ${categoryPosts.length} posts in category "${category}"`);
+
+// 5. Get category metadata for display
+const categoryData = CATEGORY_HIERARCHY[category];
+---
+
+<BaseLayout>
+  <div class="container mx-auto px-4 py-8">
+    <header class="mb-12">
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-4xl">{categoryData?.icon || '📁'}</span>
+        <h1 class="text-4xl font-bold dark:text-white text-gray-900">
+          {categoryData?.name || category}
+        </h1>
+      </div>
+      
+      {categoryData?.description && (
+        <p class="text-xl dark:text-gray-400 text-gray-600 max-w-3xl">
+          {categoryData.description}
+        </p>
+      )}
+      
+      <div class="mt-8">
+        <p class="text-lg dark:text-white text-gray-900">
+          <span class="font-semibold">{categoryPosts.length}</span> 
+          {categoryPosts.length === 1 ? ' post' : ' posts'} in this category
+        </p>
+      </div>
+    </header>
+
+    {categoryPosts.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {categoryPosts.map(post => (
+          <PostCard post={post} />
+        ))}
+      </div>
+    ) : (
+      <div class="text-center py-12">
+        <div class="text-6xl mb-4">📭</div>
+        <h2 class="text-2xl font-semibold mb-2 dark:text-white text-gray-900">No posts found</h2>
+        <p class="dark:text-gray-400 text-gray-600 max-w-md mx-auto">
+          No posts in the "{categoryData?.name || category}" category yet.
+          Check back soon or browse other categories.
+        </p>
+      </div>
+    )}
+  </div>
+</BaseLayout>

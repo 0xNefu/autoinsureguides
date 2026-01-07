@@ -1,0 +1,32 @@
+---
+export interface Props {
+  title: string;
+  children?: any;
+}
+
+const { title } = Astro.props;
+---
+
+<details class="accordion">
+  <summary>{title}</summary>
+  <div class="accordion-content">
+    <slot />
+  </div>
+</details>
+
+<style>
+  .accordion {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+  .accordion summary {
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .accordion-content {
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+  }
+</style>

@@ -1,0 +1,28 @@
+---
+export interface Props {
+  type?: "info" | "warning" | "success" | "danger";
+  children?: any;
+}
+
+const { type = "info" } = Astro.props;
+---
+
+<div class={`alert alert-${type}`}>
+  <slot />
+</div>
+
+<style>
+  .alert {
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+  .alert-info {
+    background: #e3f2fd;
+    border-left: 4px solid #2196f3;
+  }
+  .alert-warning {
+    background: #fff3e0;
+    border-left: 4px solid #ff9800;
+  }
+</style>

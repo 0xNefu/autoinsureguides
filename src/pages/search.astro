@@ -1,0 +1,237 @@
+---
+import TwSizeIndicator from "@/components/TwSizeIndicator.astro";
+import config from "@/config/config.json";
+import theme from "@/config/theme.json";
+import { plainify } from "@/lib/utils/textConverter";
+import Footer from "@/partials/Footer.astro";
+import Header from "@/partials/Header.astro";
+import FloatingBubble from "@/components/FloatingBubble.jsx";
+import "@/styles/main.css";
+import { AstroFont } from "astro-font";
+import { ClientRouter } from "astro:transitions";
+import SEO from "@/layouts/components/SEO.astro";
+import SearchBar from "@/components/SearchBar.astro";
+
+const pf = theme.fonts.font_family.primary;
+let fontPrimary;
+if (theme.fonts.font_family.primary) {
+  fontPrimary = theme.fonts.font_family.primary
+    .replace(/\+/g, " ")
+    .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
+}
+
+// Glob all pages and guides
+const pageModules = import.meta.glob('../pages/**/*.{astro,md,mdx}', { eager: true });
+const guideModules = import.meta.glob('../../../guides/**/*.{md,mdx}', { eager: true });
+
+const allModules = { ...pageModules, ...guideModules };
+
+const searchList = Object.values(allModules)
+  .filter(mod => mod.frontmatter?.title && mod.file)  // Must have title and file path
+  .map(mod => {
+    // Read raw file content safely
+    let rawContent = '';
+    try {
+      rawContent = mod.rawContent?.() || mod.getRawContent?.() || '';
+      if (!rawContent && mod.file) {
+        // Fallback: read from file system (works in dev/build)
+        const fileContent = Deno.readTextFileSync(mod.file);
+        rawContent = fileContent || '';
+      }
+    } catch (e) {
+      console.warn(`Could not read content for ${mod.file}`);
+    }
+
+    // Build clean URL
+    let url = '/';
+    if (mod.url) {
+      url = mod.url;
+    } else if (mod.file) {
+      url = mod.file
+        .replace(/^.*src\/pages/, '')  // Remove path up to src/pages
+        .replace(/^.*guides/, '/guides')  // Map guides folder correctly
+        .replace(/\/index\.(astro|md|mdx)$/, '/')
+        .replace(/\.(astro|md|mdx)$/, '')
+        .replace(/\/$/, '') || '/';
+      if (!url.startsWith('/')) url = '/' + url;
+    }
+
+    return {
+      title: mod.frontmatter.title || 'Untitled',
+      description: mod.frontmatter.description || '',
+      content: rawContent.toLowerCase(),  // Lowercase for faster search
+      url: url,
+    };
+  });
+
+const title = "Search Documentation - Txchyon";
+const description = "Real-time search across all guides, tutorials, and documentation pages.";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W77T47Y58P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-W77T47Y58P');
+    </script>
+
+    <link rel="shortcut icon" href={config.site.favicon} />
+    <meta name="theme-name" content="bookworm-light-astro" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
+    <meta name="generator" content={Astro.generator} />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <AstroFont
+      config={[
+        {
+          src: [],
+          preload: false,
+          display: "swap",
+          name: fontPrimary!,
+          fallback: "sans-serif",
+          cssVariable: "font-primary",
+          googleFontsURL: `https://fonts.googleapis.com/css2?family=${pf}&display=swap`,
+        },
+      ]}
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+    <SEO
+      title={title}
+      description={description}
+      image={`${config.site.base_url}${config.metadata.meta_image}`}
+      canonical={`${config.site.base_url}/search`}
+    />
+
+    <link rel="alternate" type="application/rss+xml" title="Txchyon RSS" href="/rss.xml" />
+    <link rel="alternate" type="application/feed+json" title="Txchyon JSON Feed" href="/feed.json" />
+
+    <ClientRouter />
+    <meta name="author" content={config.metadata.meta_author} />
+  </head>
+
+  <body class="bg-body text-text font-primary font-normal leading-relaxed dark:bg-dark dark:text-light">
+    <TwSizeIndicator />
+    <Header />
+
+    <main id="main-content" class="min-h-[60vh] py-12">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-10">
+          <h1 class="text-4xl font-bold mb-4">Search Documentation</h1>
+          <p class="text-xl text-gray-600 dark:text-gray-300 mb-2">
+            Find guides, tutorials, and references
+          </p>
+          <p class="text-gray-500">
+            Currently indexing {searchList.length} pages
+          </p>
+        </div>
+        
+        <div class="mb-12">
+          <SearchBar searchList={searchList} client:load />
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div class="p-6 border rounded-lg dark:border-gray-700">
+            <h3 class="font-semibold text-lg mb-2">Quick Tips</h3>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1">
+              <li>• Use at least 2 characters</li>
+              <li>• Try different keywords</li>
+              <li>• Check spelling</li>
+            </ul>
+          </div>
+          
+          <div class="p-6 border rounded-lg dark:border-gray-700">
+            <h3 class="font-semibold text-lg mb-2">Search Features</h3>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1">
+              <li>• Searches titles & descriptions</li>
+              <li>• Full-text content search</li>
+              <li>• Real-time results</li>
+            </ul>
+          </div>
+          
+          <div class="p-6 border rounded-lg dark:border-gray-700">
+            <h3 class="font-semibold text-lg mb-2">Alternative Search</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-3">
+              Try our traditional search page:
+            </p>
+            <a 
+              href="/search-results" 
+              class="inline-block px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            >
+              Go to Search Page →
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+    <FloatingBubble client:load />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <script is:global>
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      
+      document.documentElement.setAttribute('data-theme', initialTheme);
+      if (initialTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+      
+      if (!savedTheme) {
+        localStorage.setItem('theme', initialTheme);
+      }
+      
+      function toggleDarkMode() {
+        const html = document.documentElement;
+        const isDark = html.classList.contains('dark');
+        const newTheme = isDark ? 'light' : 'dark';
+        
+        html.setAttribute('data-theme', newTheme);
+        html.classList.toggle('dark');
+        localStorage.setItem('theme', newTheme);
+      }
+      
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggleBtn = document.getElementById('theme-toggle');
+        if (toggleBtn) {
+          toggleBtn.addEventListener('click', toggleDarkMode);
+        }
+      });
+      
+      document.addEventListener('astro:page-load', () => {
+        const toggleBtn = document.getElementById('theme-toggle');
+        if (toggleBtn) {
+          toggleBtn.replaceWith(toggleBtn.cloneNode(true));
+          document.getElementById('theme-toggle')?.addEventListener('click', toggleDarkMode);
+        }
+      });
+    </script>
+
+    <style>
+      .container {
+        animation: fadeIn 0.3s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </body>
+</html>
