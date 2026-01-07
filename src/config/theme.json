@@ -2,36 +2,48 @@
   "colors": {
     "default": {
       "theme_color": {
-        "primary": "#01AD9F",
-        "body": "#ffffff",
-        "border": "#D5D5D5",
-        "light": "#FAFAFA",
-        "dark": "#152035"
+        "primary": "#1E40AF",          /* Professional insurance blue */
+        "secondary": "#3B82F6",        /* Lighter blue for accents */
+        "body": "#ffffff",             /* White background */
+        "border": "#E5E7EB",           /* Light gray borders */
+        "light": "#F8FAFC",            /* Very light blue-gray */
+        "dark": "#1E293B",             /* Dark blue-gray for text */
+        "accent": "#059669",           /* Green for CTAs/savings */
+        "warning": "#DC2626",          /* Red for warnings/errors */
+        "highlight": "#FBBF24"         /* Yellow for highlights */
       },
       "text_color": {
-        "text": "#747577",
-        "text-dark": "#152035",
-        "text-light": "#a1a5ae"
+        "text": "#4B5563",             /* Medium gray for body text */
+        "text-dark": "#111827",        /* Near black for headings */
+        "text-light": "#6B7280",       /* Light gray for secondary text */
+        "link": "#1E40AF",             /* Blue for links */
+        "link-hover": "#1E3A8A"        /* Darker blue for hover */
       }
     },
     "dark": {
       "theme_color": {
-        "primary": "#01AD9F",
-        "body": "#121212",
-        "border": "#333333",
-        "light": "#1a1a1a",
-        "dark": "#ffffff"
+        "primary": "#3B82F6",          /* Brighter blue for dark mode */
+        "secondary": "#60A5FA",        /* Lighter blue */
+        "body": "#0F172A",             /* Dark blue background */
+        "border": "#334155",           /* Medium blue-gray borders */
+        "light": "#1E293B",            /* Slightly lighter background */
+        "dark": "#F1F5F9",             /* Light text on dark */
+        "accent": "#10B981",           /* Brighter green */
+        "warning": "#EF4444",          /* Brighter red */
+        "highlight": "#F59E0B"         /* Brighter yellow */
       },
       "text_color": {
-        "text": "#e0e0e0",
-        "text-dark": "#ffffff",
-        "text-light": "#a0a0a0"
+        "text": "#CBD5E1",             /* Light gray for body text */
+        "text-dark": "#F8FAFC",        /* Very light for headings */
+        "text-light": "#94A3B8",       /* Medium light gray */
+        "link": "#60A5FA",             /* Light blue for links */
+        "link-hover": "#93C5FD"        /* Lighter blue for hover */
       }
     }
   },
   "fonts": {
     "font_family": {
-      "primary": "Mulish:wght@400;600;700",
+      "primary": "Inter:wght@300;400;500;600;700",  /* Professional sans-serif */
       "primary_type": "sans-serif"
     },
     "font_size": {

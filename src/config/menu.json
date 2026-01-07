@@ -1,92 +1,234 @@
 {
   "main": [
     {
-      "name": "Getting Started",
-      "url": "/categories/getting-started"
+      "name": "Basics",
+      "url": "/categories/car-insurance-basics",
+      "description": "Understanding coverage & requirements"
     },
     {
-      "name": "Airdrop",
-      "url": "/categories/airdrop-farming"
+      "name": "Savings",
+      "url": "/categories/saving-tips",
+      "description": "Discounts & money-saving tips",
+      "dropdown": [
+        {
+          "name": "Discount Guide",
+          "url": "/savings/discounts",
+          "description": "All available discounts explained"
+        },
+        {
+          "name": "Rate Factors",
+          "url": "/savings/rate-factors",
+          "description": "What affects your premium"
+        },
+        {
+          "name": "Bundling Tips",
+          "url": "/savings/bundling",
+          "description": "Save with multi-policy discounts"
+        },
+        {
+          "name": "Deductible Guide",
+          "url": "/savings/deductible",
+          "description": "Choose the right deductible"
+        }
+      ]
     },
     {
-      "name": "DeFi & Yield",
-      "url": "/categories/defi-yield"
+      "name": "Claims",
+      "url": "/categories/claims-accidents",
+      "description": "Accident & claims process"
     },
     {
-      "name": "Security",
-      "url": "/categories/security-privacy"
+      "name": "States",
+      "url": "/states",
+      "description": "State requirements & rates",
+      "dropdown": [
+        {
+          "name": "California",
+          "url": "/states/california",
+          "description": "CA insurance requirements"
+        },
+        {
+          "name": "Texas",
+          "url": "/states/texas",
+          "description": "TX insurance requirements"
+        },
+        {
+          "name": "Florida",
+          "url": "/states/florida",
+          "description": "FL insurance requirements"
+        },
+        {
+          "name": "New York",
+          "url": "/states/new-york",
+          "description": "NY insurance requirements"
+        },
+        {
+          "name": "View All 50 States",
+          "url": "/states",
+          "description": "Complete state-by-state guide"
+        }
+      ]
     },
     {
-      "name": "Alpha",
-      "url": "/categories/alpha-insider"
+      "name": "Companies",
+      "url": "/companies",
+      "description": "Insurance company reviews",
+      "dropdown": [
+        {
+          "name": "Geico Review",
+          "url": "/companies/geico",
+          "description": "Complete Geico analysis"
+        },
+        {
+          "name": "State Farm Review",
+          "url": "/companies/state-farm",
+          "description": "State Farm pros & cons"
+        },
+        {
+          "name": "Progressive Review",
+          "url": "/companies/progressive",
+          "description": "Progressive coverage review"
+        },
+        {
+          "name": "Allstate Review",
+          "url": "/companies/allstate",
+          "description": "Allstate insurance review"
+        },
+        {
+          "name": "Compare All Companies",
+          "url": "/companies",
+          "description": "Side-by-side comparison"
+        }
+      ]
     },
     {
-      "name": "Gaming",
-      "url": "/categories/web3-gaming-metaverse"
+      "name": "Get Quotes",
+      "url": "/get-quotes",
+      "description": "Free quote comparison"
     },
     {
       "name": "More",
       "dropdown": [
         {
-          "name": "Trading",
-          "url": "/categories/trading-investing"
+          "name": "Drivers & Coverage",
+          "url": "/categories/drivers-coverage",
+          "description": "Teen, senior, high-risk drivers"
         },
         {
-          "name": "Infrastructure",
-          "url": "/categories/infrastructure-tech"
+          "name": "Company Reviews",
+          "url": "/categories/company-reviews",
+          "description": "Insurance company comparisons"
         },
         {
-          "name": "Portfolio",
-          "url": "/categories/portfolio-management"
+          "name": "Comparison Tools",
+          "url": "/categories/comparison-tools",
+          "description": "Quote comparison guides"
         },
         {
-          "name": "Regulatory & Tax",
-          "url": "/categories/regulatory-tax"
+          "name": "Legal & Regulatory",
+          "url": "/categories/legal-regulatory",
+          "description": "Laws & requirements"
         },
         {
-          "name": "Tools & Automation",
-          "url": "/categories/tools-automation"
+          "name": "Specialized Coverage",
+          "url": "/categories/specialized-coverage",
+          "description": "Gap, roadside, pet coverage"
         },
         {
-          "name": "Prediction Markets",
-          "url": "/categories/prediction-markets"
+          "name": "Emergency Prep",
+          "url": "/categories/emergency-preparedness",
+          "description": "Disaster & emergency planning"
         },
         {
-          "name": "Research",
-          "url": "/categories/research-analysis"
+          "name": "Future Trends",
+          "url": "/categories/future-trends",
+          "description": "Telematics & EV insurance"
         },
         {
-          "name": "Services",
-          "url": "/services"
+          "name": "Insurance News",
+          "url": "/categories/insurance-news",
+          "description": "Industry updates & changes"
         },
         {
-          "name": "Tools",
-          "url": "/tools"
+          "name": "Cost & Discounts",
+          "url": "/categories/cost-discounts",
+          "description": "Rate factors & savings"
         }
       ]
     }
   ],
   "footer": [
     {
-      "name": "autoinsureguides",
-      "url": "/"
+      "name": "AutoInsureGuides",
+      "url": "/",
+      "description": "Expert auto insurance advice"
     },
     {
-      "name": "Services",
-      "url": "/services"
+      "name": "About Us",
+      "url": "/about",
+      "description": "Our mission & team"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact",
+      "description": "Get in touch with experts"
+    },
+    {
+      "name": "Privacy Policy",
+      "url": "/privacy",
+      "description": "Your privacy & data"
+    },
+    {
+      "name": "Terms of Service",
+      "url": "/terms",
+      "description": "Website terms & conditions"
+    },
+    {
+      "name": "Disclaimer",
+      "url": "/disclaimer",
+      "description": "Important legal information"
+    },
+    {
+      "name": "Sitemap",
+      "url": "/sitemap.xml",
+      "description": "Browse all content"
+    },
+    {
+      "name": "Get Quotes",
+      "url": "/get-quotes",
+      "description": "Free insurance comparison"
     },
     {
       "name": "Tools",
-      "url": "/tools"
+      "url": "/tools",
+      "description": "Calculators & comparison tools"
     },
     {
-      "name": "Newsletter",
-      "url": "/newsletter"
+      "name": "State Guides",
+      "url": "/states",
+      "description": "Requirements by state"
+    },
+    {
+      "name": "Company Reviews",
+      "url": "/companies",
+      "description": "Insurance company ratings"
+    },
+    {
+      "name": "Savings Tips",
+      "url": "/categories/saving-tips",
+      "description": "Money-saving strategies"
     },
     {
       "name": "Twitter",
       "url": "https://twitter.com/autoinsureguides",
-      "external": true
+      "external": true,
+      "description": "Follow us on Twitter"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://facebook.com/autoinsureguides",
+      "external": true,
+      "description": "Like us on Facebook"
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "autoinsureguides",
+    "title": "AutoInsureGuides",
     "base_url": "https://autoinsureguides.com",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": false,
-    "logo_width": "200",
-    "logo_height": "34",
-    "logo_text": "autoinsureguides"
+    "logo": "/images/logo.jpg",
+    "logo_width": "160",
+    "logo_height": "40",
+    "logo_text": "AutoInsureGuides"
   },
 
   "settings": {
@@ -16,9 +16,9 @@
   },
 
   "metadata": {
-    "meta_author": "NefuTrades",
-    "meta_image": "/images/txchyafinal.jpg",
-    "meta_description": "Raw data. Real alpha. Live Aster positions and Solana infra bets."
+    "meta_author": "AutoInsureGuides Team",
+    "meta_image": "/images/auto-insurance-og.jpg",
+    "meta_description": "Expert auto insurance guides, comparison tools, and money-saving tips. Get unbiased advice to save hundreds on your car insurance."
   },
 
   "google_tag_manager": {
@@ -27,36 +27,37 @@
   },
 
   "params": {
-    "contact_form_action": "https://formspree.io/f/xzznjdnr",
-    "copyright": "� 2025 autoinsureguides Capital"
+    "contact_form_action": "https://formspree.io/f/YOUR_FORM_ID",
+    "copyright": "© 2024 AutoInsureGuides. All rights reserved."
   },
 
   "contactinfo": {
-    "address": "Scottsdale, AZ",
+    "address": "123 Insurance Plaza, Suite 500, Financial District, New York, NY 10005",
     "email": "contact@autoinsureguides.com",
-    "phone": "+63 9613092580"
+    "phone": "1-800-555-1234"
   },
 
   "social": {
-    "twitter": "https://twitter.com/autoinsureguides",
-    "telegram": "https://t.me/autoinsureguides",
-    "discord": "https://discord.gg/autoinsureguides",
-    "github": "https://github.com/autoinsureguides",
+    "twitter": "https://twitter.com/insureautoguide",
+    "facebook": "https://facebook.com/autoinsureguides",
     "linkedin": "",
     "youtube": "",
-    "instagram": ""
+    "instagram": "",
+    "telegram": "",
+    "discord": "",
+    "github": ""
   },
 
   "author": {
-    "name": "NefuTrades",
-    "bio": "Trading, building, and writing in public.",
-    "avatar": "/images/avatar.jpg",
-    "twitter": "https://twitter.com/nefutrades"
+    "name": "AutoInsureGuides Team",
+    "bio": "Insurance analysts and consumer advocates dedicated to helping you save money on auto insurance.",
+    "avatar": "/images/insurance-expert-avatar.jpg",
+    "twitter": "https://twitter.com/insureautoguide"
   },
 
   "branding": {
-    "blog_name": "autoinsureguides",
-    "tagline": "Signal in the noise.",
-    "twitter_handle": "@autoinsureguides"
+    "blog_name": "AutoInsureGuides",
+    "tagline": "Expert Insurance Advice • Unbiased Guides • Money-Saving Tips",
+    "twitter_handle": "@insureautoguide"
   }
 }

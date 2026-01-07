@@ -21,40 +21,43 @@ try {
   draftCount = 0;
 }
 
-// Define your footer links in a clean structure
+// Define your footer links for Auto Insurance
 const footerLinks = {
-  services: {
-    title: 'Services',
+  guides: {
+    title: 'Insurance Guides',
     links: [
-      { name: 'Launch Services', url: '/services' },
-      { name: 'Apply Now', url: '/services#apply' },
-      { name: 'Twitter Marketing', url: '/services' },
+      { name: 'Car Insurance Basics', url: '/categories/car-insurance-basics' },
+      { name: 'Savings & Discounts', url: '/categories/saving-tips' },
+      { name: 'Claims Process', url: '/categories/claims-accidents' },
+      { name: 'State Requirements', url: '/states' },
+      { name: 'Company Reviews', url: '/companies' },
     ]
   },
-  resources: {
-    title: 'Resources',
+  tools: {
+    title: 'Tools & Resources',
     links: [
-      { name: 'All Guides', url: '/blog' },
-      { name: 'Newsletter', url: '/newsletter' },
-      { name: 'Toolkit', url: '/tools' },
+      { name: 'Savings Calculator', url: '/tools/calculator' },
+      { name: 'Quote Comparison', url: '/get-quotes' },
+      { name: 'State Minimums', url: '/states' },
+      { name: 'Discount Finder', url: '/tools/discounts' },
+      { name: 'Coverage Checklist', url: '/tools/checklist' },
     ]
   },
-  learn: {
-    title: 'Learn',
+  company: {
+    title: 'Company',
     links: [
-      { name: 'Getting Started', url: '/categories/getting-started' },
-      { name: 'DeFi Yield', url: '/categories/defi-yield' },
-      { name: 'Airdrop Farming', url: '/categories/airdrop-farming' },
+      { name: 'About Us', url: '/about' },
+      { name: 'Contact Support', url: '/contact' },
+      { name: 'Insurance News', url: '/categories/insurance-news' },
+      { name: 'Write for Us', url: '/write-for-us' },
+      { name: 'Advertise With Us', url: '/advertise' },
     ]
   }
 };
 
 const currentYear = new Date().getFullYear();
-
-// Check if we're on home page for newsletter
-const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html';
 ---
-<footer class="border-t dark:border-gray-800 border-gray-200 py-12">
+<footer class="border-t border-gray-200 bg-blue-50 py-12">
   <div class="container mx-auto px-4">
     
     {/* Main Footer Content */}
@@ -62,76 +65,105 @@ const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === '/index.
       
       {/* Brand Column - Takes 1 column */}
       <div>
-        <a href="/" class="flex items-center gap-3 mb-6">
-          <img
-            src="/images/logo.jpg"
-            alt="autoinsureguides"
-            class="w-12 h-12 rounded-lg object-cover"
-          />
-          <span class="text-2xl font-bold dark:text-white text-gray-900">
-            autoinsureguides
-          </span>
+        <a href="/" class="flex items-center gap-3 mb-6 group">
+          <div class="relative">
+            <img
+              src="/images/logo.jpg"
+              alt="AutoInsureGuides - Expert Auto Insurance Advice"
+              class="w-12 h-12 rounded-lg object-cover border-2 border-blue-200 group-hover:border-blue-400 transition-all"
+            />
+            <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center">
+              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-bold text-blue-900">
+              AutoInsureGuides
+            </span>
+            <span class="text-sm text-blue-600 font-medium">
+              Expert Insurance Advice
+            </span>
+          </div>
         </a>
-        <p class="dark:text-gray-400 text-gray-600 text-sm mb-6">
-          Premium DeFi education that should cost thousands... but we're giving it away free.
+        <p class="text-gray-600 text-sm mb-6">
+          Unbiased auto insurance guidance to help you save money and make informed decisions.
+          No commission, just expert advice.
         </p>
         
         {/* Guide Counts */}
-        <div class="mb-6 space-y-2">
+        <div class="mb-6 space-y-3">
           {/* Published Guides */}
-          <p class="dark:text-gray-300 text-gray-700 text-sm">
-            <span class="inline-flex items-center gap-1">
-              <svg class="w-4 h-4 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.968 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+              <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
               </svg>
-              <span class="font-semibold text-green-600 dark:text-green-400">{publishedPosts.length || 0}</span> 
-              <span>Published Guides</span>
-            </span>
-          </p>
+            </div>
+            <div>
+              <div class="text-green-700 font-bold">{publishedPosts.length || 0} Published Guides</div>
+              <div class="text-gray-500 text-xs">Expert insurance articles</div>
+            </div>
+          </div>
 
-          {/* Total Guides */}
-          <p class="dark:text-gray-400 text-gray-600 text-xs">
-            <span class="inline-flex items-center gap-1">
-              <svg class="w-3 h-3 text-blue-500 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+          {/* Tools Count */}
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+              <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
               </svg>
-              <span class="font-semibold text-blue-600 dark:text-blue-400">{totalPosts}</span> 
-              <span>Total Guides</span>
-              {draftCount > 0 && (
-                <span class="text-yellow-600 dark:text-yellow-400 ml-1">
-                  ({draftCount} draft)
-                </span>
-              )}
-            </span>
-          </p>
+            </div>
+            <div>
+              <div class="text-blue-700 font-bold">12+ Free Tools</div>
+              <div class="text-gray-500 text-xs">Calculators & comparison tools</div>
+            </div>
+          </div>
         </div>
         
-        {/* Social Icons - This replaces the Connect section */}
+        {/* Social Icons */}
         <div class="flex gap-4 mb-4">
           <a href="https://twitter.com/autoinsureguides" 
              target="_blank"
-             class="dark:text-gray-400 text-gray-600 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
-             title="Twitter">
-            <span class="text-xl">🐦 Twitter</span>
+             class="flex items-center gap-2 text-blue-700 hover:text-blue-900 transition-colors"
+             title="Follow us on Twitter">
+            <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.213c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </div>
+            <span class="text-sm font-medium">Twitter</span>
           </a>
-          <a href="/rss.xml" 
-             class="dark:text-gray-400 text-gray-600 hover:text-orange-500 dark:hover:text-orange-400 transition-colors"
-             title="RSS Feed">
-            <span class="text-xl">📡 RSS</span>
+          <a href="https://facebook.com/autoinsureguides" 
+             target="_blank"
+             class="flex items-center gap-2 text-blue-700 hover:text-blue-900 transition-colors"
+             title="Like us on Facebook">
+            <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </div>
+            <span class="text-sm font-medium">Facebook</span>
           </a>
         </div>
         
-        {/* Contact link under social icons */}
-        <a href="/contact" 
-           class="dark:text-gray-400 text-gray-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">
-          📧 Contact Us
-        </a>
+        {/* Newsletter Signup */}
+        <div class="mt-6">
+          <div class="text-sm font-medium text-blue-900 mb-2">Get Insurance Tips</div>
+          <a href="/newsletter" 
+             class="inline-flex items-center gap-2 text-blue-700 hover:text-blue-900 text-sm font-medium">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            Subscribe to Newsletter
+          </a>
+        </div>
       </div>
       
-      {/* Footer Link Columns - 3 columns for Services, Resources, Learn */}
+      {/* Footer Link Columns - 3 columns for Guides, Tools, Company */}
       {Object.entries(footerLinks).map(([key, section]) => (
         <div key={key}>
-          <h3 class="text-lg font-bold dark:text-white text-gray-900 mb-4">
+          <h3 class="text-lg font-bold text-blue-900 mb-4">
             {section.title}
           </h3>
           <ul class="space-y-3">
@@ -139,56 +171,80 @@ const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === '/index.
               <li>
                 <a 
                   href={link.url}
-                  class="dark:text-gray-400 text-gray-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm"
+                  class="text-gray-600 hover:text-blue-700 hover:font-medium transition-colors text-sm flex items-center gap-2 group"
                   {link.url.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {}}
                 >
+                  <div class="w-1 h-1 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   {link.name}
                 </a>
               </li>
             ))}
           </ul>
         </div>
-      ))}    
+      ))}
+    </div>
+    
     {/* Divider */}
-    <div class="border-t dark:border-gray-800 border-gray-200 my-8"></div>
+    <div class="border-t border-blue-200 my-8"></div>
     
     {/* Bottom Bar */}
     <div class="flex flex-col md:flex-row justify-between items-center gap-4">
       {/* Copyright & Links */}
       <div class="text-center md:text-left">
-        <p class="dark:text-gray-500 text-gray-500 text-sm">
-          © {currentYear} autoinsureguides Capital. All content is free to share under{' '}
-          <a href="https://creativecommons.org/licenses/by/4.0/" 
-             target="_blank" 
-             class="text-blue-600 dark:text-blue-400 hover:underline">
-            CC BY 4.0
-          </a>.
+        <p class="text-gray-600 text-sm">
+          © {currentYear} AutoInsureGuides. All rights reserved.
+        </p>
+        <p class="text-gray-500 text-xs mt-1">
+          Providing unbiased auto insurance guidance since 2024
         </p>
       </div>
       
       {/* Legal Links */}
       <div class="flex flex-wrap justify-center gap-4 md:gap-6">
-        <a href="/privacy" class="dark:text-gray-500 text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
+        <a href="/privacy" class="text-gray-500 hover:text-blue-700 text-sm transition-colors">
           Privacy Policy
         </a>
-        <a href="/terms" class="dark:text-gray-500 text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
+        <a href="/terms" class="text-gray-500 hover:text-blue-700 text-sm transition-colors">
           Terms of Service
         </a>
-        <a href="/disclaimer" class="dark:text-gray-500 text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
-          Disclaimer
+        <a href="/disclaimer" class="text-gray-500 hover:text-blue-700 text-sm transition-colors">
+          Insurance Disclaimer
         </a>
-        <a href="/contact" class="dark:text-gray-500 text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
-          Contact
+        <a href="/contact" class="text-gray-500 hover:text-blue-700 text-sm transition-colors">
+          Contact Us
+        </a>
+        <a href="/sitemap.xml" class="text-gray-500 hover:text-blue-700 text-sm transition-colors">
+          Sitemap
         </a>
       </div>
     </div>
     
-    {/* Important Notice */}
-    <div class="mt-8 pt-6 border-t dark:border-gray-800 border-gray-200">
-      <p class="dark:text-gray-600 text-gray-500 text-xs text-center">
-        ⚠️ <strong>Not financial advice:</strong> All content is educational. DeFi involves risk. 
-        Always do your own research and never invest more than you can afford to lose.
+    {/* Insurance Disclaimer */}
+    <div class="mt-8 pt-6 border-t border-blue-200">
+      <p class="text-gray-600 text-xs text-center">
+        ⚠️ <strong>Important Disclaimer:</strong> AutoInsureGuides provides educational content only. We are not insurance agents, brokers, or advisors. 
+        Always consult with licensed insurance professionals for personalized advice. 
+        Insurance requirements and rates vary by state and individual circumstances. 
+        We may receive compensation from insurance companies for referrals. 
+        <a href="/disclaimer" class="text-blue-700 hover:underline ml-1">Read full disclaimer</a>.
       </p>
+    </div>
+    
+    {/* AdSense Footer Ad Placement */}
+    <div class="mt-8 pt-6 border-t border-blue-200">
+      <div class="text-center text-gray-500 text-xs mb-2">Advertisement</div>
+      <!-- AdSense footer ad slot -->
+      <div class="flex justify-center">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
     </div>
   </div>
 </footer>
@@ -197,5 +253,10 @@ const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === '/index.
   /* Smooth hover effects */
   footer a {
     transition: all 0.2s ease;
+  }
+  
+  /* Professional insurance styling */
+  .footer-link:hover {
+    transform: translateX(4px);
   }
 </style>

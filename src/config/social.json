@@ -1,24 +1,10 @@
 {
   "main": [
     {
-      "name": "X",
+      "name": "Twitter",
       "icon": "FaXTwitter",
-      "link": "https://x.com/autoinsureguides"
-    },
-    {
-      "name": "instagram",
-      "icon": "FaInstagram",
-      "link": "https://www.instagram.com/txchyaai"
-    },
-    {
-      "name": "YouTube",
-      "icon": "FaYoutube",
-      "link": "https://www.youtube.com/@autoinsureguides"
-    },
-    {
-      "name": "Telegram",
-      "icon": "FaTelegram",
-      "link": "https://t.me/autoinsureguides"
+      "link": "https://twitter.com/autoinsureguides",
+      "description": "Follow us on Twitter for insurance tips and updates"
     }
   ]
 }

@@ -1,12 +1,9 @@
 ---
 import SocialShare from "@/components/SocialShare.astro";
 import SimilarPosts from "@/components/SimilarPosts.astro";
-// REMOVED: import SEO from "@/layouts/components/SEO.astro"; <-- Remove this line
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
-import similarItems from "@/lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
-import { Image } from "astro:assets";
 import { render } from "astro:content";
 import { BiCalendarEdit, BiCategoryAlt } from "react-icons/bi";
 
@@ -16,203 +13,361 @@ const { post } = Astro.props;
 
 const similarPosts = posts.filter(p => p.slug !== post.slug && p.data.category === post.data.category).slice(0, 3);
 const { Content } = await render(post);
-const { title, description, authors, categories, image, date, tags } = post.data;
+const { title, description, authors, category, image, date, tags, insuranceCompany, state, savingsAmount, coverageType } = post.data;
 
 const siteUrl = "https://autoinsureguides.com";
 const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
-const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
+const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/images/insurance-og-default.jpg`;
 
 // Safe author handling
 const getAuthorNames = () => {
-  if (!authors || !Array.isArray(authors)) return "NefuTrades";
+  if (!authors || !Array.isArray(authors)) return "AutoInsureGuides Team";
   
   const names = authors
     .map(a => a?.data?.name)
     .filter(name => name && typeof name === 'string');
   
-  return names.length > 0 ? names.join(", ") : "NefuTrades";
+  return names.length > 0 ? names.join(", ") : "AutoInsureGuides Team";
 };
 
 const authorNames = getAuthorNames();
+
+// Calculate read time
+function calculateReadTime(content, wordsPerMinute = 200) {
+  if (!content) return 5;
+  const plainText = content.replace(/<[^>]*>/g, '');
+  const wordCount = plainText.split(/\s+/).length;
+  return Math.max(1, Math.ceil(wordCount / wordsPerMinute));
+}
+
+const readTime = calculateReadTime(post.body) || 8;
 ---
 
-<!-- REMOVED: The duplicate SEO component that was here -->
+<!-- Structured Data for Insurance Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{title}",
+  "description": "{description}",
+  "image": "{ogImage}",
+  "datePublished": "{date}",
+  "dateModified": "{date}",
+  "author": {
+    "@type": "Organization",
+    "name": "AutoInsureGuides",
+    "url": "https://autoinsureguides.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AutoInsureGuides",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://autoinsureguides.com/images/logo.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{canonicalUrl}"
+  },
+  {insuranceCompany ? `"about": "${insuranceCompany}",` : ''}
+  {state ? `"spatialCoverage": "${state}",` : ''}
+  "keywords": "{tags ? tags.join(', ') : 'auto insurance'}",
+  "articleSection": "{category ? category.replace('-', ' ') : 'Insurance'}",
+  "timeRequired": "PT{readTime}M",
+  "isAccessibleForFree": "true"
+}
+</script>
 
-<!-- Keep existing viewport meta -->
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<section class="section">
-  <div class="container">
-    <article class="row justify-center">
-      <!-- Title + meta info (unchanged) -->
-      <div class="md:col-10 text-center">
-        <h1 set:html={markdownify(title)} class="h2" />
-        <ul class="mt-4 flex flex-wrap items-center justify-center text-text">
-          <!-- Author, Date, Categories – with safe handling -->
-          {authorNames !== "NefuTrades" && (
-            <li class="mr-4 flex items-center">
-              {authorNames.split(", ").map((name: string, i: number) => (
-                <span>
-                  {i > 0 && ", "}
-                  <a
-                    href={`/authors/${slugify(name)}`}
-                    class="ml-1 hover:text-primary"
-                  >
-                    {name}
-                  </a>
-                </span>
-              ))}
-            </li>
-          )}
-          <li class="mr-4 flex items-center">
-            <BiCalendarEdit class="mr-1" />
-            {dateFormat(date)}
-          </li>
-          {categories && (
-            <li class="flex items-center">
-              <BiCategoryAlt class="mr-1" />
-              {categories.map((category: string, i: number) => (
-                <span>
-                  {i > 0 && ", "}
-                  <a
-                    href={`/categories/${slugify(category)}`}
-                    class="ml-1 hover:text-primary"
-                  >
-                    {humanize(category)}
-                  </a>
-                </span>
-              ))}
-            </li>
-          )}
-        </ul>
-      </div>
-
-      <!-- Featured image (unchanged) -->
-      {image && (
-        <div class="col-12 mt-8 mb-2">
-          <img src={image} height={500} width={1000} alt={title} class="rounded-lg w-full" />
+<section class="pt-8 pb-16 bg-gradient-to-b from-blue-50 to-white">
+  <div class="container mx-auto px-4 max-w-4xl">
+    
+    <!-- Article Header -->
+    <div class="text-center mb-12">
+      {/* Category Badge */}
+      {category && (
+        <div class="inline-block mb-6">
+          <a href={`/categories/${slugify(category)}`} 
+             class="px-5 py-2 bg-blue-100 text-blue-700 font-bold rounded-full text-sm hover:bg-blue-200 transition-colors">
+            {category ? category.replace('-', ' ').toUpperCase() : 'INSURANCE GUIDE'}
+          </a>
         </div>
       )}
-
-      <!-- Main content -->
-      <div class="md:col-10">
-        <div class="content mb-16 text-left">
-          <Content />
+      
+      {/* Title */}
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        {title}
+      </h1>
+      
+      {/* Meta Info Row */}
+      <div class="flex flex-wrap items-center justify-center gap-4 md:gap-8 text-gray-600 text-sm md:text-base">
+        {/* Author */}
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+          </svg>
+          <span class="font-medium text-gray-900">{authorNames}</span>
         </div>
-
-        <!-- MOBILE-OPTIMIZED BEEHIIV FORM WITH PLAIN CSS -->
-        <!-- Updated: 2024-12-08 for mobile responsiveness -->
-        <div class="my-16 md:my-20 px-4 sm:px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-6 sm:p-8 lg:p-10 text-center shadow-lg">
-            
-            <!-- SIMPLE CSS VERSION - Bypasses Tailwind -->
-            <h3 class="desktop-title">Get Weekly DeFi Alpha in Your Inbox</h3>
-            <h3 class="mobile-title">Weekly DeFi Alpha</h3>
-            
-            <p class="desktop-desc">56k+ traders getting my private newsletter every week</p>
-            <p class="mobile-desc">Join To Download our Ebook Free</p>
-
-            <style>
-              /* Mobile first */
-              .desktop-title, .desktop-desc {
-                display: none;
-              }
-              
-              .mobile-title, .mobile-desc {
-                display: block;
-              }
-              
-              .mobile-title, .desktop-title {
-                font-size: 1.5rem; /* text-2xl */
-                font-weight: 700; /* font-bold */
-                margin-bottom: 0.75rem; /* mb-3 */
-                line-height: 1.25; /* leading-tight */
-              }
-              
-              .mobile-desc, .desktop-desc {
-                font-size: 1rem; /* text-base */
-                color: #4b5563; /* text-gray-600 */
-                margin-bottom: 2rem; /* mb-8 */
-                max-width: 36rem; /* max-w-xl */
-                margin-left: auto;
-                margin-right: auto;
-                line-height: 1.625; /* leading-relaxed */
-              }
-              
-              .dark .mobile-desc, .dark .desktop-desc {
-                color: #9ca3af; /* dark:text-gray-400 */
-              }
-              
-              /* Desktop styles */
-              @media (min-width: 640px) {
-                .desktop-title, .desktop-desc {
-                  display: block !important;
-                }
-                .mobile-title, .mobile-desc {
-                  display: none !important;
-                }
-                
-                .desktop-title {
-                  font-size: 1.875rem; /* text-3xl */
-                  margin-bottom: 1rem; /* mb-4 */
-                }
-                
-                .desktop-desc {
-                  font-size: 1.125rem; /* text-lg */
-                  margin-bottom: 2.5rem; /* sm:mb-10 */
-                }
-              }
-            </style>
-
-            <!-- FIXED: Wider Beehiiv iframe (500px) for proper email field -->
-            <div class="w-full flex justify-center">
-              <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
-              <iframe
-                src="https://subscribe-forms.beehiiv.com/cc63cad9-7786-4f32-badd-628ad1226266"
-                class="beehiiv-embed"
-                data-test-id="beehiiv-embed"
-                frameborder="0"
-                scrolling="no"
-                style="width: 500px; height: 420px; border: none; border-radius: 12px; max-width: 100%;"
-                loading="lazy"
-              ></iframe>
-            </div>
-
-            <noscript>
-              <p class="text-sm text-gray-500 mt-4">
-                <a href="https://autoinsureguides.beehiiv.com/subscribe" target="_blank" rel="noopener" class="underline hover:text-primary">
-                  Subscribe to the newsletter
-                </a>
-              </p>
-            </noscript>
-          </div>
+        
+        {/* Date */}
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+          </svg>
+          <time datetime={date}>{dateFormat(date)}</time>
         </div>
-
-        <!-- Tags and Share Buttons -->
-        <div class="my-20 text-center border-t-2 border-gray-200 dark:border-gray-700 pt-12">
-          <!-- Tags -->
-          <div class="flex flex-wrap justify-center gap-3 mb-12">
-            {tags?.map((tag: string) => (
-              <a href={`/tags/${slugify(tag)}`} class="px-5 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium hover:text-primary">
-                #{humanize(tag)}
-              </a>
-            ))}
-          </div>
-
-          <!-- SHARE BUTTONS – NOW VISIBLE -->
-          <SocialShare title={title} url={Astro.url} />
+        
+        {/* Read Time */}
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+          </svg>
+          <span>{readTime} min read</span>
         </div>
       </div>
+      
+      {/* Insurance-specific metadata */}
+      <div class="flex flex-wrap justify-center gap-4 mt-6">
+        {state && (
+          <div class="inline-flex items-center gap-2 bg-gray-100 px-3 py-1.5 rounded-full">
+            <svg class="w-4 h-4 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm font-medium text-gray-700">{state}</span>
+          </div>
+        )}
+        
+        {insuranceCompany && (
+          <div class="inline-flex items-center gap-2 bg-gray-100 px-3 py-1.5 rounded-full">
+            <svg class="w-4 h-4 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2h6a2 2 0 002-2V6a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm font-medium text-gray-700">{insuranceCompany}</span>
+          </div>
+        )}
+        
+        {savingsAmount && (
+          <div class="inline-flex items-center gap-2 bg-green-100 px-3 py-1.5 rounded-full">
+            <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm font-bold text-green-700">Save {savingsAmount}</span>
+          </div>
+        )}
+      </div>
+    </div>
+
+    {/* Featured Image */}
+    {image && (
+      <div class="mb-12 rounded-2xl overflow-hidden shadow-xl">
+        <img 
+          src={image} 
+          alt={title} 
+          class="w-full h-auto object-cover"
+          loading="eager"
+        />
+        {post.data.heroImageAlt && (
+          <p class="text-center text-sm text-gray-500 mt-2 px-4">{post.data.heroImageAlt}</p>
+        )}
+      </div>
+    )}
+
+    {/* Main Content */}
+    <article class="prose prose-lg max-w-none mb-16">
+      <div class="content">
+        <Content />
+      </div>
     </article>
+
+    {/* Tags */}
+    {tags && tags.length > 0 && (
+      <div class="mb-16 pt-8 border-t border-gray-200">
+        <h3 class="text-lg font-bold text-gray-900 mb-4">Topics:</h3>
+        <div class="flex flex-wrap gap-3">
+          {tags.map((tag: string) => (
+            <a href={`/tags/${slugify(tag)}`} 
+               class="px-4 py-2 bg-blue-50 text-blue-700 font-medium rounded-lg hover:bg-blue-100 transition-colors text-sm">
+              #{humanize(tag)}
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {/* Insurance Tools Callout */}
+    <div class="my-16 p-8 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl border border-blue-200">
+      <div class="text-center">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Need Help With Your Insurance?</h3>
+        <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
+          Use our free tools to compare quotes, calculate savings, and find the best coverage for your needs.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/tools/calculator" 
+             class="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold rounded-xl hover:shadow-lg transition-all">
+            ðŸ§® Use Savings Calculator
+          </a>
+          <a href="/get-quotes" 
+             class="px-6 py-3 bg-white border-2 border-blue-600 text-blue-700 font-bold rounded-xl hover:bg-blue-50 transition-all">
+            ðŸš— Get Free Quotes
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {/* Share Buttons */}
+    <div class="mb-16 pt-8 border-t border-gray-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-6 text-center">Share This Guide</h3>
+      <SocialShare title={title} url={Astro.url} />
+    </div>
+
+    {/* Newsletter Signup - Insurance Focused */}
+    <div class="my-16 p-8 bg-white rounded-2xl shadow-lg border border-gray-200">
+      <div class="text-center max-w-2xl mx-auto">
+        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Get Insurance Tips & Savings Alerts</h3>
+        <p class="text-gray-600 mb-8">
+          Join 15,000+ readers getting weekly insurance insights, rate change alerts, and money-saving tips.
+        </p>
+        
+        <!-- Simple Email Form -->
+        <form class="space-y-4 max-w-md mx-auto" 
+              action="https://app.convertkit.com/forms/YOUR_FORM_ID/subscribe" 
+              method="post">
+          <div class="flex gap-3">
+            <input 
+              type="email" 
+              name="email_address" 
+              placeholder="Your email address" 
+              required
+              class="flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            />
+            <button 
+              type="submit"
+              class="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold rounded-xl hover:shadow-lg transition-all"
+            >
+              Subscribe
+            </button>
+          </div>
+          <p class="text-xs text-gray-500">
+            No spam. Unsubscribe anytime. <a href="/privacy" class="text-blue-600 hover:underline">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    {/* Similar Posts */}
+    {similarPosts.length > 0 && (
+      <div class="mt-16 pt-8 border-t border-gray-200">
+        <h3 class="text-2xl font-bold text-gray-900 mb-8">Related Insurance Guides</h3>
+        <SimilarPosts posts={similarPosts} />
+      </div>
+    )}
+
+    {/* Insurance Disclaimer */}
+    <div class="mt-12 pt-8 border-t border-gray-200">
+      <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
+        <h4 class="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+          <svg class="w-5 h-5 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+          </svg>
+          Important Insurance Disclaimer
+        </h4>
+        <p class="text-sm text-gray-700">
+          AutoInsureGuides provides educational content only. We are not licensed insurance agents, brokers, or advisors. 
+          Insurance requirements, rates, and coverage options vary by state and individual circumstances. 
+          Always consult with licensed insurance professionals for personalized advice. 
+          <a href="/disclaimer" class="text-blue-600 hover:underline font-medium ml-1">Read full disclaimer</a>.
+        </p>
+      </div>
+    </div>
+
+    {/* AdSense Placement */}
+    <div class="mt-12 pt-8 border-t border-gray-200">
+      <div class="text-center text-gray-500 text-sm mb-4">Advertisement</div>
+      <!-- AdSense in-article ad -->
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-layout="in-article"
+           data-ad-format="fluid"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="XXXXXXXXXX">
+      </ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
   </div>
 </section>
 
-<!-- Similar posts – untouched -->
-{similarPosts.length > 0 && (
-  <section class="section pt-0">
-    <div class="container">
-      <h2 class="mb-8 text-center h3">Similar Posts</h2>
-      <!-- SimilarPosts disabled temporarily -->
-    </div>
-  </section>
-)}
+<style>
+  /* Article content styling */
+  .prose {
+    color: #1f2937;
+    line-height: 1.75;
+  }
+  
+  .prose h2 {
+    color: #111827;
+    font-weight: 700;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+  }
+  
+  .prose h3 {
+    color: #374151;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+  }
+  
+  .prose p {
+    margin-bottom: 1.5em;
+  }
+  
+  .prose ul, .prose ol {
+    margin-bottom: 1.5em;
+    padding-left: 1.5em;
+  }
+  
+  .prose li {
+    margin-bottom: 0.5em;
+  }
+  
+  .prose a {
+    color: #1e40af;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  .prose a:hover {
+    color: #1e3a8a;
+  }
+  
+  .prose blockquote {
+    border-left: 4px solid #3b82f6;
+    padding-left: 1.5em;
+    margin: 2em 0;
+    font-style: italic;
+    color: #4b5563;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .prose {
+      font-size: 1.125rem;
+    }
+    
+    .prose h2 {
+      font-size: 1.75rem;
+    }
+    
+    .prose h3 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
