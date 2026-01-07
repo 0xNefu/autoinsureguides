@@ -1,4 +1,4 @@
-// src/pages/feed.json.ts
+// src/pages/feed.json.ts - INSURANCE FEED
 import { getCollection } from 'astro:content';
 import type { APIRoute } from 'astro';
 
@@ -11,8 +11,7 @@ export const GET: APIRoute = async ({ site }) => {
 
   const items = posts
     .map((post) => {
-      // Use post.slug for correct nested URL: getting-started/how-to-buy-crypto
-      const path = post.slug; // FIXED: Changed from post.id to post.slug
+      const path = post.slug;
       const url = new URL(`/blog/${path}/`, site).href;
 
       const imageUrl = post.data.image
@@ -26,9 +25,10 @@ export const GET: APIRoute = async ({ site }) => {
         id: url,
         url,
         title: String(post.data.title || 'Untitled Post'),
-        summary: String(post.data.description || 'New on-chain alpha from autoinsureguides Capital'),
+        summary: String(post.data.description || 'Expert auto insurance tips and money-saving strategies from AutoInsureGuides.'),
         date_published: new Date(post.data.date).toISOString(),
         image: imageUrl,
+        category: post.data.category ? [String(post.data.category)] : [],
       };
     })
     .sort((a, b) => new Date(b.date_published).getTime() - new Date(a.date_published).getTime());
@@ -37,12 +37,19 @@ export const GET: APIRoute = async ({ site }) => {
     JSON.stringify(
       {
         version: 'https://jsonfeed.org/version/1.1',
-        title: 'autoinsureguides Capital – On-Chain Research',
-        description: 'High-conviction crypto research, trading strategies, and DeFi insights.',
+        title: 'AutoInsureGuides – Expert Auto Insurance Resources',
+        description: 'Money-saving tips, coverage guides, and insurance comparisons for smart drivers.',
         home_page_url: site.href,
         feed_url: new URL('/feed.json', site).href,
         icon: new URL('/favicon.ico', site).href,
         favicon: new URL('/favicon.ico', site).href,
+        authors: [
+          {
+            name: 'AutoInsureGuides Team',
+            url: site.href,
+          }
+        ],
+        language: 'en-US',
         items,
       },
       null,

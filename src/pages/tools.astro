@@ -1,567 +1,140 @@
 ---
-// src/pages/tools.astro
-import Base from '../layouts/Base.astro';
-
-const title = "Crypto Toolkit - Every Tool I Actually Use";
-const description = "Complete list of platforms, wallets, and services I use with full transparency on referral earnings. Always updated.";
+// src/pages/tools.astro - Insurance Tools Page
+import Base from "@/layouts/Base.astro";
 ---
 
-<Base title={title} description={description}>
-  <main class="max-w-6xl mx-auto px-4 py-16">
-    <!-- Hero Section -->
-    <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-        🧰 Complete Crypto Toolkit
-      </h1>
-      <p class="text-xl text-gray-700 mb-6 max-w-3xl mx-auto">
-        Every single tool, exchange, and service I use for crypto trading, DeFi, and research.
-        <span class="font-semibold text-cyan-600"> Full affiliate transparency included.</span>
-      </p>
-      <div class="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-xl p-4 max-w-2xl mx-auto">
-        <p class="text-gray-800 flex items-start gap-2">
-          <span class="text-cyan-500 font-bold text-lg">⚠️</span>
-          <span>
-            Using my links <span class="font-semibold text-green-600">never costs you extra</span>.
-            You often get bonuses, and commissions support this free site.
-          </span>
+<Base 
+  title="Free Insurance Tools & Calculators | AutoInsureGuides" 
+  description="Use our free insurance calculators, comparison tools, and savings estimators to find the best rates and maximize your coverage."
+>
+  <section class="section">
+    <div class="container max-w-6xl">
+      
+      <!-- Hero -->
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
+          Free <span class="text-primary dark:text-primary-light">Insurance Tools</span>
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+          Calculate your potential savings, compare quotes, and make informed insurance decisions with our expert tools.
         </p>
       </div>
-    </div>
 
-    <!-- Navigation Tabs -->
-    <div class="flex flex-wrap gap-2 mb-8 justify-center" id="category-tabs">
-      <button class="category-tab px-4 py-2 rounded-lg bg-cyan-100 text-cyan-800 font-medium" data-category="all">
-        🔥 All Tools
-      </button>
-      <button class="category-tab px-4 py-2 rounded-lg bg-gray-100 text-gray-700 font-medium" data-category="trading">
-        📈 Trading
-      </button>
-      <button class="category-tab px-4 py-2 rounded-lg bg-gray-100 text-gray-700 font-medium" data-category="wallets">
-        🔐 Wallets
-      </button>
-      <button class="category-tab px-4 py-2 rounded-lg bg-gray-100 text-gray-700 font-medium" data-category="cex">
-        🏦 CEX
-      </button>
-      <button class="category-tab px-4 py-2 rounded-lg bg-gray-100 text-gray-700 font-medium" data-category="defi">
-        🦄 DeFi
-      </button>
-      <button class="category-tab px-4 py-2 rounded-lg bg-gray-100 text-gray-700 font-medium" data-category="tools">
-        🛠️ Tools
-      </button>
-      <button class="category-tab px-4 py-2 rounded-lg bg-gray-100 text-gray-700 font-medium" data-category="services">
-        💼 Services
-      </button>
-    </div>
-
-    <!-- Search -->
-    <div class="mb-8">
-      <input 
-        type="text" 
-        placeholder="🔍 Search tools by name or category..." 
-        class="w-full max-w-md mx-auto block px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none shadow-sm"
-        id="tool-search"
-      />
-    </div>
-
-    <!-- Tools Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="tools-grid">
-      {[
-        // Trading & Perpetuals
-        {
-          name: "Axiom",
-          description: "Best for low-cap altcoin perps. Great UI, deep liquidity for emerging tokens.",
-          url: "https://tinyurl.com/tryaxiom",
-          category: "trading",
-          type: "Perp DEX",
-          status: "active",
-          bonus: "30% of L1 fees forever",
-          icon: "📊"
-        },
-        {
-          name: "Drift Protocol",
-          description: "Solana's best perpetual DEX. Fast, cheap, and constantly innovating.",
-          url: "https://tinyurl.com/driftnefu",
-          category: "trading",
-          type: "Perp DEX",
-          status: "active",
-          bonus: "15% lifetime fees",
-          icon: "⚡"
-        },
-        {
-          name: "Hyperliquid",
-          description: "High-performance perp exchange with its own L1. Professional trading.",
-          url: "https://tinyurl.com/hypeliqdm",
-          category: "trading",
-          type: "Perp Exchange",
-          status: "active",
-          bonus: "Up to 30% fee share",
-          icon: "🚀"
-        },
-        {
-          name: "Aster",
-          description: "New perp DEX with innovative features. Growing ecosystem.",
-          url: "https://tinyurl.com/asterperps",
-          category: "trading",
-          type: "Perp DEX",
-          status: "active",
-          bonus: "Standard affiliate",
-          icon: "🌟"
-        },
-        {
-          name: "Polymarket",
-          description: "Bet on real-world events. Liquid prediction markets.",
-          url: "https://tinyurl.com/polynefu",
-          category: "trading",
-          type: "Prediction Market",
-          status: "active",
-          bonus: "$10 bonus on first deposit",
-          icon: "🔮"
-        },
-        {
-          name: "TradingView",
-          description: "Best charting platform. Essential for technical analysis.",
-          url: "https://tinyurl.com/tradingview9",
-          category: "trading",
-          type: "Charting",
-          status: "active",
-          bonus: "Black Friday discounts",
-          icon: "📉"
-        },
-        {
-          name: "GMX v2",
-          description: "Top-tier perp trading on Arbitrum & Avalanche.",
-          url: "#",
-          category: "trading",
-          type: "Perp DEX",
-          status: "pending",
-          bonus: "Coming soon",
-          icon: "📈"
-        },
-        {
-          name: "dYdX",
-          description: "Institutional-grade perp trading platform.",
-          url: "#",
-          category: "trading",
-          type: "Perp Exchange",
-          status: "pending",
-          bonus: "Coming soon",
-          icon: "🏛️"
-        },
-
-        // Centralized Exchanges
-        {
-          name: "Coinbase",
-          description: "Best US exchange for beginners. Regulatory compliant.",
-          url: "https://tinyurl.com/coinbnefu",
-          category: "cex",
-          type: "CEX",
-          status: "active",
-          bonus: "Signup bonus",
-          icon: "🔷"
-        },
-        {
-          name: "Binance",
-          description: "Largest global exchange. Massive liquidity, low fees.",
-          url: "https://tinyurl.com/bscnef",
-          category: "cex",
-          type: "CEX",
-          status: "active",
-          bonus: "Referral rewards",
-          icon: "💰"
-        },
-        {
-          name: "KuCoin",
-          description: "Best for altcoin discovery. Great for early listings.",
-          url: "https://tinyurl.com/kucoinlyf",
-          category: "cex",
-          type: "CEX",
-          status: "active",
-          bonus: "Standard affiliate",
-          icon: "💎"
-        },
-        {
-          name: "Bybit",
-          description: "Excellent derivatives platform. Great trading experience.",
-          url: "https://tinyurl.com/bybitnef",
-          category: "cex",
-          type: "CEX",
-          status: "active",
-          bonus: "Standard affiliate",
-          icon: "⚙️"
-        },
-        {
-          name: "OKX",
-          description: "Feature-rich exchange with Web3 wallet integration.",
-          url: "https://tinyurl.com/okxnefref",
-          category: "cex",
-          type: "CEX",
-          status: "active",
-          bonus: "Standard affiliate",
-          icon: "🌐"
-        },
-        {
-          name: "Robinhood",
-          description: "Easy stock & crypto trading. Free commission trades.",
-          url: "https://tinyurl.com/robinhoodG",
-          category: "cex",
-          type: "CEX",
-          status: "active",
-          bonus: "Free stock",
-          icon: "🔄"
-        },
-
-        // Wallets
-        {
-          name: "Phantom Wallet",
-          description: "Best Solana wallet. Clean, secure, feature-rich.",
-          url: "https://phantom.app/download",
-          category: "wallets",
-          type: "Hot Wallet",
-          status: "no-affiliate",
-          bonus: "No affiliate",
-          icon: "👻"
-        },
-        {
-          name: "Ledger",
-          description: "Most popular hardware wallet. Secure cold storage.",
-          url: "https://tinyurl.com/ledgernef",
-          category: "wallets",
-          type: "Hardware Wallet",
-          status: "active",
-          bonus: "Shop discount",
-          icon: "🔒"
-        },
-        {
-          name: "Trezor",
-          description: "Open-source hardware wallet. Trusted by experts.",
-          url: "https://tinyurl.com/trezor99",
-          category: "wallets",
-          type: "Hardware Wallet",
-          status: "active",
-          bonus: "Shop discount",
-          icon: "💽"
-        },
-        {
-          name: "MetaMask",
-          description: "Essential Ethereum wallet. Most widely used.",
-          url: "https://tinyurl.com/mmnefu",
-          category: "wallets",
-          type: "Hot Wallet",
-          status: "active",
-          bonus: "Potential rewards",
-          icon: "🦊"
-        },
-        {
-          name: "Tangem Wallet",
-          description: "Card-style hardware wallet. Super portable.",
-          url: "https://tinyurl.com/tangemnefu",
-          category: "wallets",
-          type: "Hardware Wallet",
-          status: "active",
-          bonus: "Shop discount",
-          icon: "💳"
-        },
-        {
-          name: "Keystone",
-          description: "Air-gapped hardware wallet. Advanced security.",
-          url: "https://tinyurl.com/keystonenef",
-          category: "wallets",
-          type: "Hardware Wallet",
-          status: "active",
-          bonus: "Shop discount",
-          icon: "🗝️"
-        },
-
-        // DeFi & Tools
-        {
-          name: "Jupiter",
-          description: "Best swap aggregator on Solana. Always finds best prices.",
-          url: "https://tinyurl.com/jupnefu",
-          category: "defi",
-          type: "DEX Aggregator",
-          status: "active",
-          bonus: "50 bps fee share",
-          icon: "🪐"
-        },
-        {
-          name: "Claim Free SOL",
-          description: "Get free SOL for gas fees. Useful for new users.",
-          url: "https://tinyurl.com/claimsolanafree",
-          category: "defi",
-          type: "Faucet",
-          status: "active",
-          bonus: "Free SOL",
-          icon: "🚰"
-        },
-        {
-          name: "Xeet AI",
-          description: "AI-powered Twitter thread generator. Save hours.",
-          url: "https://tinyurl.com/xeetnef",
-          category: "tools",
-          type: "AI Tool",
-          status: "active",
-          bonus: "Free credits",
-          icon: "🤖"
-        },
-        {
-          name: "Tria",
-          description: "Social trading platform. Copy top traders.",
-          url: "https://tinyurl.com/trianef",
-          category: "trading",
-          type: "Social Trading",
-          status: "active",
-          bonus: "Access code",
-          icon: "👥"
-        },
-        {
-          name: "Wallchain",
-          description: "MEV protection & smart swaps.",
-          url: "https://tinyurl.com/quacknef",
-          category: "defi",
-          type: "MEV Protection",
-          status: "active",
-          bonus: "Standard affiliate",
-          icon: "🛡️"
-        },
-        {
-          name: "Cookie",
-          description: "Crypto gaming & rewards platform.",
-          url: "https://tinyurl.com/cookienef",
-          category: "tools",
-          type: "Gaming",
-          status: "active",
-          bonus: "Signup bonus",
-          icon: "🍪"
-        },
-        {
-          name: "Rally",
-          description: "Waitlist for upcoming crypto projects.",
-          url: "https://tinyurl.com/rallynef",
-          category: "tools",
-          type: "Alpha Access",
-          status: "active",
-          bonus: "Early access",
-          icon: "🎯"
-        },
-        {
-          name: "Moonshot",
-          description: "Crypto social platform with rewards.",
-          url: "https://tinyurl.com/moonshotnefu",
-          category: "tools",
-          type: "Social Platform",
-          status: "active",
-          bonus: "Signup bonus",
-          icon: "🌙"
-        },
-        {
-          name: "QuickNode",
-          description: "Reliable blockchain RPC nodes.",
-          url: "https://tinyurl.com/qnode",
-          category: "tools",
-          type: "Infrastructure",
-          status: "active",
-          bonus: "Credit",
-          icon: "🔗"
-        },
-        {
-          name: "NordVPN",
-          description: "Secure VPN for crypto trading.",
-          url: "https://tinyurl.com/nordnefu",
-          category: "tools",
-          type: "Security",
-          status: "active",
-          bonus: "Discount",
-          icon: "🛡️"
-        },
-
-        // Services
-        {
-          name: "Reply Guy Service",
-          description: "Professional Twitter engagement service.",
-          url: "https://tinyurl.com/thereplyguy",
-          category: "services",
-          type: "Service",
-          status: "active",
-          bonus: "Service discount",
-          icon: "💬"
-        },
-        {
-          name: "autoinsureguides Newsletter",
-          description: "My free crypto newsletter with alpha.",
-          url: "https://tinyurl.com/autoinsureguidesnewsletter",
-          category: "services",
-          type: "Newsletter",
-          status: "active",
-          bonus: "Free subscription",
-          icon: "📧"
-        }
-      ].map(tool => (
-        <div 
-          class="tool-card bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition-all hover:-translate-y-1"
-          data-category={tool.category}
-          data-status={tool.status}
-          data-name={tool.name.toLowerCase()}
-        >
-          <div class="flex justify-between items-start mb-4">
-            <div class="flex items-center gap-3">
-              <div class="text-2xl">{tool.icon}</div>
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">
-                  {tool.name}
-                </h3>
-                <span class="text-sm text-gray-500">{tool.type}</span>
-              </div>
-            </div>
-            
-            <span class={`
-              px-3 py-1 rounded-full text-xs font-bold
-              ${tool.status === 'active' ? 'bg-green-100 text-green-800' : ''}
-              ${tool.status === 'pending' ? 'bg-yellow-100 text-yellow-800' : ''}
-              ${tool.status === 'no-affiliate' ? 'bg-gray-100 text-gray-800' : ''}
-            `}>
-              {tool.status === 'active' ? 'ACTIVE' : 
-               tool.status === 'pending' ? 'SOON' : 
-               'NO AFFILIATE'}
-            </span>
-          </div>
-          
-          <p class="text-gray-600 mb-4">
-            {tool.description}
+      <!-- Tools Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Quote Comparison Tool -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-blue-200 dark:border-blue-800">
+          <div class="text-blue-600 dark:text-blue-400 text-3xl mb-4">📊</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Insurance Quote Comparison</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            Compare rates from top providers in your area. Get personalized quotes in minutes.
           </p>
-          
-          <div class="flex items-center justify-between">
-            <span class="text-sm text-gray-500">
-              {tool.bonus}
-            </span>
-            {tool.url !== '#' ? (
-              <a 
-                href={tool.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-1 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-cyan-500/30 transition-all text-sm"
-              >
-                Visit →
-              </a>
-            ) : (
-              <span class="text-gray-400 text-sm">Coming soon</span>
-            )}
+          <a href="/quote-comparison" class="btn btn-primary w-full text-center">
+            Compare Quotes
+          </a>
+        </div>
+
+        <!-- Premium Calculator -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-green-200 dark:border-green-800">
+          <div class="text-green-600 dark:text-green-400 text-3xl mb-4">🧮</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Premium Calculator</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            Estimate your auto insurance costs based on your vehicle, location, and driving history.
+          </p>
+          <a href="/premium-calculator" class="btn bg-green-600 hover:bg-green-700 text-white w-full text-center">
+            Calculate Premium
+          </a>
+        </div>
+
+        <!-- Savings Estimator -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-purple-200 dark:border-purple-800">
+          <div class="text-purple-600 dark:text-purple-400 text-3xl mb-4">💰</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Savings Estimator</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            See how much you could save by adjusting your coverage or switching providers.
+          </p>
+          <a href="/savings-estimator" class="btn bg-purple-600 hover:bg-purple-700 text-white w-full text-center">
+            Estimate Savings
+          </a>
+        </div>
+
+        <!-- Coverage Advisor -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-yellow-200 dark:border-yellow-800">
+          <div class="text-yellow-600 dark:text-yellow-400 text-3xl mb-4">🛡️</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Coverage Advisor</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            Get personalized recommendations for the right coverage levels based on your needs.
+          </p>
+          <a href="/coverage-advisor" class="btn bg-yellow-600 hover:bg-yellow-700 text-white w-full text-center">
+            Get Advice
+          </a>
+        </div>
+
+        <!-- State Requirements -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-red-200 dark:border-red-800">
+          <div class="text-red-600 dark:text-red-400 text-3xl mb-4">🗺️</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">State Requirements Checker</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            Find your state's minimum insurance requirements and compare with your current coverage.
+          </p>
+          <a href="/state-requirements" class="btn bg-red-600 hover:bg-red-700 text-white w-full text-center">
+            Check Requirements
+          </a>
+        </div>
+
+        <!-- Claims Calculator -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-indigo-200 dark:border-indigo-800">
+          <div class="text-indigo-600 dark:text-indigo-400 text-3xl mb-4">📈</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Claims Impact Calculator</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            Estimate how a claim might affect your future premiums before you file.
+          </p>
+          <a href="/claims-calculator" class="btn bg-indigo-600 hover:bg-indigo-700 text-white w-full text-center">
+            Calculate Impact
+          </a>
+        </div>
+
+      </div>
+
+      <!-- How It Works -->
+      <div class="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-8 mb-16">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-white">How Our Tools Help You Save</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="text-2xl mb-3">🔍</div>
+            <h3 class="font-bold mb-2 text-gray-900 dark:text-white">Compare Rates</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">See side-by-side comparisons from multiple insurers</p>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl mb-3">💰</div>
+            <h3 class="font-bold mb-2 text-gray-900 dark:text-white">Maximize Savings</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Identify discounts and coverage adjustments to save money</p>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl mb-3">🛡️</div>
+            <h3 class="font-bold mb-2 text-gray-900 dark:text-white">Optimize Coverage</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Ensure you have the right protection without overpaying</p>
           </div>
         </div>
-      ))}
-    </div>
-
-    <!-- Stats & Transparency -->
-    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-xl p-6 text-center">
-        <div class="text-3xl font-bold text-cyan-700 mb-2">40+</div>
-        <div class="text-gray-700 font-medium">Total Tools Listed</div>
       </div>
-      <div class="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-6 text-center">
-        <div class="text-3xl font-bold text-green-700 mb-2">30+</div>
-        <div class="text-gray-700 font-medium">Active Affiliates</div>
+
+      <!-- CTA -->
+      <div class="text-center">
+        <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Ready to Save on Insurance?</h2>
+        <p class="text-lg mb-8 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Our users save an average of $489 per year on auto insurance. Start comparing today.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/quote-comparison" class="btn btn-primary px-8 py-3">
+            Get Free Quotes
+          </a>
+          <a href="/blog/how-to-save-on-car-insurance" class="btn btn-outline dark:border-gray-600 dark:text-gray-300 px-8 py-3">
+            Read Money-Saving Tips
+          </a>
+        </div>
       </div>
-      <div class="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-6 text-center">
-        <div class="text-3xl font-bold text-purple-700 mb-2">100%</div>
-        <div class="text-gray-700 font-medium">Tools I Actually Use</div>
-      </div>
+
     </div>
-
-    <!-- CTA -->
-    <div class="text-center mt-12">
-      <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
-        Want me to add or review a specific tool? 
-        <a href="/contact" class="text-cyan-600 font-medium hover:underline">Send a suggestion</a>.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a 
-          href="/blog" 
-          class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-xl hover:shadow-lg hover:shadow-cyan-500/30 transition-all"
-        >
-          📚 Read My Tool Guides
-        </a>
-        <a 
-          href="/categories/tools-automation" 
-          class="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-900 text-white font-bold rounded-xl transition-all"
-        >
-          🛠️ More Tool Articles
-        </a>
-      </div>
-    </div>
-
-    <!-- Footer Note -->
-    <div class="text-center mt-12 pt-8 border-t border-gray-200">
-      <p class="text-sm text-gray-500">
-        Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} • 
-        <a href="/disclaimer" class="text-gray-600 hover:underline ml-2">Not financial advice</a> • 
-        Always DYOR • Commissions support this free site
-      </p>
-    </div>
-  </main>
-
-  <style>
-    /* Active tab styling */
-    .category-tab.active {
-      background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
-      color: white;
-    }
-    
-    /* Tool card animations */
-    .tool-card {
-      transition: all 0.3s ease;
-    }
-    
-    .tool-card:hover {
-      border-color: #06b6d4;
-    }
-  </style>
-
-  <script>
-    // Category filtering
-    document.querySelectorAll('.category-tab').forEach(tab => {
-      tab.addEventListener('click', () => {
-        // Update active tab
-        document.querySelectorAll('.category-tab').forEach(t => {
-          t.classList.remove('active');
-          t.classList.add('bg-gray-100', 'text-gray-700');
-          t.classList.remove('bg-cyan-100', 'text-cyan-800');
-        });
-        
-        tab.classList.add('active');
-        tab.classList.remove('bg-gray-100', 'text-gray-700');
-        tab.classList.add('bg-cyan-100', 'text-cyan-800');
-        
-        // Filter tools
-        const category = tab.dataset.category;
-        document.querySelectorAll('.tool-card').forEach(card => {
-          if (category === 'all' || card.dataset.category === category) {
-            card.style.display = 'block';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-
-    // Search functionality
-    const searchInput = document.getElementById('tool-search');
-    if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
-        document.querySelectorAll('.tool-card').forEach(card => {
-          const name = card.dataset.name;
-          const categories = card.dataset.category;
-          const text = card.textContent.toLowerCase();
-          
-          if (name.includes(searchTerm) || text.includes(searchTerm)) {
-            card.style.display = 'block';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    }
-
-    // Initialize first tab as active
-    document.querySelector('[data-category="all"]').click();
-  </script>
+  </section>
 </Base>

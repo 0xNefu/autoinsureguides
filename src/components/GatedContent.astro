@@ -1,176 +1,75 @@
 ---
 // src/components/GatedContent.astro
-const BEEHIIV_FORM_ID = "62d85daa-7878-4a83-a78a-a15f6226c516";
+interface Props {
+  title?: string;
+  description?: string;
+}
 
-// ======================
-// SERVER-SIDE DEBUG LOGS (SHOWS IN TERMINAL)
-// ======================
-console.log("GATEDCONTENT: Component loaded for page:", Astro.url.pathname);
-console.log("  - Build time:", new Date().toISOString());
-console.log("  - Has slot content?:", Astro.slots.has("default"));
+const { title = "Premium Insurance Guide", description = "Unlock this exclusive insurance content" } = Astro.props;
 ---
 
-<div class="gate-wrapper">
-  <!-- Google sees this clean HTML -->
-  <div class="locked-content">
-    <slot />
-  </div>
-
-  <div class="gate-overlay">
-    <div class="gate-box">
-      <h3>Unlock the Full Guide</h3>
-      <p>Pepe, the technical steps and visual walkthroughs are reserved for our community. Join 12,000+ builders to get your Free autoinsureguides Library Card.</p>
-      
-      <!-- YOUR Beehiiv Embedded Form -->
-      <div id="beehiiv-embed-container">
-        <iframe 
-          src="https://subscribe-forms.beehiiv.com/62d85daa-7878-4a83-a78a-a15f6226c516" 
-          class="beehiiv-embed" 
-          data-test-id="beehiiv-embed" 
-          frameborder="0" 
-          scrolling="no" 
-          style="width: 100%; height: 52px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
-        ></iframe>
-      </div>
-      
-      <div class="already-subscribed">
-        <button onclick="unlockContent()" class="unlock-btn">
-          Already subscribed? Click here
-        </button>
-      </div>
-      
-      <p class="privacy-note">
-        By subscribing, you agree to our <a href="/privacy">Privacy Policy</a>
-      </p>
+<div class="gated-content border-2 border-yellow-400 dark:border-yellow-600 rounded-2xl p-8 bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20">
+  
+  <div class="text-center mb-6">
+    <div class="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 dark:bg-yellow-900 rounded-full mb-4">
+      <span class="text-2xl">??</span>
     </div>
+    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{title}</h3>
+    <p class="text-gray-600 dark:text-gray-300">{description}</p>
   </div>
+  
+  <!-- Email Capture Form -->
+  <form class="space-y-4" id="gated-form-{Math.random().toString(36).substring(2, 9)}">
+    <div>
+      <input 
+        type="email" 
+        placeholder="Your email address" 
+        required
+        class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+      />
+    </div>
+    <div>
+      <button 
+        type="submit"
+        class="w-full py-3 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold rounded-lg transition-all"
+      >
+        Unlock Premium Content
+      </button>
+    </div>
+  </form>
+  
+  <p class="text-sm text-gray-500 dark:text-gray-400 text-center mt-4">
+    By submitting, you agree to receive insurance tips and offers from AutoInsureGuides.
+    <a href="/privacy" class="text-yellow-600 dark:text-yellow-400 hover:underline">Privacy Policy</a>
+  </p>
+  
+  <script>
+    // Handle form submission
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('gated-form-{Math.random().toString(36).substring(2, 9)}');
+      if (form) {
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const email = form.querySelector('input[type="email"]').value;
+          
+          // Simulate API call
+          const submitBtn = form.querySelector('button[type="submit"]');
+          submitBtn.textContent = 'Unlocking...';
+          submitBtn.disabled = true;
+          
+          // In reality, send to your email service
+          await new Promise(resolve => setTimeout(resolve, 1000));
+          
+          // Show success and unlock content
+          form.innerHTML = `
+            <div class="text-center">
+              <div class="text-green-500 text-3xl mb-4">?</div>
+              <p class="text-gray-900 dark:text-white font-medium mb-2">Check your email!</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">We've sent the premium content to your inbox.</p>
+            </div>
+          `;
+        });
+      }
+    });
+  </script>
 </div>
-
-<style>
-  .gate-wrapper {
-    position: relative;
-    margin: 3rem 0;
-  }
-
-  .locked-content {
-    filter: blur(12px);
-    pointer-events: none;
-    user-select: none;
-    opacity: 0.3;
-    transition: filter 0.3s ease, opacity 0.3s ease;
-  }
-
-  .locked-content.unlocked {
-    filter: blur(0);
-    pointer-events: auto;
-    user-select: auto;
-    opacity: 1;
-  }
-
-  .gate-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 50px;
-    background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.7) 20%, white 40%);
-    z-index: 10;
-  }
-
-  .gate-box {
-    background: #fff;
-    padding: 2.5rem;
-    border: 2px solid #000;
-    box-shadow: 8px 8px 0px #000;
-    text-align: center;
-    max-width: 500px;
-    margin-top: 2rem;
-    width: 90%;
-  }
-
-  .unlock-btn {
-    background: #000;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 4px;
-    transition: background 0.2s;
-  }
-
-  .unlock-btn:hover {
-    background: #333;
-  }
-
-  .already-subscribed {
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #e5e5e5;
-  }
-
-  .privacy-note {
-    font-size: 0.8rem;
-    color: #666;
-    margin-top: 1rem;
-  }
-
-  #beehiiv-embed-container {
-    margin: 1.5rem 0;
-  }
-
-  /* Mobile responsiveness */
-  @media (max-width: 640px) {
-    .gate-box {
-      padding: 1.5rem;
-      margin: 1rem;
-    }
-    
-    .gate-overlay {
-      padding-top: 20px;
-      background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.8) 10%, white 30%);
-    }
-  }
-</style>
-
-<script>
-  // SIMPLE VERSION - Just basic functionality
-  console.log("GATEDCONTENT: Client-side script loaded");
-  
-  function unlockContent() {
-    console.log("GATEDCONTENT: Unlocking content");
-    
-    const content = document.querySelector(".locked-content");
-    const overlay = document.querySelector(".gate-overlay");
-    
-    if (content) {
-      content.classList.add("unlocked");
-      localStorage.setItem("autoinsureguides_subscriber", "true");
-      localStorage.setItem("unlock_timestamp", Date.now());
-    }
-    
-    if (overlay) {
-      overlay.style.display = "none";
-    }
-  }
-  
-  // Check if already subscribed
-  function checkSubscription() {
-    const isSubscriber = localStorage.getItem("autoinsureguides_subscriber");
-    if (isSubscriber === "true") {
-      console.log("GATEDCONTENT: User is already subscribed");
-      unlockContent();
-    }
-  }
-  
-  // Initialize on page load
-  document.addEventListener("DOMContentLoaded", checkSubscription);
-  
-  // Make function available globally
-  window.unlockContent = unlockContent;
-</script>
