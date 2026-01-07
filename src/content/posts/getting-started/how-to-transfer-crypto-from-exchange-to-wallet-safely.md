@@ -6,7 +6,7 @@ updatedDate: 2025-12-22
 image: "/images/posts/ethereum3.jpg"
 heroImageAlt: "Illustration of cryptocurrency moving securely from an exchange icon to a personal wallet icon via a protected arrow"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Transfer Crypto", "Exchange to Wallet", "Withdraw Crypto", "Crypto Security", "Beginner Guide", "Self Custody"]
 category: "getting-started"
 subcategory: "wallet-setup"
@@ -21,7 +21,7 @@ Moving your assets to a personal wallet gives you full control and significantly
 
 This guide explains the complete process safely and clearly for 2026. We cover preparation, step-by-step transfer, fees, common mistakes, and verification tips.
 
-Strengthen your knowledge with our [best crypto wallets for beginners](https://txchyon.com/blog/getting-started/best-crypto-wallets-for-beginners) and review pitfalls in our [10 biggest crypto mistakes](https://txchyon.com/blog/getting-started/biggest-crypto-mistakes).
+Strengthen your knowledge with our [best crypto wallets for beginners](https://autoinsureguides.com/blog/getting-started/best-crypto-wallets-for-beginners) and review pitfalls in our [10 biggest crypto mistakes](https://autoinsureguides.com/blog/getting-started/biggest-crypto-mistakes).
 
 ## Preparation: Set Up Your Wallet First
 
@@ -33,7 +33,7 @@ Never buy crypto before having a wallet ready.
 
 Popular beginner options:
 - MetaMask or Trust Wallet for multi-chain.
-- Phantom for Solana (see our [Phantom setup tutorial](https://txchyon.com/blog/getting-started/how-to-setup-phantom-wallet)).
+- Phantom for Solana (see our [Phantom setup tutorial](https://autoinsureguides.com/blog/getting-started/how-to-setup-phantom-wallet)).
 - Hardware wallets like Ledger for larger amounts.
 
 ## Step-by-Step: Transferring Crypto from Exchange to Wallet
@@ -113,7 +113,7 @@ This prevents catastrophic loss from address errors.
 5. **Sending to Wrong Wallet Type**  
    Solution: Ensure your wallet supports the asset and network.
 
-See our full list in the [biggest crypto mistakes guide](https://txchyon.com/blog/getting-started/biggest-crypto-mistakes).
+See our full list in the [biggest crypto mistakes guide](https://autoinsureguides.com/blog/getting-started/biggest-crypto-mistakes).
 
 ## Fees Overview in 2026
 
@@ -137,7 +137,7 @@ Layer-2 solutions and chains like Solana keep costs minimal.
 
 - Hold long-term with proper backups.
 - Use dollar-cost averaging for additional purchases.
-- Monitor portfolio sparingly to avoid emotional stress — see our [crypto psychology guide](https://txchyon.com/blog/getting-started/crypto-investing-psychology).
+- Monitor portfolio sparingly to avoid emotional stress — see our [crypto psychology guide](https://autoinsureguides.com/blog/getting-started/crypto-investing-psychology).
 
 ## Conclusion: Take Control of Your Assets
 
@@ -145,6 +145,6 @@ Transferring crypto from exchange to wallet is a crucial step toward true owners
 
 Follow this guide, start with test transactions, and prioritize correct addresses and networks. Self-custody protects your investment far better than leaving funds on platforms.
 
-Combine this with safe buying practices from our [how to buy Bitcoin guide](https://txchyon.com/blog/getting-started/how-to-buy-bitcoin-for-beginners) or general [how to buy crypto](https://txchyon.com/blog/getting-started/how-to-buy-crypto).
+Combine this with safe buying practices from our [how to buy Bitcoin guide](https://autoinsureguides.com/blog/getting-started/how-to-buy-bitcoin-for-beginners) or general [how to buy crypto](https://autoinsureguides.com/blog/getting-started/how-to-buy-crypto).
 
 You now have the tools for responsible crypto ownership in 2026. Stay vigilant and enjoy the benefits of decentralization.

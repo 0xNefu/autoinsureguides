@@ -59,7 +59,7 @@ export default function FloatingBubble() {
             <div className="space-y-4">
               {/* Telegram */}
               <a
-                href="https://t.me/txchyon"
+                href="https://t.me/autoinsureguides"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-4 rounded-xl font-bold text-lg transition-colors duration-200"
@@ -69,18 +69,18 @@ export default function FloatingBubble() {
                   // setOpen(false);
                 }}
               >
-                Join Txchyon Defi TG
+                Join autoinsureguides Defi TG
               </a>
 
               {/* Beehiiv Newsletter */}
               <a
-                href="https://txchyon.beehiiv.com/"
+                href="https://autoinsureguides.beehiiv.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-black text-center py-4 rounded-xl font-bold text-lg transition-all duration-200"
                 onClick={(e) => e.stopPropagation()}
               >
-                Get Txchyon Defi 
+                Get autoinsureguides Defi 
               </a>
             </div>
 

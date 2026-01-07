@@ -6,7 +6,7 @@ updatedDate: 2025-12-05
 image: "/images/posts/scamadviser.jpg"
 heroImageAlt: "A magnifying glass icon over a website address bar with a shield next to it"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["ScamAdviser", "DeFi Security", "Crypto Scams", "Beginner Guide", "Privacy", "Security", "Web3 Safety", "Due Diligence"]
 category: "security-privacy"
 subcategory: "scam-prevention"

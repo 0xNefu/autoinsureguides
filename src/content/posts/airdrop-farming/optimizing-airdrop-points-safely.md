@@ -6,7 +6,7 @@ updatedDate: 2025-12-27
 image: "/images/posts/airdrop5.jpg"
 heroImageAlt: "Crypto dashboard showing optimized point accumulation and risk management"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Airdrop Farming
   - Points Systems

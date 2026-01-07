@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/crypto-api-integration-explained.jpg"
 heroImageAlt: "Crypto API integration diagram connecting trading bots to exchanges"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto API", "API integration", "trading bot API", "crypto automation", "exchange API"]
 category: "tools-automation"
 subcategory: "api-integration"
@@ -27,7 +27,7 @@ The answer is **crypto API integration**.
 This guide explains APIs from zero and shows how they power modern crypto automation.
 
 For a high-level overview of bots first, read:
-- [What Is a Crypto Trading Bot?](https://txchyon.com/what-is-a-crypto-trading-bot)
+- [What Is a Crypto Trading Bot?](https://autoinsureguides.com/what-is-a-crypto-trading-bot)
 
 ---
 
@@ -140,7 +140,7 @@ Best practices:
 - Rotate keys periodically
 
 More on safety:
-- [Are Crypto Trading Bots Safe?](https://txchyon.com/are-crypto-trading-bots-safe)
+- [Are Crypto Trading Bots Safe?](https://autoinsureguides.com/are-crypto-trading-bots-safe)
 
 ---
 
@@ -159,7 +159,7 @@ This is how:
 - Wallet trackers work
 
 Related:
-- [Best Solana Meme Coin Trading Bots](https://txchyon.com/best-solana-meme-coin-bots)
+- [Best Solana Meme Coin Trading Bots](https://autoinsureguides.com/best-solana-meme-coin-bots)
 
 ---
 
@@ -192,8 +192,8 @@ Then API knowledge is essential.
 ## What’s Next in the Tools & Automation Pillar?
 
 This article connects directly to:
-- [Best Crypto Trading Bots in 2026](https://txchyon.com/best-crypto-trading-bots-2026)
-- [Best DCA Crypto Bots](https://txchyon.com/best-dca-crypto-bots)
-- [How Solana Trading Bots Work](https://txchyon.com/how-solana-trading-bots-work)
+- [Best Crypto Trading Bots in 2026](https://autoinsureguides.com/best-crypto-trading-bots-2026)
+- [Best DCA Crypto Bots](https://autoinsureguides.com/best-dca-crypto-bots)
+- [How Solana Trading Bots Work](https://autoinsureguides.com/how-solana-trading-bots-work)
 
 APIs are the foundation — everything else builds on top of them.

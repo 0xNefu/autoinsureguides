@@ -6,7 +6,7 @@ updatedDate: 2025-12-28
 image: "/images/posts/airdrop2.jpg"
 heroImageAlt: "Crypto dashboard showing actions and points for wallets"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Airdrop Farming
   - Points Systems

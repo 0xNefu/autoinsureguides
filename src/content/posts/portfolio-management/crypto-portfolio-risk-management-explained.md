@@ -6,7 +6,7 @@ updatedDate: 2025-12-26
 image: "/images/posts/riskmanagement.jpg"
 heroImageAlt: "Crypto risk management diagram showing position sizing, diversification, and drawdown control"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Risk Management", "Drawdowns", "Bitcoin", "Ethereum", "Investing"]
 category: "portfolio-management"
 subcategory: "risk-management"
@@ -24,7 +24,7 @@ It’s not about avoiding risk entirely — it’s about **controlling how much 
 If allocation decides *where* money goes and rebalancing decides *when* adjustments happen, risk management decides **how bad things can get**.
 
 If you’re new to portfolio structure, start here first:  
-👉 **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
+👉 **[Crypto Portfolio Allocation for Beginners](https://autoinsureguides.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
 
 ---
 
@@ -57,7 +57,7 @@ Too many high-volatility assets = fragile portfolio.
 Allocation sets the *baseline risk*.
 
 👉 Review:  
-**[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
+**[Crypto Portfolio Allocation for Beginners](https://autoinsureguides.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
 
 ---
 
@@ -70,7 +70,7 @@ Without rebalancing:
 Rebalancing pulls risk back down systematically.
 
 👉 Learn how to do it properly:  
-**[How to Rebalance a Crypto Portfolio](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**
+**[How to Rebalance a Crypto Portfolio](https://autoinsureguides.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**
 
 ---
 
@@ -166,7 +166,7 @@ Key metrics:
 - risk-adjusted returns  
 
 👉 This flows directly into performance analysis:  
-**[How to Track Crypto Portfolio Performance](https://txchyon.com/blog/portfolio-management/how-to-track-crypto-portfolio-performance/)**
+**[How to Track Crypto Portfolio Performance](https://autoinsureguides.com/blog/portfolio-management/how-to-track-crypto-portfolio-performance/)**
 
 ---
 

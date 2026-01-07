@@ -1,7 +1,7 @@
 ---
 title: "Contact"
-description: "Get in touch with Txchyon for inquiries and collaborations"
-meta_title: "Contact Txchyon"
+description: "Get in touch with autoinsureguides for inquiries and collaborations"
+meta_title: "Contact autoinsureguides"
 image: "/images/tokens.jpg"
 ---
 

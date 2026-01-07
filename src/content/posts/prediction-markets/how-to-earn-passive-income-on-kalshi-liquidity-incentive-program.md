@@ -6,7 +6,7 @@ updatedDate: 2026-1-2
 image: "/images/posts/kalshi2.jpg"
 heroImageAlt: "Liquidity pools visualization with yes/no shares"
 authors: ["Nefu"]
-authorTwitter: "txchyon"
+authorTwitter: "autoinsureguides"
 tags: ["prediction-markets", "passive-income", "liquidity", "kalshi"]
 category: "prediction-markets"
 subcategory: "liquidity-providing"
@@ -21,7 +21,7 @@ Prediction markets like Kalshi have revolutionized how we bet on real-world even
 
 We'll explore what liquidity means in Kalshi's order-book system, the tangible benefits, provide step-by-step instructions, and detail the latest 2025 incentive programs. Whether you're a novice trader or an experienced market maker, this guide will equip you with the knowledge to participate effectively and earn.
 
-> **Curious about liquidity on other platforms?** Compare strategies across Polymarket, Worm.wtf, and Augur in our comprehensive guide: [How to Earn Passive Yield as a Liquidity Provider on Prediction Markets](https://txchyon.com/blog/prediction-markets/how-to-earn-passive-yield-as-a-liquidity-provider-on-prediction-markets).
+> **Curious about liquidity on other platforms?** Compare strategies across Polymarket, Worm.wtf, and Augur in our comprehensive guide: [How to Earn Passive Yield as a Liquidity Provider on Prediction Markets](https://autoinsureguides.com/blog/prediction-markets/how-to-earn-passive-yield-as-a-liquidity-provider-on-prediction-markets).
 
 ## Understanding Liquidity in Kalshi's Ecosystem
 
@@ -31,7 +31,7 @@ On Kalshi, contracts are binary (Yes/No) outcomes priced between $0.01 and $0.99
 
 Without sufficient liquidity, spreads widen, making trading costlier and less efficient for everyone. By adding resting orders, you tighten spreads, improve price discovery, and earn rewards. Kalshi's structured incentive programs explicitly pay you for this service, turning market making into a source of passive income.
 
-> For a foundational understanding of how Kalshi works, see our beginner's guide: [What Is Kalshi? The Complete Beginner's Guide](https://txchyon.com/blog/prediction-markets/what-is-kalshi).
+> For a foundational understanding of how Kalshi works, see our beginner's guide: [What Is Kalshi? The Complete Beginner's Guide](https://autoinsureguides.com/blog/prediction-markets/what-is-kalshi).
 
 ## Why Provide Liquidity on Kalshi? The Tangible Benefits
 
@@ -113,6 +113,6 @@ Start today by funding your account and placing your first strategic limit order
 ---
 ### **Expand Your Prediction Market Knowledge**
 Now that you've mastered Kalshi liquidity, explore how other platforms operate:
-*   **The AMM Model**: Learn about providing liquidity on [Polymarket](https://txchyon.com/blog/prediction-markets/what-is-polymarket) and the innovative [Worm.wtf](https://txchyon.com/blog/prediction-markets/what-is-worm-wtf).
-*   **The Decentralized Pioneer**: Understand the original model with our guide on [What Is Augur?](https://txchyon.com/blog/prediction-markets/what-is-augur)
+*   **The AMM Model**: Learn about providing liquidity on [Polymarket](https://autoinsureguides.com/blog/prediction-markets/what-is-polymarket) and the innovative [Worm.wtf](https://autoinsureguides.com/blog/prediction-markets/what-is-worm-wtf).
+*   **The Decentralized Pioneer**: Understand the original model with our guide on [What Is Augur?](https://autoinsureguides.com/blog/prediction-markets/what-is-augur)
 *   **All Prediction Markets**: Dive into our full [Prediction Markets](/categories/prediction-markets/) category for more insights and strategies.

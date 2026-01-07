@@ -6,7 +6,7 @@ updatedDate: 2025-12-02
 image: "/images/posts/uniswapv3.jpg"
 heroImageAlt: "Uniswap V3 concentrated liquidity interface showing price range selection and fee tier options"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Uniswap", "Uniswap V3", "Liquidity Providing", "DeFi", "Concentrated Liquidity", "Impermanent Loss", "EVM", "Ethereum", "Yield Farming"]
 category: "defi-yield"
 subcategory: "dexs-swapping"

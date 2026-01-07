@@ -6,7 +6,7 @@ updatedDate: 2025-12-27
 image: "/images/posts/airdrop6.jpg"
 heroImageAlt: "Crypto dashboard showing multiple wallets and point tracking analytics"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Airdrop Farming
   - Points Systems

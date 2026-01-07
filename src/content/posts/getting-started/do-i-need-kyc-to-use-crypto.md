@@ -6,7 +6,7 @@ updatedDate: 2025-12-30
 image: "/images/posts/doineedkyc.jpg"
 heroImageAlt: "Illustration of a crypto user facing KYC checkpoints with a shield for privacy"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["kyc", "crypto-privacy", "onboarding", "beginner-guide", "wallet-setup"]
 category: "getting-started"
 subcategory: "basics"
@@ -26,7 +26,7 @@ This guide breaks down where KYC is required, where it's optional, and how to sa
 When you start using crypto, you have two main paths:
 
 1. **Custodial services** – Exchanges like Coinbase, Binance, or Kraken hold your crypto for you. They almost always require KYC because they operate under local regulations.  
-2. **Non-custodial wallets** – Apps like [Trust Wallet](https://txchyon.com/blog/getting-started/how-to-set-up-trust-wallet) or hardware wallets give you full control. No KYC is needed because you hold your own private keys.
+2. **Non-custodial wallets** – Apps like [Trust Wallet](https://autoinsureguides.com/blog/getting-started/how-to-set-up-trust-wallet) or hardware wallets give you full control. No KYC is needed because you hold your own private keys.
 
 Understanding this distinction helps you know **when KYC is actually necessary**.
 
@@ -76,9 +76,9 @@ By separating **fiat interactions** from **on-chain interactions**, you can safe
 
 Once you understand KYC, the next steps naturally follow:
 
-- Set up a secure wallet: [Set up your first wallet](https://txchyon.com/blog/getting-started/how-to-setup-bitocoin-wallet)  
-- Make your first crypto purchase safely: [First purchase guide](https://txchyon.com/blog/getting-started/how-to-buy-crypto)  
-- Learn essential wallet hygiene: [Cold vs Hot Wallets: Optimizing Security and Eligibility](https://txchyon.com/blog/airdrop-farming/cold-vs-hot-wallets-optimizing-security-and-eligibility)
+- Set up a secure wallet: [Set up your first wallet](https://autoinsureguides.com/blog/getting-started/how-to-setup-bitocoin-wallet)  
+- Make your first crypto purchase safely: [First purchase guide](https://autoinsureguides.com/blog/getting-started/how-to-buy-crypto)  
+- Learn essential wallet hygiene: [Cold vs Hot Wallets: Optimizing Security and Eligibility](https://autoinsureguides.com/blog/airdrop-farming/cold-vs-hot-wallets-optimizing-security-and-eligibility)
 
 These guides will help you take action without unnecessary risk, making your entry into crypto much smoother.
 
@@ -96,4 +96,4 @@ Understanding KYC is your first step toward becoming a confident crypto user.
 ---
 
 **Next Steps:**  
-Explore our [Getting Started 🚀](https://txchyon.com/blog/getting-started/) pillar to continue learning how to safely interact with crypto, set up wallets, and make your first purchases.
+Explore our [Getting Started 🚀](https://autoinsureguides.com/blog/getting-started/) pillar to continue learning how to safely interact with crypto, set up wallets, and make your first purchases.

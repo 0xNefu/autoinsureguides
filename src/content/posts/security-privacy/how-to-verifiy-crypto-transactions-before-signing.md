@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/verify-crypto-transactions-guide.jpg"
 heroImageAlt: "Wallet interface showing transaction details with verification checklist overlay"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["transaction security", "crypto scams", "wallet safety", "smart contract", "verify transaction"]
 category: "security-privacy"
 subcategory: "transaction-security"

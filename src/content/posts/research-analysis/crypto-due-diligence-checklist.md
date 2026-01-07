@@ -6,7 +6,7 @@ updatedDate: 2026-1-1
 image: "/images/posts/checklist.jpg"
 heroImageAlt: "Crypto investor checking a detailed due diligence checklist"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Crypto Due Diligence
   - Checklist

@@ -17,7 +17,7 @@ draft: false
 
 In the wild world of prediction markets, where people turn their hunches about elections, crypto pumps, and celebrity drama into actual profits. A new contender has slithered onto the scene with surprising speed. Worm.wtf launched in mid-October 2025 on Solana, and by December it had already raised $4.5 million in pre-seed funding from heavy hitters like Solana Ventures and Alliance. It is not just another platform. It is the cheeky, creator focused upstart that lets anyone spin up a market with the help of AI, earn fees from trades, and even add leverage for those who like their predictions with a bit more kick.
 
-If you have already read our guide on [What Is Polymarket?](https://txchyon.com/blog/prediction-markets/what-is-polymarket/), you know how that platform dominated the space with massive volume during big events. Worm.wtf takes a different approach: faster, cheaper, and far more permissionless, turning users into mini-entrepreneurs who profit from viral topics.
+If you have already read our guide on [What Is Polymarket?](https://autoinsureguides.com/blog/prediction-markets/what-is-polymarket/), you know how that platform dominated the space with massive volume during big events. Worm.wtf takes a different approach: faster, cheaper, and far more permissionless, turning users into mini-entrepreneurs who profit from viral topics.
 
 # How Worm.wtf Works (Simple Explanation)
 
@@ -124,4 +124,4 @@ Prediction markets are one of the most intellectually stimulating corners of cry
 
 If you are building a portfolio of prediction platforms, add Worm.wtf to the list. It is fresh, fun, and full of potential.
 
-Check out the rest of our [Prediction Markets](https://txchyon.com/categories/prediction-markets/) category for deep dives on other platforms. Next up: more guides to help you navigate this growing space.
+Check out the rest of our [Prediction Markets](https://autoinsureguides.com/categories/prediction-markets/) category for deep dives on other platforms. Next up: more guides to help you navigate this growing space.

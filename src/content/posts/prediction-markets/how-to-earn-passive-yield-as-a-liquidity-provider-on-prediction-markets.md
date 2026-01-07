@@ -6,7 +6,7 @@ updatedDate: 2025-12-31
 image: "/images/posts/pmliquidity.jpg"
 heroImageAlt: "Liquidity pools visualization with yes/no shares"
 authors: ["Nefu"]
-authorTwitter: "txchyon"
+authorTwitter: "autoinsureguides"
 tags: ["prediction-markets", "passive-income", "liquidity", "kalshi"]
 category: "prediction-markets"
 subcategory: "liquidity-providing"
@@ -51,21 +51,21 @@ Built on Solana, Worm.wtf uses bonding curves where early liquidity providers ca
 
 *   **Best For**: Agile capital chasing higher APYs on trending, viral markets.
 *   **Current Opportunity**: Pre-sales and early bonding curve phases for crypto/political topics.
-*   **Learn More**: [What Is Worm.wtf? The Complete Beginner's Guide](https://txchyon.com/blog/prediction-markets/what-is-worm-wtf/)
+*   **Learn More**: [What Is Worm.wtf? The Complete Beginner's Guide](https://autoinsureguides.com/blog/prediction-markets/what-is-worm-wtf/)
 
 ### 📊 Kalshi (Regulated Order Book)
 As a CFTC-regulated U.S. platform, Kalshi runs a traditional order book. It incentivizes liquidity through a transparent **Liquidity Incentive Program** (running through Sep 2026) and an elite Market Maker program.
 
 *   **Best For**: U.S.-based participants wanting a regulated environment with clear daily rewards.
 *   **Current Opportunity**: Daily incentive programs in major politics and economics markets.
-*   **Learn More**: [What Is Kalshi? The Complete Beginner's Guide](https://txchyon.com/blog/prediction-markets/what-is-kalshi)
+*   **Learn More**: [What Is Kalshi? The Complete Beginner's Guide](https://autoinsureguides.com/blog/prediction-markets/what-is-kalshi)
 
 ### 🔮 Augur (Decentralized Order Book)
 The pioneer of decentralized prediction markets, Augur relies on a peer-to-peer order book. Providing liquidity is more manual, involving creating and posting your own bids and asks.
 
 *   **Best For**: Decentralization purists and those trading in niche markets.
 *   **Current Opportunity**: Manual market making in less-competitive, long-tail markets.
-*   **Learn More**: [What Is Augur? The Complete Beginner's Guide](https://txchyon.com/blog/prediction-markets/what-is-augur)
+*   **Learn More**: [What Is Augur? The Complete Beginner's Guide](https://autoinsureguides.com/blog/prediction-markets/what-is-augur)
 
 ---
 

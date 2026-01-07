@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/defi-staking-tax-compliance.jpg"
 heroImageAlt: "Crypto DeFi dashboard showing staking rewards and transaction tracking"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["defi tax compliance", "staking rewards tax", "crypto income reporting", "decentralized finance taxes", "crypto tax strategy"]
 category: "regulatory-tax"
 subcategory: "tax-reporting"
@@ -61,9 +61,9 @@ Use automated tools to track:
 - Gains/losses when rewards are sold or converted  
 
 **Recommended tools:**  
-- [Koinly](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software)  
-- [CoinLedger](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software)  
-- [TokenTax](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software)  
+- [Koinly](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software)  
+- [CoinLedger](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software)  
+- [TokenTax](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software)  
 
 ---
 
@@ -82,7 +82,7 @@ Use automated tools to track:
 1. **Automate tracking** with crypto tax software  
 2. **Separate wallets** for staking and trading  
 3. **Document everything** — screenshots, transaction IDs, and contracts  
-4. **Integrate with your business entity** if staking professionally ([Crypto Entity Formation](https://txchyon.com/blog/regulatory-tax/crypto-entity-formation))  
+4. **Integrate with your business entity** if staking professionally ([Crypto Entity Formation](https://autoinsureguides.com/blog/regulatory-tax/crypto-entity-formation))  
 
 ---
 

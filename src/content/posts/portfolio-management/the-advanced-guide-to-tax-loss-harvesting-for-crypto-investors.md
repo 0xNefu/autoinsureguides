@@ -6,7 +6,7 @@ updatedDate: 2025-12-26
 image: "/images/posts/taxloss.jpg"
 heroImageAlt: "Crypto portfolio showing tax-loss harvesting strategies and realized losses"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Tax-Loss Harvesting", "Tax Optimization", "Rebalancing", "Risk Management", "Multi-Chain"]
 category: "portfolio-management"
 subcategory: "tax-loss-harvesting"
@@ -43,7 +43,7 @@ Key benefits:
 It works hand-in-hand with **allocation and rebalancing strategies**, rather than against them.
 
 > Learn foundational allocation strategies here:  
-> **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/categories/portfolio-management/)**
+> **[Crypto Portfolio Allocation for Beginners](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 
@@ -77,7 +77,7 @@ As crypto expands across multiple chains, harvesting becomes trickier:
 Multi-chain portfolios need discipline, but the benefits are significant for diversified investors.
 
 > Deep dive:  
-> **[Multi-Chain Portfolio Allocation](https://txchyon.com/categories/portfolio-management/)**
+> **[Multi-Chain Portfolio Allocation](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 
@@ -99,7 +99,7 @@ Tax-loss harvesting and rebalancing can be **perfect partners**:
 This approach turns a reactive tax exercise into a **strategic portfolio optimization tool**.
 
 > Related reading:  
-> **[How to Rebalance a Crypto Portfolio](https://txchyon.com/categories/portfolio-management/)**
+> **[How to Rebalance a Crypto Portfolio](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 
@@ -114,7 +114,7 @@ Once you master the basics, consider advanced strategies:
 These methods are most suitable for professional or high-net-worth investors, but even retail investors can learn from the principles.
 
 > Connects to hedging strategies:  
-> **[Hedging a Crypto Portfolio](https://txchyon.com/categories/portfolio-management/)**
+> **[Hedging a Crypto Portfolio](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 

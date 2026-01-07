@@ -6,7 +6,7 @@ updatedDate: 2025-12-11
 image: "/images/posts/Ledger_VictorMalecot-163.jpg"
 heroImageAlt: "A Ledger Nano device on a desk next to a paper sheet with the 24-word recovery phrase written down"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Ledger", "Cold Storage", "Hardware Wallet", "Security", "Seed Phrase", "BIP39", "Crypto Safety", "Cryptocurrency", "Blockchain", "Self-Custody"]
 category: "security-privacy"
 subcategory: "hardware-wallets"
@@ -130,7 +130,7 @@ With your Ledger set up, you're ready to move funds from an exchange (a "hot" wa
 
 > **Need an exchange to buy crypto?** Learn how to choose a reputable platform and make your first purchase safely in our dedicated guide.
 
-**[Read: The Beginner's Guide to Choosing and Using a Cryptocurrency Exchange](https://txchyon.com/blog/best-crypto-exchanges/)**
+**[Read: The Beginner's Guide to Choosing and Using a Cryptocurrency Exchange](https://autoinsureguides.com/blog/best-crypto-exchanges/)**
 
 ## Final Security Checklist
 

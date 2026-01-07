@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/advancedestateplanning.jpg"
 heroImageAlt: "Crypto estate planning with digital assets, legal documents, and secure storage"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Estate Planning", "Inheritance", "Trusts", "Multi-Generational Wealth", "Risk Management"]
 category: "portfolio-management"
 subcategory: "estate-planning"
@@ -21,7 +21,7 @@ Imagine Sarah’s uncle, a crypto investor, passes away suddenly. He left behind
 
 This scenario is more common than people realize and highlights a major gap in **crypto risk management**.
 
-> Related: **[Crypto Portfolio Risk Management Explained](https://txchyon.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**
+> Related: **[Crypto Portfolio Risk Management Explained](https://autoinsureguides.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**
 
 ---
 
@@ -37,7 +37,7 @@ Crypto estate planning prevents that outcome by ensuring:
 
 This is the natural next step after learning **how to manage and protect a crypto portfolio**.
 
-> Builds on: **[Introduction to Crypto Estate Planning](https://txchyon.com/blog/portfolio-management/introduction-to-crypto-estate-planning/)**
+> Builds on: **[Introduction to Crypto Estate Planning](https://autoinsureguides.com/blog/portfolio-management/introduction-to-crypto-estate-planning/)**
 
 ---
 
@@ -61,7 +61,7 @@ Your inventory should include:
 
 Alex learned the hard way that undocumented wallets can disappear forever. Now, his inventory is updated alongside his **portfolio rebalancing routine**.
 
-> See also: **[Creating a Digital Asset Inventory](https://txchyon.com/blog/portfolio-management/creating-a-digital-asset-inventory/)**
+> See also: **[Creating a Digital Asset Inventory](https://autoinsureguides.com/blog/portfolio-management/creating-a-digital-asset-inventory/)**
 
 ---
 
@@ -78,7 +78,7 @@ Best practices include:
 
 Alex once saved an encrypted backup online “just temporarily.” That moment scared him into upgrading his setup to **multi-signature cold storage**, similar to professional custody standards.
 
-> Deep dive: **[Secure Storage of Crypto Keys](https://txchyon.com/blog/portfolio-management/secure-storage-of-crypto-keys/)**
+> Deep dive: **[Secure Storage of Crypto Keys](https://autoinsureguides.com/blog/portfolio-management/secure-storage-of-crypto-keys/)**
 
 ---
 
@@ -95,7 +95,7 @@ A proper crypto will should:
 
 Alex created a crypto-specific will alongside his traditional one, ensuring courts wouldn’t freeze or misinterpret his assets.
 
-> Next step: **[Writing a Crypto Will](https://txchyon.com/blog/portfolio-management/writing-a-crypto-will/)**
+> Next step: **[Writing a Crypto Will](https://autoinsureguides.com/blog/portfolio-management/writing-a-crypto-will/)**
 
 ---
 
@@ -118,7 +118,7 @@ How to use them effectively:
 
 Alex watched two inheritances unfold — one with a trust and one without. Only one transferred smoothly.
 
-> Related guide: **[Using Trusts for Crypto Assets](https://txchyon.com/blog/portfolio-management/using-trusts-for-crypto-assets/)**
+> Related guide: **[Using Trusts for Crypto Assets](https://autoinsureguides.com/blog/portfolio-management/using-trusts-for-crypto-assets/)**
 
 ---
 
@@ -135,7 +135,7 @@ Smart strategies include:
 
 Alex now treats education as part of the inheritance — teaching wallets, security, and risk before handing over keys.
 
-> Continue reading: **[Planning for Multi-Generational Crypto Wealth](https://txchyon.com/blog/portfolio-management/planning-for-multi-generational-crypto-wealth/)**
+> Continue reading: **[Planning for Multi-Generational Crypto Wealth](https://autoinsureguides.com/blog/portfolio-management/planning-for-multi-generational-crypto-wealth/)**
 
 ---
 
@@ -157,7 +157,7 @@ Avoid them by:
 
 Alex learned from a friend who lost an entire NFT collection due to missing seed phrases — a mistake he vowed never to repeat.
 
-> Avoid pitfalls: **[Common Mistakes in Crypto Estate Planning](https://txchyon.com/blog/portfolio-management/common-mistakes-in-crypto-estate-planning/)**
+> Avoid pitfalls: **[Common Mistakes in Crypto Estate Planning](https://autoinsureguides.com/blog/portfolio-management/common-mistakes-in-crypto-estate-planning/)**
 
 ---
 

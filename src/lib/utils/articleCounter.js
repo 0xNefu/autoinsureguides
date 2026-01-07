@@ -1,4 +1,4 @@
-﻿// src/lib/utils/articleCounter.js
+// src/lib/utils/articleCounter.js
 import { getCollection } from "astro:content";
 
 export async function getArticleCount() {

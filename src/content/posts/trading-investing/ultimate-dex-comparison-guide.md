@@ -6,7 +6,7 @@ updatedDate: 2025-12-24
 image: "/images/posts/dex-comparison-guide-2026.jpg"
 heroImageAlt: "Icons of Ethereum, Solana, BNB Chain, and Polygon logos connected by trading charts and DEX interfaces"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["DEX Comparison", "Decentralized Exchanges", "Ethereum DEXs", "Solana DEXs", "BNB Chain DEXs", "Polygon DEXs", "DeFi Platforms", "2026 Guide"]
 category: "trading-investing"
 subcategory: "platforms"

@@ -6,7 +6,7 @@ updatedDate: 2025-12-30
 image: "/images/posts/cryptotax.jpg"
 heroImageAlt: "Illustration showing crypto tax forms and reporting concepts for beginners"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto-taxes", "tax-basics", "crypto-beginners", "reporting"]
 category: "getting-started"
 subcategory: "basics"
@@ -25,9 +25,9 @@ Taxes can feel intimidating, but understanding the basics early reduces stress a
 - **Selling crypto:** Exchanging crypto for fiat (USD, EUR, etc.) or another crypto token often triggers a **capital gains event**.  
 - **Swapping tokens:** Swaps between crypto assets (like ETH → SOL) are taxable in many jurisdictions.  
 
-**Pro Tip:** Keep detailed records of every purchase, swap, or sale. Tools like [Crypto Portfolio Tracking & Compliance Tools](https://txchyon.com/tools) help automate this.
+**Pro Tip:** Keep detailed records of every purchase, swap, or sale. Tools like [Crypto Portfolio Tracking & Compliance Tools](https://autoinsureguides.com/tools) help automate this.
 
-For beginners, check out [Your First 30 Days in Crypto: A Beginner Roadmap](https://txchyon.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) to understand how buying and trading affects your overall tax picture.
+For beginners, check out [Your First 30 Days in Crypto: A Beginner Roadmap](https://autoinsureguides.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) to understand how buying and trading affects your overall tax picture.
 
 ---
 
@@ -38,7 +38,7 @@ For beginners, check out [Your First 30 Days in Crypto: A Beginner Roadmap](http
 
 **Practical tip:** Consider your holding strategy before selling, as tax implications can significantly impact net profits.
 
-Learn more about tracking and analyzing your holdings in our [How to Track Your Crypto Portfolio as a Beginner](https://txchyon.com/blog/getting-started/how-to-track-your-crypto-portfolio) guide.
+Learn more about tracking and analyzing your holdings in our [How to Track Your Crypto Portfolio as a Beginner](https://autoinsureguides.com/blog/getting-started/how-to-track-your-crypto-portfolio) guide.
 
 ---
 
@@ -55,7 +55,7 @@ Not every crypto transaction creates a major tax obligation. Here's a simple bre
 
 Even if your trades seem minor, **keeping records from day one** prevents headaches later and ensures smooth compliance.
 
-Check our guide on [Tools for Tracking & Compliance](https://txchyon.com/tools) for automated reporting options and portfolio analysis.
+Check our guide on [Tools for Tracking & Compliance](https://autoinsureguides.com/tools) for automated reporting options and portfolio analysis.
 
 ---
 
@@ -63,20 +63,20 @@ Check our guide on [Tools for Tracking & Compliance](https://txchyon.com/tools) 
 
 1. **Document everything:** Keep track of purchases, swaps, staking rewards, airdrops, and income.  
 2. **Start small:** Focus on learning and safety before diving into complex strategies.  
-3. **Use tracking tools:** Apps like [Crypto Portfolio Tracker](https://txchyon.com/blog/getting-started/how-to-track-your-crypto-portfolio) save time and reduce errors.  
+3. **Use tracking tools:** Apps like [Crypto Portfolio Tracker](https://autoinsureguides.com/blog/getting-started/how-to-track-your-crypto-portfolio) save time and reduce errors.  
 4. **Plan trades with taxes in mind:** Decide if short-term gains are worth the tax hit versus long-term holding.  
-5. **Educate yourself:** Explore [Set Up Your First Wallet](https://txchyon.com/blog/getting-started/how-to-setup-bitocoin-wallet) and [Beginner Crypto Security Practices](https://txchyon.com/blog/getting-started/best-crypto-wallets-for-beginners) to protect your assets.
+5. **Educate yourself:** Explore [Set Up Your First Wallet](https://autoinsureguides.com/blog/getting-started/how-to-setup-bitocoin-wallet) and [Beginner Crypto Security Practices](https://autoinsureguides.com/blog/getting-started/best-crypto-wallets-for-beginners) to protect your assets.
 
 ---
 
 ## 5. Additional Resources & Cluster Links
 
-- [Your First 30 Days in Crypto: A Beginner Roadmap](https://txchyon.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) – Beginner roadmap  
-- [Set Up Your First Wallet](https://txchyon.com/blog/getting-started/how-to-setup-bitocoin-wallet) – Wallet setup guide  
-- [How to Track Your Crypto Portfolio as a Beginner](https://txchyon.com/blog/getting-started/how-to-track-your-crypto-portfolio) – Tax & performance tracking  
-- [Best Crypto Wallets for Beginners: Top Picks and Reviews](https://txchyon.com/blog/getting-started/best-crypto-wallets-for-beginners) – Security and storage  
-- [Ultimate Guide to Crypto Regulatory & Tax Compliance](https://txchyon.com/blog/regulatory-tax/ultimate-guide-to-crypto-regulatory-and-tax-compliance) – Deep dive into laws, reporting, and audits  
-- [Crypto Estate Planning Basics (Secure Your Digital Assets)](https://txchyon.com/blog/portfolio-management/crypto-estate-planning-basics) – Planning inheritance & taxes  
+- [Your First 30 Days in Crypto: A Beginner Roadmap](https://autoinsureguides.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) – Beginner roadmap  
+- [Set Up Your First Wallet](https://autoinsureguides.com/blog/getting-started/how-to-setup-bitocoin-wallet) – Wallet setup guide  
+- [How to Track Your Crypto Portfolio as a Beginner](https://autoinsureguides.com/blog/getting-started/how-to-track-your-crypto-portfolio) – Tax & performance tracking  
+- [Best Crypto Wallets for Beginners: Top Picks and Reviews](https://autoinsureguides.com/blog/getting-started/best-crypto-wallets-for-beginners) – Security and storage  
+- [Ultimate Guide to Crypto Regulatory & Tax Compliance](https://autoinsureguides.com/blog/regulatory-tax/ultimate-guide-to-crypto-regulatory-and-tax-compliance) – Deep dive into laws, reporting, and audits  
+- [Crypto Estate Planning Basics (Secure Your Digital Assets)](https://autoinsureguides.com/blog/portfolio-management/crypto-estate-planning-basics) – Planning inheritance & taxes  
 
 ---
 

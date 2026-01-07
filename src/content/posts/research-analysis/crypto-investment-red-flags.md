@@ -6,7 +6,7 @@ updatedDate: 2026-1-1
 image: "/images/posts/cryptoredflags.jpg"
 heroImageAlt: "Crypto investor reviewing red flags and warning signs before investing"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Crypto Red Flags
   - Risk Assessment

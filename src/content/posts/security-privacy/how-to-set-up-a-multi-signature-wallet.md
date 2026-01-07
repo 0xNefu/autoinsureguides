@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/multi-signature-wallet-setup-guide.jpg"
 heroImageAlt: "Multi-signature wallet interface showing multiple confirmations required"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["multi-sig", "wallet security", "gnosis safe", "multi-signature", "self-custody"]
 category: "security-privacy"
 subcategory: "multi-sig"

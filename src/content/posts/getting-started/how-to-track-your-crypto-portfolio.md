@@ -6,7 +6,7 @@ updatedDate: 2025-12-30
 image: "/images/posts/trackcryptoportfolio.jpg"
 heroImageAlt: "A simple dashboard showing crypto portfolio tracking for beginners"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["portfolio-tracking", "crypto-beginners", "wallets", "apps", "privacy"]
 category: "getting-started"
 subcategory: "basics"
@@ -27,8 +27,8 @@ Before diving into methods, it's important to understand **why tracking your cry
 
 - **Know your holdings:** You can't manage what you don't know you have.  
 - **Measure performance:** Track gains, losses, and allocation over time.  
-- **Compliance and taxes:** Many jurisdictions require reporting on crypto gains. Our [crypto tax guide](https://txchyon.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto) explains this in plain English.  
-- **Safety and risk management:** Seeing all wallets in one place can highlight exposure to risky tokens, rug pulls, or scams. Review [crypto scams explained](https://txchyon.com/blog/getting-started/crypto-scams-explained) for context.
+- **Compliance and taxes:** Many jurisdictions require reporting on crypto gains. Our [crypto tax guide](https://autoinsureguides.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto) explains this in plain English.  
+- **Safety and risk management:** Seeing all wallets in one place can highlight exposure to risky tokens, rug pulls, or scams. Review [crypto scams explained](https://autoinsureguides.com/blog/getting-started/crypto-scams-explained) for context.
 
 Tracking doesn't have to be a full-time job. Even basic tracking can save you headaches and help you make smarter investment decisions.
 
@@ -65,7 +65,7 @@ Example:
 
 ### Step 3: Understand Wallet Addresses
 
-Manual tracking requires knowing your **wallet addresses**. Check out our guide on [setting up your first wallet](https://txchyon.com/blog/getting-started/how-to-setup-bitocoin-wallet) to understand address formats and best practices for privacy.
+Manual tracking requires knowing your **wallet addresses**. Check out our guide on [setting up your first wallet](https://autoinsureguides.com/blog/getting-started/how-to-setup-bitocoin-wallet) to understand address formats and best practices for privacy.
 
 ### Advantages of Manual Tracking
 
@@ -102,7 +102,7 @@ Once comfortable with manual tracking, **automated tools make life easier**, esp
 - Linking exchanges or wallets exposes your holdings to the platform  
 - Avoid apps that **require full access to private keys**  
 - Use apps with read-only public address tracking when possible  
-- For more details, see [tools for portfolio & memecoins](https://txchyon.com/tools)
+- For more details, see [tools for portfolio & memecoins](https://autoinsureguides.com/tools)
 
 ### Best Practices
 
@@ -129,7 +129,7 @@ Automated trackers can help:
 
 Beginners can start small by linking **one main wallet** and tracking progress over a few months before adding DeFi positions.
 
-For a beginner-friendly introduction to DeFi interactions, see [DeFi basics for beginners](https://txchyon.com/blog/getting-started/what-is-defi).
+For a beginner-friendly introduction to DeFi interactions, see [DeFi basics for beginners](https://autoinsureguides.com/blog/getting-started/what-is-defi).
 
 ---
 
@@ -147,13 +147,13 @@ Instead, **schedule weekly check-ins** or use automated alerts.
 
 ### Pitfall 2: Forgetting to Track Small Wallets
 
-Even small wallets can accumulate memecoins or tokens from airdrops. Track them to avoid **lost assets**. Use [tools for portfolio & memecoins](https://txchyon.com/tools) to consolidate.
+Even small wallets can accumulate memecoins or tokens from airdrops. Track them to avoid **lost assets**. Use [tools for portfolio & memecoins](https://autoinsureguides.com/tools) to consolidate.
 
 ### Pitfall 3: Ignoring Security
 
 - Never enter your seed phrase in an app or site  
-- Regularly check approvals for smart contracts ([crypto scams explained](https://txchyon.com/blog/getting-started/crypto-scams-explained))  
-- Use hardware wallets for long-term holdings ([best crypto wallets](https://txchyon.com/blog/getting-started/best-crypto-wallets-for-beginners))
+- Regularly check approvals for smart contracts ([crypto scams explained](https://autoinsureguides.com/blog/getting-started/crypto-scams-explained))  
+- Use hardware wallets for long-term holdings ([best crypto wallets](https://autoinsureguides.com/blog/getting-started/best-crypto-wallets-for-beginners))
 
 ---
 
@@ -165,7 +165,7 @@ A structured approach helps beginners form habits:
 - **Day 6–15:** Explore automated apps with read-only import  
 - **Day 16–30:** Track small memecoin experiments and DeFi staking  
 
-Reference: [Your First 30 Days in Crypto](https://txchyon.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto)
+Reference: [Your First 30 Days in Crypto](https://autoinsureguides.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto)
 
 ---
 
@@ -175,7 +175,7 @@ Even beginners should track **cost basis** and portfolio history for taxes:
 
 - Use transaction records from wallets and exchanges  
 - Note purchases, sales, swaps, and airdrops  
-- Reference our [crypto taxes guide](https://txchyon.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto)  
+- Reference our [crypto taxes guide](https://autoinsureguides.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto)  
 
 Automated trackers often **export CSVs** that simplify tax reporting.
 
@@ -186,21 +186,21 @@ Automated trackers often **export CSVs** that simplify tax reporting.
 1. Start **manual tracking** to learn wallet basics  
 2. Add automated tools gradually  
 3. Track **only active wallets initially**  
-4. Combine tracking with **safety measures** ([crypto scams explained](https://txchyon.com/blog/getting-started/crypto-scams-explained))  
+4. Combine tracking with **safety measures** ([crypto scams explained](https://autoinsureguides.com/blog/getting-started/crypto-scams-explained))  
 5. Use weekly reviews instead of constant monitoring  
-6. Document all trades and DeFi interactions for **tax and audit purposes** ([crypto taxes guide](https://txchyon.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto))  
+6. Document all trades and DeFi interactions for **tax and audit purposes** ([crypto taxes guide](https://autoinsureguides.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto))  
 
 ---
 
 ## 8. Recommended Resources & Cluster Links
 
-- [Set Up Your First Wallet](https://txchyon.com/blog/getting-started/how-to-setup-bitocoin-wallet) – Wallet basics  
-- [Your First 30 Days in Crypto](https://txchyon.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) – Beginner roadmap  
-- [Tools for Portfolio & Memecoins](https://txchyon.com/tools) – Apps and dashboards  
-- [Crypto Scams Explained](https://txchyon.com/blog/getting-started/crypto-scams-explained) – Safety tips  
-- [Crypto Fees Explained](https://txchyon.com/blog/getting-started/crypto-fees-explained) – Learn transaction costs  
-- [Do I Have to Pay Taxes on Crypto?](https://txchyon.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto) – Tax basics  
-- [DeFi Guide for Beginners](https://txchyon.com/blog/getting-started/what-is-defi) – Tracking DeFi positions  
+- [Set Up Your First Wallet](https://autoinsureguides.com/blog/getting-started/how-to-setup-bitocoin-wallet) – Wallet basics  
+- [Your First 30 Days in Crypto](https://autoinsureguides.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) – Beginner roadmap  
+- [Tools for Portfolio & Memecoins](https://autoinsureguides.com/tools) – Apps and dashboards  
+- [Crypto Scams Explained](https://autoinsureguides.com/blog/getting-started/crypto-scams-explained) – Safety tips  
+- [Crypto Fees Explained](https://autoinsureguides.com/blog/getting-started/crypto-fees-explained) – Learn transaction costs  
+- [Do I Have to Pay Taxes on Crypto?](https://autoinsureguides.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto) – Tax basics  
+- [DeFi Guide for Beginners](https://autoinsureguides.com/blog/getting-started/what-is-defi) – Tracking DeFi positions  
 
 ---
 

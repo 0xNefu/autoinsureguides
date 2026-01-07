@@ -6,7 +6,7 @@ updatedDate: 2025-12-30
 image: "/images/posts/cryptoscam.jpg"
 heroImageAlt: "Illustration showing common crypto scams and traps for beginners"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto-scams", "phishing", "airdrops", "security", "crypto-beginners"]
 category: "getting-started"
 subcategory: "common-mistakes"
@@ -36,7 +36,7 @@ Phishing remains the number one way beginners lose crypto. Attackers try to tric
 - Always type URLs manually or use official bookmarks.  
 - Enable **2FA** on every platform.  
 - Never share your **seed phrase** under any circumstance.  
-- Learn more about crypto wallet setup in [Set Up Your First Wallet](https://txchyon.com/blog/getting-started/how-to-setup-bitocoin-wallet).
+- Learn more about crypto wallet setup in [Set Up Your First Wallet](https://autoinsureguides.com/blog/getting-started/how-to-setup-bitocoin-wallet).
 
 ---
 
@@ -53,9 +53,9 @@ The idea of **free tokens** is appealing, which makes fake airdrops one of the o
 **Safe Practices:**
 
 - Verify airdrops via official project channels.  
-- Never approve unknown contracts; check them with tools like [Tools for Scam Protection & Memecoins](https://txchyon.com/tools).  
+- Never approve unknown contracts; check them with tools like [Tools for Scam Protection & Memecoins](https://autoinsureguides.com/tools).  
 - Start small on test networks before interacting with mainnet projects.  
-- For beginners, see [What to Do Before You Buy Your First Crypto](https://txchyon.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) to understand safe participation.
+- For beginners, see [What to Do Before You Buy Your First Crypto](https://autoinsureguides.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) to understand safe participation.
 
 ---
 
@@ -73,7 +73,7 @@ Approval drainers are malicious contracts that **request unlimited access** to y
 - **Check and revoke approvals regularly** using services like revoke.cash.  
 - Limit approvals to **specific amounts** instead of infinite.  
 - Keep your main wallet offline or in a **hardware wallet** for high-value assets.  
-- Learn about wallet security in [Best Crypto Wallets for Beginners: Top Picks and Reviews](https://txchyon.com/blog/getting-started/best-crypto-wallets-for-beginners).
+- Learn about wallet security in [Best Crypto Wallets for Beginners: Top Picks and Reviews](https://autoinsureguides.com/blog/getting-started/best-crypto-wallets-for-beginners).
 
 ---
 
@@ -90,7 +90,7 @@ Social engineering scams rely on trust, not code. Scammers impersonate friends, 
 - Never act under pressure. Scammers often create urgency.  
 - Verify identities through **official channels**.  
 - Avoid clicking links in DMs from unknown sources.  
-- Always double-check any token sale or trade in [How to Track Your Crypto Portfolio as a Beginner](https://txchyon.com/blog/getting-started/how-to-track-your-crypto-portfolio).
+- Always double-check any token sale or trade in [How to Track Your Crypto Portfolio as a Beginner](https://autoinsureguides.com/blog/getting-started/how-to-track-your-crypto-portfolio).
 
 ---
 
@@ -101,7 +101,7 @@ Social engineering scams rely on trust, not code. Scammers impersonate friends, 
 - **Pump & Dump Schemes:** Coordinated hype artificially inflates token prices, then collapses the market.  
 - **Malicious Smart Contracts:** Hidden functions allow hackers to steal funds even after legitimate transactions.
 
-For learning about avoiding these, explore our [Do I Have to Pay Taxes on Crypto? A Beginner's Reality Check](https://txchyon.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto), which covers **DeFi-specific scam risks**.
+For learning about avoiding these, explore our [Do I Have to Pay Taxes on Crypto? A Beginner's Reality Check](https://autoinsureguides.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto), which covers **DeFi-specific scam risks**.
 
 ---
 
@@ -109,23 +109,23 @@ For learning about avoiding these, explore our [Do I Have to Pay Taxes on Crypto
 
 1. **Start with awareness:** Knowledge of scams prevents panic and mistakes.  
 2. **Test with small amounts:** Use tiny amounts to interact with wallets, DEXs, or airdrops.  
-3. **Integrate safety practices early:** [What to Do Before You Buy Your First Crypto](https://txchyon.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) is an essential starting point.  
-4. **Use tracking and compliance tools:** Automate wallet monitoring via [Tools for Scam Protection & Memecoins](https://txchyon.com/tools).  
-5. **Secure wallets:** Consider hardware wallets for long-term storage. Learn more in [Best Crypto Wallets for Beginners: Top Picks and Reviews](https://txchyon.com/blog/getting-started/best-crypto-wallets-for-beginners).  
-6. **Follow cluster guides:** Keep reading [Crypto Fees Explained](https://txchyon.com/blog/getting-started/crypto-fees-explained) and [How to Track Your Crypto Portfolio as a Beginner](https://txchyon.com/blog/getting-started/how-to-track-your-crypto-portfolio) for ongoing education.
+3. **Integrate safety practices early:** [What to Do Before You Buy Your First Crypto](https://autoinsureguides.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) is an essential starting point.  
+4. **Use tracking and compliance tools:** Automate wallet monitoring via [Tools for Scam Protection & Memecoins](https://autoinsureguides.com/tools).  
+5. **Secure wallets:** Consider hardware wallets for long-term storage. Learn more in [Best Crypto Wallets for Beginners: Top Picks and Reviews](https://autoinsureguides.com/blog/getting-started/best-crypto-wallets-for-beginners).  
+6. **Follow cluster guides:** Keep reading [Crypto Fees Explained](https://autoinsureguides.com/blog/getting-started/crypto-fees-explained) and [How to Track Your Crypto Portfolio as a Beginner](https://autoinsureguides.com/blog/getting-started/how-to-track-your-crypto-portfolio) for ongoing education.
 
 ---
 
 ## 7. Recommended Resources & Cluster Links
 
-- [Set Up Your First Wallet](https://txchyon.com/blog/getting-started/how-to-setup-bitocoin-wallet) – Wallet setup for safety  
-- [Crypto Fees Explained](https://txchyon.com/blog/getting-started/crypto-fees-explained) – Understand transaction costs  
-- [Tools for Scam Protection & Memecoins](https://txchyon.com/tools) – Portfolio and approval monitoring  
-- [Best Crypto Wallets for Beginners: Top Picks and Reviews](https://txchyon.com/blog/getting-started/best-crypto-wallets-for-beginners) – Secure storage and hardware wallet guide  
-- [What to Do Before You Buy Your First Crypto](https://txchyon.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) – Step-by-step beginner safety  
-- [Your First 30 Days in Crypto: A Beginner Roadmap](https://txchyon.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) – Beginner roadmap  
-- [How to Track Your Crypto Portfolio as a Beginner](https://txchyon.com/blog/getting-started/how-to-track-your-crypto-portfolio) – Compliance and tracking guide  
-- [Do I Have to Pay Taxes on Crypto? A Beginner's Reality Check](https://txchyon.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto) – Beginner's guide to crypto taxes  
+- [Set Up Your First Wallet](https://autoinsureguides.com/blog/getting-started/how-to-setup-bitocoin-wallet) – Wallet setup for safety  
+- [Crypto Fees Explained](https://autoinsureguides.com/blog/getting-started/crypto-fees-explained) – Understand transaction costs  
+- [Tools for Scam Protection & Memecoins](https://autoinsureguides.com/tools) – Portfolio and approval monitoring  
+- [Best Crypto Wallets for Beginners: Top Picks and Reviews](https://autoinsureguides.com/blog/getting-started/best-crypto-wallets-for-beginners) – Secure storage and hardware wallet guide  
+- [What to Do Before You Buy Your First Crypto](https://autoinsureguides.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) – Step-by-step beginner safety  
+- [Your First 30 Days in Crypto: A Beginner Roadmap](https://autoinsureguides.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto) – Beginner roadmap  
+- [How to Track Your Crypto Portfolio as a Beginner](https://autoinsureguides.com/blog/getting-started/how-to-track-your-crypto-portfolio) – Compliance and tracking guide  
+- [Do I Have to Pay Taxes on Crypto? A Beginner's Reality Check](https://autoinsureguides.com/blog/getting-started/do-i-have-to-pay-taxes-on-crypto) – Beginner's guide to crypto taxes  
 
 ---
 

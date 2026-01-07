@@ -68,7 +68,7 @@
   ],
   "footer": [
     {
-      "name": "Txchyon",
+      "name": "autoinsureguides",
       "url": "/"
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "name": "Twitter",
-      "url": "https://twitter.com/txchyon",
+      "url": "https://twitter.com/autoinsureguides",
       "external": true
     }
   ]

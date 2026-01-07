@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/best-privacy-coins-tools-2026.jpg"
 heroImageAlt: "Abstract illustration of shielded crypto transactions and privacy tools"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["privacy coins", "monero", "zcash", "railgun", "coinjoin", "crypto anonymity"]
 category: "security-privacy"
 subcategory: "privacy-tools"

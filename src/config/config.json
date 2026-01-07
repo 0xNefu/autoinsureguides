@@ -1,14 +1,14 @@
-﻿{
+{
   "site": {
-    "title": "Txchyon",
-    "base_url": "https://txchyon.com",
+    "title": "autoinsureguides",
+    "base_url": "https://autoinsureguides.com",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": false,
     "logo_width": "200",
     "logo_height": "34",
-    "logo_text": "Txchyon"
+    "logo_text": "autoinsureguides"
   },
 
   "settings": {
@@ -28,20 +28,20 @@
 
   "params": {
     "contact_form_action": "https://formspree.io/f/xzznjdnr",
-    "copyright": "© 2025 Txchyon Capital"
+    "copyright": "� 2025 autoinsureguides Capital"
   },
 
   "contactinfo": {
     "address": "Scottsdale, AZ",
-    "email": "contact@txchyon.com",
+    "email": "contact@autoinsureguides.com",
     "phone": "+63 9613092580"
   },
 
   "social": {
-    "twitter": "https://twitter.com/txchyon",
-    "telegram": "https://t.me/txchyon",
-    "discord": "https://discord.gg/txchyon",
-    "github": "https://github.com/txchyon",
+    "twitter": "https://twitter.com/autoinsureguides",
+    "telegram": "https://t.me/autoinsureguides",
+    "discord": "https://discord.gg/autoinsureguides",
+    "github": "https://github.com/autoinsureguides",
     "linkedin": "",
     "youtube": "",
     "instagram": ""
@@ -55,8 +55,8 @@
   },
 
   "branding": {
-    "blog_name": "Txchyon",
+    "blog_name": "autoinsureguides",
     "tagline": "Signal in the noise.",
-    "twitter_handle": "@txchyon"
+    "twitter_handle": "@autoinsureguides"
   }
 }

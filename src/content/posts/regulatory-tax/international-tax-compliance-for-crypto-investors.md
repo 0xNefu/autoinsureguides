@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/international-crypto-tax.jpg"
 heroImageAlt: "World map with crypto coins and tax forms overlay"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["international crypto tax", "cross-border crypto reporting", "crypto tax compliance", "global crypto regulations", "crypto tax strategy"]
 category: "regulatory-tax"
 subcategory: "tax-reporting"
@@ -56,7 +56,7 @@ This guide covers **key strategies and tools** to keep your international crypto
 - Keep **records of fiat conversions** for each country  
 - Understand **tax treaties** to prevent double taxation  
 
-> Pro Tip: Automated software like [Koinly](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software) supports multi-country tax reporting and generates reports for different tax authorities.
+> Pro Tip: Automated software like [Koinly](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software) supports multi-country tax reporting and generates reports for different tax authorities.
 
 ---
 
@@ -67,8 +67,8 @@ This guide covers **key strategies and tools** to keep your international crypto
 - **Compliance platforms:** Ensure AML/KYC compliance if you operate globally  
 
 Integration with banking and legal structures makes reporting simpler:  
-- [Crypto Banking Solutions](https://txchyon.com/blog/regulatory-tax/crypto-banking-solutions)  
-- [Crypto Entity Formation](https://txchyon.com/blog/regulatory-tax/crypto-entity-formation)  
+- [Crypto Banking Solutions](https://autoinsureguides.com/blog/regulatory-tax/crypto-banking-solutions)  
+- [Crypto Entity Formation](https://autoinsureguides.com/blog/regulatory-tax/crypto-entity-formation)  
 
 ---
 

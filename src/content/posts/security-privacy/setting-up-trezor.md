@@ -6,7 +6,7 @@ updatedDate: 2025-12-16
 image: "/images/posts/trezor1.jpg"
 heroImageAlt: "A Trezor hardware wallet connected to a computer running the Trezor Suite application"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Trezor", "Cold Storage", "Hardware Wallet", "Security", "Seed Phrase", "Passphrase", "BIP39"]
 category: "security-privacy"
 subcategory: "hardware-wallets"
@@ -116,4 +116,4 @@ Firmware updates are done through Trezor Suite and are necessary for security.
 After setup, you can transfer assets from an exchange to the secure addresses generated in Trezor Suite.
 
 * Need a guide on which exchange to use or how to make your first crypto purchase?
-    **[Read Our Complete Guide to the Best Crypto Exchanges and Buying Process Here](Yhttps://txchyon.com/blog/getting-started/best-crypto-exchanges/)**
+    **[Read Our Complete Guide to the Best Crypto Exchanges and Buying Process Here](Yhttps://autoinsureguides.com/blog/getting-started/best-crypto-exchanges/)**

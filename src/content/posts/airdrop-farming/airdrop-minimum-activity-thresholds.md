@@ -6,7 +6,7 @@ updatedDate: 2026-1-3
 image: "/images/posts/airdrops3.jpg"
 heroImageAlt: "Crypto wallet dashboard showing activity metrics and eligibility scores"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Airdrop Farming
   - Eligibility Optimization

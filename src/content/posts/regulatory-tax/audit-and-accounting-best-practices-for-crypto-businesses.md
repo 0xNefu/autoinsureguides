@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/crypto-audit-accounting.jpg"
 heroImageAlt: "Accounting dashboard showing crypto transactions and audit reports"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto audit accounting", "crypto accounting software", "audit-ready crypto business", "tax reporting", "crypto bookkeeping"]
 category: "regulatory-tax"
 subcategory: "audit-accounting"
@@ -88,10 +88,10 @@ If your business is cross-border, keep in mind:
 
 ## 🔗 Section 4: Integrating With Other Tools
 
-- **Entity formation:** ([Crypto Entity Formation](https://txchyon.com/blog/regulatory-tax/crypto-entity-formation))  
-- **Banking solutions:** ([Crypto Banking Solutions](https://txchyon.com/blog/regulatory-tax/crypto-banking-solutions))  
-- **Compliance tools:** ([Crypto Compliance Tools](https://txchyon.com/blog/regulatory-tax/crypto-compliance-tools))  
-- **Tax reporting software:** ([Crypto Tax Reporting Software](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software))  
+- **Entity formation:** ([Crypto Entity Formation](https://autoinsureguides.com/blog/regulatory-tax/crypto-entity-formation))  
+- **Banking solutions:** ([Crypto Banking Solutions](https://autoinsureguides.com/blog/regulatory-tax/crypto-banking-solutions))  
+- **Compliance tools:** ([Crypto Compliance Tools](https://autoinsureguides.com/blog/regulatory-tax/crypto-compliance-tools))  
+- **Tax reporting software:** ([Crypto Tax Reporting Software](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software))  
 
 Integration ensures automated workflows, reducing manual errors and audit risk.
 

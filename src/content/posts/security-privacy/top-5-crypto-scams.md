@@ -6,7 +6,7 @@ updatedDate: 2025-12-06
 image: "/images/posts/top_5_scams_crypto.jpg"
 heroImageAlt: "A hand shielding a crypto coin from a barrage of digital threats and malware symbols"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Scams", "Security", "Phishing", "RugPull", "Investment Fraud", "Wallet Protection", "Beginner"]
 category: "security-privacy"
 subcategory: "scam-prevention"

@@ -120,8 +120,8 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
       </script>
     )}
 
-    <link rel="alternate" type="application/rss+xml" title="Txchyon RSS" href="/rss.xml" />
-    <link rel="alternate" type="application/feed+json" title="Txchyon Research Hub JSON Feed" href="/feed.json" />
+    <link rel="alternate" type="application/rss+xml" title="autoinsureguides RSS" href="/rss.xml" />
+    <link rel="alternate" type="application/feed+json" title="autoinsureguides Research Hub JSON Feed" href="/feed.json" />
 
     <ClientRouter />
     <meta name="author" content={config.metadata.meta_author} />
@@ -130,7 +130,7 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
     {hasGatedContent && (
       <style>
         /* Gate Overlay - PARTIAL POSITIONING */
-        .txchyon-gate-overlay {
+        .autoinsureguides-gate-overlay {
           position: absolute !important; /* NOT fixed - moves with content */
           top: 0 !important;
           left: 0 !important;
@@ -149,13 +149,13 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
           pointer-events: auto !important;
         }
         
-        .txchyon-gate-overlay.active {
+        .autoinsureguides-gate-overlay.active {
           opacity: 1 !important;
           display: flex !important;
         }
         
         /* Gate Modal */
-        .txchyon-gate-modal {
+        .autoinsureguides-gate-modal {
           background: white !important;
           border: 2px solid #000 !important;
           box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.2) !important;
@@ -366,14 +366,14 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
         }
         
         /* Force all elements to be visible */
-        .txchyon-gate-overlay * {
+        .autoinsureguides-gate-overlay * {
           visibility: visible !important;
           opacity: 1 !important;
         }
         
         /* Responsive */
         @media (max-width: 640px) {
-          .txchyon-gate-modal {
+          .autoinsureguides-gate-modal {
             padding: 2rem 1.5rem !important;
             width: 95% !important;
             margin: 1rem !important;
@@ -438,20 +438,20 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
     {hasGatedContent && (
       <>
         <!-- Gate HTML Structure -->
-        <div id="txchyon-gate" class="txchyon-gate-overlay">
-          <div class="txchyon-gate-modal">
+        <div id="autoinsureguides-gate" class="autoinsureguides-gate-overlay">
+          <div class="autoinsureguides-gate-modal">
             <button class="gate-close" aria-label="Close gate">×</button>
             
             <div class="gate-header">
               <span class="gate-icon">🔐</span>
               <h2 class="gate-title">Unlock All Our Full Guides</h2>
-              <p class="gate-subtitle">Join 12,000+ traders and investors in the Txchyon Research Hub to access step-by-step instructions, visual walkthroughs, how to's, AI prompts, tools, and more.</p>
+              <p class="gate-subtitle">Join 12,000+ traders and investors in the autoinsureguides Research Hub to access step-by-step instructions, visual walkthroughs, how to's, AI prompts, tools, and more.</p>
             </div>
             
             <div class="gate-form">
               <input type="email" class="gate-input" placeholder="your.email@example.com" id="gate-email-input" required>
               <button class="gate-button">
-                Get Your Txchyon Tesseract Pass
+                Get Your autoinsureguides Tesseract Pass
               </button>
             </div>
             
@@ -494,7 +494,7 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
             console.log('⚡ Initializing PARTIAL gate...');
             
             // Check if already subscribed
-            const hasAccess = localStorage.getItem('txchyon_subscriber') === 'true';
+            const hasAccess = localStorage.getItem('autoinsureguides_subscriber') === 'true';
             if (hasAccess && !GATE_CONFIG.forceShow) {
               console.log('✅ Already subscribed');
               return;
@@ -598,7 +598,7 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
             console.log('🚀 Showing PARTIAL gate with blur (40% visible, 60% blurred)...');
             
             // DEBUG: Check if gate exists
-            const gate = document.getElementById('txchyon-gate');
+            const gate = document.getElementById('autoinsureguides-gate');
             console.log('🔍 Gate element exists:', !!gate);
             
             if (!gate) {
@@ -715,7 +715,7 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
             }
             
             // Save where user came from for redirect
-            localStorage.setItem('txchyon_return_to', window.location.pathname);
+            localStorage.setItem('autoinsureguides_return_to', window.location.pathname);
             
             // Show loading
             const submitBtn = document.querySelector('.gate-button');
@@ -736,7 +736,7 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
                 body: JSON.stringify({
                   email: email,
                   publication_id: BEEHIV_CONFIG.publicationId,
-                  utm_source: 'txchyon-gate',
+                  utm_source: 'autoinsureguides-gate',
                   utm_medium: 'web',
                   utm_campaign: 'content-gate',
                   send_welcome_email: true,
@@ -763,8 +763,8 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
               // TRY 2: MAGIC LINK (More reliable)
               try {
                 // Build magic link with redirect
-                const redirectUrl = encodeURIComponent('https://txchyon.com/verified?email=' + email);
-                const magicLink = `${BEEHIV_CONFIG.magicLinkBase}?email=${encodeURIComponent(email)}&utm_source=txchyon-gate&utm_medium=web&utm_campaign=content-gate&redirect=${redirectUrl}`;
+                const redirectUrl = encodeURIComponent('https://autoinsureguides.com/verified?email=' + email);
+                const magicLink = `${BEEHIV_CONFIG.magicLinkBase}?email=${encodeURIComponent(email)}&utm_source=autoinsureguides-gate&utm_medium=web&utm_campaign=content-gate&redirect=${redirectUrl}`;
                 
                 console.log('🔗 Using Magic Link:', magicLink);
                 
@@ -810,11 +810,11 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
             console.log('🔓 Granting temporary access for:', email);
             
             // Mark as pending (waiting for Beehiiv confirmation)
-            localStorage.setItem('txchyon_subscriber_pending', 'true');
-            localStorage.setItem('txchyon_subscriber_email', email);
+            localStorage.setItem('autoinsureguides_subscriber_pending', 'true');
+            localStorage.setItem('autoinsureguides_subscriber_email', email);
             
             // Hide gate
-            const gate = document.getElementById('txchyon-gate');
+            const gate = document.getElementById('autoinsureguides-gate');
             if (gate) {
               gate.style.opacity = '0';
               setTimeout(() => gate.style.display = 'none', 400);
@@ -839,7 +839,7 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
               gateButton.disabled = true;
               setTimeout(() => {
                 gateIcon.textContent = '🔐';
-                gateButton.textContent = 'Get Your Txchyon Tesseract Pass';
+                gateButton.textContent = 'Get Your autoinsureguides Tesseract Pass';
                 gateButton.disabled = false;
               }, 5000);
             }
@@ -857,7 +857,7 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
                 clearInterval(checkInterval);
                 console.log('✅ Magic Link tab closed - subscription completed');
                 // Grant full access
-                localStorage.setItem('txchyon_subscriber', 'true');
+                localStorage.setItem('autoinsureguides_subscriber', 'true');
                 return;
               }
               
@@ -875,7 +875,7 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
             if (!email) return;
             
             // Check localStorage first
-            const storedEmail = localStorage.getItem('txchyon_subscriber_email');
+            const storedEmail = localStorage.getItem('autoinsureguides_subscriber_email');
             
             if (storedEmail && storedEmail.toLowerCase() === email.toLowerCase()) {
               // User is subscribed on this device
@@ -898,7 +898,7 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
           // Close gate
           function closeGate() {
             console.log('🚪 Closing gate...');
-            const gate = document.getElementById('txchyon-gate');
+            const gate = document.getElementById('autoinsureguides-gate');
             if (gate) {
               gate.style.opacity = '0';
               setTimeout(() => gate.style.display = 'none', 400);
@@ -906,11 +906,11 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
           }
           
           // Reset function
-          window.txchyonResetGate = function() {
+          window.autoinsureguidesResetGate = function() {
             console.log('🔄 Resetting gate...');
-            localStorage.removeItem('txchyon_subscriber');
-            localStorage.removeItem('txchyon_subscriber_email');
-            localStorage.removeItem('txchyon_subscriber_pending');
+            localStorage.removeItem('autoinsureguides_subscriber');
+            localStorage.removeItem('autoinsureguides_subscriber_email');
+            localStorage.removeItem('autoinsureguides_subscriber_pending');
             location.reload();
           };
           

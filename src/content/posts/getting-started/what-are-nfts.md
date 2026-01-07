@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/what-are-nfts-beginners.jpg"
 heroImageAlt: "Illustrative diagram explaining Non-Fungible Tokens (NFTs) on blockchain"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["nfts", "non-fungible-tokens", "digital-art", "blockchain-collectibles", "crypto-nfts", "ordinals"]
 category: "getting-started"
 subcategory: "basics"

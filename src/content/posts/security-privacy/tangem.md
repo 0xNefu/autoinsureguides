@@ -6,7 +6,7 @@ updatedDate: 2025-12-07
 image: "/images/posts/tangem_setup_guide.jpg"
 heroImageAlt: "A Tangem card being tapped against a smartphone running the Tangem mobile app"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Tangem", "Cold Storage", "Hardware Wallet", "NFC", "Seedless", "Security", "Mobile Crypto"]
 category: "security-privacy"
 subcategory: "hardware-wallets"

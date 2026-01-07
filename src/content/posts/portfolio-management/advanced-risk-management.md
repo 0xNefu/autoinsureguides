@@ -6,7 +6,7 @@ updatedDate: 2025-12-26
 image: "/images/posts/advancedriskman.jpg"
 heroImageAlt: "Crypto portfolio dashboard showing risk controls, drawdowns, and protective measures"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Risk Management", "Stop-Loss", "Drawdowns", "Hedging", "VaR", "Correlation"]
 category: "portfolio-management"
 subcategory: "risk-management"
@@ -96,7 +96,7 @@ Stop-losses are tools — not guarantees.
 They work best when paired with **allocation discipline and rebalancing**.
 
 👉 Reference foundation:  
-**[How to Rebalance a Crypto Portfolio](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**
+**[How to Rebalance a Crypto Portfolio](https://autoinsureguides.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**
 
 ---
 
@@ -126,7 +126,7 @@ Bad drawdown control:
 This is why **allocation and volatility control matter more than moonshots**.
 
 👉 Core framework:  
-**[Crypto Portfolio Risk Management Explained](https://txchyon.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**
+**[Crypto Portfolio Risk Management Explained](https://autoinsureguides.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**
 
 ---
 
@@ -175,7 +175,7 @@ Smart portfolios reduce correlation by:
 This is especially important in multi-chain portfolios.
 
 👉 Helpful context:  
-**[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
+**[Crypto Portfolio Allocation for Beginners](https://autoinsureguides.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
 
 ---
 

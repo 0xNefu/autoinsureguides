@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/ethereum-bridging-guide.jpg"
 heroImageAlt: "Visual diagram showing crypto bridging from Ethereum to Layer-2 chains like Polygon and Arbitrum"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto-bridging", "ethereum-bridge", "polygon-bridge", "arbitrum-bridge", "bnb-chain-bridge", "hyperliquid-bridge", "layer-2"]
 category: "getting-started"
 subcategory: "basics"

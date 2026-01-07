@@ -6,7 +6,7 @@ updatedDate: 2025-12-27
 image: "/images/posts/walletorg.jpg"
 heroImageAlt: "Organized crypto wallets on a sleek digital dashboard with charts and labels"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Airdrop Farming
   - Wallet Strategy

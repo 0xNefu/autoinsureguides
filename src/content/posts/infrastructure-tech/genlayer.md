@@ -6,7 +6,7 @@ updatedDate: 2025-12-02
 image: "/images/posts/genlayer3.jpg"
 heroImageAlt: "Genlayer architecture diagram showing blockchain + traditional oracles + Genlayer as the decentralized AI brain with zkML verification"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Genlayer", "EVM", "AI", "DeFi", "Prediction Markets", "Autonomous Agents", "Web3 AI", "Zero-Knowledge"]
 category: "infrastructure-tech"
 subcategory: "zk-technology"

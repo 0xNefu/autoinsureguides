@@ -6,7 +6,7 @@ updatedDate: 2025-12-02
 image: "/images/posts/kloutgg.jpg"
 heroImageAlt: "KloutGG on-chain social graph visualization with Solana wallets, TVL, and reputation scores"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["KloutGG", "SocialFi", "On-Chain Reputation", "Solana", "Klout Score", "Airdrop", "DeFi"]
 category: "infrastructure-tech"
   # Keep: "evm", "research", "solana", "ai", "EVM"

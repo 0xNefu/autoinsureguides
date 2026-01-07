@@ -6,7 +6,7 @@ updatedDate: 2025-12-22
 image: "/images/posts/whatiscrypto4crop.jpg"
 heroImageAlt: "A visual representation of a blockchain as interconnected digital blocks secured by cryptographic locks, with Bitcoin and Ethereum symbols"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["What is Cryptocurrency", "Blockchain Explained", "Crypto Basics", "Beginner Guide", "Bitcoin", "Ethereum", "Decentralization"]
 category: "getting-started"
 subcategory: "basics"
@@ -21,7 +21,7 @@ Searches for "what is cryptocurrency" and "blockchain explained for beginners" r
 
 By the end of this article, you will understand what cryptocurrency actually is, how the underlying blockchain technology functions, why it represents a significant shift from traditional money, and where it stands in 2026. No technical background is required.
 
-Once you grasp these concepts, practical steps become much clearer. Explore our [crypto terminology glossary](https://txchyon.com/blog/getting-started/crypto-terminology-glossary) for definitions of key terms used here, or review common pitfalls in our guide to the [10 biggest crypto mistakes beginners make](https://txchyon.com/blog/getting-started/biggest-crypto-mistakes).
+Once you grasp these concepts, practical steps become much clearer. Explore our [crypto terminology glossary](https://autoinsureguides.com/blog/getting-started/crypto-terminology-glossary) for definitions of key terms used here, or review common pitfalls in our guide to the [10 biggest crypto mistakes beginners make](https://autoinsureguides.com/blog/getting-started/biggest-crypto-mistakes).
 
 ## What Exactly Is Cryptocurrency?
 

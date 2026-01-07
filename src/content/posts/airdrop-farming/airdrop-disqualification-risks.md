@@ -1,4 +1,4 @@
-﻿---
+---
 title: "How to Avoid Disqualification After Doing Everything Right"
 description: "Even if you follow all the guides, airdrops can still disqualify your wallet. Learn the hidden pitfalls, red flags, and strategies to stay eligible while farming efficiently."
 date: 2026-1-4
@@ -6,7 +6,7 @@ updatedDate: 2026-1-4
 image: "/images/posts/airdrops1.jpg"
 heroImageAlt: "Wallet being analyzed for eligibility with warning signals and flags"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Airdrop Farming
   - Eligibility Optimization
@@ -26,7 +26,7 @@ gateType: 'partial'
 
 Many airdrop farmers think:
 
-> *"I followed all the steps — I used multiple wallets, earned points, and interacted over time. I should get the reward."*
+> *"I followed all the steps � I used multiple wallets, earned points, and interacted over time. I should get the reward."*
 
 Yet, disqualifications still happen.
 
@@ -82,7 +82,7 @@ Even "good" wallets can trip the following flags:
 - Some airdrops require certain token holdings, governance participation, or staking  
 - Not all rules are obvious; failure to comply can disqualify your wallet regardless of points or activity
 
-> Tip: Always read project-specific guides like [🪂 The Solana Airdrop Snowball: 4 Confirmed Farm Strategies to Claim Free Tokens](/blog/airdrop-farming/solana-airdrops/) for context
+> Tip: Always read project-specific guides like [?? The Solana Airdrop Snowball: 4 Confirmed Farm Strategies to Claim Free Tokens](/blog/airdrop-farming/solana-airdrops/) for context
 
 ---
 
@@ -112,11 +112,11 @@ Even "good" wallets can trip the following flags:
 
 Disqualification avoidance ties all clusters together:
 
-- **Wallet Strategy** → ensures baseline safety  
-- **Points Systems** → prevent overfarming and detect red flags early  
-- **Eligibility Optimization** → the foundation ([How Airdrop Eligibility Is Really Determined](/blog/airdrop-farming/airdrop-eligibility-criteria/))  
-- **Gas Optimization** → avoid cheap bulk transactions that look suspicious  
-- **Tools & Tracking** → monitor activity, points, and risk across wallets
+- **Wallet Strategy** ? ensures baseline safety  
+- **Points Systems** ? prevent overfarming and detect red flags early  
+- **Eligibility Optimization** ? the foundation ([How Airdrop Eligibility Is Really Determined](/blog/airdrop-farming/airdrop-eligibility-criteria/))  
+- **Gas Optimization** ? avoid cheap bulk transactions that look suspicious  
+- **Tools & Tracking** ? monitor activity, points, and risk across wallets
 
 When implemented correctly, this step **converts potential failures into guaranteed eligibility**.
 

@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/how-to-create-secure-exchange-api-keys.jpg"
 heroImageAlt: "Exchange API key creation and security settings dashboard"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["exchange API keys", "crypto API security", "trading bot API", "crypto automation", "API permissions"]
 category: "tools-automation"
 subcategory: "api-integration"
@@ -32,7 +32,7 @@ This is required reading before using:
 - Automation scripts
 
 If you haven’t already, start here:
-- [Crypto API Integration Explained](https://txchyon.com/crypto-api-integration-explained)
+- [Crypto API Integration Explained](https://autoinsureguides.com/crypto-api-integration-explained)
 
 ---
 
@@ -63,8 +63,8 @@ You typically need API keys to use:
 You do **not** need API keys just to buy crypto manually.
 
 If you’re still early-stage, see:
-- [How to Buy Crypto for Beginners](https://txchyon.com/how-to-buy-crypto)
-- [Best Crypto Exchanges for Beginners](https://txchyon.com/best-crypto-exchanges)
+- [How to Buy Crypto for Beginners](https://autoinsureguides.com/how-to-buy-crypto)
+- [Best Crypto Exchanges for Beginners](https://autoinsureguides.com/best-crypto-exchanges)
 
 ---
 
@@ -193,8 +193,8 @@ Bots cannot:
 Unless **you allow it**.
 
 Related reading:
-- [Are Crypto Trading Bots Safe?](https://txchyon.com/are-crypto-trading-bots-safe)
-- [Best Crypto Trading Bots in 2026](https://txchyon.com/best-crypto-trading-bots-2026)
+- [Are Crypto Trading Bots Safe?](https://autoinsureguides.com/are-crypto-trading-bots-safe)
+- [Best Crypto Trading Bots in 2026](https://autoinsureguides.com/best-crypto-trading-bots-2026)
 
 ---
 
@@ -208,8 +208,8 @@ This article connects directly to:
 - API-driven Solana tools
 
 Next logical reads:
-- [Best Crypto Trading Bots in 2026](https://txchyon.com/best-crypto-trading-bots-2026)
-- [Crypto Alert Systems Explained](https://txchyon.com/crypto-alert-systems-explained)
-- [Building Custom Crypto Dashboards](https://txchyon.com/custom-crypto-dashboards)
+- [Best Crypto Trading Bots in 2026](https://autoinsureguides.com/best-crypto-trading-bots-2026)
+- [Crypto Alert Systems Explained](https://autoinsureguides.com/crypto-alert-systems-explained)
+- [Building Custom Crypto Dashboards](https://autoinsureguides.com/custom-crypto-dashboards)
 
 API keys are the **keys to automation** — treat them like vault access.

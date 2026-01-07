@@ -6,7 +6,7 @@ updatedDate: 2025-12-26
 image: "/images/posts/trackingcryptoadvanced.jpg"
 heroImageAlt: "Crypto portfolio dashboard showing benchmarks, returns, and performance metrics"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Performance Tracking", "Benchmarking", "Returns", "Risk Management", "Allocation"]
 category: "portfolio-management"
 subcategory: "performance-tracking"
@@ -72,7 +72,7 @@ Benchmarking doesn’t shame you —
 it **shows you where to improve**.
 
 > Foundation concept:  
-> **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/categories/portfolio-management/)**
+> **[Crypto Portfolio Allocation for Beginners](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 
@@ -94,7 +94,7 @@ A portfolio that *was* up 200% but realized only 20%
 is not a 200% performer.
 
 > Connects directly to execution discipline:  
-> **[How to Rebalance a Crypto Portfolio](https://txchyon.com/categories/portfolio-management/)**
+> **[How to Rebalance a Crypto Portfolio](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 
@@ -139,7 +139,7 @@ This prevents the most dangerous mistake in crypto:
 **chasing returns without respecting risk**.
 
 > Core framework lives here:  
-> **[Crypto Portfolio Risk Management Explained](https://txchyon.com/categories/portfolio-management/)**
+> **[Crypto Portfolio Risk Management Explained](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 

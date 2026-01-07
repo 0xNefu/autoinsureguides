@@ -6,7 +6,7 @@ updatedDate: 2025-12-24
 image: "/images/posts/top-social-engineering-scams-2026.jpg"
 heroImageAlt: "A shadowy figure manipulating puppet strings attached to cryptocurrency wallets and user profiles"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Social Engineering", "Crypto Scams", "Pig Butchering", "Fake Support", "Deepfake", "Scam Prevention", "Security"]
 category: "security-privacy"
 subcategory: "scam-prevention"

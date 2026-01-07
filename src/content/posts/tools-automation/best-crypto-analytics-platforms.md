@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/best-crypto-analytics-platforms-2026.jpg"
 heroImageAlt: "Crypto analytics dashboard showing wallet tracking and smart money signals"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto analytics", "on-chain analytics", "wallet tracking", "smart money", "blockchain tools"]
 category: "tools-automation"
 subcategory: "analytics-platforms"
@@ -26,7 +26,7 @@ This guide covers:
 - How analytics tools tie into trading bots, alert systems, and portfolio trackers
 
 This article builds on our main hub:
-- [Best Crypto Trading Bots in 2026](https://txchyon.com/best-crypto-trading-bots-2026)
+- [Best Crypto Trading Bots in 2026](https://autoinsureguides.com/best-crypto-trading-bots-2026)
 
 ---
 
@@ -177,9 +177,9 @@ Analytics platforms are **central to the Tools & Automation ecosystem**:
 - Portfolio trackers log performance and ROI
 
 See our related guides:
-- [Best Crypto Trading Bots in 2026](https://txchyon.com/best-crypto-trading-bots-2026)
-- [Best Crypto Portfolio Trackers in 2026](https://txchyon.com/best-crypto-portfolio-trackers-2026)
-- [Best Crypto Alert Tools for Price and Wallet Tracking](https://txchyon.com/best-crypto-alert-tools-2026)
+- [Best Crypto Trading Bots in 2026](https://autoinsureguides.com/best-crypto-trading-bots-2026)
+- [Best Crypto Portfolio Trackers in 2026](https://autoinsureguides.com/best-crypto-portfolio-trackers-2026)
+- [Best Crypto Alert Tools for Price and Wallet Tracking](https://autoinsureguides.com/best-crypto-alert-tools-2026)
 
 ---
 
@@ -192,7 +192,7 @@ Analytics platforms are ideal if you:
 - Want to spot trends early
 
 If you’re a casual trader just starting out, consider building experience with:
-- [How to Buy Crypto Safely](https://txchyon.com/how-to-buy-crypto)
+- [How to Buy Crypto Safely](https://autoinsureguides.com/how-to-buy-crypto)
 
 ---
 

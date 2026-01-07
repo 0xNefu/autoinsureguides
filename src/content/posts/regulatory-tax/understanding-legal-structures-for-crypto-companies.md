@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/crypto-legal-structures.jpg"
 heroImageAlt: "Illustration of legal documents and crypto assets representing business structures"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto legal structures", "LLC vs corporation", "DAO legal recognition", "crypto business formation", "international crypto structures"]
 category: "regulatory-tax"
 subcategory: "legal-structures"
@@ -92,10 +92,10 @@ Operating globally? Consider:
 
 ## 🛠 Section 4: Integrating Legal Structure With Your Workflow
 
-- Connect your legal structure to **entity formation** ([Crypto Entity Formation](https://txchyon.com/blog/regulatory-tax/crypto-entity-formation))  
-- Ensure **banking access** ([Crypto Banking Solutions](https://txchyon.com/blog/regulatory-tax/crypto-banking-solutions))  
-- Link with **tax reporting** ([Crypto Tax Reporting Software](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software))  
-- Use **compliance tools** ([Crypto Compliance Tools](https://txchyon.com/blog/regulatory-tax/crypto-compliance-tools))  
+- Connect your legal structure to **entity formation** ([Crypto Entity Formation](https://autoinsureguides.com/blog/regulatory-tax/crypto-entity-formation))  
+- Ensure **banking access** ([Crypto Banking Solutions](https://autoinsureguides.com/blog/regulatory-tax/crypto-banking-solutions))  
+- Link with **tax reporting** ([Crypto Tax Reporting Software](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software))  
+- Use **compliance tools** ([Crypto Compliance Tools](https://autoinsureguides.com/blog/regulatory-tax/crypto-compliance-tools))  
 
 ---
 

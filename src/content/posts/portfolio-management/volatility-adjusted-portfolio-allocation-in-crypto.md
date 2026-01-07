@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/allocation2.jpg"
 heroImageAlt: "Crypto portfolio allocation chart adjusting weights based on volatility"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Volatility", "Allocation", "Risk Management", "Bitcoin", "Ethereum"]
 category: "portfolio-management"
 subcategory: "allocation-strategies"
@@ -31,7 +31,7 @@ Ethereum dipped 15%.
 Some altcoins dropped 40% in days.  
 
 Jason wasn’t “overexposed” by percentage — he was overexposed by **risk**.  
-> Related reading: **[Market Cap Weighted Allocation Explained](https://txchyon.com/blog/portfolio-management/market-cap-weighted-allocation-explained-for-crypto/)**
+> Related reading: **[Market Cap Weighted Allocation Explained](https://autoinsureguides.com/blog/portfolio-management/market-cap-weighted-allocation-explained-for-crypto/)**
 
 ---
 
@@ -51,7 +51,7 @@ You ask:
 
 The goal isn’t to kill upside.  
 The goal is to **keep total portfolio risk consistent**, even when markets get chaotic.  
-> Learn more about **[Dynamic Portfolio Allocation](https://txchyon.com/blog/portfolio-management/dynamic-portfolio-allocation-for-crypto-adjusting-to-market-conditions/)**.
+> Learn more about **[Dynamic Portfolio Allocation](https://autoinsureguides.com/blog/portfolio-management/dynamic-portfolio-allocation-for-crypto-adjusting-to-market-conditions/)**.
 
 ---
 
@@ -67,7 +67,7 @@ Consider this:
 - Smaller alts can swing ±30–60%  
 
 If you allocate 20% to each, your portfolio risk is **not evenly distributed** — it’s dominated by the wildest asset.  
-> Related: **[Time-Based vs Threshold Rebalancing](https://txchyon.com/blog/portfolio-management/time-based-vs-threshold-rebalancing-for-crypto-portfolios/)**
+> Related: **[Time-Based vs Threshold Rebalancing](https://autoinsureguides.com/blog/portfolio-management/time-based-vs-threshold-rebalancing-for-crypto-portfolios/)**
 
 ---
 
@@ -91,7 +91,7 @@ You might see something like:
 - Alts 20%  
 
 Even though alts are only 20%, they may still contribute **as much risk** as Bitcoin.  
-> For more on measuring risk: **[How to Track Crypto Portfolio Performance](https://txchyon.com/blog/portfolio-management/how-to-track-crypto-portfolio-performance-metrics-that-actually-matter/)**
+> For more on measuring risk: **[How to Track Crypto Portfolio Performance](https://autoinsureguides.com/blog/portfolio-management/how-to-track-crypto-portfolio-performance-metrics-that-actually-matter/)**
 
 ---
 
@@ -122,7 +122,7 @@ Result:
 Same assets.  
 Same market.  
 Very different experience.  
-> See also **[Rebalancing Step-by-Step Guide](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio-simple-step-by-step-guide/)** for executing adjustments.
+> See also **[Rebalancing Step-by-Step Guide](https://autoinsureguides.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio-simple-step-by-step-guide/)** for executing adjustments.
 
 ---
 
@@ -136,7 +136,7 @@ Most investors use:
 A simple rule of thumb:
 - If an asset moves **twice as much** as Bitcoin, give it **roughly half the weight**  
 
-> Related metric insights: **[Performance Metrics That Actually Matter](https://txchyon.com/blog/portfolio-management/how-to-track-crypto-portfolio-performance-metrics-that-actually-matter/)**
+> Related metric insights: **[Performance Metrics That Actually Matter](https://autoinsureguides.com/blog/portfolio-management/how-to-track-crypto-portfolio-performance-metrics-that-actually-matter/)**
 
 ---
 
@@ -160,7 +160,7 @@ High-volatility assets get capped — not eliminated.
 
 ### Step 5: Rebalance When Volatility Shifts
 As markets calm or heat up, weights adjust.  
-> For full execution guide: **[How to Rebalance a Crypto Portfolio](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio-simple-step-by-step-guide/)**
+> For full execution guide: **[How to Rebalance a Crypto Portfolio](https://autoinsureguides.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio-simple-step-by-step-guide/)**
 
 ---
 
@@ -178,7 +178,7 @@ Volatility-adjusted allocation:
 - Makes drawdowns survivable  
 - Keeps decision-making rational  
 
-> Related reading: **[Risk Management in Crypto Portfolios](https://txchyon.com/categories/portfolio-management/)**
+> Related reading: **[Risk Management in Crypto Portfolios](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 
@@ -193,4 +193,4 @@ It simply **controls risk intelligently**.
 Jason didn’t become rich overnight using this method — but he stayed in the game, avoided emotional blowups, and positioned himself to compound over time.  
 
 And in crypto, **survival is the real edge**.  
-> Explore more strategies: **[Txchyon Portfolio Management Hub](https://txchyon.com/categories/portfolio-management/)**
+> Explore more strategies: **[autoinsureguides Portfolio Management Hub](https://autoinsureguides.com/categories/portfolio-management/)**

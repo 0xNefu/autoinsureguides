@@ -6,7 +6,7 @@ updatedDate: 2026-1-2
 image: "/images/posts/airdrops2.jpg"
 heroImageAlt: "Blockchain analytics dashboard evaluating wallet activity and eligibility signals"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Airdrop Farming
   - Eligibility Optimization

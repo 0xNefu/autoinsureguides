@@ -6,7 +6,7 @@ updatedDate: 2026-1-1
 image: "/images/posts/onchaindd.jpg"
 heroImageAlt: "Crypto investor analyzing blockchain wallet data and token transactions"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - On-Chain Analysis
   - Crypto Due Diligence

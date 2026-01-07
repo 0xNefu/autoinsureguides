@@ -6,7 +6,7 @@ updatedDate: 2025-12-24
 image: "/images/posts/best-crypto-antivirus-2026.jpg"
 heroImageAlt: "A digital shield protecting a laptop displaying crypto wallets from viruses and malware icons"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Antivirus", "Crypto Security", "Malware Protection", "Clipboard Hijacker", "Keylogger", "Device Security", "2026 Guide"]
 category: "security-privacy"
 subcategory: "advanced"

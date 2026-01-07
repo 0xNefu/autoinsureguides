@@ -12,14 +12,14 @@ const email = urlParams.get('email');
 
 if (email) {
   // Grant FULL access (they completed subscription)
-  localStorage.setItem('txchyon_subscriber', 'true');
-  localStorage.setItem('txchyon_subscriber_email', email);
-  localStorage.setItem('txchyon_beehiiv_verified', 'true');
+  localStorage.setItem('autoinsureguides_subscriber', 'true');
+  localStorage.setItem('autoinsureguides_subscriber_email', email);
+  localStorage.setItem('autoinsureguides_beehiiv_verified', 'true');
   
   console.log('🔓 Full access granted to:', email);
   
   // Redirect back to where they came from
-  const returnTo = localStorage.getItem('txchyon_return_to') || '/';
+  const returnTo = localStorage.getItem('autoinsureguides_return_to') || '/';
   setTimeout(() => {
     window.location.href = returnTo + '?subscribed=true';
   }, 2000);
@@ -27,8 +27,8 @@ if (email) {
   // No email in URL, ask for it
   const userEmail = prompt('Welcome! Please enter your email to verify subscription:');
   if (userEmail) {
-    localStorage.setItem('txchyon_subscriber', 'true');
-    localStorage.setItem('txchyon_subscriber_email', userEmail);
+    localStorage.setItem('autoinsureguides_subscriber', 'true');
+    localStorage.setItem('autoinsureguides_subscriber_email', userEmail);
     window.location.href = '/?verified=true';
   }
 }

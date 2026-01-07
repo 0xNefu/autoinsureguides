@@ -6,7 +6,7 @@ updatedDate: 2025-12-22
 image: "/images/posts/metamask2.jpg"
 heroImageAlt: "MetaMask fox logo with setup steps on browser and mobile"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["MetaMask Setup", "MetaMask Tutorial", "Ethereum Wallet", "DeFi Wallet", "Beginner Guide"]
 category: "getting-started"
 subcategory: "wallet-setup"

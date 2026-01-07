@@ -6,7 +6,7 @@ updatedDate: 2025-12-29
 image: "/images/posts/kalshi1.jpg"
 heroImageAlt: "Kalshi platform screenshot showing event contracts"
 authors: ["Nefu"]
-authorTwitter: "txchyon"
+authorTwitter: "autoinsureguides"
 tags: ["prediction-markets", "regulated", "cftc"]
 category: "prediction-markets"
 subcategory: "platform-guides"
@@ -19,7 +19,7 @@ While crypto degens battled regulators on offshore platforms, Kalshi took the bo
 
 By late 2025, Kalshi hit $11 billion valuation after a $1 billion raise, processing billions in monthly volume, often outpacing Polymarket. Partnerships with CNN, CNBC, and even Phantom wallet for crypto access cemented its mainstream push. Over 90% of activity is now sports, but it started with macro events.
 
-If our [What Is Polymarket?](https://txchyon.com/blog/prediction-markets/what-is-polymarket) guide showed the wild crypto side, Kalshi is the polished, legal Wall Street version, fiat-friendly and state-proof thanks to federal oversight.
+If our [What Is Polymarket?](https://autoinsureguides.com/blog/prediction-markets/what-is-polymarket) guide showed the wild crypto side, Kalshi is the polished, legal Wall Street version, fiat-friendly and state-proof thanks to federal oversight.
 
 ![kalshi screenshot](/screenshots/kal1.jpg)
 
@@ -89,4 +89,4 @@ Kalshi turned prediction markets mainstream, proving regulation can fuel explosi
 
 If legality and scale matter, this is your platform. The tortoise won the race.
 
-Check out the rest of our [Prediction Markets](https://txchyon.com/categories/prediction-markets/) category for deep dives on other platforms. Next up: more guides to help you navigate this growing space.
+Check out the rest of our [Prediction Markets](https://autoinsureguides.com/categories/prediction-markets/) category for deep dives on other platforms. Next up: more guides to help you navigate this growing space.

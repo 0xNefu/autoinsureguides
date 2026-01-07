@@ -1,9 +1,9 @@
-﻿// src/lib/categories.js - FULL CATEGORY HIERARCHY WITH 13 PILLARS (UPDATED)
+// src/lib/categories.js - FULL CATEGORY HIERARCHY WITH 13 PILLARS (UPDATED)
 export const CATEGORY_HIERARCHY = {
   "getting-started": {
     name: "Getting Started",
     description: "Beginner guides to cryptocurrency, wallets, and your first purchase",
-    icon: "🚀",
+    icon: "??",
     subcategories: {
       "basics": "Basics & Terminology",
       "first-purchase": "First Purchase Guides",
@@ -16,7 +16,7 @@ export const CATEGORY_HIERARCHY = {
   "security-privacy": {
     name: "Security & Privacy",
     description: "Protect your crypto assets with hardware wallets, security guides, and scam prevention",
-    icon: "🔐",
+    icon: "??",
     subcategories: {
       "hardware-wallets": "Hardware Wallets",
       "software-wallets": "Software Wallets",
@@ -31,7 +31,7 @@ export const CATEGORY_HIERARCHY = {
   "trading-investing": {
     name: "Trading & Investing",
     description: "Spot trading, derivatives, technical analysis, and venture investing",
-    icon: "📈",
+    icon: "??",
     subcategories: {
       "spot-trading": "Spot Trading",
       "derivatives": "Derivatives (Perps, Futures, Options)",
@@ -46,7 +46,7 @@ export const CATEGORY_HIERARCHY = {
   "defi-yield": {
     name: "DeFi & Yield",
     description: "DEXs, liquidity providing, lending, and yield strategies",
-    icon: "🏦",
+    icon: "??",
     subcategories: {
       "dexs-swapping": "DEXs & Swapping",
       "liquidity-providing": "Liquidity Providing",
@@ -61,7 +61,7 @@ export const CATEGORY_HIERARCHY = {
   "airdrop-farming": {
     name: "Airdrop Farming",
     description: "Wallet strategy, points systems, and optimization techniques",
-    icon: "🎁",
+    icon: "??",
     subcategories: {
       "wallet-strategy": "Wallet Strategy",
       "points-systems": "Points Systems",
@@ -76,7 +76,7 @@ export const CATEGORY_HIERARCHY = {
   "infrastructure-tech": {
     name: "Infrastructure & Tech",
     description: "Layer 1/2s, oracles, bridges, ZK tech, and AI x Crypto",
-    icon: "⚙️",
+    icon: "??",
     subcategories: {
       "layer-1s": "Layer 1s",
       "layer-2s-rollups": "Layer 2s & Rollups",
@@ -91,7 +91,7 @@ export const CATEGORY_HIERARCHY = {
   "tools-automation": {
     name: "Tools & Automation",
     description: "Trading bots, analytics, portfolio trackers, and automation scripts",
-    icon: "🛠️",
+    icon: "???",
     subcategories: {
       "trading-bots": "Trading Bots",
       "analytics-platforms": "Analytics Platforms",
@@ -106,7 +106,7 @@ export const CATEGORY_HIERARCHY = {
   "research-analysis": {
     name: "Research & Analysis",
     description: "Due diligence, tokenomics analysis, and risk assessment",
-    icon: "🔬",
+    icon: "??",
     subcategories: {
       "due-diligence-framework": "Due Diligence Framework",
       "tokenomics-analysis": "Tokenomics Analysis",
@@ -120,7 +120,7 @@ export const CATEGORY_HIERARCHY = {
   "regulatory-tax": {
     name: "Regulatory & Tax",
     description: "Global regulations, tax reporting, compliance, and legal structures",
-    icon: "⚖️",
+    icon: "??",
     subcategories: {
       "global-regulations": "Global Regulations",
       "tax-reporting": "Tax Reporting",
@@ -135,7 +135,7 @@ export const CATEGORY_HIERARCHY = {
   "portfolio-management": {
     name: "Portfolio Management",
     description: "Allocation strategies, risk management, and performance tracking",
-    icon: "💼",
+    icon: "??",
     subcategories: {
       "allocation-strategies": "Allocation Strategies",
       "rebalancing-methods": "Rebalancing Methods",
@@ -149,7 +149,7 @@ export const CATEGORY_HIERARCHY = {
   "prediction-markets": {
     name: "Prediction Markets",
     description: "On-chain prediction platforms, event betting strategies, liquidity, arbitrage, and real-world outcome markets",
-    icon: "🎲",
+    icon: "??",
     subcategories: {
       "platform-guides": "Platform Guides",
       "event-strategies": "Event Strategies",
@@ -165,41 +165,41 @@ export const CATEGORY_HIERARCHY = {
 
   // NEW PILLAR 1: Alpha & Insider Strategies
   "alpha-insider": {
-    name: "Alpha & Insider Strategies 🔒",
+    name: "Alpha & Insider Strategies ??",
     description: "Exclusive early DEX arbitrage, memecoin whitelists, high-frequency airdrop tactics, and alpha discovery systems",
-    icon: "🔒",
+    icon: "??",
     subcategories: {
-      "early-dex-arbitrage": "⚡ Early DEX Arbitrage",
-      "memecoin-nft-whitelists": "🎯 Memecoin & NFT Whitelist Strategies",
-      "high-frequency-airdrops": "🔥 High-Frequency Airdrop Tactics",
-      "smart-contract-sniping": "🛡️ Smart Contract Sniping",
-      "liquidity-market-depth-alpha": "💧 Liquidity & Market Depth Alpha",
-      "cross-chain-alpha-arbitrage": "🌉 Cross-Chain Alpha & Arbitrage",
-      "insider-governance-dao-plays": "🏛️ Insider Governance & DAO Plays",
-      "token-launch-fair-launch-tactics": "🚀 Token Launch & Fair Launch Tactics",
-      "private-testnet-beta-exploits": "🧪 Private Testnet & Beta Exploits",
-      "on-chain-analytics-wallet-shadowing": "🔍 On-Chain Analytics & Wallet Shadowing"
+      "early-dex-arbitrage": "? Early DEX Arbitrage",
+      "memecoin-nft-whitelists": "?? Memecoin & NFT Whitelist Strategies",
+      "high-frequency-airdrops": "?? High-Frequency Airdrop Tactics",
+      "smart-contract-sniping": "??? Smart Contract Sniping",
+      "liquidity-market-depth-alpha": "?? Liquidity & Market Depth Alpha",
+      "cross-chain-alpha-arbitrage": "?? Cross-Chain Alpha & Arbitrage",
+      "insider-governance-dao-plays": "??? Insider Governance & DAO Plays",
+      "token-launch-fair-launch-tactics": "?? Token Launch & Fair Launch Tactics",
+      "private-testnet-beta-exploits": "?? Private Testnet & Beta Exploits",
+      "on-chain-analytics-wallet-shadowing": "?? On-Chain Analytics & Wallet Shadowing"
     }
   },
 
   // NEW PILLAR 2: Web3 Gaming & Metaverse
   "web3-gaming-metaverse": {
-    name: "Web3 Gaming & Metaverse 🔒",
+    name: "Web3 Gaming & Metaverse ??",
     description: "Exclusive play-to-earn strategies, NFT game assets, metaverse land, early access plays, and guild dynamics",
-    icon: "🎮",
+    icon: "??",
     subcategories: {
-      "play-to-earn-strategies": "🎮 Play-to-Earn Strategies",
-      "nft-game-assets": "🏆 NFT Game Assets",
-      "metaverse-land-real-estate": "🌐 Metaverse Land & Real Estate",
-      "game-economy-tokenomics": "💹 Game Economy & Tokenomics",
-      "early-access-insider-play": "⚡ Early Access & Insider Play",
-      "cross-game-multiverse-strategies": "🔗 Cross-Game & Multi-Metaverse Strategies",
-      "guilds-teams-community": "🛡️ Guilds, Teams & Community Dynamics",
-      "defi-integration-gamers": "🏦 DeFi Integration for Gamers",
-      "risk-management-exit": "🧰 Risk Management & Exit Strategy",
-      "rare-event-opportunities": "🎯 Rare Event & Limited-Time Opportunities",
-      "tools-trackers-analytics": "📊 Tools, Trackers & Analytics for Gamers",
-      "social-competitive-alpha": "🏆 Social & Competitive Alpha"
+      "play-to-earn-strategies": "?? Play-to-Earn Strategies",
+      "nft-game-assets": "?? NFT Game Assets",
+      "metaverse-land-real-estate": "?? Metaverse Land & Real Estate",
+      "game-economy-tokenomics": "?? Game Economy & Tokenomics",
+      "early-access-insider-play": "? Early Access & Insider Play",
+      "cross-game-multiverse-strategies": "?? Cross-Game & Multi-Metaverse Strategies",
+      "guilds-teams-community": "??? Guilds, Teams & Community Dynamics",
+      "defi-integration-gamers": "?? DeFi Integration for Gamers",
+      "risk-management-exit": "?? Risk Management & Exit Strategy",
+      "rare-event-opportunities": "?? Rare Event & Limited-Time Opportunities",
+      "tools-trackers-analytics": "?? Tools, Trackers & Analytics for Gamers",
+      "social-competitive-alpha": "?? Social & Competitive Alpha"
     }
   }
 };

@@ -6,7 +6,7 @@ updatedDate: 2025-12-24
 image: "/images/posts/on-chain-security-2026.jpg"
 heroImageAlt: "A blockchain network with protective shields blocking malicious contract interactions and approvals"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["On-Chain Security", "Wallet Protection", "Revoke Approvals", "Drainers", "EVM Security", "Solana Security", "Exploits"]
 category: "security-privacy"
 subcategory: "advanced"

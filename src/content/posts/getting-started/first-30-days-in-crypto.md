@@ -6,7 +6,7 @@ updatedDate: 2025-12-30
 image: "/images/posts/beginners2.jpg"
 heroImageAlt: "A calendar showing a 30-day crypto journey with icons for wallets, coins, charts, and security"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["beginner-crypto", "crypto-roadmap", "wallet-setup", "first-purchase", "crypto-education"]
 category: "getting-started"
 subcategory: "basics"
@@ -29,7 +29,7 @@ Decide whether you want a **custodial** wallet (managed by an exchange) or **non
 
 > *Not your keys, not your coins.*
 
-Learn more here: [Cold vs Hot Wallets: Optimizing Security and Eligibility](https://txchyon.com/blog/airdrop-farming/cold-vs-hot-wallets-optimizing-security-and-eligibility)
+Learn more here: [Cold vs Hot Wallets: Optimizing Security and Eligibility](https://autoinsureguides.com/blog/airdrop-farming/cold-vs-hot-wallets-optimizing-security-and-eligibility)
 
 ### 2. Set Up Your First Wallet
 
@@ -39,8 +39,8 @@ Choose a beginner-friendly wallet like **Trust Wallet** or **MetaMask**. Follow 
 - Enable extra security (PIN, biometrics)
 - Start with small amounts
 
-Check out: [Set up your first wallet](https://txchyon.com/blog/getting-started/how-to-setup-bitocoin-wallet)  
-Or our detailed tutorial: [How to Set Up Trust Wallet](https://txchyon.com/blog/getting-started/how-to-set-up-trust-wallet)
+Check out: [Set up your first wallet](https://autoinsureguides.com/blog/getting-started/how-to-setup-bitocoin-wallet)  
+Or our detailed tutorial: [How to Set Up Trust Wallet](https://autoinsureguides.com/blog/getting-started/how-to-set-up-trust-wallet)
 
 ### 3. Learn Crypto Basics
 
@@ -50,7 +50,7 @@ Spend time learning:
 - How transactions work
 - Gas and network fees
 
-Internal reference: [How Crypto Transactions Actually Work: From Click to Confirmation](https://txchyon.com/blog/getting-started/how-crypto-transactions-actually-work)
+Internal reference: [How Crypto Transactions Actually Work: From Click to Confirmation](https://autoinsureguides.com/blog/getting-started/how-crypto-transactions-actually-work)
 
 ---
 
@@ -65,7 +65,7 @@ For beginners, use reputable platforms with clear KYC requirements. Remember:
 - Custodial vs non-custodial distinctions
 - KYC is often required for fiat on-ramps
 
-Learn more: [Do I Need KYC to Use Crypto? Beginner's Guide](https://txchyon.com/blog/getting-started/do-i-need-kyc-to-use-crypto)
+Learn more: [Do I Need KYC to Use Crypto? Beginner's Guide](https://autoinsureguides.com/blog/getting-started/do-i-need-kyc-to-use-crypto)
 
 ### 2. Start Small
 
@@ -97,11 +97,11 @@ Beginner-friendly apps help you monitor balances without overcomplicating things
 - Manual spreadsheet tracking
 - Privacy tradeoffs
 
-Guide: [How to Track Your Crypto Portfolio as a Beginner](https://txchyon.com/blog/getting-started/how-to-track-your-crypto-portfolio)
+Guide: [How to Track Your Crypto Portfolio as a Beginner](https://autoinsureguides.com/blog/getting-started/how-to-track-your-crypto-portfolio)
 
 ### 2. Explore DeFi and Stablecoins
 
-Learn **what stablecoins are** and why beginners use them for holding or moving funds: [What Are Stablecoins and Why Beginners Should Care](https://txchyon.com/blog/getting-started/what-are-stablecoins)
+Learn **what stablecoins are** and why beginners use them for holding or moving funds: [What Are Stablecoins and Why Beginners Should Care](https://autoinsureguides.com/blog/getting-started/what-are-stablecoins)
 
 ### 3. Reinforce Security Habits
 
@@ -109,7 +109,7 @@ Learn **what stablecoins are** and why beginners use them for holding or moving 
 - Never share private keys or recovery phrases  
 - Consider hot vs cold wallets for different balances
 
-Further reading: [Cold vs Hot Wallets: Optimizing Security and Eligibility](https://txchyon.com/blog/airdrop-farming/cold-vs-hot-wallets-optimizing-security-and-eligibility)
+Further reading: [Cold vs Hot Wallets: Optimizing Security and Eligibility](https://autoinsureguides.com/blog/airdrop-farming/cold-vs-hot-wallets-optimizing-security-and-eligibility)
 
 ---
 
@@ -129,7 +129,7 @@ Think of yourself as your own bank:
 
 - Responsibility for security is yours
 - Learn to evaluate projects before investing
-- Familiarize yourself with scams and social engineering: [Crypto Scams Explained: How Beginners Actually Get Wiped](https://txchyon.com/blog/getting-started/crypto-scams-explained)
+- Familiarize yourself with scams and social engineering: [Crypto Scams Explained: How Beginners Actually Get Wiped](https://autoinsureguides.com/blog/getting-started/crypto-scams-explained)
 
 ### 3. Set Up Ongoing Learning
 
@@ -152,6 +152,6 @@ By following this roadmap, beginners can go from zero knowledge to **active, con
 
 **Next Steps:**
 
-- Set up your wallet → [Set up your first wallet](https://txchyon.com/blog/getting-started/how-to-setup-bitocoin-wallet)  
-- Learn transactions → [How Crypto Transactions Actually Work: From Click to Confirmation](https://txchyon.com/blog/getting-started/how-crypto-transactions-actually-work)  
-- Understand security → [Cold vs Hot Wallets: Optimizing Security and Eligibility](https://txchyon.com/blog/airdrop-farming/cold-vs-hot-wallets-optimizing-security-and-eligibility)
+- Set up your wallet → [Set up your first wallet](https://autoinsureguides.com/blog/getting-started/how-to-setup-bitocoin-wallet)  
+- Learn transactions → [How Crypto Transactions Actually Work: From Click to Confirmation](https://autoinsureguides.com/blog/getting-started/how-crypto-transactions-actually-work)  
+- Understand security → [Cold vs Hot Wallets: Optimizing Security and Eligibility](https://autoinsureguides.com/blog/airdrop-farming/cold-vs-hot-wallets-optimizing-security-and-eligibility)

@@ -6,7 +6,7 @@ updatedDate: 2026-01-02
 image: "/images/posts/redflags2.jpg"
 heroImageAlt: "Crypto warning signs with charts and tokens, highlighting red flags"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Crypto Tokenomics
   - Token Red Flags

@@ -6,7 +6,7 @@ updatedDate: 2026-01-02
 image: "/images/posts/checklist2.jpg"
 heroImageAlt: "Crypto tokenomics checklist with charts and metrics visualized digitally"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Crypto Tokenomics
   - Token Analysis

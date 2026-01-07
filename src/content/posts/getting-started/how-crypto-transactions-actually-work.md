@@ -6,7 +6,7 @@ updatedDate: 2025-12-30
 image: "/images/posts/howcryptowork.jpg"
 heroImageAlt: "A flowchart showing the path of a crypto transaction from wallet to blockchain confirmation"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto-transactions", "blockchain-basics", "mempool", "gas-fees", "crypto-beginners"]
 category: "getting-started"
 subcategory: "basics"
@@ -31,7 +31,7 @@ Every crypto transaction follows a similar path:
 
 Think of it as mailing a letter. Your wallet is the post office, the mempool is the sorting facility, miners/validators are the delivery drivers, and confirmations are the signatures ensuring delivery.
 
-> **Pro Tip:** Understanding mempools helps you predict delays and fee spikes. Learn more about [crypto fees explained](https://txchyon.com/blog/getting-started/crypto-fees-explained).
+> **Pro Tip:** Understanding mempools helps you predict delays and fee spikes. Learn more about [crypto fees explained](https://autoinsureguides.com/blog/getting-started/crypto-fees-explained).
 
 ---
 
@@ -49,12 +49,12 @@ The mempool is essentially a waiting room for unconfirmed transactions. Every no
 
 Fees are essential. They incentivize validators to include your transaction in a block.
 
-- **Ethereum:** Gas fees vary by network congestion. Use [wallets like Trust Wallet](https://txchyon.com/blog/getting-started/how-to-set-up-trust-wallet) to estimate fees.  
+- **Ethereum:** Gas fees vary by network congestion. Use [wallets like Trust Wallet](https://autoinsureguides.com/blog/getting-started/how-to-set-up-trust-wallet) to estimate fees.  
 - **Solana:** Typically lower and more predictable.  
 - **Exchanges:** May charge extra withdrawal or conversion fees.  
 - **Bridges and swaps:** Hidden slippage and liquidity costs may apply.
 
-> Including memecoin transactions? Fees spike during launches—plan accordingly and check [our tools page](https://txchyon.com/tools).
+> Including memecoin transactions? Fees spike during launches—plan accordingly and check [our tools page](https://autoinsureguides.com/tools).
 
 ---
 
@@ -77,7 +77,7 @@ Reasons include:
 - Network congestion  
 - Wallet misconfigurations
 
-> Avoid stress by starting with **small test transactions**. Read more about [first-time crypto safety](https://txchyon.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto).
+> Avoid stress by starting with **small test transactions**. Read more about [first-time crypto safety](https://autoinsureguides.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto).
 
 ---
 
@@ -89,13 +89,13 @@ Understanding transactions builds confidence to:
 - Explore blockchain explorers  
 - Prepare for memecoin participation and yield farming  
 
-Next, dive into [crypto fees explained](https://txchyon.com/blog/getting-started/crypto-fees-explained) to understand the costs behind every click.
+Next, dive into [crypto fees explained](https://autoinsureguides.com/blog/getting-started/crypto-fees-explained) to understand the costs behind every click.
 
 ---
 
 **Internal Links for Next Steps:**
 
-- [Set Up Your First Wallet](https://txchyon.com/blog/getting-started/how-to-setup-bitocoin-wallet)  
-- [Crypto Fees Explained](https://txchyon.com/blog/getting-started/crypto-fees-explained)  
-- [Your First 30 Days in Crypto](https://txchyon.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto)  
-- [Tools for Beginners & Memecoin Launches](https://txchyon.com/tools)
+- [Set Up Your First Wallet](https://autoinsureguides.com/blog/getting-started/how-to-setup-bitocoin-wallet)  
+- [Crypto Fees Explained](https://autoinsureguides.com/blog/getting-started/crypto-fees-explained)  
+- [Your First 30 Days in Crypto](https://autoinsureguides.com/blog/getting-started/what-to-do-before-you-buy-your-first-crypto)  
+- [Tools for Beginners & Memecoin Launches](https://autoinsureguides.com/tools)

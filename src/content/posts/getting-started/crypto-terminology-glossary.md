@@ -6,7 +6,7 @@ updatedDate: 2025-12-21
 image: "/images/posts/glossary1.jpg"
 heroImageAlt: "A clean digital illustration of interconnected blockchain nodes with key crypto terms floating around them"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Basics", "Terminology", "Glossary", "Blockchain", "Bitcoin", "Beginner Guide", "DeFi", "Wallet"]
 category: "getting-started"
 subcategory: "basics"
@@ -21,7 +21,7 @@ This glossary is designed specifically for beginners. It covers 100 of the most 
 
 As the crypto ecosystem evolves rapidly, having a clear grasp of the basics helps you make informed decisions. Once you are familiar with these concepts, you will find it easier to explore topics like choosing an exchange or setting up a wallet.
 
-For practical next steps, check out our guide on the [best crypto exchanges for beginners](https://txchyon.com/blog/getting-started/best-crypto-exchanges) or learn [how to buy crypto safely](https://txchyon.com/blog/getting-started/how-to-buy-crypto).
+For practical next steps, check out our guide on the [best crypto exchanges for beginners](https://autoinsureguides.com/blog/getting-started/best-crypto-exchanges) or learn [how to buy crypto safely](https://autoinsureguides.com/blog/getting-started/how-to-buy-crypto).
 
 The terms below are organized alphabetically for easy reference.
 
@@ -252,6 +252,6 @@ This covers the core 50 terms most frequently encountered by newcomers. Below ar
 
 Mastering this vocabulary does more than help you follow conversations. It empowers you to evaluate projects, spot potential risks, and navigate platforms confidently. Many beginners lose funds simply because they misunderstand basic concepts like private keys or phishing attempts.
 
-With these terms in your toolkit, you are ready to take practical steps. Explore our detailed tutorials on [setting up a Phantom wallet](https://txchyon.com/blog/getting-started/how-to-setup-phantom-wallet) for Solana or learn the fundamentals of secure storage in our [best crypto exchanges guide](https://txchyon.com/blog/getting-started/best-crypto-exchanges).
+With these terms in your toolkit, you are ready to take practical steps. Explore our detailed tutorials on [setting up a Phantom wallet](https://autoinsureguides.com/blog/getting-started/how-to-setup-phantom-wallet) for Solana or learn the fundamentals of secure storage in our [best crypto exchanges guide](https://autoinsureguides.com/blog/getting-started/best-crypto-exchanges).
 
 Crypto continues to mature in 2026, but the foundational terms remain largely the same. Bookmark this page and refer back as needed. Welcome to the space – informed beginners become the most successful long-term participants.

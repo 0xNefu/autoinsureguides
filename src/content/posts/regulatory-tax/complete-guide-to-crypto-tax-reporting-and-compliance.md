@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/crypto-tax-reporting-guide.jpg"
 heroImageAlt: "Crypto tax dashboard showing gains, losses, and reporting tools"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto tax reporting", "cryptocurrency taxable events", "crypto tax software", "crypto compliance", "crypto tax guide"]
 category: "regulatory-tax"
 subcategory: "tax-reporting"
@@ -96,10 +96,10 @@ Manual calculations for a few trades are fine. Thousands? Nightmare. That’s wh
 
 ### 🔹 Popular Tools
 
-- **[Koinly](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software):** imports wallets and exchange data, calculates gains/losses, produces tax-ready reports  
-- **[CoinLedger](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software):** similar features, also works for businesses  
-- **[TokenTax](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software):** integrates with DeFi protocols and derivatives  
-- **[CryptoTrader-Tax](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software):** good for active traders with many exchanges  
+- **[Koinly](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software):** imports wallets and exchange data, calculates gains/losses, produces tax-ready reports  
+- **[CoinLedger](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software):** similar features, also works for businesses  
+- **[TokenTax](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software):** integrates with DeFi protocols and derivatives  
+- **[CryptoTrader-Tax](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software):** good for active traders with many exchanges  
 
 > Pro tip: Pick one, stick with it, and **sync all wallets and exchanges**. You’ll save hours during tax season.
 
@@ -129,7 +129,7 @@ Manual calculations for a few trades are fine. Thousands? Nightmare. That’s wh
 - Must track **income, expenses, and payroll in crypto**  
 - Maintain **AML/KYC compliance alongside taxes**  
 - Prepare for **audits** using detailed reports  
-- Tools like [crypto-compliance-tools](https://txchyon.com/blog/regulatory-tax/crypto-compliance-tools) are essential  
+- Tools like [crypto-compliance-tools](https://autoinsureguides.com/blog/regulatory-tax/crypto-compliance-tools) are essential  
 
 ---
 
@@ -149,9 +149,9 @@ Even with software, you need good habits:
 
 To build a full compliance workflow, check out these other articles:  
 
-- [Global Crypto Regulations](https://txchyon.com/blog/regulatory-tax/global-crypto-regulations) — know the rules wherever you operate  
-- [Compliance Tools](https://txchyon.com/blog/regulatory-tax/crypto-compliance-tools) — software to help businesses scale safely  
-- [Entity Formation](https://txchyon.com/blog/regulatory-tax/crypto-entity-formation) — whether you need an LLC or corporation for your trading  
+- [Global Crypto Regulations](https://autoinsureguides.com/blog/regulatory-tax/global-crypto-regulations) — know the rules wherever you operate  
+- [Compliance Tools](https://autoinsureguides.com/blog/regulatory-tax/crypto-compliance-tools) — software to help businesses scale safely  
+- [Entity Formation](https://autoinsureguides.com/blog/regulatory-tax/crypto-entity-formation) — whether you need an LLC or corporation for your trading  
 
 This creates a **full evergreen network** of compliance content.
 

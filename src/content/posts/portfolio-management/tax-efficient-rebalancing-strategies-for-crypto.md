@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/rebalancing.jpg"
 heroImageAlt: "Crypto portfolio rebalancing chart highlighting tax optimization"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Tax-Efficient Rebalancing", "Tax-Loss Harvesting", "Allocation", "Risk Management"]
 category: "portfolio-management"
 subcategory: "rebalancing-methods"
@@ -21,7 +21,7 @@ Tax-efficient rebalancing **reduces taxable events** when adjusting allocations:
 - Avoid unnecessary sales  
 - Plan trades around gains and losses
 
-> Links to: **[Crypto Tax-Loss Harvesting Explained (Save on Capital Gains)](https://txchyon.com/categories/portfolio-management/)**
+> Links to: **[Crypto Tax-Loss Harvesting Explained (Save on Capital Gains)](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 
@@ -30,7 +30,7 @@ Tax-efficient rebalancing **reduces taxable events** when adjusting allocations:
 1. Identify positions with unrealized losses  
 2. Prioritize selling them to offset gains  
 3. Adjust other allocations using minimal taxable trades  
-4. Track portfolio performance: **[How to Track Crypto Portfolio Performance (Metrics That Actually Matter)](https://txchyon.com/categories/portfolio-management/)**
+4. Track portfolio performance: **[How to Track Crypto Portfolio Performance (Metrics That Actually Matter)](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 

@@ -6,7 +6,7 @@ updatedDate: 2025-12-29
 image: "/images/posts/bitcoin-node.jpg"
 heroImageAlt: "Bitcoin full node syncing the blockchain on a dedicated computer"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["bitcoin", "bitcoin node", "full node", "privacy", "self-sovereignty"]
 category: "infrastructure-tech"
 subcategory: "layer-1s"
@@ -39,7 +39,7 @@ There are roughly 18,000–23,000 reachable full nodes worldwide as of late 2025
 3. **Light/SPV Nodes**  
    Used in mobile wallets (e.g., Electrum, BlueWallet). They rely on full nodes for data and offer less privacy and security. While convenient, they don't contribute to the network's decentralization.
 
-Running a full or pruned node is what most people mean when they say "run your own Bitcoin node." For those interested in scaling up, consider integrating with Layer 2 solutions like the Lightning Network, as detailed in our [How to Set Up a Bitcoin Lightning Network Node](https://txchyon.com/blog/infrastructure-tech/how-to-setup-up-lightning-network-node).
+Running a full or pruned node is what most people mean when they say "run your own Bitcoin node." For those interested in scaling up, consider integrating with Layer 2 solutions like the Lightning Network, as detailed in our [How to Set Up a Bitcoin Lightning Network Node](https://autoinsureguides.com/blog/infrastructure-tech/how-to-setup-up-lightning-network-node).
 
 ### Why Run Your Own Bitcoin Node in 2026?
 
@@ -82,7 +82,7 @@ Running a full node is more accessible than ever:
 
 **Software**: Bitcoin Core (free, open-source, most widely used). Alternatives include Knots or custom implementations.
 
-For detailed comparisons and recommendations on the best hardware setups, check out our [Best Hardware for Running a Bitcoin Node in 2026](https://txchyon.com/blog/infrastructure-tech/best-hardware-for-bitcoin-nodes-2026). If you're leaning towards a compact, energy-efficient option, our [How to Set Up a Bitcoin Node on Raspberry Pi](https://txchyon.com/blog/infrastructure-tech/how-to-set-up-bitcoin-node-on-raspberry-pi) provides a hands-on tutorial.
+For detailed comparisons and recommendations on the best hardware setups, check out our [Best Hardware for Running a Bitcoin Node in 2026](https://autoinsureguides.com/blog/infrastructure-tech/best-hardware-for-bitcoin-nodes-2026). If you're leaning towards a compact, energy-efficient option, our [How to Set Up a Bitcoin Node on Raspberry Pi](https://autoinsureguides.com/blog/infrastructure-tech/how-to-set-up-bitcoin-node-on-raspberry-pi) provides a hands-on tutorial.
 
 ### Easy Ways to Get Started
 
@@ -97,7 +97,7 @@ For detailed comparisons and recommendations on the best hardware setups, check 
 - **Start9 Embassy**: User-friendly device with beautiful interface
 - **Umbrel**: Popular home server with node + apps (podcasting, media, etc.)
 
-These come with one-click Bitcoin node setup and take minutes to configure. Many of these solutions also support easy Lightning Network integration, which you can explore further in [How to Set Up a Bitcoin Lightning Network Node](https://txchyon.com/blog/infrastructure-tech/how-to-setup-up-lightning-network-node).
+These come with one-click Bitcoin node setup and take minutes to configure. Many of these solutions also support easy Lightning Network integration, which you can explore further in [How to Set Up a Bitcoin Lightning Network Node](https://autoinsureguides.com/blog/infrastructure-tech/how-to-setup-up-lightning-network-node).
 
 ### Advanced Considerations
 Once your node is up and running, consider enhancing it with privacy tools like Tor for anonymous connections or integrating it with personal servers for additional services. Monitoring tools can help track your node's performance and uptime. For those interested in earning from their node, opening Lightning channels allows you to route transactions and collect fees, turning your setup into a productive asset.
@@ -111,15 +111,15 @@ Once your node is up and running, consider enhancing it with privacy tools like 
 
 ### Final Thoughts
 
-Running a Bitcoin node is one of the most meaningful ways to participate in Bitcoin beyond just buying and holding. It aligns perfectly with self-custody principles covered in our [Security & Privacy pillar](https://txchyon.com/blog/security-privacy), especially when paired with hardware wallets and secure [seed phrase storage](/how-to-store-your-seed-phrase-safely).
+Running a Bitcoin node is one of the most meaningful ways to participate in Bitcoin beyond just buying and holding. It aligns perfectly with self-custody principles covered in our [Security & Privacy pillar](https://autoinsureguides.com/blog/security-privacy), especially when paired with hardware wallets and secure [seed phrase storage](/how-to-store-your-seed-phrase-safely).
 
 Whether you choose a simple pruned node on an old computer or a full-featured Umbrel setup, you'll gain privacy, independence, and the satisfaction of strengthening Bitcoin.
 
 Start small—your future self (and the network) will thank you.
 
 This article is part of our Bitcoin node cluster. For more in-depth guides, see:
-- [How to Set Up a Bitcoin Node on Raspberry Pi](https://txchyon.com/blog/infrastructure-tech/how-to-set-up-bitcoin-node-on-raspberry-pi)
-- [Best Hardware for Running a Bitcoin Node in 2026](https://txchyon.com/blog/infrastructure-tech/best-hardware-for-bitcoin-nodes-2026)
-- [How to Set Up a Bitcoin Lightning Network Node](https://txchyon.com/blog/infrastructure-tech/how-to-setup-up-lightning-network-node)
+- [How to Set Up a Bitcoin Node on Raspberry Pi](https://autoinsureguides.com/blog/infrastructure-tech/how-to-set-up-bitcoin-node-on-raspberry-pi)
+- [Best Hardware for Running a Bitcoin Node in 2026](https://autoinsureguides.com/blog/infrastructure-tech/best-hardware-for-bitcoin-nodes-2026)
+- [How to Set Up a Bitcoin Lightning Network Node](https://autoinsureguides.com/blog/infrastructure-tech/how-to-setup-up-lightning-network-node)
 
-For more on Bitcoin fundamentals, revisit [How to Buy Bitcoin for Beginners](https://txchyon.com/blog/getting-started/how-to-buy-bitcoin-for-beginners) and [Bitcoin vs Ethereum](https://txchyon.com/blog/getting-started/bitcoin-vs-ethereum).
+For more on Bitcoin fundamentals, revisit [How to Buy Bitcoin for Beginners](https://autoinsureguides.com/blog/getting-started/how-to-buy-bitcoin-for-beginners) and [Bitcoin vs Ethereum](https://autoinsureguides.com/blog/getting-started/bitcoin-vs-ethereum).

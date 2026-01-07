@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/bullbear.jpg"
 heroImageAlt: "Crypto portfolio rebalancing chart for bull and bear market scenarios"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Rebalancing", "Bull Market", "Bear Market", "Risk Management", "Allocation"]
 category: "portfolio-management"
 subcategory: "rebalancing-methods"
@@ -52,7 +52,7 @@ Rebalancing exists to correct **allocation drift** — but *how* your portfolio 
 The rules don’t change — but the **context does**.
 
 If you’re new to rebalancing mechanics, start here:
-👉 **[How to Rebalance a Crypto Portfolio (Simple Step-by-Step Guide)](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**
+👉 **[How to Rebalance a Crypto Portfolio (Simple Step-by-Step Guide)](https://autoinsureguides.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**
 
 ---
 
@@ -118,7 +118,7 @@ A common bull-market error:
 True rebalancing follows your **original allocation logic**, not Twitter trends.
 
 If allocation fundamentals aren’t clear yet:
-👉 **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
+👉 **[Crypto Portfolio Allocation for Beginners](https://autoinsureguides.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
 
 ---
 
@@ -147,7 +147,7 @@ Bear markets exaggerate risk:
 Ironically, **not rebalancing can increase risk**, even as portfolio value falls.
 
 This is where risk management matters more than performance:
-👉 **[Crypto Portfolio Risk Management Explained](https://txchyon.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**
+👉 **[Crypto Portfolio Risk Management Explained](https://autoinsureguides.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**
 
 ---
 
@@ -185,7 +185,7 @@ High volatility:
 Reducing exposure to high-volatility assets improves survivability.
 
 This pairs well with:
-👉 **[Volatility-Adjusted Portfolio Allocation](https://txchyon.com/blog/portfolio-management/volatility-adjusted-portfolio-allocation/)**
+👉 **[Volatility-Adjusted Portfolio Allocation](https://autoinsureguides.com/blog/portfolio-management/volatility-adjusted-portfolio-allocation/)**
 
 ---
 

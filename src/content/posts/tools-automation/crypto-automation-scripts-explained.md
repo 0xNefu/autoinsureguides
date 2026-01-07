@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/crypto-automation-scripts-2026.jpg"
 heroImageAlt: "Crypto automation workflow showing scripts, bots, APIs, and alerts connected together"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto automation", "automation scripts", "crypto bots", "webhooks", "no-code automation", "API automation"]
 category: "tools-automation"
 subcategory: "automation-scripts"
@@ -29,9 +29,9 @@ This guide explains:
 - How scripts connect analytics, alerts, and bots into one system
 
 This article builds on:
-- [Best Crypto Trading Bots in 2026](https://txchyon.com/best-crypto-trading-bots-2026)
-- [Best Crypto Analytics Platforms in 2026](https://txchyon.com/best-crypto-analytics-platforms-2026)
-- [Best Crypto Alert Tools in 2026](https://txchyon.com/best-crypto-alert-tools-2026)
+- [Best Crypto Trading Bots in 2026](https://autoinsureguides.com/best-crypto-trading-bots-2026)
+- [Best Crypto Analytics Platforms in 2026](https://autoinsureguides.com/best-crypto-analytics-platforms-2026)
+- [Best Crypto Alert Tools in 2026](https://autoinsureguides.com/best-crypto-alert-tools-2026)
 
 ---
 
@@ -78,7 +78,7 @@ Scripts are for traders who want **custom edges**.
 - Feed data into analytics dashboards
 
 This complements:
-- [Crypto Analytics Platforms](https://txchyon.com/best-crypto-analytics-platforms-2026)
+- [Crypto Analytics Platforms](https://autoinsureguides.com/best-crypto-analytics-platforms-2026)
 
 ---
 
@@ -104,7 +104,7 @@ Automatically:
 - Calculate PnL over time
 
 This works well alongside:
-- [Crypto Portfolio Trackers](https://txchyon.com/best-crypto-portfolio-trackers-2026)
+- [Crypto Portfolio Trackers](https://autoinsureguides.com/best-crypto-portfolio-trackers-2026)
 
 ---
 
@@ -167,7 +167,7 @@ Risk management tips:
 - Separate automation wallets from main holdings
 
 Review:
-- [10 Biggest Crypto Mistakes Beginners Make](https://txchyon.com/10-biggest-crypto-mistakes-beginners-make)
+- [10 Biggest Crypto Mistakes Beginners Make](https://autoinsureguides.com/10-biggest-crypto-mistakes-beginners-make)
 
 ---
 

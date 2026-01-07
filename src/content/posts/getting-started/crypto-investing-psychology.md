@@ -6,7 +6,7 @@ updatedDate: 2025-12-22
 image: "/images/posts/cryptopsychology.jpg"
 heroImageAlt: "A split image showing a calm investor on one side and chaotic price charts with emotional reactions on the other"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Psychology", "Investing Mindset", "FOMO", "Panic Selling", "Emotional Trading", "Beginner Tips", "Discipline"]
 category: "getting-started"
 subcategory: "psychology"
@@ -21,7 +21,7 @@ Searches for "crypto psychology," "avoid FOMO crypto," and "crypto investing min
 
 This guide examines the core psychological challenges in crypto investing. It explains why emotions run high, identifies the most common mental traps, and provides actionable strategies to develop a resilient mindset. Mastering these principles early helps you navigate bull runs and bear markets with greater confidence.
 
-Build your foundation with our [crypto terminology glossary](https://txchyon.com/blog/getting-started/crypto-terminology-glossary) and understand key pitfalls in our [10 biggest crypto mistakes beginners make](https://txchyon.com/blog/getting-started/biggest-crypto-mistakes). When ready to act, explore secure options in our [best crypto wallets guide](https://txchyon.com/blog/getting-started/best-crypto-wallets-for-beginners).
+Build your foundation with our [crypto terminology glossary](https://autoinsureguides.com/blog/getting-started/crypto-terminology-glossary) and understand key pitfalls in our [10 biggest crypto mistakes beginners make](https://autoinsureguides.com/blog/getting-started/biggest-crypto-mistakes). When ready to act, explore secure options in our [best crypto wallets guide](https://autoinsureguides.com/blog/getting-started/best-crypto-wallets-for-beginners).
 
 ## Why Crypto Triggers Strong Emotions
 
@@ -150,6 +150,6 @@ Technical knowledge and strategy matter, but emotional control often determines 
 
 Implement one or two strategies from this guide immediately. Small consistent improvements compound significantly.
 
-With a solid mindset, you are prepared to act wisely. Choose secure storage with our [best crypto wallets recommendations](https://txchyon.com/blog/getting-started/best-crypto-wallets-for-beginners), start safely via our [how to buy crypto guide](https://txchyon.com/blog/getting-started/how-to-buy-crypto), and avoid pitfalls outlined in our [common mistakes article](https://txchyon.com/blog/getting-started/biggest-crypto-mistakes).
+With a solid mindset, you are prepared to act wisely. Choose secure storage with our [best crypto wallets recommendations](https://autoinsureguides.com/blog/getting-started/best-crypto-wallets-for-beginners), start safely via our [how to buy crypto guide](https://autoinsureguides.com/blog/getting-started/how-to-buy-crypto), and avoid pitfalls outlined in our [common mistakes article](https://autoinsureguides.com/blog/getting-started/biggest-crypto-mistakes).
 
 Crypto investing is a marathon. Build discipline early, stay patient, and let rational decisions guide your journey through 2026 and beyond.

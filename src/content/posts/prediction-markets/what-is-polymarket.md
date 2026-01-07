@@ -107,7 +107,7 @@ Sign up takes under one minute.
 👉 **Use my Polymarket link here:**  
 **[https://tinyurl.com/polynefu]**
 
-This supports the Txchyon blog & future DeFi research.
+This supports the autoinsureguides blog & future DeFi research.
 
 ---
 
@@ -238,6 +238,6 @@ Polymarket is one of the most fun and educational platforms in Web3.
 👉 **Start here with my Polymarket partner link:**  
 **[https://tinyurl.com/polynefu]**
 
-This supports the Txchyon blog & helps fund future content and DeFi guides. Check out the rest of our [Prediction Markets](https://txchyon.com/categories/prediction-markets/) category for deep dives on other platforms. Next up: more guides to help you navigate this growing space.
+This supports the autoinsureguides blog & helps fund future content and DeFi guides. Check out the rest of our [Prediction Markets](https://autoinsureguides.com/categories/prediction-markets/) category for deep dives on other platforms. Next up: more guides to help you navigate this growing space.
 
 ---

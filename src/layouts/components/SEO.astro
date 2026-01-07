@@ -1,4 +1,4 @@
-﻿---
+---
 import config from "@/config/config.json";
 
 const {
@@ -14,14 +14,14 @@ const {
 } = Astro.props;
 
 // Simple, direct image URL - NO DOUBLE BASE_URL!
-const finalTitle = title ?? "Txchyon - On-Chain Research & DeFi Alpha";
+const finalTitle = title ?? "autoinsureguides - On-Chain Research & DeFi Alpha";
 const finalDescription = description && description !== "true" ? description : "on-chain research + Defi alpha and Airdrops";
 // Use provided image OR fall back to default
-const finalImage = image ? image : "https://txchyon.com/images/tchyasit.jpg";
+const finalImage = image ? image : "https://autoinsureguides.com/images/tchyasit.jpg";
 
 // FIXED: Normalize canonical URL - remove trailing slash
 const cleanPath = Astro.url.pathname.replace(/\/$/, ""); // Remove trailing slash
-const finalCanonical = canonical ?? `https://txchyon.com${cleanPath}`;
+const finalCanonical = canonical ?? `https://autoinsureguides.com${cleanPath}`;
 ---
 
 <!-- Simple, reliable social meta tags -->
@@ -42,7 +42,7 @@ const finalCanonical = canonical ?? `https://txchyon.com${cleanPath}`;
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content={finalTitle} />
-<meta property="og:site_name" content="Txchyon" />
+<meta property="og:site_name" content="autoinsureguides" />
 
 <!-- Additional Open Graph tags for articles -->
 {type === 'article' && (

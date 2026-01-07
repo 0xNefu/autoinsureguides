@@ -6,7 +6,7 @@ updatedDate: 2025-12-02
 image: "/images/posts/aster-rocket.jpg"
 heroImageAlt: "Aster, Drift, and Hyperliquid logos with live volume, funding, and OI comparison"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Aster", "Drift", "Hyperliquid", "Solana", "Perps", "Funding", "Liquidity", "Smart Money"]
 category: "trading-investing"
 subcategory: "perpetuals-derivatives"

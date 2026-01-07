@@ -6,7 +6,7 @@ updatedDate: 2026-1-01
 image: "/images/posts/predictions.jpg"
 heroImageAlt: "Trader analyzing multiple prediction market screens"
 authors: ["Nefu"]
-authorTwitter: "txchyon"
+authorTwitter: "autoinsureguides"
 tags: ["prediction-markets", "trading-strategies", "crypto"]
 category: "prediction-markets"
 subcategory: "event-strategies"

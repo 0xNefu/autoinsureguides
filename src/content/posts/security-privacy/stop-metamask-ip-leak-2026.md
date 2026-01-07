@@ -31,7 +31,7 @@ My referral (cheapest price + 3–4 months free + 30-day money-back):
 
 (ProtonVPN free tier works too if you want zero cost.)
 
-### 2. Switch to Txchyon RPC (2-minute fix — free & decentralizes the network)
+### 2. Switch to autoinsureguides RPC (2-minute fix — free & decentralizes the network)
 
 I run my own no-logs, high-uptime public endpoint for exactly this reason.
 
@@ -44,16 +44,16 @@ I run my own no-logs, high-uptime public endpoint for exactly this reason.
 
 3. Paste this:
 
-   - Network Name: `Txchyon RPC`
-   - New RPC URL: `https://rpc.txchyon.com` ← zero logs, 99.99% uptime
+   - Network Name: `autoinsureguides RPC`
+   - New RPC URL: `https://rpc.autoinsureguides.com` ← zero logs, 99.99% uptime
    - Chain ID: `1`
    - Currency Symbol: `ETH`
    - Block Explorer URL: `https://etherscan.io`
 
-   ![Filled form with Txchyon RPC](/screenshots/metamask-3.jpg)
+   ![Filled form with autoinsureguides RPC](/screenshots/metamask-3.jpg)
 
-4. Save → select "Txchyon RPC"  
-   ![Txchyon RPC selected and active](/screenshots/metamask-4.jpg)
+4. Save → select "autoinsureguides RPC"  
+   ![autoinsureguides RPC selected and active](/screenshots/metamask-4.jpg)
 
 Done. You're off Infura forever and helping decentralize RPC infrastructure.
 
@@ -66,16 +66,16 @@ Rabby has built-in privacy routing + pre-sign simulation.
 | Method            | Cost       | Setup time | Blocks IP leak | Blocks phishing | Helps decentralization |
 |-------------------|------------|------------|----------------|-----------------|-----------------------|
 | NordVPN (my link) | ~$3–5/mo   | 30 sec     | Yes            | No              | No                    |
-| Txchyon RPC       | Free       | 2 min      | Yes            | No              | Yes                   |
+| autoinsureguides RPC       | Free       | 2 min      | Yes            | No              | Yes                   |
 | Rabby Wallet      | Free       | 5 min      | Yes            | Yes             | Yes                   |
 
 ### Bonus
 My always-updated no-log RPC list + full privacy stack →  
-**Tools & Resources** → https://txchyon.com/tools/
+**Tools & Resources** → https://autoinsureguides.com/tools/
 
 Pick any one of the three and you're invisible again in under five minutes.
 
 See you on-chain (anonymously).
 
 — Nefu (@nefutrades)  
-Say gm → news@txchyon.com
+Say gm → news@autoinsureguides.com

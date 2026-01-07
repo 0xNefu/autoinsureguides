@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/best-metal-seed-backups-2026.jpg"
 heroImageAlt: "Various metal seed phrase backup plates including Billfodl and Cryptosteel"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["seed phrase", "metal backup", "billfodl", "cryptosteel", "wallet security"]
 category: "security-privacy"
 subcategory: "seed-phrase"

@@ -6,7 +6,7 @@ updatedDate: 2025-12-27
 image: "/images/posts/augur1.jpg"
 heroImageAlt: "Augur prediction market platform interface or logo"
 authors: ["Nefu"]
-authorTwitter: "txchyon"
+authorTwitter: "autoinsureguides"
 tags: ["prediction-markets", "ethereum", "decentralized"]
 category: "prediction-markets"
 subcategory: "platform-guides"
@@ -19,7 +19,7 @@ Prediction markets have come a long way since the early days of crypto dreaming 
 
 Fast forward to 2025, and Augur is in reboot mode with Augur Turbo on Polygon for faster trades and a planned next-gen oracle upgrade. It has seen its share of ups and downs, including infamous assassination markets early on and stubbornly low volume compared to newcomers. Yet it remains the purest vision of decentralized prediction power, powered by REP tokens for reporting outcomes.
 
-If you are coming from our guides on [What Is Polymarket?](https://txchyon.com/blog/prediction-markets/what-is-polymarket/) or Worm.wtf, Augur feels like the wise but slightly eccentric elder statesman, prioritizing absolute decentralization over flashy growth.
+If you are coming from our guides on [What Is Polymarket?](https://autoinsureguides.com/blog/prediction-markets/what-is-polymarket/) or Worm.wtf, Augur feels like the wise but slightly eccentric elder statesman, prioritizing absolute decentralization over flashy growth.
 
 ![augur](/images/posts/augur2.jpg)
 
@@ -81,4 +81,4 @@ Augur may never reclaim the spotlight, but its reboot and unwavering decentraliz
 
 If you believe in crypto principles over convenience, dive in. It is the original, still kicking.
 
-Check out the rest of our [Prediction Markets](https://txchyon.com/categories/prediction-markets/) category for deep dives on other platforms. Next up: more guides to help you navigate this growing space.
+Check out the rest of our [Prediction Markets](https://autoinsureguides.com/categories/prediction-markets/) category for deep dives on other platforms. Next up: more guides to help you navigate this growing space.

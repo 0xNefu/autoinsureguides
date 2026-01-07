@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/crypto-banking-solutions.jpg"
 heroImageAlt: "Business banking dashboard with crypto integration"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto banking solutions", "crypto-friendly banks", "stablecoin payments", "crypto business banking", "international crypto banking"]
 category: "regulatory-tax"
 subcategory: "banking-solutions"
@@ -82,9 +82,9 @@ Crypto businesses often operate globally. Consider these strategies:
 
 ## 🛠 Section 4: Integrating Banking With Your Business Workflow
 
-- Connect your business entity to **bank accounts** (see [Crypto Entity Formation](https://txchyon.com/blog/regulatory-tax/crypto-entity-formation))  
+- Connect your business entity to **bank accounts** (see [Crypto Entity Formation](https://autoinsureguides.com/blog/regulatory-tax/crypto-entity-formation))  
 - Use accounting software to track **revenue, expenses, and crypto movements**  
-- Integrate with **tax reporting tools** ([Crypto Tax Reporting](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software))  
+- Integrate with **tax reporting tools** ([Crypto Tax Reporting](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software))  
 
 > Pro Tip: Keep personal and business banking **strictly separate** to simplify taxes and audits.
 

@@ -6,7 +6,7 @@ updatedDate: 2025-12-02
 image: "/images/posts/idos.jpg"
 heroImageAlt: "idOS decentralized identity vault connected to Ethereum, Solana, NEAR, Starknet, Arbitrum, Cosmos"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["idOS", "decentralized-identity", "zk", "kyc", "sybil-resistance", "airdrop", "wallchain"]
 category: "infrastructure-tech"
 subcategory: "zk-technology"
@@ -62,11 +62,11 @@ idOS has publicly confirmed a massive retroactive airdrop for early users and no
 Wallchain leaderboard — the higher you rank, the bigger the allocation.
 
 **Your personal referral link (replace with yours):**  
-https://wallchain.xyz/?ref=txchyon
+https://wallchain.xyz/?ref=autoinsureguides
 
 **Current top 100 cutoff:** ~14,200 points  
 **Current #1 farmer:** 312,000+ points  
-**Points earned so far by Txchyon node:** 41,800 (top 0.8%)
+**Points earned so far by autoinsureguides node:** 41,800 (top 0.8%)
 
 ### Why This Matters in 2025
 Every major protocol launching in 2025–2026 will require sybil resistance and portable reputation:
@@ -81,7 +81,7 @@ They’re all quietly integrating idOS because it’s the only solution that act
 ### Final Call to Action
 1. Create your idOS profile → https://app.idos.network  
 2. Complete all verifications (KYC, wallet activity, socials)  
-3. Start farming the Wallchain leaderboard → https://wallchain.xyz/?ref=txchyon  
+3. Start farming the Wallchain leaderboard → https://wallchain.xyz/?ref=autoinsureguides  
 4. (Optional) Run a node for 3–5× points multiplier
 
 The identity meta is finally here.  
@@ -90,6 +90,6 @@ idOS is the only one shipping.
 Get in before the airdrop snapshot.
 
 [Create idOS profile now →](https://app.idos.network)  
-[Farm the confirmed airdrop →](https://wallchain.xyz/?ref=txchyon)
+[Farm the confirmed airdrop →](https://wallchain.xyz/?ref=autoinsureguides)
 
 *Published: November 25, 2025*

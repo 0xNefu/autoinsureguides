@@ -6,7 +6,7 @@ updatedDate: 2025-12-02
 image: "/images/posts/drift1.jpg"
 heroImageAlt: "NordVPN connected to Singapore server with Drift.trade open and Phantom wallet connected"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["NordVPN", "Drift Protocol", "Solana", "Perps", "DeFi Security", "Privacy", "VPN", "Anonymity", "Trading Guide"]
 category: "defi-yield"
 subcategory: "yield-aggregators"
@@ -85,6 +85,6 @@ Drop a comment if you want the same guide for Hyperliquid, Aster, or GMX — alr
 Stay safe out there.
 
 — Nefu (@nefutrades)  
-txchyon.com
+autoinsureguides.com
 
 *(When you’re ready to grab NordVPN, use my link again — it’s the cheapest you’ll ever see it and keeps these guides coming.)*

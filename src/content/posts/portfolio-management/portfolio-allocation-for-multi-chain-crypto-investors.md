@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/allocation4.jpg"
 heroImageAlt: "Multi-chain crypto portfolio allocation chart showing different blockchain assets"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Multi-Chain Allocation", "Risk Management", "Bitcoin", "Ethereum", "Solana"]
 category: "portfolio-management"
 subcategory: "allocation-strategies"
@@ -21,7 +21,7 @@ Take Jasmine, a developer-turned-crypto investor. She started with 70% BTC and 3
 
 Months later, during an Ethereum network congestion event, her BTC and ETH positions slowed while her Solana and Polygon investments continued to grow and earn staking rewards. By diversifying across chains, Jasmine **captured upside and reduced the impact of a single-chain disruption**, all while keeping her long-term strategy intact.
 
-> Start with core allocation: **[Crypto Portfolio Allocation for Beginners (Simple, Low-Risk Framework)](https://txchyon.com/categories/portfolio-management/)**
+> Start with core allocation: **[Crypto Portfolio Allocation for Beginners (Simple, Low-Risk Framework)](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 
@@ -38,11 +38,11 @@ Months later, during an Ethereum network congestion event, her BTC and ETH posit
 
 4. **Track Portfolio Performance**  
    Monitor value, risk, and returns for each chain and token.  
-   > Example tool: **[How to Track Crypto Portfolio Performance (Metrics That Actually Matter)](https://txchyon.com/categories/portfolio-management/)**  
+   > Example tool: **[How to Track Crypto Portfolio Performance (Metrics That Actually Matter)](https://autoinsureguides.com/categories/portfolio-management/)**  
 
 5. **Rebalance Periodically**  
    Adjust weights to maintain target allocations across chains and assets.  
-   > Guide: **[How to Rebalance a Crypto Portfolio (Simple Step-by-Step Guide)](https://txchyon.com/categories/portfolio-management/)**
+   > Guide: **[How to Rebalance a Crypto Portfolio (Simple Step-by-Step Guide)](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 

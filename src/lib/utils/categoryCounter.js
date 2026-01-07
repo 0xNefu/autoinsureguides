@@ -1,4 +1,4 @@
-﻿// src/lib/utils/categoryCounter.js
+// src/lib/utils/categoryCounter.js
 import { getCollection } from "astro:content";
 
 export async function getCategoriesWithCounts() {

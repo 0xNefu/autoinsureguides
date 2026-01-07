@@ -6,7 +6,7 @@ updatedDate: 2026-01-02
 image: "/images/posts/tokenomics.jpg"
 heroImageAlt: "Crypto token metrics, charts, and supply analysis on a futuristic digital interface"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Crypto Tokenomics
   - Token Analysis

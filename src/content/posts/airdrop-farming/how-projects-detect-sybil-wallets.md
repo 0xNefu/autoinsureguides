@@ -6,7 +6,7 @@ updatedDate: 2025-12-27
 image: "/images/posts/airdrop4.jpg"
 heroImageAlt: "Visualization of Sybil wallet detection in crypto airdrops"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Airdrop Farming
   - Points Systems

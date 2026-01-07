@@ -6,7 +6,7 @@ updatedDate: 2025-12-31
 image: "/images/posts/pmbankroll.jpg"
 heroImageAlt: "Bankroll growth chart with risk controls"
 authors: ["Nefu"]
-authorTwitter: "txchyon"
+authorTwitter: "autoinsureguides"
 tags: ["prediction-markets", "risk-management", "trading"]
 category: "prediction-markets"
 subcategory: "bankroll-management"

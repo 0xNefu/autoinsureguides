@@ -6,7 +6,7 @@ updatedDate: 2025-12-19
 image: "/images/posts/solana1.jpg"
 heroImageAlt: "Four different logos representing crypto projects on Solana (NFT, DeFi, Derivatives) arranged like a snowball"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Airdrop", "Solana", "Tensor", "Pumpfun", "Farming Strategy", "Crypto Rewards", "Security"]
 category: airdrop-farming
 subcategory: points-systems   
@@ -34,9 +34,9 @@ A **Burner Wallet** is a secondary hot wallet (like a second Phantom account) th
 ### Getting Started:
 
 * **Need a Wallet?** The recommended wallet for Solana is Phantom. If you don't have it set up yet:
-    **[Read Our Step-by-Step Guide on How to Set Up Your Phantom Wallet HERE](https://txchyon.com/blog/getting-started/how-to-setup-phantom-wallet/)**
+    **[Read Our Step-by-Step Guide on How to Set Up Your Phantom Wallet HERE](https://autoinsureguides.com/blog/getting-started/how-to-setup-phantom-wallet/)**
 * **Need Crypto?** To fund your Burner Wallet, you'll need SOL. If you don't know where to start:
-    **[Read Our Guide to Top Exchanges and How to Buy SOL HERE](https://txchyon.com/blog/getting-started/best-crypto-exchanges/)**
+    **[Read Our Guide to Top Exchanges and How to Buy SOL HERE](https://autoinsureguides.com/blog/getting-started/best-crypto-exchanges/)**
 
 ---
 
@@ -108,7 +108,7 @@ Due to the unique nature and high-risk mechanics of Pump.fun, the strategy for m
 
 For the comprehensive, step-by-step strategy, including **speculative reward tiers** and the **Dune Airdrop Checker tool**, please see our dedicated article:
 
-**[Read the Full Pump.fun Airdrop Strategy Guide Here](https://txchyon.com/blog/airdrop-farming/pump-fun-airdrop-hunt/)**
+**[Read the Full Pump.fun Airdrop Strategy Guide Here](https://autoinsureguides.com/blog/airdrop-farming/pump-fun-airdrop-hunt/)**
 
 ---
 

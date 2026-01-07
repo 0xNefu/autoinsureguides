@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/best-solana-trading-bots-2026.jpg"
 heroImageAlt: "Solana meme coin trading bots executing fast on-chain transactions"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Solana trading bots", "meme coin bots", "Telegram trading bots", "Solana sniping bots", "Jupiter bots"]
 category: "tools-automation"
 subcategory: "trading-bots"
@@ -29,7 +29,7 @@ In this guide, you’ll learn:
 - Which wallets and tools you need before starting
 
 This guide builds on our main hub:
-- [Best Crypto Trading Bots in 2026](https://txchyon.com/best-crypto-trading-bots-2026)
+- [Best Crypto Trading Bots in 2026](https://autoinsureguides.com/best-crypto-trading-bots-2026)
 
 ---
 
@@ -69,8 +69,8 @@ Before using any bot, make sure you have:
 - A small funded trading wallet (not your main holdings)
 
 Wallet setup guides:
-- [How to Set Up Phantom Wallet](https://txchyon.com/how-to-setup-phantom-wallet)
-- [How to Transfer Crypto from Exchange to Wallet Safely](https://txchyon.com/how-to-transfer-crypto-from-exchange-to-wallet)
+- [How to Set Up Phantom Wallet](https://autoinsureguides.com/how-to-setup-phantom-wallet)
+- [How to Transfer Crypto from Exchange to Wallet Safely](https://autoinsureguides.com/how-to-transfer-crypto-from-exchange-to-wallet)
 
 ---
 
@@ -175,7 +175,7 @@ Recommended:
 - Solflare
 
 Guides:
-- [How to Set Up Phantom Wallet](https://txchyon.com/how-to-setup-phantom-wallet)
+- [How to Set Up Phantom Wallet](https://autoinsureguides.com/how-to-setup-phantom-wallet)
 
 ---
 
@@ -209,7 +209,7 @@ Key safety rules:
 - Start with very small amounts
 
 Also review common mistakes:
-- [10 Biggest Crypto Mistakes Beginners Make](https://txchyon.com/10-biggest-crypto-mistakes-beginners-make)
+- [10 Biggest Crypto Mistakes Beginners Make](https://autoinsureguides.com/10-biggest-crypto-mistakes-beginners-make)
 
 ---
 
@@ -228,7 +228,7 @@ Upcoming guides:
 - Best Crypto Portfolio Trackers
 
 All of these will link back to:
-- [Best Crypto Trading Bots in 2026](https://txchyon.com/best-crypto-trading-bots-2026)
+- [Best Crypto Trading Bots in 2026](https://autoinsureguides.com/best-crypto-trading-bots-2026)
 
 ---
 

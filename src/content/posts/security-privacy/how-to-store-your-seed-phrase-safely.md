@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/seed-phrase-storage-guide.jpg"
 heroImageAlt: "Secure metal seed phrase backup plates and storage options"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["seed phrase", "crypto security", "wallet backup", "hardware wallet", "self-custody"]
 category: "security-privacy"
 subcategory: "seed-phrase"

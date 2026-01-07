@@ -1,4 +1,4 @@
-﻿---
+---
 // src/components/GatedContent.astro
 const BEEHIIV_FORM_ID = "62d85daa-7878-4a83-a78a-a15f6226c516";
 
@@ -19,7 +19,7 @@ console.log("  - Has slot content?:", Astro.slots.has("default"));
   <div class="gate-overlay">
     <div class="gate-box">
       <h3>Unlock the Full Guide</h3>
-      <p>Pepe, the technical steps and visual walkthroughs are reserved for our community. Join 12,000+ builders to get your Free Txchyon Library Card.</p>
+      <p>Pepe, the technical steps and visual walkthroughs are reserved for our community. Join 12,000+ builders to get your Free autoinsureguides Library Card.</p>
       
       <!-- YOUR Beehiiv Embedded Form -->
       <div id="beehiiv-embed-container">
@@ -150,7 +150,7 @@ console.log("  - Has slot content?:", Astro.slots.has("default"));
     
     if (content) {
       content.classList.add("unlocked");
-      localStorage.setItem("txchyon_subscriber", "true");
+      localStorage.setItem("autoinsureguides_subscriber", "true");
       localStorage.setItem("unlock_timestamp", Date.now());
     }
     
@@ -161,7 +161,7 @@ console.log("  - Has slot content?:", Astro.slots.has("default"));
   
   // Check if already subscribed
   function checkSubscription() {
-    const isSubscriber = localStorage.getItem("txchyon_subscriber");
+    const isSubscriber = localStorage.getItem("autoinsureguides_subscriber");
     if (isSubscriber === "true") {
       console.log("GATEDCONTENT: User is already subscribed");
       unlockContent();

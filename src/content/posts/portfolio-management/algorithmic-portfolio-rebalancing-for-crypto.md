@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/algorithmic.jpg"
 heroImageAlt: "Automated crypto rebalancing dashboard showing portfolio allocations and trades"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Algorithmic Rebalancing", "Automation", "Risk Management", "Allocation"]
 category: "portfolio-management"
 subcategory: "rebalancing-methods"
@@ -23,7 +23,7 @@ Algorithmic rebalancing uses **predefined rules or scripts** to automatically ad
 
 Story: Jamie, a Solana-focused investor, used to rebalance manually each month. Market swings caused him to overreact, selling winners too early and holding losers too long. After switching to algorithmic rebalancing, trades now execute automatically, keeping his allocations steady without emotional decisions.
 
-> Start with: **[How to Rebalance a Crypto Portfolio](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**
+> Start with: **[How to Rebalance a Crypto Portfolio](https://autoinsureguides.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**
 
 ---
 
@@ -39,9 +39,9 @@ Algorithmic strategies remove these hurdles. For example, you can:
 
 - Automatically rebalance when a coin exceeds a **5% deviation** from its target  
 - Adjust allocations based on **market volatility** or **momentum signals**  
-- Coordinate rebalancing with **tax-loss harvesting**: **[Tax-Loss Harvesting Basics for Crypto](https://txchyon.com/blog/portfolio-management/crypto-tax-loss-harvesting-explained/)**  
+- Coordinate rebalancing with **tax-loss harvesting**: **[Tax-Loss Harvesting Basics for Crypto](https://autoinsureguides.com/blog/portfolio-management/crypto-tax-loss-harvesting-explained/)**  
 
-> Related reading: **[Crypto Portfolio Risk Management Explained](https://txchyon.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**
+> Related reading: **[Crypto Portfolio Risk Management Explained](https://autoinsureguides.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**
 
 ---
 
@@ -58,13 +58,13 @@ Example: Maria manages a 15-coin portfolio across Ethereum, Solana, and Avalanch
 
 ## Implementation Steps
 
-1. **Define target allocations** – e.g., BTC 40%, ETH 30%, Altcoins 20%, Stablecoins 10% (**[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners-simple-low-risk-framework/)**)  
-2. **Set trigger rules** – ±5% allocation drift, volatility thresholds, or momentum signals (**[Dynamic Allocation Strategies for Active Traders](https://txchyon.com/blog/portfolio-management/dynamic-allocation-strategies-for-active-traders/)**)  
-3. **Automate execution** – via API, trading bots, or portfolio management platforms (**[Automated Rebalancing Tools and Strategies](https://txchyon.com/blog/portfolio-management/automated-rebalancing-tools-and-strategies/)**)  
-4. **Monitor performance** – track metrics like realized/unrealized gains, Sharpe ratio, and risk-adjusted returns (**[How to Track Crypto Portfolio Performance](https://txchyon.com/blog/portfolio-management/how-to-track-crypto-portfolio-performance/)**)  
+1. **Define target allocations** – e.g., BTC 40%, ETH 30%, Altcoins 20%, Stablecoins 10% (**[Crypto Portfolio Allocation for Beginners](https://autoinsureguides.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners-simple-low-risk-framework/)**)  
+2. **Set trigger rules** – ±5% allocation drift, volatility thresholds, or momentum signals (**[Dynamic Allocation Strategies for Active Traders](https://autoinsureguides.com/blog/portfolio-management/dynamic-allocation-strategies-for-active-traders/)**)  
+3. **Automate execution** – via API, trading bots, or portfolio management platforms (**[Automated Rebalancing Tools and Strategies](https://autoinsureguides.com/blog/portfolio-management/automated-rebalancing-tools-and-strategies/)**)  
+4. **Monitor performance** – track metrics like realized/unrealized gains, Sharpe ratio, and risk-adjusted returns (**[How to Track Crypto Portfolio Performance](https://autoinsureguides.com/blog/portfolio-management/how-to-track-crypto-portfolio-performance/)**)  
 
 Tip: Combine algorithmic rebalancing with **multi-chain tracking** and tax-loss harvesting:  
-- **[Integrating Tax-Loss Harvesting with Rebalancing](https://txchyon.com/blog/portfolio-management/crypto-tax-loss-harvesting-explained/)**
+- **[Integrating Tax-Loss Harvesting with Rebalancing](https://autoinsureguides.com/blog/portfolio-management/crypto-tax-loss-harvesting-explained/)**
 
 ---
 
@@ -72,7 +72,7 @@ Tip: Combine algorithmic rebalancing with **multi-chain tracking** and tax-loss 
 
 - **API Security:** Always use secure API keys with read/write limits  
 - **Fees and Slippage:** Frequent rebalancing can incur costs; optimize thresholds  
-- **Tax Optimization:** Coordinate rebalancing with tax-loss harvesting strategies (**[Strategic Tax-Loss Harvesting Throughout the Year](https://txchyon.com/blog/portfolio-management/crypto-tax-loss-harvesting-explained/)**)  
+- **Tax Optimization:** Coordinate rebalancing with tax-loss harvesting strategies (**[Strategic Tax-Loss Harvesting Throughout the Year](https://autoinsureguides.com/blog/portfolio-management/crypto-tax-loss-harvesting-explained/)**)  
 
 Story: Alex automated his portfolio and coordinated rebalancing with tax-loss harvesting. This kept his allocations steady while **saving thousands in taxes** each year.
 

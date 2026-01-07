@@ -6,7 +6,7 @@ updatedDate: 2025-12-23
 image: "/images/posts/seed-phrase-compromised-guide.jpg"
 heroImageAlt: "Emergency alert over a compromised seed phrase with steps to recovery"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["seed phrase", "compromised wallet", "crypto recovery", "emergency guide", "wallet security"]
 category: "security-privacy"
 subcategory: "seed-phrase"

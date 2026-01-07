@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/global-crypto-regulations.jpg"
 heroImageAlt: "World map with crypto compliance icons"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["global crypto regulations", "crypto compliance", "international crypto rules", "crypto business reporting", "crypto laws worldwide"]
 category: "regulatory-tax"
 subcategory: "global-regulations"
@@ -79,7 +79,7 @@ This guide covers **recent trends and updates** in major regions so you can stay
 ## 🛠 Section 4: How to Stay Updated
 
 - Subscribe to newsletters and blogs from regulators  
-- Use compliance tools ([Crypto Compliance Tools](https://txchyon.com/blog/regulatory-tax/crypto-compliance-tools))  
+- Use compliance tools ([Crypto Compliance Tools](https://autoinsureguides.com/blog/regulatory-tax/crypto-compliance-tools))  
 - Set up Google alerts for “crypto regulations” and your country  
 
 > Pro Tip: Combining automation and regular reading ensures you’re always ahead of rule changes.

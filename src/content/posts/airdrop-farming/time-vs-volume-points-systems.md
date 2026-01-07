@@ -6,7 +6,7 @@ updatedDate: 2025-12-27
 image: "/images/posts/airdrop3.jpg"
 heroImageAlt: "Crypto dashboard visualizing time-based vs volume-based scoring for wallets"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Airdrop Farming
   - Points Systems

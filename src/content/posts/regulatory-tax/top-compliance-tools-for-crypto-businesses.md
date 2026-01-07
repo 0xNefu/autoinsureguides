@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/crypto-compliance-tools.jpg"
 heroImageAlt: "Crypto compliance dashboard with AML/KYC monitoring"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto compliance tools", "AML software", "KYC solutions", "crypto business compliance", "audit-ready crypto tools"]
 category: "regulatory-tax"
 subcategory: "compliance-tools"
@@ -80,9 +80,9 @@ Audit-ready reporting ensures you can respond to regulators or internal checks:
 
 ## 🔗 Section 4: Integrating Compliance Into Your Workflow
 
-- Connect **entity formation** ([Crypto Entity Formation](https://txchyon.com/blog/regulatory-tax/crypto-entity-formation))  
-- Integrate with **banking solutions** ([Crypto Banking Solutions](https://txchyon.com/blog/regulatory-tax/crypto-banking-solutions))  
-- Sync **tax reporting** ([Crypto Tax Reporting Software](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software))  
+- Connect **entity formation** ([Crypto Entity Formation](https://autoinsureguides.com/blog/regulatory-tax/crypto-entity-formation))  
+- Integrate with **banking solutions** ([Crypto Banking Solutions](https://autoinsureguides.com/blog/regulatory-tax/crypto-banking-solutions))  
+- Sync **tax reporting** ([Crypto Tax Reporting Software](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software))  
 
 Automation reduces human error and keeps your business scalable.
 

@@ -6,7 +6,7 @@ updatedDate: 2026-1-1
 image: "/images/posts/framework.jpg"
 heroImageAlt: "Crypto investor analyzing blockchain data, token metrics, and on-chain activity"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Crypto Due Diligence
   - Crypto Research

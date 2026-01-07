@@ -107,5 +107,5 @@ Get in the airdrop now while it’s still early.
 
 Let’s build the future that actually lasts.
 
-Get my weekly watchlist + 48h yield alerts → [[Beehiiv subscribe link](https://tinyurl.com/txchyonnewsletter)]
+Get my weekly watchlist + 48h yield alerts → [[Beehiiv subscribe link](https://tinyurl.com/autoinsureguidesnewsletter)]
 – Nefu

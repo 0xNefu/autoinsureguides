@@ -6,7 +6,7 @@ updatedDate: 2025-12-27
 image: "/images/posts/hotandcold.jpg"
 heroImageAlt: "Cold and hot crypto wallets with icy and fiery visual themes, digital coins transferring safely"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags:
   - Airdrop Farming
   - Wallet Strategy

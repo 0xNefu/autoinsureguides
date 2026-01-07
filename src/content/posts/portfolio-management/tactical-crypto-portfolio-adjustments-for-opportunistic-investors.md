@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/tactical.jpg"
 heroImageAlt: "Crypto portfolio with tactical allocation adjustments highlighted"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Tactical Allocation", "Risk Management", "Bitcoin", "Ethereum"]
 category: "portfolio-management"
 subcategory: "allocation-strategies"
@@ -29,7 +29,7 @@ Tactical moves can include:
 
 These moves **enhance returns without abandoning your long-term allocation**.
 
-> Builds on: **[Crypto Portfolio Allocation for Beginners (Simple, Low-Risk Framework)](https://txchyon.com/categories/portfolio-management/)**
+> Builds on: **[Crypto Portfolio Allocation for Beginners (Simple, Low-Risk Framework)](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 
@@ -50,8 +50,8 @@ These moves **enhance returns without abandoning your long-term allocation**.
 5. **Consider Risk**  
    Tactical moves must consider liquidity, volatility, and market correlation. Alex avoids tiny illiquid coins, even if the hype is high, because he knows the risk outweighs the opportunity.
 
-> See related: **[How to Track Crypto Portfolio Performance (Metrics That Actually Matter)](https://txchyon.com/categories/portfolio-management/)**  
-> Learn risk management basics: **[Crypto Portfolio Risk Management Explained (Protect Capital First)](https://txchyon.com/categories/portfolio-management/)**
+> See related: **[How to Track Crypto Portfolio Performance (Metrics That Actually Matter)](https://autoinsureguides.com/categories/portfolio-management/)**  
+> Learn risk management basics: **[Crypto Portfolio Risk Management Explained (Protect Capital First)](https://autoinsureguides.com/categories/portfolio-management/)**
 
 ---
 

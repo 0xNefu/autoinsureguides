@@ -6,7 +6,7 @@ updatedDate: 2025-12-26
 image: "/images/posts/cryptoperform.jpg"
 heroImageAlt: "Crypto portfolio dashboard showing returns, allocation drift, and risk metrics"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["Crypto Portfolio", "Performance Tracking", "Metrics", "Bitcoin", "Ethereum", "Investing"]
 category: "portfolio-management"
 subcategory: "performance-tracking"
@@ -26,7 +26,7 @@ Tracking your crypto portfolio is **more than just seeing your net worth in doll
 For example, your portfolio could show a 10% gain over a month, but if 80% of that gain comes from a single volatile altcoin, your portfolio may actually be more risky than you realize. Performance tracking **gives context** to the numbers and helps you make informed decisions.
 
 > Performance tracking is the lens that lets all other portfolio management strategies — allocation, rebalancing, risk management, and tax planning — work effectively.  
-> Learn more about **[Crypto Portfolio Allocation](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners-simple-low-risk-framework/)** and **[Rebalancing Methods](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio-simple-step-by-step-guide/)**.
+> Learn more about **[Crypto Portfolio Allocation](https://autoinsureguides.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners-simple-low-risk-framework/)** and **[Rebalancing Methods](https://autoinsureguides.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio-simple-step-by-step-guide/)**.
 
 ---
 
@@ -44,7 +44,7 @@ Tracking your total portfolio value in USD (or your base currency) over time is 
 **Example:**  
 Imagine your portfolio was $10,000 at the start of the month, dips to $8,500 mid-month, then climbs to $11,000. Simply seeing the $11,000 might suggest smooth growth, but plotting the value over time reveals volatility and drawdowns that could affect your risk tolerance.
 
-Related: **[Dynamic Portfolio Allocation Strategies](https://txchyon.com/blog/portfolio-management/dynamic-portfolio-allocation-for-crypto-adjusting-to-market-conditions/)**
+Related: **[Dynamic Portfolio Allocation Strategies](https://autoinsureguides.com/blog/portfolio-management/dynamic-portfolio-allocation-for-crypto-adjusting-to-market-conditions/)**
 
 ### 2️⃣ Allocation Drift
 Over time, asset weights naturally drift from your target allocation due to differential performance. Tracking drift tells you **when to rebalance**.
@@ -54,7 +54,7 @@ Over time, asset weights naturally drift from your target allocation due to diff
 
 **Practical Tip:**  
 Set a drift tolerance, e.g., 5–10%. Rebalance only when allocations exceed this range, reducing unnecessary trading and fees.  
-See our guide: **[How to Rebalance a Crypto Portfolio](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio-simple-step-by-step-guide/)**
+See our guide: **[How to Rebalance a Crypto Portfolio](https://autoinsureguides.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio-simple-step-by-step-guide/)**
 
 ### 3️⃣ Realized vs. Unrealized Gains
 It’s critical to distinguish between what you’ve **actually sold** versus what’s still on paper:
@@ -62,7 +62,7 @@ It’s critical to distinguish between what you’ve **actually sold** versus wh
 - **Realized gains**: Profit you’ve locked in by selling  
 - **Unrealized gains/losses**: Profit or loss on assets still held  
 
-Tracking these helps with **tax planning**. Related: **[Crypto Tax-Loss Harvesting Explained](https://txchyon.com/blog/portfolio-management/crypto-tax-loss-harvesting-explained/)**
+Tracking these helps with **tax planning**. Related: **[Crypto Tax-Loss Harvesting Explained](https://autoinsureguides.com/blog/portfolio-management/crypto-tax-loss-harvesting-explained/)**
 
 ### 4️⃣ Risk-Adjusted Returns
 Raw returns don’t tell the full story — you also need to account for risk. Metrics like:
@@ -71,7 +71,7 @@ Raw returns don’t tell the full story — you also need to account for risk. M
 - **Sortino ratio**: Focuses only on downside volatility  
 
 …help you understand **how efficiently your portfolio generates returns relative to risk taken**.  
-Learn more: **[Factor-Based Allocation Strategies](https://txchyon.com/blog/portfolio-management/factor-based-allocation-strategies-for-crypto-portfolios/)**
+Learn more: **[Factor-Based Allocation Strategies](https://autoinsureguides.com/blog/portfolio-management/factor-based-allocation-strategies-for-crypto-portfolios/)**
 
 ### 5️⃣ Performance Attribution
 Knowing which assets or sectors contribute most to your returns is key to refining strategy:
@@ -93,7 +93,7 @@ Many crypto investors earn yield via staking, lending, or liquidity provision. T
 - Track APY vs. volatility of the underlying asset  
 - Consider risk of smart contract failure  
 
-See **[Staking and Yield Strategies](https://txchyon.com/blog/portfolio-management/dynamic-allocation-strategies-for-crypto-adjusting-to-market-conditions/)**
+See **[Staking and Yield Strategies](https://autoinsureguides.com/blog/portfolio-management/dynamic-allocation-strategies-for-crypto-adjusting-to-market-conditions/)**
 
 ### Benchmarking Against Crypto Indices
 Comparing your portfolio to BTC, ETH, or total market cap index shows if your strategy **adds value beyond holding the market**.
@@ -111,7 +111,7 @@ Selecting the right tracking method depends on portfolio complexity:
 - **Spreadsheets:** Google Sheets, Excel templates  
 - **Custom dashboards:** Python, JavaScript, or Tableau  
 
-Related guide: **[Automated Rebalancing and Tracking Tools](https://txchyon.com/blog/portfolio-management/automated-rebalancing-tools-and-strategies/)**
+Related guide: **[Automated Rebalancing and Tracking Tools](https://autoinsureguides.com/blog/portfolio-management/automated-rebalancing-tools-and-strategies/)**
 
 ---
 
@@ -141,4 +141,4 @@ By measuring:
 …you gain clarity, reduce emotional decisions, and make data-driven adjustments that improve long-term results.  
 
 > Allocation sets the plan, rebalancing maintains discipline, risk management protects capital, and performance tracking tells you if it’s all working.  
-> See full series: **[Txchyon Portfolio Management Hub](https://txchyon.com/categories/portfolio-management/)**  
+> See full series: **[autoinsureguides Portfolio Management Hub](https://autoinsureguides.com/categories/portfolio-management/)**  

@@ -6,7 +6,7 @@ updatedDate: 2025-12-24
 image: "/images/posts/safepal-s1-setup-2026.jpg"
 heroImageAlt: "SafePal S1 hardware wallet device displaying a QR code next to a smartphone scanning it"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["SafePal", "Hardware Wallet", "Air-Gapped", "Setup Guide", "Cold Storage", "Crypto Security", "Beginner Tutorial"]
 category: "security-privacy"
 subcategory: "wallets"

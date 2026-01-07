@@ -6,7 +6,7 @@ updatedDate: 2025-12-25
 image: "/images/posts/crypto-entity-formation.jpg"
 heroImageAlt: "Business paperwork and digital wallet representing crypto entity formation"
 authors: ["Nefu"]
-authorTwitter: "@txchyon"
+authorTwitter: "@autoinsureguides"
 tags: ["crypto entity formation", "LLC crypto business", "crypto corporation setup", "legal structures", "crypto business compliance"]
 category: "regulatory-tax"
 subcategory: "entity-formation"
@@ -100,9 +100,9 @@ Crypto businesses often operate cross-border. Here’s what to consider:
 - **Crypto-friendly accountants** – Some specialize in crypto businesses  
 
 **Interlinks:**  
-- [Crypto Tax Reporting Software](https://txchyon.com/blog/regulatory-tax/crypto-tax-reporting-software) – sync entity structure with tax compliance  
-- [Crypto Banking Solutions](https://txchyon.com/blog/regulatory-tax/crypto-banking-solutions) – connect your legal entity to bank accounts  
-- [Compliance Tools](https://txchyon.com/blog/regulatory-tax/crypto-compliance-tools) – integrate AML/KYC with your entity  
+- [Crypto Tax Reporting Software](https://autoinsureguides.com/blog/regulatory-tax/crypto-tax-reporting-software) – sync entity structure with tax compliance  
+- [Crypto Banking Solutions](https://autoinsureguides.com/blog/regulatory-tax/crypto-banking-solutions) – connect your legal entity to bank accounts  
+- [Compliance Tools](https://autoinsureguides.com/blog/regulatory-tax/crypto-compliance-tools) – integrate AML/KYC with your entity  
 
 ---
 

@@ -1,5 +1,5 @@
 // Theme persistence utilities
-export const THEME_KEY = 'txchyon-theme';
+export const THEME_KEY = 'autoinsureguides-theme';
 
 export function getSavedTheme() {
   if (typeof window === 'undefined') return 'dark'; // Default on server

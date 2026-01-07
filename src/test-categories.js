@@ -1,4 +1,4 @@
-﻿// Test categories
+// Test categories
 import { getCategoriesWithCounts } from "@/lib/utils/categoryCounter";
 
 const categories = await getCategoriesWithCounts();

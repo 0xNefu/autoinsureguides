@@ -6,7 +6,7 @@ updatedDate: 2025-12-31
 image: "/images/posts/pmregulation.jpg"
 heroImageAlt: "Gavel over prediction market interface"
 authors: ["Nefu"]
-authorTwitter: "txchyon"
+authorTwitter: "autoinsureguides"
 tags: ["prediction-markets", "regulation", "legal"]
 category: "prediction-markets"
 subcategory: "regulatory-updates"
