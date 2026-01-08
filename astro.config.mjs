@@ -51,4 +51,12 @@ export default defineConfig({
     shikiConfig: { theme: "one-dark-pro", wrap: true },
     extendDefaultPlugins: true,
   },
+  
+  // ⭐⭐ NEW: CONFIGURE MULTIPLE COLLECTIONS ⭐⭐
+  collections: {
+    posts: 'src/content/posts/**/*.md',
+    states: 'src/content/states/**/*.md',
+    vehicles: 'src/content/vehicles/**/*.md',
+    companies: 'src/content/companies/**/*.md'
+  }
 });
