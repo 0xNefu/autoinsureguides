@@ -1,0 +1,522 @@
+---
+// src/layouts/PostSingle.astro - COMPLETE FIXED VERSION
+import Base from "@/layouts/Base.astro";
+import "@/styles/main.css";
+
+const { frontmatter } = Astro.props;
+const { 
+  title, 
+  description, 
+  date, 
+  author = "AutoInsureGuides Team",
+  image,
+  categories = []
+} = frontmatter;
+
+// Format date
+const formattedDate = date ? new Date(date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+}) : '';
+---
+
+<Base 
+  title={title}
+  description={description}
+  image={image}
+>
+
+<!-- Hero Section -->
+<div class="bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+  <div class="container mx-auto px-4 py-16 max-w-4xl">
+    
+    <!-- Breadcrumb -->
+    <nav class="mb-8">
+      <ol class="flex items-center gap-2 text-sm text-gray-600">
+        <li><a href="/" class="hover:text-blue-600">Home</a></li>
+        <li>/</li>
+        <li><a href="/blog" class="hover:text-blue-600">Blog</a></li>
+        <li>/</li>
+        <li class="text-gray-900 font-medium">{title}</li>
+      </ol>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="mb-12">
+      {categories.length > 0 && (
+        <div class="flex flex-wrap gap-2 mb-6">
+          {categories.map(category => (
+            <a 
+              href={`/blog/category/${category.toLowerCase().replace(/\s+/g, '-')}`}
+              class="px-4 py-2 bg-blue-100 text-blue-800 text-sm font-medium rounded-full hover:bg-blue-200"
+            >
+              {category}
+            </a>
+          ))}
+        </div>
+      )}
+      
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        {title}
+      </h1>
+      
+      {description && (
+        <p class="text-xl text-gray-700 mb-8 max-w-3xl">
+          {description}
+        </p>
+      )}
+      
+      <div class="flex flex-wrap items-center gap-6 text-gray-600">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+            {author.charAt(0)}
+          </div>
+          <div>
+            <div class="font-medium text-gray-900">{author}</div>
+            <div class="text-sm">Insurance Expert</div>
+          </div>
+        </div>
+        
+        {formattedDate && (
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>{formattedDate}</span>
+          </div>
+        )}
+        
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>8 min read</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured Image -->
+    {image && (
+      <div class="mb-12 rounded-2xl overflow-hidden shadow-xl">
+        <img 
+          src={image} 
+          alt={title}
+          class="w-full h-auto object-cover"
+          width="1200"
+          height="630"
+        />
+      </div>
+    )}
+
+    <!-- Article Content -->
+    <article class="prose prose-lg max-w-none">
+      <!-- Table of Contents (Auto-generated from h2) -->
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg mb-12">
+        <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+          </svg>
+          In This Guide
+        </h3>
+        <div id="toc" class="space-y-2"></div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="markdown-content">
+        <slot />
+      </div>
+    </article>
+
+    <!-- Author Bio -->
+    <div class="mt-16 p-8 bg-gray-50 rounded-2xl border border-gray-200">
+      <div class="flex items-start gap-6">
+        <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+          {author.charAt(0)}
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">About {author}</h3>
+          <p class="text-gray-700">
+            {author} is an insurance expert with over 10 years of experience helping drivers save money on car insurance. Specializing in state-specific regulations and coverage optimization.
+          </p>
+          <div class="mt-4 flex gap-4">
+            <a href="/authors" class="text-blue-600 hover:text-blue-800 font-medium">
+              View all articles →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Posts -->
+    <div class="mt-16">
+      <h3 class="text-2xl font-bold text-gray-900 mb-8">More Insurance Guides</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <a href="/saving-tips" class="group">
+          <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-lg">
+            <div class="text-blue-600 text-2xl mb-4">💰</div>
+            <h4 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 mb-2">
+              Top 10 Insurance Saving Tips
+            </h4>
+            <p class="text-gray-600">
+              Discover proven strategies to lower your auto insurance premiums.
+            </p>
+          </div>
+        </a>
+        
+        <a href="/vehicles" class="group">
+          <div class="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-lg">
+            <div class="text-blue-600 text-2xl mb-4">🚙</div>
+            <h4 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 mb-2">
+              Vehicle-Specific Insurance Guides
+            </h4>
+            <p class="text-gray-600">
+              Learn how insurance costs vary by vehicle type, make, and model.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="mt-16 p-8 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl">
+      <div class="max-w-2xl">
+        <h3 class="text-2xl font-bold mb-4">Get Your Free Insurance Quote</h3>
+        <p class="text-blue-100 mb-6">
+          Compare rates from top providers in minutes. No obligation, just savings.
+        </p>
+        <a 
+          href="/tools/quote-comparison"
+          class="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50"
+        >
+          🚗 Compare Free Quotes Now
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="mt-12 pt-8 border-t border-gray-200 flex justify-between">
+      <a href="/blog" class="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+        </svg>
+        Back to Blog
+      </a>
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+              class="inline-flex items-center gap-2 px-6 py-3 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+        Back to Top
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript for Table of Contents -->
+<script>
+  // Generate Table of Contents
+  document.addEventListener('DOMContentLoaded', function() {
+    const headings = document.querySelectorAll('.markdown-content h2');
+    const toc = document.getElementById('toc');
+    
+    if (headings.length > 0 && toc) {
+      headings.forEach((heading, index) => {
+        const id = `section-${index}`;
+        heading.id = id;
+        
+        const tocItem = document.createElement('a');
+        tocItem.href = `#${id}`;
+        tocItem.className = 'block text-gray-700 hover:text-blue-600 hover:pl-2 transition-all';
+        tocItem.innerHTML = `
+          <div class="flex items-center gap-3 py-2 border-b border-blue-100">
+            <div class="text-blue-500 font-mono">${String(index + 1).padStart(2, '0')}</div>
+            <span>${heading.textContent}</span>
+          </div>
+        `;
+        toc.appendChild(tocItem);
+      });
+    } else if (toc) {
+      toc.innerHTML = '<p class="text-gray-600">No sections available.</p>';
+    }
+    
+    // Smooth scroll for TOC links
+    document.querySelectorAll('#toc a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 100,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  });
+</script>
+
+<!-- Markdown Styling -->
+<style>
+  /* Base markdown styling */
+  .markdown-content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #374151;
+  }
+
+  /* Headings */
+  .markdown-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #dbeafe;
+    color: #1e40af;
+  }
+
+  .markdown-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #374151;
+  }
+
+  .markdown-content h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: #4b5563;
+  }
+
+  /* Paragraphs and text */
+  .markdown-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .markdown-content strong {
+    font-weight: 600;
+    color: #1e40af;
+  }
+
+  .markdown-content em {
+    font-style: italic;
+    color: #6b7280;
+  }
+
+  /* Lists */
+  .markdown-content ul,
+  .markdown-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .markdown-content ul {
+    list-style-type: disc;
+  }
+
+  .markdown-content ol {
+    list-style-type: decimal;
+  }
+
+  .markdown-content li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+  }
+
+  .markdown-content li > ul,
+  .markdown-content li > ol {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Links */
+  .markdown-content a {
+    color: #2563eb;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    font-weight: 500;
+  }
+
+  .markdown-content a:hover {
+    color: #1d4ed8;
+    text-decoration-thickness: 3px;
+  }
+
+  /* Blockquotes */
+  .markdown-content blockquote {
+    border-left: 4px solid #3b82f6;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #4b5563;
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+  }
+
+  /* Code */
+  .markdown-content code {
+    background-color: #f1f5f9;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #1e40af;
+  }
+
+  .markdown-content pre {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
+  .markdown-content pre code {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+  }
+
+  /* Tables */
+  .markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95em;
+  }
+
+  .markdown-content th,
+  .markdown-content td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+  }
+
+  .markdown-content th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #1e293b;
+  }
+
+  .markdown-content tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+
+  .markdown-content tr:hover {
+    background-color: #f3f4f6;
+  }
+
+  /* Images */
+  .markdown-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .markdown-content img + em {
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    color: #6b7280;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Horizontal Rule */
+  .markdown-content hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #dbeafe, transparent);
+    margin: 3rem 0;
+  }
+
+  /* Callouts / Alerts */
+  .markdown-content .tip,
+  .markdown-content .warning,
+  .markdown-content .important {
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border-left: 4px solid;
+  }
+
+  .markdown-content .tip {
+    background-color: #f0f9ff;
+    border-left-color: #0ea5e9;
+  }
+
+  .markdown-content .warning {
+    background-color: #fef3c7;
+    border-left-color: #f59e0b;
+  }
+
+  .markdown-content .important {
+    background-color: #fce7f3;
+    border-left-color: #db2777;
+  }
+
+  /* Insurance-specific styling */
+  .markdown-content .premium-box {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+  }
+
+  .markdown-content .savings-tip {
+    background-color: #d1fae5;
+    border: 2px solid #10b981;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .markdown-content {
+      font-size: 1rem;
+    }
+    
+    .markdown-content h2 {
+      font-size: 1.75rem;
+    }
+    
+    .markdown-content h3 {
+      font-size: 1.375rem;
+    }
+    
+    .markdown-content h4 {
+      font-size: 1.125rem;
+    }
+    
+    .markdown-content table {
+      font-size: 0.85em;
+    }
+    
+    .markdown-content th,
+    .markdown-content td {
+      padding: 0.5rem;
+    }
+  }
+</style>
+
+</Base>

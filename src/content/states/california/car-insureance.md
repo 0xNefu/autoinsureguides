@@ -1,7 +1,7 @@
 ---
-title: "California Car Insurance 2024: Rates, Laws & Savings Guide"
+title: "California Car Insurance 2026: Rates, Laws & Savings Guide"
 description: "Complete California car insurance guide with average rates by city ($1,842/year), minimum coverage requirements (15/30/5), and how to save up to 40%. Get quotes from top insurers."
-date: 2024-01-15
+date: 2026-01-15
 image: /images/california-car-insurance-guide.jpg
 heroImageAlt: "California highway with insurance savings overlay"
 state: "california"
@@ -22,13 +22,16 @@ canonicalUrl: "https://autoinsureguides.com/states/california/car-insurance"
 priority: 0.9
 ---
 
-# California Car Insurance Guide 2024
+**Advertiser & Legal Disclosure:** AutoInsureGuides is a free educational resource. We are not licensed insurance agents, brokers, or carriers. We may receive compensation when you click on links to partner sites. This does not influence our unbiased guides. For personalized advice, please consult a licensed insurance professional. [Full disclosure here](/affiliate-disclosure).
+
+
+# California Car Insurance Guide 2026
 
 California drivers pay an average of **$1,842 per year** for full coverage car insurance, but rates vary dramatically by city and driver profile.
 
 ## California Minimum Coverage Requirements
-- **Bodily Injury Liability**: $15,000 per person / $30,000 per accident
-- **Property Damage Liability**: $5,000 per accident  
+- **Bodily Injury Liability**: $15$25,000 per person / $30$50,000 per accident
+- **Property Damage Liability**: $5$50,000 per accident  
 - **Uninsured Motorist**: Required (matching your liability limits)
 
 ## Average Annual Premiums by City

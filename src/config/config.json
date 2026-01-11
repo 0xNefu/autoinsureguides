@@ -4,7 +4,7 @@
     "base_url": "https://autoinsureguides.com",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
+    "favicon": "/favicon.png",
     "logo": "/images/logo.jpg",
     "logo_width": "160",
     "logo_height": "40",
@@ -59,5 +59,105 @@
     "blog_name": "AutoInsureGuides",
     "tagline": "Expert Insurance Advice • Unbiased Guides • Money-Saving Tips",
     "twitter_handle": "@insureautoguide"
+  },
+
+  "fonts": {
+    "font_family": {
+      "primary": "Inter:wght@300;400;500;600;700;800",
+      "secondary": "sans-serif"
+    },
+    "font_size": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem"
+    }
+  },
+
+  "colors": {
+    "light_mode": {
+      "primary": "#1e40af",
+      "secondary": "#3b82f6",
+      "body": "#ffffff",
+      "text": "#1f2937",
+      "heading": "#111827",
+      "border": "#e5e7eb",
+      "muted": "#6b7280",
+      "light": "#f8fafc"
+    },
+    "dark_mode": {
+      "primary": "#3b82f6",
+      "secondary": "#1e40af",
+      "body": "#111827",
+      "text": "#d1d5db",
+      "heading": "#f9fafb",
+      "border": "#374151",
+      "muted": "#9ca3af",
+      "light": "#1f2937"
+    }
+  },
+
+  "navigation": {
+    "header": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "States",
+        "url": "/states"
+      },
+      {
+        "name": "Companies",
+        "url": "/companies"
+      },
+      {
+        "name": "Vehicles",
+        "url": "/vehicles"
+      },
+      {
+        "name": "Blog",
+        "url": "/blog"
+      },
+      {
+        "name": "Saving Tips",
+        "url": "/saving-tips"
+      }
+    ],
+    "footer": [
+      {
+        "name": "Privacy Policy",
+        "url": "/privacy"
+      },
+      {
+        "name": "Terms of Service",
+        "url": "/terms"
+      },
+      {
+        "name": "Contact",
+        "url": "/contact"
+      },
+      {
+        "name": "Sitemap",
+        "url": "/sitemap"
+      }
+    ]
+  },
+
+  "ads": {
+    "enable_adsense": false,
+    "adsense_client": "ca-pub-YOUR_PUBLISHER_ID",
+    "ad_positions": {
+      "header": true,
+      "sidebar": true,
+      "in_content": true,
+      "footer": true
+    }
   }
 }

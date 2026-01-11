@@ -62,24 +62,20 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
 <html lang="en">
   <head>
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W77T47Y58P"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4FBFWMB51"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-W77T47Y58P');
+      gtag('config', 'G-V4FBFWMB51');
     </script>
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
-
-    <!-- Ahrefs Analytics -->
-    <script src="https://analytics.ahrefs.com/analytics.js" data-key="BM9NrhHESqRca7xP0Vuqeg" async></script>
-
-    <link rel="shortcut icon" href={config.site.favicon} />
+    <!-- AutoInsureGuides Favicon -->
+    <link rel="shortcut icon" href="/favicon.png" />
+    
     <meta name="theme-name" content="AutoInsureGuides" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#1e40af" />
+    <meta name="theme-color" content="#1e40af" />
     <meta name="generator" content={Astro.generator} />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
@@ -399,7 +395,7 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
         // Force light mode for professional insurance site
         document.documentElement.classList.remove('dark');
         document.documentElement.setAttribute('data-theme', 'light');
-        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#ffffff');
+        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#1e40af');
         localStorage.setItem('theme', 'light');
       })();
     </script>
@@ -427,12 +423,6 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
     </main>
     
     <Footer />
-
-    <!-- AdSense Auto Ads -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
 
     <!-- INSURANCE PREMIUM CONTENT GATE -->
     {hasGatedContent && (
