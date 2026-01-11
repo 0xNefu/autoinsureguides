@@ -104,6 +104,9 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
       type="website"
     />
 
+    <!-- ALPINE.JS FOR MOBILE MENU (FIX FOR STUCK MENU) -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <!-- SCHEMA MARKUP FOR INSURANCE SITE -->
     {title && (
       <script type="application/ld+json">
