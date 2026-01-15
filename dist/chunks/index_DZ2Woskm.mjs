@@ -1,0 +1,151 @@
+/* empty css                                  */
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead, b as addAttribute } from './astro/server_BH2CgaJp.mjs';
+import 'kleur/colors';
+import { g as getCollection } from './_astro_content_DNkqUFJX.mjs';
+import { $ as $$Base } from './Base_CKfait4E.mjs';
+
+const $$Index = createComponent(async ($$result, $$props, $$slots) => {
+  const ALL_STATES = [
+    "Alabama",
+    "Alaska",
+    "Arizona",
+    "Arkansas",
+    "California",
+    "Colorado",
+    "Connecticut",
+    "Delaware",
+    "Florida",
+    "Georgia",
+    "Hawaii",
+    "Idaho",
+    "Illinois",
+    "Indiana",
+    "Iowa",
+    "Kansas",
+    "Kentucky",
+    "Louisiana",
+    "Maine",
+    "Maryland",
+    "Massachusetts",
+    "Michigan",
+    "Minnesota",
+    "Mississippi",
+    "Missouri",
+    "Montana",
+    "Nebraska",
+    "Nevada",
+    "New Hampshire",
+    "New Jersey",
+    "New Mexico",
+    "New York",
+    "North Carolina",
+    "North Dakota",
+    "Ohio",
+    "Oklahoma",
+    "Oregon",
+    "Pennsylvania",
+    "Rhode Island",
+    "South Carolina",
+    "South Dakota",
+    "Tennessee",
+    "Texas",
+    "Utah",
+    "Vermont",
+    "Virginia",
+    "Washington",
+    "West Virginia",
+    "Wisconsin",
+    "Wyoming",
+    "Washington DC"
+  ];
+  let insuranceGuides = [];
+  let accidentHelp = [];
+  let trafficTickets = [];
+  let findHelp = [];
+  try {
+    insuranceGuides = await getCollection("auto-insurance", ({ data }) => !data.draft);
+  } catch (e) {
+    console.log("No insurance guides yet");
+  }
+  try {
+    accidentHelp = await getCollection("accidents", ({ data }) => !data.draft);
+  } catch (e) {
+    console.log("No accident guides yet");
+  }
+  try {
+    trafficTickets = await getCollection("traffic-laws", ({ data }) => !data.draft);
+  } catch (e) {
+    console.log("No traffic law guides yet");
+  }
+  try {
+    findHelp = await getCollection("find-help", ({ data }) => !data.draft);
+  } catch (e) {
+    console.log("No local help guides yet");
+  }
+  const stats = {
+    statesCovered: "51",
+    topicAreas: "4",
+    stateGuides: "204+"};
+  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": "Auto Insurance Guides - State-by-State Help & Expert Resources", "description": "Your trusted guide for auto insurance in all 51 states. Find expert advice, accident checklists, ticket help, and connect with local professionals." }, { "default": async ($$result2) => renderTemplate`  ${maybeRenderHead()}<section class="relative min-h-[85vh] overflow-hidden bg-gradient-to-br from-blue-50 via-white to-gray-50"> <!-- Background Elements --> <div class="absolute inset-0"> <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2Y4ZjhmOCIvPjxwYXRoIGQ9Ik0wIDQwTDQwIDBaIiBmaWxsPSJub25lIiBzdHJva2U9IiNlNWU1ZTUiIHN0cm9rZS13aWR0aD0iMC41Ii8+PHBhdGggZD0iTTQwIDBMNDAgNDBaIiBmaWxsPSJub25lIiBzdHJva2U9IiNlNWU1ZTUiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+')] opacity-10"></div> <div class="absolute inset-0"> <div class="absolute right-0 top-0 bottom-0 w-1/2 lg:w-2/3 bg-gradient-to-l from-blue-500/5 to-transparent"></div> </div> </div> <div class="container relative z-10 mx-auto px-4 pt-28 pb-16"> <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">  <div>  <div class="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm border border-blue-200 rounded-full px-5 py-2.5 mb-8 shadow-sm"> <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M9 4.5a.5.5 0 01.5.5 3.5 3.5 0 11-3.5 3.5.5.5 0 011 0 2.5 2.5 0 105 0v-1a.5.5 0 011 0v1a3.5 3.5 0 11-3.5 3.5.5.5 0 011 0 4.5 4.5 0 10-4.5-4.5.5.5 0 01-.5-.5z" clip-rule="evenodd"></path> </svg> <span class="text-blue-700 font-semibold text-sm">
+FREE GUIDES • 51 STATES • TRUSTED ADVICE
+</span> </div>  <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight"> <span class="text-blue-900">
+Your Complete Auto Insurance
+</span> <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+Resource
+</span> </h1>  <p class="text-xl text-gray-700 mb-10 max-w-2xl">
+Get expert guides, step-by-step help, and local support for every state. <span class="font-semibold text-blue-700">All in one place, always free.</span> </p>  <div class="grid grid-cols-2 gap-4 mb-12"> <a href="/blog/auto-insurance" class="group px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold rounded-xl hover:shadow-xl hover:shadow-blue-500/40 transition-all text-center">
+State Insurance Guides
+</a> <a href="/blog/accidents" class="group px-6 py-4 bg-gradient-to-r from-red-600 to-red-800 text-white font-bold rounded-xl hover:shadow-xl hover:shadow-red-500/40 transition-all text-center">
+Accident & Injury Help
+</a> <a href="/blog/traffic-laws" class="group px-6 py-4 bg-gradient-to-r from-green-600 to-green-800 text-white font-bold rounded-xl hover:shadow-xl hover:shadow-green-500/40 transition-all text-center">
+Traffic Tickets & Laws
+</a> <a href="/blog/find-help" class="group px-6 py-4 bg-gradient-to-r from-purple-600 to-purple-800 text-white font-bold rounded-xl hover:shadow-xl hover:shadow-purple-500/40 transition-all text-center">
+Find Local Help
+</a> </div>  <div class="flex flex-wrap items-center gap-6 text-sm text-gray-600"> <div class="flex items-center gap-2"> <div class="w-2 h-2 bg-green-500 rounded-full"></div> <span>200+ expert state guides</span> </div> <div class="flex items-center gap-2"> <div class="w-2 h-2 bg-green-500 rounded-full"></div> <span>Clear, step-by-step advice</span> </div> <div class="flex items-center gap-2"> <div class="w-2 h-2 bg-green-500 rounded-full"></div> <span>No sales, just help</span> </div> </div> </div>  <div class="relative"> <div class="bg-white rounded-2xl shadow-2xl p-8 border border-blue-100">  <div class="grid grid-cols-2 gap-6 mb-8"> <div class="text-center p-4 bg-blue-50 rounded-xl"> <div class="text-3xl font-bold text-blue-900 mb-2">${stats.statesCovered}</div> <div class="text-sm text-blue-700 font-medium">STATES COVERED</div> </div> <div class="text-center p-4 bg-cyan-50 rounded-xl"> <div class="text-3xl font-bold text-cyan-900 mb-2">${stats.topicAreas}</div> <div class="text-sm text-cyan-700 font-medium">TOPIC AREAS</div> </div> <div class="text-center p-4 bg-green-50 rounded-xl"> <div class="text-3xl font-bold text-green-900 mb-2">${stats.stateGuides}</div> <div class="text-sm text-green-700 font-medium">STATE GUIDES</div> </div> <div class="text-center p-4 bg-purple-50 rounded-xl"> <div class="text-3xl font-bold text-purple-900 mb-2">Free</div> <div class="text-sm text-purple-700 font-medium">ALWAYS FREE</div> </div> </div>  <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 border border-blue-200"> <h3 class="text-lg font-bold text-blue-900 mb-4 flex items-center gap-2"> <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path> </svg>
+What You'll Find Inside
+</h3> <div class="space-y-3"> <div class="flex items-center gap-2"> <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm text-gray-700">State Insurance Guides</span> </div> <div class="flex items-center gap-2"> <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm text-gray-700">Accident & Injury Help</span> </div> <div class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm text-gray-700">Traffic Tickets & Laws</span> </div> <div class="flex items-center gap-2"> <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm text-gray-700">Find Local Help</span> </div> </div> </div> </div>  <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-100 rounded-full opacity-50"></div> <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-cyan-100 rounded-full opacity-50"></div> </div> </div> </div> </section>  <section class="py-20 bg-white"> <div class="container mx-auto px-4"> <div class="text-center mb-16"> <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+Your Guide to Everything Auto Insurance
+</span> </h2> <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+From understanding your policy to handling tickets and accidents—find clear, actionable help for your state.
+</p> </div> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">  <div class="bg-white rounded-2xl shadow-lg p-8 border border-blue-100 hover:shadow-2xl transition-shadow"> <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6"> <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20"> <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path> </svg> </div> <h3 class="text-xl font-bold text-gray-900 mb-4">State Insurance Guides</h3> <p class="text-gray-600 mb-6">Know your coverage, compare costs, and find the best deals where you live.</p> <ul class="space-y-2 mb-6"> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">51 state-specific guides</span> </li> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">Coverage requirements</span> </li> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">Cost-saving strategies</span> </li> </ul> <a href="/blog/auto-insurance" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800">
+Explore State Guides
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path> </svg> </a> </div>  <div class="bg-white rounded-2xl shadow-lg p-8 border border-red-100 hover:shadow-2xl transition-shadow"> <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6"> <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828a1 1 0 010-1.415z" clip-rule="evenodd"></path> </svg> </div> <h3 class="text-xl font-bold text-gray-900 mb-4">Accident & Injury Help</h3> <p class="text-gray-600 mb-6">Know exactly what to do, who to call, and how to protect yourself after a crash.</p> <ul class="space-y-2 mb-6"> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">Step-by-step checklists</span> </li> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">Injury claim guidance</span> </li> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">State legal deadlines</span> </li> </ul> <a href="/blog/accidents" class="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-800">
+Get Accident Help
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path> </svg> </a> </div>  <div class="bg-white rounded-2xl shadow-lg p-8 border border-green-100 hover:shadow-2xl transition-shadow"> <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6"> <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"></path> </svg> </div> <h3 class="text-xl font-bold text-gray-900 mb-4">Traffic Tickets & Laws</h3> <p class="text-gray-600 mb-6">Navigate speeding tickets, DUIs, and other violations with clear state-specific info.</p> <ul class="space-y-2 mb-6"> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">Fight a speeding ticket</span> </li> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">Understand DUI laws</span> </li> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">License suspension rules</span> </li> </ul> <a href="/blog/traffic-laws" class="inline-flex items-center gap-2 text-green-600 font-semibold hover:text-green-800">
+Handle Tickets & Violations
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path> </svg> </a> </div>  <div class="bg-white rounded-2xl shadow-lg p-8 border border-purple-100 hover:shadow-2xl transition-shadow"> <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6"> <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path> </svg> </div> <h3 class="text-xl font-bold text-gray-900 mb-4">Find Local Help</h3> <p class="text-gray-600 mb-6">Connect with qualified attorneys and compare insurance quotes in your area.</p> <ul class="space-y-2 mb-6"> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">Local attorney directories</span> </li> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">Insurance quote comparison</span> </li> <li class="flex items-center gap-2"> <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-sm">Company reviews</span> </li> </ul> <a href="/blog/find-help" class="inline-flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-800">
+Find Local Help
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path> </svg> </a> </div> </div>  <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8"> <div class="text-center mb-8"> <h3 class="text-2xl font-bold text-gray-900 mb-4">All 51 States Covered</h3> <p class="text-gray-600 max-w-2xl mx-auto">Find specific guides and local resources for your state</p> </div> <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4"> ${ALL_STATES.slice(0, 16).map((state) => renderTemplate`<div class="text-center p-3 bg-white/80 backdrop-blur-sm rounded-lg border border-blue-100 hover:border-blue-300 transition-colors"> <span class="text-sm font-medium text-gray-700">${state}</span> </div>`)} </div> <div class="text-center mt-8"> <a href="/states" class="text-blue-600 font-semibold hover:text-blue-800 inline-flex items-center gap-2">
+View All 51 States
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path> </svg> </a> </div> </div> </div> </section>  <section class="py-20 bg-gradient-to-b from-gray-50 to-white"> <div class="container mx-auto px-4"> <div class="text-center mb-16"> <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"> <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">
+Latest Guides & Resources
+</span> </h2> <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Fresh content from across our site
+</p> </div> <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">  <div class="bg-white rounded-2xl shadow-lg p-8 border border-blue-100"> <div class="flex items-center gap-3 mb-6"> <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center"> <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"> <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path> </svg> </div> <div> <h3 class="text-xl font-bold text-gray-900">State Insurance Guides</h3> <p class="text-sm text-gray-500">${insuranceGuides.length} guides available</p> </div> </div> ${insuranceGuides.slice(0, 3).map((article) => renderTemplate`<a${addAttribute(`/blog/auto-insurance/${article.data.subcategory}/${article.slug}`, "href")} class="block p-4 hover:bg-blue-50 rounded-lg transition-colors mb-2 last:mb-0"> <div class="flex justify-between items-start"> <div> <h4 class="font-medium text-gray-900 hover:text-blue-600">${article.data.title}</h4> ${article.data.state && renderTemplate`<span class="inline-block px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full mt-1"> ${article.data.state} </span>`} </div> <svg class="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path> </svg> </div> </a>`)} <a href="/blog/auto-insurance" class="mt-6 inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800">
+View All Insurance Guides
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path> </svg> </a> </div>  <div class="bg-white rounded-2xl shadow-lg p-8 border border-red-100"> <div class="flex items-center gap-3 mb-6"> <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center"> <svg class="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828a1 1 0 010-1.415z" clip-rule="evenodd"></path> </svg> </div> <div> <h3 class="text-xl font-bold text-gray-900">Accident & Injury Help</h3> <p class="text-sm text-gray-500">${accidentHelp.length} guides available</p> </div> </div> ${accidentHelp.slice(0, 3).map((article) => renderTemplate`<a${addAttribute(`/blog/accidents/${article.data.subcategory}/${article.slug}`, "href")} class="block p-4 hover:bg-red-50 rounded-lg transition-colors mb-2 last:mb-0"> <div class="flex justify-between items-start"> <div> <h4 class="font-medium text-gray-900 hover:text-red-600">${article.data.title}</h4> ${article.data.state && renderTemplate`<span class="inline-block px-2 py-1 bg-red-100 text-red-700 text-xs rounded-full mt-1"> ${article.data.state} </span>`} </div> <svg class="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path> </svg> </div> </a>`)} <a href="/blog/accidents" class="mt-6 inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-800">
+View All Accident Guides
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path> </svg> </a> </div> </div> </div> </section>  <section class="py-20 bg-gradient-to-r from-blue-900 to-blue-800"> <div class="container mx-auto px-4"> <div class="max-w-4xl mx-auto text-center text-white"> <div class="mb-12"> <h2 class="text-3xl md:text-4xl font-bold mb-6">
+Start Exploring Your State's Resources
+</h2> <p class="text-xl text-blue-100 mb-8">
+Access 200+ guides, checklists, and local support for every insurance need.
+</p> </div> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"> <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"> <svg class="w-12 h-12 mx-auto mb-4 text-white" fill="currentColor" viewBox="0 0 20 20"> <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path> </svg> <h3 class="text-lg font-bold mb-3">State Guides</h3> <p class="text-blue-100 text-sm">51 state guides</p> </div> <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"> <svg class="w-12 h-12 mx-auto mb-4 text-white" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828a1 1 0 010-1.415z" clip-rule="evenodd"></path> </svg> <h3 class="text-lg font-bold mb-3">Accident Help</h3> <p class="text-blue-100 text-sm">Step-by-step guides</p> </div> <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"> <svg class="w-12 h-12 mx-auto mb-4 text-white" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"></path> </svg> <h3 class="text-lg font-bold mb-3">Traffic Laws</h3> <p class="text-blue-100 text-sm">Ticket & violation info</p> </div> <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"> <svg class="w-12 h-12 mx-auto mb-4 text-white" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path> </svg> <h3 class="text-lg font-bold mb-3">Find Help</h3> <p class="text-blue-100 text-sm">Local attorneys & quotes</p> </div> </div> <div class="space-y-6"> <a href="#start-exploring" class="inline-block w-full max-w-md mx-auto py-5 bg-white text-blue-900 font-bold rounded-xl hover:bg-blue-50 hover:shadow-2xl transition-all text-lg">
+START EXPLORING ALL GUIDES
+</a> <div class="text-blue-200 text-sm"> <p>No signup required • 100% free educational content</p> </div> </div> </div> </div> </section>  <div class="bg-gray-50 py-8 border-t border-gray-200"> <div class="container mx-auto px-4"> <p class="text-center text-gray-600 text-sm max-w-3xl mx-auto"> <strong>Important Educational Disclaimer:</strong> AutoInsureGuides provides free educational content about auto insurance. 
+        We are <strong>not</strong> insurance agents, brokers, or carriers. We do <strong>not</strong> sell insurance. 
+        This website contains educational guides to help you understand insurance concepts. 
+        For specific insurance advice, always consult licensed insurance professionals in your state.
+</p> </div> </div> ` })}`;
+}, "C:/Users/NefuTrades/autoinsureguides/src/pages/index.astro", void 0);
+
+const $$file = "C:/Users/NefuTrades/autoinsureguides/src/pages/index.astro";
+const $$url = "";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Index,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { _page as _ };

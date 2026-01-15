@@ -1,0 +1,59 @@
+/* empty css                                  */
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from './astro/server_BH2CgaJp.mjs';
+import 'kleur/colors';
+import { $ as $$Base } from './Base_CKfait4E.mjs';
+
+const $$About = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": "About AutoInsureGuides", "description": "Expert auto insurance guides, comparison tools, and money-saving tips. Get the best coverage at the lowest rates with our comprehensive resources.", "image": "/images/insurance-hero.jpg" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="section"> <div class="container max-w-4xl"> <!-- Hero Section --> <div class="text-center mb-16"> <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
+Your Guide to <span class="text-primary dark:text-primary-light">Smarter Auto Insurance</span> </h1> <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+Expert advice, comparison tools, and money-saving tips for every driver.
+</p> <div class="flex justify-center gap-4"> <a href="/insurance-quote-comparison" class="btn btn-primary dark:bg-primary-dark dark:hover:bg-primary">
+Compare Quotes
+</a> <a href="/contact" class="btn btn-outline dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800">
+Ask an Expert
+</a> </div> </div> <!-- What We Do --> <div class="mb-16"> <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">How We Help You Save</h2> <div class="grid md:grid-cols-2 gap-8"> <div class="p-6 border rounded-lg dark:border-gray-700 dark:bg-gray-800/50"> <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Insurance Comparison</h3> <p class="text-gray-600 dark:text-gray-300">
+Unbiased comparisons of top insurance providers with real-time rate analysis 
+              to help you find the best coverage at the lowest price.
+</p> </div> <div class="p-6 border rounded-lg dark:border-gray-700 dark:bg-gray-800/50"> <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Money-Saving Tips</h3> <p class="text-gray-600 dark:text-gray-300">
+Proven strategies to reduce your premiums, from safe driver discounts 
+              to bundling policies and improving your credit score.
+</p> </div> <div class="p-6 border rounded-lg dark:border-gray-700 dark:bg-gray-800/50"> <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">State-Specific Guides</h3> <p class="text-gray-600 dark:text-gray-300">
+Detailed coverage requirements and regulations for all 50 states, 
+              plus local provider recommendations and minimum coverage analysis.
+</p> </div> <div class="p-6 border rounded-lg dark:border-gray-700 dark:bg-gray-800/50"> <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Claims Assistance</h3> <p class="text-gray-600 dark:text-gray-300">
+Step-by-step guidance through the claims process, negotiation tips, 
+              and how to maximize your settlement after an accident.
+</p> </div> </div> </div> <!-- Mission Statement --> <div class="mb-16 p-8 bg-gradient-to-r from-blue-50 to-primary/10 dark:from-gray-800/50 dark:to-primary-dark/20 rounded-2xl"> <h2 class="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-white">Our Mission</h2> <p class="text-lg text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto">
+To empower drivers with transparent, unbiased information that demystifies auto insurance. 
+          We believe everyone deserves affordable coverage without sacrificing protection. 
+          Through comprehensive guides, comparison tools, and expert advice, we help millions 
+          of drivers make informed decisions and save money every year.
+</p> </div> <!-- Team/Expert Section --> <div class="mb-16"> <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Our Insurance Experts</h2> <div class="grid md:grid-cols-2 gap-8"> <div class="p-6 border rounded-lg dark:border-gray-700 dark:bg-gray-800/50"> <div class="flex items-center gap-4 mb-4"> <div class="w-16 h-16 bg-primary/20 dark:bg-primary-dark/30 rounded-full flex items-center justify-center"> <span class="text-2xl">📊</span> </div> <div> <h3 class="text-xl font-bold text-gray-900 dark:text-white">Data Analysis Team</h3> <p class="text-sm text-gray-500 dark:text-gray-400">Rate Comparison Specialists</p> </div> </div> <p class="text-gray-600 dark:text-gray-300">
+Our analysts constantly monitor insurance rates across all 50 states, 
+              tracking over 100 providers to bring you the most accurate, up-to-date 
+              pricing information available.
+</p> </div> <div class="p-6 border rounded-lg dark:border-gray-700 dark:bg-gray-800/50"> <div class="flex items-center gap-4 mb-4"> <div class="w-16 h-16 bg-primary/20 dark:bg-primary-dark/30 rounded-full flex items-center justify-center"> <span class="text-2xl">⚖️</span> </div> <div> <h3 class="text-xl font-bold text-gray-900 dark:text-white">Legal & Compliance</h3> <p class="text-sm text-gray-500 dark:text-gray-400">Regulation Experts</p> </div> </div> <p class="text-gray-600 dark:text-gray-300">
+With expertise in insurance law and state regulations, our team ensures 
+              all information is compliant, accurate, and reflects current legal requirements.
+</p> </div> </div> </div> <!-- Trust Indicators --> <div class="mb-16"> <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Why Trust Us</h2> <div class="grid grid-cols-2 md:grid-cols-4 gap-6"> <div class="text-center p-4"> <div class="text-3xl font-bold text-primary dark:text-primary-light mb-2">500K+</div> <p class="text-sm text-gray-600 dark:text-gray-300">Drivers Helped</p> </div> <div class="text-center p-4"> <div class="text-3xl font-bold text-primary dark:text-primary-light mb-2">$42M+</div> <p class="text-sm text-gray-600 dark:text-gray-300">Annual Savings</p> </div> <div class="text-center p-4"> <div class="text-3xl font-bold text-primary dark:text-primary-light mb-2">50</div> <p class="text-sm text-gray-600 dark:text-gray-300">States Covered</p> </div> <div class="text-center p-4"> <div class="text-3xl font-bold text-primary dark:text-primary-light mb-2">100+</div> <p class="text-sm text-gray-600 dark:text-gray-300">Providers Compared</p> </div> </div> </div> <!-- CTA --> <div class="text-center border-t dark:border-gray-700 pt-12"> <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Start Saving Today</h2> <p class="text-lg mb-8 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+Join thousands of drivers who save an average of $489 per year on auto insurance.
+</p> <div class="flex flex-col sm:flex-row gap-4 justify-center"> <a href="/car-insurance-quotes" class="btn btn-primary dark:bg-primary-dark dark:hover:bg-primary px-8">
+Get Free Quotes
+</a> <a href="/blog" class="btn btn-outline dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800 px-8">
+Read Our Guides
+</a> </div> <p class="text-sm text-gray-500 dark:text-gray-400 mt-6">
+*Average savings based on user-reported data. Individual results may vary.
+</p> </div> </div> </section> ` })}`;
+}, "C:/Users/NefuTrades/autoinsureguides/src/pages/about.astro", void 0);
+
+const $$file = "C:/Users/NefuTrades/autoinsureguides/src/pages/about.astro";
+const $$url = "/about";
+
+const __vite_glob_0_2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$About,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { __vite_glob_0_2 as _ };

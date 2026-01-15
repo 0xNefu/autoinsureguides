@@ -1,0 +1,91 @@
+/* empty css                                  */
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from './astro/server_BH2CgaJp.mjs';
+import 'kleur/colors';
+import { g as getCollection } from './_astro_content_DNkqUFJX.mjs';
+import { $ as $$Base } from './Base_CKfait4E.mjs';
+import { $ as $$Posts } from './Posts_DeO1jOO3.mjs';
+import { $ as $$Pagination } from './Pagination_B4Al2mj3.mjs';
+
+const $$Blog = createComponent(async ($$result, $$props, $$slots) => {
+  function calculateReadTime(content, wordsPerMinute = 130) {
+    if (!content) return 5;
+    const plainText = content.replace(/---[\s\S]*?---/, "").replace(/```[\s\S]*?```/g, "").replace(/<[^>]*>/g, "").replace(/#{1,6}\s*/g, "").replace(/[\[\]\(\)]/g, " ").replace(/\s+/g, " ").trim();
+    const wordCount = plainText.split(/\s+/).length;
+    const minutes = Math.ceil(wordCount / wordsPerMinute);
+    return Math.max(1, Math.min(minutes, 60));
+  }
+  function getPostReadTime(post) {
+    if (post.data.readTime) return post.data.readTime;
+    if (post.body) return calculateReadTime(post.body);
+    const estimates = {
+      "car-insurance-basics": 8,
+      "saving-money": 10,
+      "state-guides": 12,
+      "claims-help": 15
+    };
+    return estimates[post.data.category] || 8;
+  }
+  const allPostsRaw = await getCollection("posts", ({ data }) => !data.draft);
+  const allPosts = allPostsRaw.map((post) => ({
+    ...post,
+    data: {
+      ...post.data,
+      readTime: getPostReadTime(post)
+    }
+  }));
+  const sortedPosts = allPosts.sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+  );
+  const pageSize = 12;
+  const currentPage = 1;
+  const paginatedPosts = sortedPosts.slice(0, pageSize);
+  const totalPages = Math.ceil(allPosts.length / pageSize);
+  const blogOgImage = "/images/insurance-blog-og.jpg";
+  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": "Auto Insurance Guides & Resources | AutoInsureGuides", "description": "Browse our comprehensive auto insurance guides. Learn how to save money, understand coverage, and make smart insurance decisions.", "image": blogOgImage }, { "default": async ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-black py-20"> <div class="container mx-auto px-4">  <div class="text-center mb-16"> <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 backdrop-blur-sm border border-blue-300 dark:border-blue-700 rounded-full px-6 py-3 mb-8"> <span class="text-blue-600 dark:text-blue-400">📚</span> <span class="text-blue-700 dark:text-blue-300 font-medium">
+EXPERT GUIDES • MONEY-SAVING TIPS • FREE RESOURCES
+</span> </div> <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+Auto Insurance Knowledge Center
+</h1> <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+Everything you need to know about auto insurance. From basic coverage to advanced money-saving strategies.
+</p>  <div class="flex flex-wrap justify-center gap-8 mt-10"> <div class="text-center"> <div class="text-3xl font-bold text-gray-900 dark:text-white">${allPosts.length}</div> <div class="text-gray-600 dark:text-gray-400">Insurance Guides</div> </div> <div class="text-center"> <div class="text-3xl font-bold text-gray-900 dark:text-white">50</div> <div class="text-gray-600 dark:text-gray-400">States Covered</div> </div> <div class="text-center"> <div class="text-3xl font-bold text-green-600 dark:text-green-400">$489</div> <div class="text-gray-600 dark:text-gray-400">Avg. Annual Savings</div> </div> </div> </div>  <div class="flex flex-wrap gap-4 mb-12 justify-center"> <a href="/categories/car-insurance-basics" class="px-5 py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all">
+🚗 Car Insurance Basics
+</a> <a href="/categories/saving-money" class="px-5 py-2.5 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-green-500/30 transition-all">
+💰 Saving Money
+</a> <a href="/categories/state-guides" class="px-5 py-2.5 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/30 transition-all">
+🗺️ State Guides
+</a> <a href="/categories/claims-help" class="px-5 py-2.5 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-red-500/30 transition-all">
+🆘 Claims Help
+</a> <a href="/categories/commercial-insurance" class="px-5 py-2.5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-yellow-500/30 transition-all">
+🚚 Commercial Insurance
+</a> <a href="/categories/specialty-vehicles" class="px-5 py-2.5 bg-gradient-to-r from-indigo-500 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-indigo-500/30 transition-all">
+🏎️ Specialty Vehicles
+</a> </div>  <div class="mb-12"> <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+Most Popular Guides
+</h2> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8"> <a href="/guides/how-to-save-on-car-insurance" class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"> <div class="text-blue-600 dark:text-blue-400 text-2xl mb-3">💰</div> <h3 class="font-bold text-gray-900 dark:text-white mb-2">7 Ways to Save on Car Insurance</h3> <p class="text-sm text-gray-600 dark:text-gray-400">Proven strategies to lower your premiums</p> </a> <a href="/guides/state-minimum-requirements" class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"> <div class="text-green-600 dark:text-green-400 text-2xl mb-3">🗺️</div> <h3 class="font-bold text-gray-900 dark:text-white mb-2">State Minimum Requirements</h3> <p class="text-sm text-gray-600 dark:text-gray-400">Coverage requirements in all 50 states</p> </a> <a href="/guides/comprehensive-vs-collision" class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"> <div class="text-purple-600 dark:text-purple-400 text-2xl mb-3">⚖️</div> <h3 class="font-bold text-gray-900 dark:text-white mb-2">Comprehensive vs Collision</h3> <p class="text-sm text-gray-600 dark:text-gray-400">What's the difference and which do you need?</p> </a> <a href="/guides/after-accident-checklist" class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"> <div class="text-red-600 dark:text-red-400 text-2xl mb-3">📋</div> <h3 class="font-bold text-gray-900 dark:text-white mb-2">After Accident Checklist</h3> <p class="text-sm text-gray-600 dark:text-gray-400">Step-by-step guide for what to do</p> </a> </div> </div>  <div class="mb-16"> ${renderComponent($$result2, "Posts", $$Posts, { "posts": paginatedPosts, "className": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" })} </div>  ${totalPages > 1 && renderTemplate`<div class="text-center mb-16"> ${renderComponent($$result2, "Pagination", $$Pagination, { "currentPage": currentPage, "totalPages": totalPages })} </div>`}  <div class="bg-gradient-to-r from-blue-500/10 to-blue-600/10 dark:from-blue-900/30 dark:to-blue-800/30 backdrop-blur-sm rounded-3xl border border-blue-300 dark:border-blue-700 p-8 max-w-4xl mx-auto mb-12"> <div class="text-center"> <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Try Our Insurance Tools</h2> <p class="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
+Use our free calculators and comparison tools to estimate your savings and find the best rates.
+</p> <div class="flex flex-wrap gap-4 justify-center"> <a href="/insurance-calculator" class="px-6 py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-colors">
+Premium Calculator
+</a> <a href="/quote-comparison" class="px-6 py-3 bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 font-bold rounded-xl border border-blue-300 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors">
+Compare Quotes
+</a> <a href="/savings-estimator" class="px-6 py-3 bg-green-600 text-white font-bold rounded-xl hover:bg-green-700 transition-colors">
+Savings Estimator
+</a> </div> </div> </div>  <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 max-w-2xl mx-auto text-center"> <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full mb-6"> <span class="text-2xl">📧</span> </div> <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Get Weekly Insurance Tips</h2> <p class="text-gray-600 dark:text-gray-400 mb-6">
+Join 50,000+ drivers who receive our money-saving tips and rate alerts.
+</p> <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"> <input type="email" placeholder="Your email address" class="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" required> <button type="submit" class="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors">
+Subscribe
+</button> </form> <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+No spam. Unsubscribe anytime. We respect your privacy.
+</p> </div> </div> </section> ` })}`;
+}, "C:/Users/NefuTrades/autoinsureguides/src/pages/blog.astro", void 0);
+
+const $$file = "C:/Users/NefuTrades/autoinsureguides/src/pages/blog.astro";
+const $$url = "/blog";
+
+const __vite_glob_0_8 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Blog,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { __vite_glob_0_8 as _ };

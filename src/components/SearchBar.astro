@@ -1,7 +1,7 @@
 ---
-// src/components/SearchBar.astro - FINAL FIXED VERSION
+// src/components/SearchBar.astro
 interface Props {
-  searchList: any[];
+  searchList: any[]; // ← Consider more specific type if possible, e.g. { title: string; description?: string; content?: string; url: string }[]
 }
 
 const { searchList = [] } = Astro.props;
@@ -10,181 +10,190 @@ const { searchList = [] } = Astro.props;
 <div class="search-bar" id="search-container">
   <div class="relative">
     <input
-      type="text"
+      type="search"                    <!-- ← Changed to type="search" for better mobile UX (shows X clear button) -->
       placeholder="Start typing to search articles..."
       class="w-full p-3 border rounded-lg dark:bg-gray-800 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
       id="search-input"
       aria-label="Search articles"
       autocomplete="off"
     />
-    <div class="absolute right-3 top-3 pointer-events-none">
-      <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+      <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
     </div>
   </div>
-  
-  <div id="search-results" class="mt-4 hidden">
+
+  <div id="search-results" class="mt-4 hidden bg-white dark:bg-gray-900 border rounded-lg shadow-lg dark:shadow-gray-800/50">
     <!-- Results will appear here -->
   </div>
 </div>
 
-<!-- Initialize search data -->
 <script is:inline>
-  window.searchIndex = JSON.stringify(searchList);
-  console.log("Search index loaded with", window.searchIndex?.length || 0, "items");
+  window.searchIndex = JSON.stringify({{searchList | safe}});  // ← Use Astro's | safe filter instead of manual JSON.stringify (safer & cleaner)
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    console.log("Search component initialized");
-    
+  document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
-    const searchContainer = document.getElementById('search-container');  // ← THIS LINE WAS MISSING!
-    
+    const searchContainer = document.getElementById('search-container');
+
     if (!searchInput || !searchResults || !searchContainer) {
-      console.error("Search elements not found");
+      console.error('Search elements not found');
       return;
     }
-    
-    const searchData = window.searchIndex || [];
-    console.log("Available search items:", searchData.length);
-    
+
+    let searchData = [];
+    try {
+      searchData = JSON.parse(window.searchIndex || '[]');
+    } catch (e) {
+      console.error('Failed to parse search index:', e);
+    }
+
+    if (searchData.length === 0) {
+      console.warn('Search index is empty');
+    }
+
     function searchPosts(query) {
       if (!query || query.length < 2) return [];
-      const lowerQuery = query.toLowerCase();
+      const lowerQuery = query.toLowerCase().trim();
       return searchData.filter(item => {
         if (!item) return false;
-        const inTitle = item.title?.toLowerCase().includes(lowerQuery);
-        const inDesc = item.description?.toLowerCase().includes(lowerQuery);
-        const inContent = item.content?.toLowerCase().includes(lowerQuery);
-        return inTitle || inDesc || inContent;
+        return (
+          item.title?.toLowerCase().includes(lowerQuery) ||
+          item.description?.toLowerCase().includes(lowerQuery) ||
+          item.content?.toLowerCase().includes(lowerQuery)
+        );
       });
     }
-    
+
+    function escapeHtml(unsafe) {
+      return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
     function displayResults(results) {
-      if (!results || results.length === 0) {
+      if (results.length === 0) {
         searchResults.innerHTML = `
-          <div class="p-4 text-center text-gray-500 dark:text-gray-400 border rounded-lg bg-gray-50 dark:bg-gray-800">
+          <div class="p-6 text-center text-gray-500 dark:text-gray-400">
             No results found. Try different keywords.
           </div>
         `;
         searchResults.classList.remove('hidden');
         return;
       }
-      
+
       let html = `
-        <div class="mb-2 text-sm text-gray-600 dark:text-gray-300">
+        <div class="p-3 text-sm text-gray-600 dark:text-gray-400 border-b dark:border-gray-700">
           Found ${results.length} ${results.length === 1 ? 'result' : 'results'}
         </div>
       `;
-      
+
       results.slice(0, 10).forEach(item => {
         html += `
-          <a href="${item.url || '/'}" class="block p-4 mb-2 border rounded-lg dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors group">
-            <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400">
+          <a href="${escapeHtml(item.url || '/')}" class="block p-4 border-b last:border-b-0 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+            <h3 class="font-medium text-gray-900 dark:text-white">
               ${escapeHtml(item.title || 'Untitled')}
             </h3>
             ${item.description ? `
-              <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
-                ${escapeHtml(item.description.substring(0, 150))}${item.description.length > 150 ? '...' : ''}
+              <p class="mt-1 text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
+                ${escapeHtml(item.description.substring(0, 160))}${item.description.length > 160 ? '...' : ''}
               </p>
             ` : ''}
           </a>
         `;
       });
-      
+
       if (results.length > 10) {
         html += `
-          <div class="text-center text-sm text-gray-500 dark:text-gray-400 mt-2">
+          <div class="p-3 text-center text-sm text-gray-500 dark:text-gray-400">
             ... and ${results.length - 10} more
           </div>
         `;
       }
-      
+
       searchResults.innerHTML = html;
       searchResults.classList.remove('hidden');
     }
-    
-    function escapeHtml(text) {
-      const div = document.createElement('div');
-      div.textContent = text;
-      return div.innerHTML;
-    }
-    
-    function debounce(func, wait) {
-      let timeout;
-      return function executedFunction(...args) {
-        const later = () => {
-          clearTimeout(timeout);
-          func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
+
+    const debounce = (fn, delay) => {
+      let timeoutId;
+      return (...args) => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => fn(...args), delay);
       };
-    }
-    
-    const performSearch = debounce(function() {
+    };
+
+    const performSearch = debounce(() => {
       const query = searchInput.value.trim();
       if (!query) {
         searchResults.classList.add('hidden');
         return;
       }
       if (query.length < 2) {
-        searchResults.innerHTML = `<div class="p-4 text-center text-gray-500 dark:text-gray-400">Please enter at least 2 characters...</div>`;
+        searchResults.innerHTML = `<div class="p-6 text-center text-gray-500 dark:text-gray-400">Type at least 2 characters...</div>`;
         searchResults.classList.remove('hidden');
         return;
       }
       const results = searchPosts(query);
       displayResults(results);
-    }, 300);
-    
+    }, 280);
+
     searchInput.addEventListener('input', performSearch);
-    searchInput.addEventListener('keydown', e => e.key === 'Escape' && (searchResults.classList.add('hidden'), searchInput.blur()));
-    
-    // ← FIXED: Now using the properly defined searchContainer
-    document.addEventListener('click', function(event) {
-      if (!searchContainer.contains(event.target)) {
+    searchInput.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        searchResults.classList.add('hidden');
+        searchInput.blur();
+      }
+    });
+
+    document.addEventListener('click', e => {
+      if (!searchContainer.contains(e.target)) {
         searchResults.classList.add('hidden');
       }
     });
-    
-    searchInput.focus();
+
+    // Optional: auto-focus on mount (useful for search pages)
+    // searchInput.focus();
   });
 </script>
 
 <style>
   .search-bar {
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
+    position: relative;
   }
-  
+
   #search-results {
-    max-height: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    max-height: 420px;
     overflow-y: auto;
-    scrollbar-width: thin;
+    border-radius: 0.5rem;
   }
-  
+
   #search-results::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
   }
-  
+
   #search-results::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
+    background: transparent;
   }
-  
-  .dark #search-results::-webkit-scrollbar-track {
-    background: #374151;
-  }
-  
+
   #search-results::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
+    background: #9ca3af;
+    border-radius: 3px;
   }
-  
-  #search-results::-webkit-scrollbar-thumb:hover {
-    background: #555;
+
+  .dark #search-results::-webkit-scrollbar-thumb {
+    background: #6b7280;
   }
 </style>

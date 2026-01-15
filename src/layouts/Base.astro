@@ -6,19 +6,19 @@ import Footer from "@/partials/Footer.astro";
 import Header from "@/partials/Header.astro";
 import "@/styles/main.css";
 import { AstroFont } from "astro-font";
-import { ClientRouter } from "astro:transitions";
 import SEO from "@/layouts/components/SEO.astro";
 
 const currentPath = Astro.url.pathname;
 
-// Get frontmatter props
+// Get frontmatter props - WITH DEFAULTS FOR ROBUSTNESS
 const { 
-  title, 
-  meta_title, 
-  description, 
-  image, 
-  noindex, 
-  canonical,
+  title = '', 
+  meta_title = '', 
+  description = '', 
+  image = '', 
+  meta_image = '',  // ✅ ADDED - with default
+  noindex = false, 
+  canonical = '',
   hasGatedContent = false,
   gateType = 'partial'
 } = Astro.props;
@@ -42,21 +42,25 @@ export interface Props {
   meta_title?: string;
   description?: string;
   image?: string;
+  meta_image?: string;  // ✅ ADDED TO INTERFACE
   noindex?: boolean;
   canonical?: string;
   hasGatedContent?: boolean;
   gateType?: 'partial' | 'full';
 }
 
-const finalTitle = meta_title ?? title ?? config.site.title;
-const finalDescription = description ?? config.metadata.meta_description;
-
-const finalImage = image && typeof image === 'string' && image.trim()
+// Use meta_image first, then image, then fallback - UPDATED LOGIC
+const finalImage = meta_image && typeof meta_image === 'string' && meta_image.trim()
+  ? `${config.site.base_url}${meta_image.startsWith("/") ? "" : "/"}${meta_image}`
+  : image && typeof image === 'string' && image.trim()
   ? `${config.site.base_url}${image.startsWith("/") ? "" : "/"}${image}`
   : `${config.site.base_url}${config.metadata.meta_image}`;
 
+const finalTitle = meta_title || title || config.site.title;
+const finalDescription = description || config.metadata.meta_description;
+
 const cleanPath = Astro.url.pathname.replace(/\/$/, "");
-const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
+const finalCanonical = canonical || `${config.site.base_url}${cleanPath}`;
 ---
 <!doctype html>
 <html lang="en">
@@ -165,7 +169,6 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
     <link rel="alternate" type="application/rss+xml" title="AutoInsureGuides RSS" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" title="AutoInsureGuides JSON Feed" href="/feed.json" />
 
-    <ClientRouter />
     <meta name="author" content={config.metadata.meta_author} />
     
     <!-- GATE STYLES - INSURANCE PREMIUM CONTENT -->

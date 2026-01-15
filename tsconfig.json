@@ -1,28 +1,11 @@
-{
+﻿{
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "baseUrl": ".",
-    "target": "ES2022",
-    "allowJs": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "isolatedModules": true,
-    "incremental": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
     "paths": {
       "@/*": ["src/*"]
-      // REMOVE all the specific paths below - they're causing conflicts
     }
   },
-  "include": [
-    ".astro/types.d.ts",
-    "src/**/*",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.astro"
-  ],
+  "include": [".astro/types.d.ts", "src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

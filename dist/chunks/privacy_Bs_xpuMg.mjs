@@ -1,0 +1,65 @@
+/* empty css                                  */
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from './astro/server_BH2CgaJp.mjs';
+import 'kleur/colors';
+import { $ as $$Base } from './Base_CKfait4E.mjs';
+
+const $$Privacy = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Base", $$Base, { "title": "Privacy Policy | AutoInsureGuides", "description": "How we handle your data and privacy at AutoInsureGuides. We're committed to transparency and protecting your information." }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="min-h-screen bg-gradient-to-b from-white to-gray-50 py-12"> <div class="container mx-auto px-4 max-w-4xl"> <div class="text-center mb-12"> <div class="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-blue-100 border border-blue-300 rounded-2xl"> <span class="text-blue-600 text-2xl">🔒</span> <span class="text-blue-800 font-semibold">PRIVACY & DATA PROTECTION</span> </div> <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+Privacy Policy
+</h1> <p class="text-lg text-gray-600">
+Last updated: ${(/* @__PURE__ */ new Date()).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })} </p> </div> <div class="prose prose-lg max-w-none"> <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200"> <div class="mb-8 p-6 bg-blue-50 rounded-xl border border-blue-100"> <h3 class="text-xl font-bold text-gray-900 mb-3">📋 Quick Summary</h3> <p class="text-gray-700">
+We collect minimal data, never sell your information, and are transparent about our practices.
+              Our goal is to provide valuable insurance information while respecting your privacy.
+</p> </div> <section class="mb-10"> <h2 class="text-2xl font-bold text-gray-900 mb-4">1. Information We Collect</h2> <p class="text-gray-700 mb-4">
+We collect only what's necessary to provide our insurance information services:
+</p> <ul class="space-y-3 text-gray-700"> <li class="flex items-start gap-2"> <span class="text-blue-600 mt-1">•</span> <span><strong>Newsletter Subscriptions:</strong> Email addresses for insurance tips and updates</span> </li> <li class="flex items-start gap-2"> <span class="text-blue-600 mt-1">•</span> <span><strong>Contact Forms:</strong> Information you provide when contacting us</span> </li> <li class="flex items-start gap-2"> <span class="text-blue-600 mt-1">•</span> <span><strong>Analytics:</strong> Anonymous usage data via Google Analytics</span> </li> <li class="flex items-start gap-2"> <span class="text-blue-600 mt-1">•</span> <span><strong>Comments:</strong> Information provided when commenting on articles</span> </li> </ul> </section> <section class="mb-10"> <h2 class="text-2xl font-bold text-gray-900 mb-4">2. How We Use Your Information</h2> <p class="text-gray-700 mb-4">
+Your information is used exclusively for:
+</p> <ul class="space-y-3 text-gray-700"> <li>Delivering free auto insurance educational content</li> <li>Sending insurance tips and updates (only with your consent)</li> <li>Improving our website and insurance guides</li> <li>Responding to your insurance questions</li> <li>Providing personalized insurance information</li> </ul> </section> <section class="mb-10"> <h2 class="text-2xl font-bold text-gray-900 mb-4">3. Third-Party Services</h2> <p class="text-gray-700 mb-4">
+We use reputable third-party services to enhance your experience:
+</p> <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"> <div class="p-4 bg-gray-50 rounded-lg border border-gray-200"> <h4 class="font-bold text-gray-900 mb-2">Google Analytics</h4> <p class="text-sm text-gray-600">Anonymous website traffic analysis</p> </div> <div class="p-4 bg-gray-50 rounded-lg border border-gray-200"> <h4 class="font-bold text-gray-900 mb-2">Email Service</h4> <p class="text-sm text-gray-600">Newsletter delivery and management</p> </div> <div class="p-4 bg-gray-50 rounded-lg border border-gray-200"> <h4 class="font-bold text-gray-900 mb-2">Form Submission</h4> <p class="text-sm text-gray-600">Contact form processing</p> </div> <div class="p-4 bg-gray-50 rounded-lg border border-gray-200"> <h4 class="font-bold text-gray-900 mb-2">Ad Networks</h4> <p class="text-sm text-gray-600">Displaying relevant insurance-related ads</p> </div> </div> </section> <section class="mb-10"> <h2 class="text-2xl font-bold text-gray-900 mb-4">4. Advertising and Affiliate Links</h2> <p class="text-gray-700 mb-4">
+To support our free insurance guides, we may display ads and use affiliate links:
+</p> <ul class="space-y-3 text-gray-700"> <li><strong>Google AdSense:</strong> We display relevant insurance advertisements</li> <li><strong>Affiliate Partnerships:</strong> We may earn commissions from insurance comparison tools</li> <li><strong>Sponsored Content:</strong> Clearly marked when content is sponsored</li> </ul> <p class="text-gray-700 mt-4 text-sm bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+⚠️ <strong>Important:</strong> We are not insurance agents or brokers. We provide educational content only.
+              Always consult licensed insurance professionals for personalized advice.
+</p> </section> <section class="mb-10"> <h2 class="text-2xl font-bold text-gray-900 mb-4">5. Your Rights</h2> <p class="text-gray-700 mb-4">
+You have complete control over your data:
+</p> <ul class="space-y-3 text-gray-700"> <li>Unsubscribe from our newsletter at any time</li> <li>Request access to your personal information</li> <li>Ask for corrections to inaccurate data</li> <li>Request deletion of your information</li> <li>Opt-out of personalized advertising</li> <li>Disable cookies in your browser settings</li> </ul> </section> <section class="mb-10"> <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Data Security</h2> <p class="text-gray-700">
+We implement industry-standard security measures to protect your information.
+              However, no online service can guarantee absolute security. We recommend practicing
+              good digital hygiene and being cautious when sharing personal information online.
+</p> </section> <section class="mb-10"> <h2 class="text-2xl font-bold text-gray-900 mb-4">7. Cookies</h2> <p class="text-gray-700 mb-4">
+We use cookies to enhance your browsing experience:
+</p> <ul class="space-y-2 text-gray-700"> <li><strong>Essential Cookies:</strong> Required for website functionality</li> <li><strong>Analytics Cookies:</strong> Help us understand how visitors use our site</li> <li><strong>Advertising Cookies:</strong> Show relevant insurance-related ads</li> <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li> </ul> <p class="text-gray-700 mt-4">
+You can manage cookie preferences in your browser settings. Note that disabling cookies
+              may affect some website features.
+</p> </section> <section class="mb-10"> <h2 class="text-2xl font-bold text-gray-900 mb-4">8. Children's Privacy</h2> <p class="text-gray-700">
+Our website is not intended for children under 16. We do not knowingly collect
+              personal information from children. If you believe we have collected information
+              from a child, please contact us immediately.
+</p> </section> <section class="mb-10"> <h2 class="text-2xl font-bold text-gray-900 mb-4">9. Changes to This Policy</h2> <p class="text-gray-700">
+We may update this privacy policy as our services evolve. The "Last updated" date
+              at the top of this page will reflect any changes. We encourage you to review this
+              policy periodically to stay informed about how we protect your information.
+</p> </section> <section class="mb-10 p-6 bg-blue-50 rounded-xl border border-blue-200"> <h2 class="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2> <p class="text-gray-700 mb-6">
+Have questions about our privacy practices or want to exercise your rights?
+</p> <div class="flex flex-col sm:flex-row gap-4"> <a href="mailto:privacy@autoinsureguides.com" class="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white font-semibold rounded-xl transition-all text-center hover:shadow-lg">
+Email Privacy Team
+</a> <a href="https://twitter.com/insureautoguide" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-white border-2 border-blue-300 hover:border-blue-400 hover:bg-blue-50 text-blue-700 font-semibold rounded-xl transition-all text-center">
+Contact on Twitter
+</a> </div> </section> <div class="text-sm text-gray-600 italic pt-6 border-t border-gray-200"> <p> <strong>Disclaimer:</strong> This privacy policy applies to AutoInsureGuides.com and our educational content.
+              We are not insurance agents, brokers, or advisors. This policy does not apply to third-party websites,
+              insurance companies, or services linked from our site.
+</p> </div> </div> </div> </div> </div> ` })}`;
+}, "C:/Users/NefuTrades/autoinsureguides/src/pages/privacy.astro", void 0);
+
+const $$file = "C:/Users/NefuTrades/autoinsureguides/src/pages/privacy.astro";
+const $$url = "/privacy";
+
+const __vite_glob_0_29 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Privacy,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { __vite_glob_0_29 as _ };

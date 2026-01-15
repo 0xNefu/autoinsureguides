@@ -1,14 +1,15 @@
-﻿@import "tailwindcss";
-@plugin "../tailwind-plugin/tw-theme.mjs";
-@plugin "../tailwind-plugin/dark-mode.mjs";
-@plugin "../tailwind-plugin/tw-bs-grid.mjs";
-@plugin "@tailwindcss/forms";
-@plugin "@tailwindcss/typography";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* ALL @imports MUST come first, before any comments or @layer */
 @import "./safe.css";
-
 @import "./utilities.css";
 
+/* Custom plugins commented out for now */
+/* @plugin "../tailwind-plugin/tw-theme.mjs"; */
+/* @plugin "../tailwind-plugin/dark-mode.mjs"; */
+/* @plugin "../tailwind-plugin/tw-bs-grid.mjs"; */
 
 @layer base {
   @import "./base.css";
@@ -19,10 +20,3 @@
   @import "./navigation.css";
   @import "./buttons.css";
 }
-
-
-
-
-
-
-@import "./dark-mode.css";

@@ -5,10 +5,9 @@ import theme from "@/config/theme.json";
 import { plainify } from "@/lib/utils/textConverter";
 import Footer from "@/partials/Footer.astro";
 import Header from "@/partials/Header.astro";
-import FloatingBubble from "@/components/FloatingBubble.jsx";
 import "@/styles/main.css";
 import { AstroFont } from "astro-font";
-import { ClientRouter } from "astro:transitions";
+// import { ClientRouter } from "astro:transitions"; // REMOVED
 import SEO from "@/layouts/components/SEO.astro";
 
 const pf = theme.fonts.font_family.primary;
@@ -129,7 +128,6 @@ const canonical = `${config.site.base_url}${cleanPath}`;
     <link rel="alternate" type="application/rss+xml" title="autoinsureguides RSS" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" title="autoinsureguides JSON Feed" href="/feed.json" />
 
-    <ClientRouter />
     <meta name="author" content={config.metadata.meta_author} />
   </head>
 
@@ -202,7 +200,6 @@ const canonical = `${config.site.base_url}${cleanPath}`;
     </main>
 
     <Footer />
-    <FloatingBubble client:load />
 
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
