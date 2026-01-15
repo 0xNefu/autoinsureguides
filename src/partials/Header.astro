@@ -1,5 +1,5 @@
----
-import menu from "@/config/menu.json";
+﻿---
+import menu from "@/data/menu.json";
 import { IoSearch } from "react-icons/io5";
 
 const main = menu.main;
@@ -133,11 +133,11 @@ const main = menu.main;
             {/* Insurance Quick Actions */}
             <div class="grid grid-cols-2 gap-3 mb-8">
               <a href="/tools/calculator" class="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl p-4 text-center hover:shadow-lg transition">
-                <div class="text-2xl mb-2">💰</div>
+                <div class="text-2xl mb-2">ðŸ’°</div>
                 <div class="font-bold text-sm">Savings Calculator</div>
               </a>
               <a href="/get-quotes" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-4 text-center hover:shadow-lg transition">
-                <div class="text-2xl mb-2">🚗</div>
+                <div class="text-2xl mb-2">ðŸš—</div>
                 <div class="font-bold text-sm">Get Quotes</div>
               </a>
             </div>
@@ -163,11 +163,11 @@ const main = menu.main;
                   >
                     <div class="flex items-center gap-3">
                       <div class={`w-10 h-10 rounded-lg flex items-center justify-center ${item.name === "Get Quotes" ? 'bg-white/20' : 'bg-blue-100'}`}>
-                        {index === 0 ? '🚗' : 
-                         index === 1 ? '💰' : 
-                         index === 2 ? '📋' : 
-                         index === 3 ? '🗺️' : 
-                         index === 4 ? '🏢' : '📚'}
+                        {index === 0 ? 'ðŸš—' : 
+                         index === 1 ? 'ðŸ’°' : 
+                         index === 2 ? 'ðŸ“‹' : 
+                         index === 3 ? 'ðŸ—ºï¸' : 
+                         index === 4 ? 'ðŸ¢' : 'ðŸ“š'}
                       </div>
                       <div>
                         <div class="font-bold">{item.name}</div>

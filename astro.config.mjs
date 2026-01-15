@@ -14,7 +14,7 @@ export default defineConfig({
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   
-  // FIX ADDED HERE
+  // ✅ CORRECTED: Build configuration
   build: {
     format: "directory", // Forces clean URLs: /blog/post/ instead of /blog/post.md
   },
@@ -52,11 +52,11 @@ export default defineConfig({
     extendDefaultPlugins: true,
   },
   
-  // ⭐⭐ NEW: CONFIGURE MULTIPLE COLLECTIONS ⭐⭐
-  collections: {
-    posts: 'src/content/posts/**/*.md',
-    states: 'src/content/states/**/*.md',
-    vehicles: 'src/content/vehicles/**/*.md',
-    companies: 'src/content/companies/**/*.md'
-  }
+  // ⭐⭐ REMOVED: The collections configuration should NOT be here ⭐⭐
+  // Collections are defined in src/content/config.ts, not in astro.config.mjs
 });
+
+// ✅ IMPORTANT NOTE: 
+// Your collections are already properly defined in src/content/config.ts
+// with the 4-pillar, 51-state structure. This config file should NOT
+// duplicate or override those definitions.

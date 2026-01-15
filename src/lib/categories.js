@@ -1,4 +1,4 @@
-// src/lib/categories.js - AUTO INSURANCE CATEGORY HIERARCHY
+// src/lib/categories.js - AUTO INSURAGE CATEGORY HIERARCHY - UPDATED WITH ALL 51 STATES
 export const CATEGORY_HIERARCHY = {
   "car-insurance-basics": {
     name: "Car Insurance Basics",
@@ -66,19 +66,60 @@ export const CATEGORY_HIERARCHY = {
   
   "state-guides": {
     name: "State-Specific Guides",
-    description: "Insurance requirements, laws, and average rates for each state",
+    description: "Insurance requirements, laws, and average rates for all 51 states",
     icon: "🗺️",
     subcategories: {
+      "alabama": "Alabama Insurance Guide",
+      "alaska": "Alaska Insurance Guide",
+      "arizona": "Arizona Insurance Guide",
+      "arkansas": "Arkansas Insurance Guide",
       "california": "California Insurance Guide",
-      "texas": "Texas Insurance Guide",
+      "colorado": "Colorado Insurance Guide",
+      "connecticut": "Connecticut Insurance Guide",
+      "delaware": "Delaware Insurance Guide",
       "florida": "Florida Insurance Guide",
-      "new-york": "New York Insurance Guide",
-      "pennsylvania": "Pennsylvania Insurance Guide",
-      "illinois": "Illinois Insurance Guide",
-      "ohio": "Ohio Insurance Guide",
       "georgia": "Georgia Insurance Guide",
+      "hawaii": "Hawaii Insurance Guide",
+      "idaho": "Idaho Insurance Guide",
+      "illinois": "Illinois Insurance Guide",
+      "indiana": "Indiana Insurance Guide",
+      "iowa": "Iowa Insurance Guide",
+      "kansas": "Kansas Insurance Guide",
+      "kentucky": "Kentucky Insurance Guide",
+      "louisiana": "Louisiana Insurance Guide",
+      "maine": "Maine Insurance Guide",
+      "maryland": "Maryland Insurance Guide",
+      "massachusetts": "Massachusetts Insurance Guide",
+      "michigan": "Michigan Insurance Guide",
+      "minnesota": "Minnesota Insurance Guide",
+      "mississippi": "Mississippi Insurance Guide",
+      "missouri": "Missouri Insurance Guide",
+      "montana": "Montana Insurance Guide",
+      "nebraska": "Nebraska Insurance Guide",
+      "nevada": "Nevada Insurance Guide",
+      "new-hampshire": "New Hampshire Insurance Guide",
+      "new-jersey": "New Jersey Insurance Guide",
+      "new-mexico": "New Mexico Insurance Guide",
+      "new-york": "New York Insurance Guide",
       "north-carolina": "North Carolina Insurance Guide",
-      "michigan": "Michigan Insurance Guide"
+      "north-dakota": "North Dakota Insurance Guide",
+      "ohio": "Ohio Insurance Guide",
+      "oklahoma": "Oklahoma Insurance Guide",
+      "oregon": "Oregon Insurance Guide",
+      "pennsylvania": "Pennsylvania Insurance Guide",
+      "rhode-island": "Rhode Island Insurance Guide",
+      "south-carolina": "South Carolina Insurance Guide",
+      "south-dakota": "South Dakota Insurance Guide",
+      "tennessee": "Tennessee Insurance Guide",
+      "texas": "Texas Insurance Guide",
+      "utah": "Utah Insurance Guide",
+      "vermont": "Vermont Insurance Guide",
+      "virginia": "Virginia Insurance Guide",
+      "washington": "Washington Insurance Guide",
+      "west-virginia": "West Virginia Insurance Guide",
+      "wisconsin": "Wisconsin Insurance Guide",
+      "wyoming": "Wyoming Insurance Guide",
+      "washington-dc": "Washington DC Insurance Guide"
     }
   },
   
@@ -243,38 +284,59 @@ export function getCategoryBySlug(slug) {
   return CATEGORY_HIERARCHY[slug];
 }
 
-// Insurance-specific helper: Get state minimum requirements
+// Insurance-specific helper: Get state minimum requirements - UPDATED WITH ALL 51 STATES
 export const STATE_MINIMUM_REQUIREMENTS = {
-  "california": {
-    liability: "15/30/5",
-    description: "$15k injury per person, $30k per accident, $5k property damage",
-    pip: false,
-    noFault: false
-  },
-  "texas": {
-    liability: "30/60/25",
-    description: "$30k injury per person, $60k per accident, $25k property damage",
-    pip: false,
-    noFault: false
-  },
-  "florida": {
-    liability: "10/20/10",
-    description: "$10k injury per person, $20k per accident, $10k property damage",
-    pip: true,
-    noFault: true
-  },
-  "new-york": {
-    liability: "25/50/10",
-    description: "$25k injury per person, $50k per accident, $10k property damage",
-    pip: true,
-    noFault: true
-  },
-  "pennsylvania": {
-    liability: "15/30/5",
-    description: "$15k injury per person, $30k per accident, $5k property damage",
-    pip: true,
-    noFault: true
-  }
+  "alabama": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: false },
+  "alaska": { liability: "50/100/25", description: "$50k injury per person, $100k per accident, $25k property damage", pip: false, noFault: false },
+  "arizona": { liability: "25/50/15", description: "$25k injury per person, $50k per accident, $15k property damage", pip: false, noFault: false },
+  "arkansas": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: false },
+  "california": { liability: "15/30/5", description: "$15k injury per person, $30k per accident, $5k property damage", pip: false, noFault: false },
+  "colorado": { liability: "25/50/15", description: "$25k injury per person, $50k per accident, $15k property damage", pip: true, noFault: false },
+  "connecticut": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: true, noFault: false },
+  "delaware": { liability: "25/50/10", description: "$25k injury per person, $50k per accident, $10k property damage", pip: true, noFault: true },
+  "florida": { liability: "10/20/10", description: "$10k injury per person, $20k per accident, $10k property damage", pip: true, noFault: true },
+  "georgia": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: false },
+  "hawaii": { liability: "20/40/10", description: "$20k injury per person, $40k per accident, $10k property damage", pip: true, noFault: true },
+  "idaho": { liability: "25/50/15", description: "$25k injury per person, $50k per accident, $15k property damage", pip: false, noFault: false },
+  "illinois": { liability: "25/50/20", description: "$25k injury per person, $50k per accident, $20k property damage", pip: false, noFault: false },
+  "indiana": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: false },
+  "iowa": { liability: "20/40/15", description: "$20k injury per person, $40k per accident, $15k property damage", pip: false, noFault: false },
+  "kansas": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: true, noFault: true },
+  "kentucky": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: true },
+  "louisiana": { liability: "15/30/25", description: "$15k injury per person, $30k per accident, $25k property damage", pip: false, noFault: false },
+  "maine": { liability: "50/100/25", description: "$50k injury per person, $100k per accident, $25k property damage", pip: true, noFault: false },
+  "maryland": { liability: "30/60/15", description: "$30k injury per person, $60k per accident, $15k property damage", pip: true, noFault: true },
+  "massachusetts": { liability: "20/40/5", description: "$20k injury per person, $40k per accident, $5k property damage", pip: true, noFault: true },
+  "michigan": { liability: "20/40/10", description: "$20k injury per person, $40k per accident, $10k property damage", pip: true, noFault: true },
+  "minnesota": { liability: "30/60/10", description: "$30k injury per person, $60k per accident, $10k property damage", pip: true, noFault: true },
+  "mississippi": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: false },
+  "missouri": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: false },
+  "montana": { liability: "25/50/20", description: "$25k injury per person, $50k per accident, $20k property damage", pip: false, noFault: false },
+  "nebraska": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: true, noFault: false },
+  "nevada": { liability: "25/50/20", description: "$25k injury per person, $50k per accident, $20k property damage", pip: false, noFault: false },
+  "new-hampshire": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: true, noFault: false },
+  "new-jersey": { liability: "15/30/5", description: "$15k injury per person, $30k per accident, $5k property damage", pip: true, noFault: true },
+  "new-mexico": { liability: "25/50/10", description: "$25k injury per person, $50k per accident, $10k property damage", pip: false, noFault: false },
+  "new-york": { liability: "25/50/10", description: "$25k injury per person, $50k per accident, $10k property damage", pip: true, noFault: true },
+  "north-carolina": { liability: "30/60/25", description: "$30k injury per person, $60k per accident, $25k property damage", pip: false, noFault: false },
+  "north-dakota": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: true, noFault: true },
+  "ohio": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: false },
+  "oklahoma": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: false },
+  "oregon": { liability: "25/50/20", description: "$25k injury per person, $50k per accident, $20k property damage", pip: true, noFault: false },
+  "pennsylvania": { liability: "15/30/5", description: "$15k injury per person, $30k per accident, $5k property damage", pip: true, noFault: true },
+  "rhode-island": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: true, noFault: false },
+  "south-carolina": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: false },
+  "south-dakota": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: false },
+  "tennessee": { liability: "25/50/15", description: "$25k injury per person, $50k per accident, $15k property damage", pip: false, noFault: false },
+  "texas": { liability: "30/60/25", description: "$30k injury per person, $60k per accident, $25k property damage", pip: false, noFault: false },
+  "utah": { liability: "25/65/15", description: "$25k injury per person, $65k per accident, $15k property damage", pip: true, noFault: true },
+  "vermont": { liability: "25/50/10", description: "$25k injury per person, $50k per accident, $10k property damage", pip: true, noFault: false },
+  "virginia": { liability: "25/50/20", description: "$25k injury per person, $50k per accident, $20k property damage", pip: false, noFault: false },
+  "washington": { liability: "25/50/10", description: "$25k injury per person, $50k per accident, $10k property damage", pip: false, noFault: false },
+  "west-virginia": { liability: "25/50/25", description: "$25k injury per person, $50k per accident, $25k property damage", pip: false, noFault: false },
+  "wisconsin": { liability: "25/50/10", description: "$25k injury per person, $50k per accident, $10k property damage", pip: false, noFault: false },
+  "wyoming": { liability: "25/50/20", description: "$25k injury per person, $50k per accident, $20k property damage", pip: false, noFault: false },
+  "washington-dc": { liability: "25/50/10", description: "$25k injury per person, $50k per accident, $10k property damage", pip: true, noFault: true }
 };
 
 // Helper: Get popular insurance companies
@@ -315,3 +377,17 @@ export const INSURANCE_COMPANIES = {
     icon: "🛡️"
   }
 };
+
+// NEW: Helper to get states by region for organized display
+export const STATES_BY_REGION = {
+  northeast: ["Connecticut", "Maine", "Massachusetts", "New Hampshire", "New Jersey", "New York", "Pennsylvania", "Rhode Island", "Vermont"],
+  midwest: ["Illinois", "Indiana", "Iowa", "Kansas", "Michigan", "Minnesota", "Missouri", "Nebraska", "North Dakota", "Ohio", "South Dakota", "Wisconsin"],
+  south: ["Alabama", "Arkansas", "Delaware", "Florida", "Georgia", "Kentucky", "Louisiana", "Maryland", "Mississippi", "North Carolina", "Oklahoma", "South Carolina", "Tennessee", "Texas", "Virginia", "West Virginia"],
+  west: ["Alaska", "Arizona", "California", "Colorado", "Hawaii", "Idaho", "Montana", "Nevada", "New Mexico", "Oregon", "Utah", "Washington", "Wyoming"],
+  special: ["Washington DC"]
+};
+
+// NEW: Helper to get state guide URL
+export function getStateGuideUrl(stateSlug) {
+  return `/blog/auto-insurance/${stateSlug}`;
+}

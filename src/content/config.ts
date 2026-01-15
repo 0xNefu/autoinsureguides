@@ -1,123 +1,79 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection, z } from 'astro:content';
 
-// 1. POSTS COLLECTION (General insurance articles)
-const posts = defineCollection({
-  type: "content",
-  schema: z.object({ // ✅ REMOVED the ({ image }) destructure
-    // ✅ ORIGINAL WORKING FIELDS (from crypto site):
-    title: z.string(),
-    description: z.string(),
-    date: z.coerce.date(),
-    updatedDate: z.coerce.date().optional(),
-    image: z.string().optional(), // ✅ CHANGED BACK to z.string()
-    heroImageAlt: z.string().optional(),
-    authors: z.array(z.string()).default(["AutoInsureGuides Team"]),
-    authorTwitter: z.string().optional(),
-    tags: z.array(z.string()).default([]),
-    category: z.string(),
-    subcategory: z.string().optional(),
-    draft: z.boolean().default(true),
-    hasGatedContent: z.boolean().default(false),
-    gateType: z.enum(['full', 'partial', 'none']).default('none'),
-    
-    // ✅ YOUR NEW INSURANCE FIELDS (preserved):
-    insuranceType: z.enum(['personal', 'commercial', 'specialty']).default('personal'),
-    vehicleType: z.enum(['car', 'truck', 'motorcycle', 'rv', 'boat', 'classic', 'none']).optional().default('none'),
-    state: z.string().optional(),
-    coverageLevel: z.enum(['minimum', 'standard', 'premium', 'none']).optional().default('none'),
-    premiumRange: z.string().optional(),
-    savingsPotential: z.string().optional(),
-    difficulty: z.enum(['beginner', 'intermediate', 'advanced']).default('beginner'),
-    targetAudience: z.array(z.string()).optional().default([]),
-    adKeywords: z.array(z.string()).optional().default([]),
-    affiliateProducts: z.array(z.string()).optional().default([]),
-    canonicalUrl: z.string().optional(),
-    noindex: z.boolean().default(true),
-    priority: z.number().min(0).max(1).optional().default(0.5),
-  }),
+// Define a shared schema for all articles
+const baseSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  date: z.date(),
+  updatedDate: z.date().optional(),
+  state: z.string().optional(), // e.g., "CA", "TX" - optional for non-state articles
+  featured: z.boolean().default(false),
+  draft: z.boolean().default(true),
+  noindex: z.boolean().default(false),
+  // ... keep your existing fields like image, authors, etc.
 });
 
-// 2. STATES COLLECTION
-const states = defineCollection({
-  type: "content",
-  schema: z.object({ // ✅ REMOVED ({ image })
-    title: z.string(),
-    description: z.string(),
-    date: z.coerce.date(),
-    updatedDate: z.coerce.date().optional(),
-    image: z.string().optional(), // ✅ CHANGED BACK to z.string()
-    heroImageAlt: z.string().optional(),
-    
-    // State-specific fields
-    state: z.string(),
-    stateName: z.string(),
-    stateAbbreviation: z.string().length(2),
-    insuranceTypes: z.array(z.enum(['auto', 'home', 'health', 'life', 'renters'])).default(['auto']),
-    vehicleTypes: z.array(z.enum(['car', 'truck', 'motorcycle', 'rv', 'boat', 'classic'])).optional().default(['car']),
-    averagePremium: z.string(),
-    minimumCoverage: z.string(),
-    mandatoryCoverage: z.array(z.string()).default(["Liability"]),
-    uniqueLaws: z.array(z.string()).default([]),
-    savingsTips: z.array(z.string()).default([]),
-    topDiscounts: z.array(z.string()).default([]),
-    recommendedCompanies: z.array(z.string()).default([]),
-    draft: z.boolean().default(true),
-    noindex: z.boolean().default(true),
-    canonicalUrl: z.string().optional(),
-    priority: z.number().min(0).max(1).optional().default(0.8),
-  }),
+// ================ ALL 51 STATES ================
+const ALL_STATES = [
+  'alabama', 'alaska', 'arizona', 'arkansas', 'california',
+  'colorado', 'connecticut', 'delaware', 'florida', 'georgia',
+  'hawaii', 'idaho', 'illinois', 'indiana', 'iowa',
+  'kansas', 'kentucky', 'louisiana', 'maine', 'maryland',
+  'massachusetts', 'michigan', 'minnesota', 'mississippi', 'missouri',
+  'montana', 'nebraska', 'nevada', 'new-hampshire', 'new-jersey',
+  'new-mexico', 'new-york', 'north-carolina', 'north-dakota', 'ohio',
+  'oklahoma', 'oregon', 'pennsylvania', 'rhode-island', 'south-carolina',
+  'south-dakota', 'tennessee', 'texas', 'utah', 'vermont',
+  'virginia', 'washington', 'west-virginia', 'wisconsin', 'wyoming',
+  'washington-dc'
+] as const;
+
+// ================ TOPICAL SUBCATEGORIES ================
+const INSURANCE_GUIDES_TOPICS = ['car-insurance-basics', 'cost-discounts', 'company-reviews', 'saving-tips'] as const;
+const ACCIDENT_HELP_TOPICS = ['claims-process', 'injury-guides', 'medical-bills', 'settlement-negotiation'] as const;
+const TRAFFIC_TICKETS_TOPICS = ['speeding-tickets', 'dui-dwi', 'license-suspension', 'moving-violations'] as const;
+const FIND_HELP_TOPICS = ['find-attorney', 'insurance-quotes', 'compare-companies', 'legal-advice'] as const;
+
+// 1. STATE INSURANCE GUIDES
+const insuranceGuidesCollection = defineCollection({
+  type: 'content',
+  schema: baseSchema.extend({
+    pillar: z.literal('auto-insurance'),
+    subcategory: z.enum([...ALL_STATES, ...INSURANCE_GUIDES_TOPICS])
+  })
 });
 
-// 3. VEHICLES COLLECTION
-const vehicles = defineCollection({
-  type: "content",
-  schema: z.object({ // ✅ REMOVED ({ image })
-    title: z.string(),
-    description: z.string(),
-    date: z.coerce.date(),
-    
-    // Vehicle-specific
-    vehicleType: z.enum(['car', 'truck', 'motorcycle', 'rv', 'boat', 'classic']),
-    vehicleSubtype: z.string().optional(),
-    
-    // Insurance data
-    averagePremium: z.string().optional(),
-    coverageRequirements: z.array(z.string()).default([]),
-    specialConsiderations: z.array(z.string()).default([]),
-    
-    // Publishing
-    draft: z.boolean().default(true),
-    noindex: z.boolean().default(true),
-  }),
+// 2. ACCIDENT & INJURY HELP
+const accidentHelpCollection = defineCollection({
+  type: 'content',
+  schema: baseSchema.extend({
+    pillar: z.literal('accidents'),
+    subcategory: z.enum([...ALL_STATES, ...ACCIDENT_HELP_TOPICS])
+  })
 });
 
-// 4. COMPANIES COLLECTION
-const companies = defineCollection({
-  type: "content",
-  schema: z.object({ // ✅ REMOVED ({ image })
-    title: z.string(),
-    description: z.string(),
-    date: z.coerce.date(),
-    
-    // Company data
-    companyName: z.string(),
-    companyType: z.enum(['national', 'regional', 'direct', 'agent']),
-    rating: z.number().min(1).max(5).optional(),
-    
-    // Coverage offered
-    insuranceTypes: z.array(z.enum(['auto', 'home', 'health', 'life'])).default(['auto']),
-    statesAvailable: z.array(z.string()).default([]),
-    
-    // Affiliate focus
-    affiliateLink: z.string().optional(),
-    pros: z.array(z.string()).default([]),
-    cons: z.array(z.string()).default([]),
-    
-    // Publishing
-    draft: z.boolean().default(true),
-    noindex: z.boolean().default(true),
-  }),
+// 3. TRAFFIC TICKETS & LAWS
+const trafficTicketsCollection = defineCollection({
+  type: 'content',
+  schema: baseSchema.extend({
+    pillar: z.literal('traffic-laws'),
+    subcategory: z.enum([...ALL_STATES, ...TRAFFIC_TICKETS_TOPICS])
+  })
+});
+
+// 4. FIND LOCAL HELP
+const findHelpCollection = defineCollection({
+  type: 'content',
+  schema: baseSchema.extend({
+    pillar: z.literal('find-help'),
+    subcategory: z.enum([...ALL_STATES, ...FIND_HELP_TOPICS])
+  })
 });
 
 // Export all collections
-export const collections = { posts, states, vehicles, companies };
+export const collections = {
+  'auto-insurance': insuranceGuidesCollection,
+  'accidents': accidentHelpCollection,
+  'traffic-laws': trafficTicketsCollection,
+  'find-help': findHelpCollection,
+};
