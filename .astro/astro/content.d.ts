@@ -992,6 +992,13 @@ declare module 'astro:content' {
   collection: "find-help";
   data: InferEntrySchema<"find-help">
 } & { render(): Render[".md"] };
+"local-insurance-help.md": {
+	id: "local-insurance-help.md";
+  slug: "local-insurance-help";
+  body: string;
+  collection: "find-help";
+  data: InferEntrySchema<"find-help">
+} & { render(): Render[".md"] };
 "louisiana.md": {
 	id: "louisiana.md";
   slug: "louisiana";

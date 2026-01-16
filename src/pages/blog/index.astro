@@ -1,0 +1,104 @@
+---
+// src/pages/blog/index.astro
+import Base from '@/layouts/Base.astro';
+
+const pillars = [
+  {
+    id: 'auto-insurance',
+    title: 'Auto Insurance',
+    description: 'State-by-state insurance requirements, rates, and coverage guides.',
+    icon: '🛡️',
+    color: 'from-blue-500 to-cyan-500',
+    stats: '50 States Covered',
+  },
+  {
+    id: 'accidents',
+    title: 'Accidents & Claims',
+    description: 'What to do after an accident, claims process, and legal guidance.',
+    icon: '🚗',
+    color: 'from-amber-500 to-orange-500',
+    stats: 'Step-by-Step Guides',
+  },
+  {
+    id: 'traffic-laws',
+    title: 'Traffic Laws',
+    description: 'State-specific traffic regulations and legal requirements.',
+    icon: '🚦',
+    color: 'from-emerald-500 to-green-500',
+    stats: 'All 50 States',
+  },
+  {
+    id: 'find-help',
+    title: 'Find Help',
+    description: 'Legal assistance, insurance agents, and support services.',
+    icon: '🤝',
+    color: 'from-purple-500 to-pink-500',
+    stats: 'Nationwide Network',
+  },
+];
+---
+
+<Base title="Insurance Guides | AutoInsureGuides" description="Expert resources across 4 insurance pillars. Find state-specific guides for auto insurance, accident procedures, traffic laws, and professional help.">
+  <div class="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <!-- Hero -->
+    <div class="container mx-auto px-4 py-20 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">
+        AutoInsure<span class="text-blue-600">Guides</span>
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10">
+        Your comprehensive resource for auto insurance, accident procedures, traffic laws, and finding professional help across all 50 states.
+      </p>
+    </div>
+
+    <!-- Pillars Grid -->
+    <div class="container mx-auto px-4 pb-20 max-w-6xl">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {pillars.map(pillar => (
+          <a 
+            href={`/blog/${pillar.id}`}
+            class={`group relative bg-gradient-to-br ${pillar.color} rounded-2xl p-8 text-white overflow-hidden`}
+          >
+            <!-- Background pattern -->
+            <div class="absolute inset-0 opacity-10">
+              <div class="absolute inset-0" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                backgroundSize: '30px 30px',
+              }}></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="relative">
+              <div class="text-4xl mb-6">{pillar.icon}</div>
+              <h2 class="text-2xl font-bold mb-3">{pillar.title}</h2>
+              <p class="text-blue-100 opacity-90 mb-6 text-sm">{pillar.description}</p>
+              <div class="text-sm font-medium opacity-80">{pillar.stats}</div>
+              
+              <!-- Arrow -->
+              <div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <!-- Stats -->
+      <div class="mt-20 grid md:grid-cols-3 gap-8">
+        <div class="text-center p-8 bg-white dark:bg-gray-800 rounded-2xl shadow">
+          <div class="text-4xl font-bold text-blue-600 mb-2">206+</div>
+          <div class="text-gray-600 dark:text-gray-400">Articles</div>
+        </div>
+        <div class="text-center p-8 bg-white dark:bg-gray-800 rounded-2xl shadow">
+          <div class="text-4xl font-bold text-blue-600 mb-2">50</div>
+          <div class="text-gray-600 dark:text-gray-400">States Covered</div>
+        </div>
+        <div class="text-center p-8 bg-white dark:bg-gray-800 rounded-2xl shadow">
+          <div class="text-4xl font-bold text-blue-600 mb-2">4</div>
+          <div class="text-gray-600 dark:text-gray-400">Expert Pillars</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,223 @@
+---
+import { getCollection } from 'astro:content';
+import { VALID_PILLARS } from '@/content/config'; // ← This fixes the error!
+import Base from '../../../layouts/Base.astro';     // Relative path to src/layouts/Base.astro
+
+// Generate static paths for each pillar
+export async function getStaticPaths() {
+  return VALID_PILLARS.map(pillar => ({
+    params: { pillar }
+  }));
+}
+
+const { pillar } = Astro.params;
+
+// Validate pillar exists
+if (!VALID_PILLARS.includes(pillar)) {
+  return Astro.redirect('/404');
+}
+
+// Get all articles for this pillar
+let articles = [];
+try {
+  articles = await getCollection(pillar);
+  console.log(`Loaded ${articles.length} articles for pillar "${pillar}"`);
+} catch (error) {
+  console.error(`Error loading collection for pillar "${pillar}":`, error);
+  articles = [];
+}
+
+// Group articles by subcategory (from frontmatter, fallback to 'general')
+const groupedArticles = articles.reduce((acc, article) => {
+  const subcategory = article.data.subcategory || 'general';
+
+  if (!acc[subcategory]) {
+    acc[subcategory] = [];
+  }
+  acc[subcategory].push(article);
+  return acc;
+}, {});
+
+// Sort subcategories alphabetically
+const sortedSubcategories = Object.keys(groupedArticles).sort();
+
+// Pillar metadata
+const pillarMetadata = {
+  'auto-insurance': {
+    title: 'Auto Insurance Guides',
+    description: 'State-by-state auto insurance requirements, rates, and coverage guides for all 50 states.',
+    icon: '🛡️',
+    color: 'text-blue-600',
+    bgColor: 'bg-blue-50 dark:bg-blue-900/20',
+  },
+  'accidents': {
+    title: 'Accident & Claims Guides',
+    description: 'What to do after an auto accident, insurance claims process, fault determination, and legal guidance.',
+    icon: '🚗',
+    color: 'text-amber-600',
+    bgColor: 'bg-amber-50 dark:bg-amber-900/20',
+  },
+  'traffic-laws': {
+    title: 'Traffic Laws & Regulations',
+    description: 'State-specific traffic laws, violations, penalties, and driving regulations across the United States.',
+    icon: '🚦',
+    color: 'text-emerald-600',
+    bgColor: 'bg-emerald-50 dark:bg-emerald-900/20',
+  },
+  'find-help': {
+    title: 'Find Legal Help & Resources',
+    description: 'Find insurance agents, lawyers, repair shops, and support services after an accident or legal issue.',
+    icon: '🤝',
+    color: 'text-purple-600',
+    bgColor: 'bg-purple-50 dark:bg-purple-900/20',
+  },
+};
+
+const meta = pillarMetadata[pillar] || {
+  title: pillar.replace(/-/g, ' ').toUpperCase(),
+  description: `Explore content in ${pillar.replace(/-/g, ' ')}`,
+  icon: '📚',
+  color: 'text-gray-700 dark:text-gray-300',
+  bgColor: 'bg-gray-50 dark:bg-gray-900',
+};
+---
+
+<Base title={meta.title} description={meta.description}>
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <!-- Hero Section -->
+    <div class={`${meta.bgColor} py-16`}>
+      <div class="container mx-auto px-4 max-w-6xl">
+        <div class="text-center mb-8">
+          <span class="text-5xl">{meta.icon}</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">
+          <span class={meta.color}>{meta.title}</span>
+        </h1>
+        <p class="text-xl text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mb-10">
+          {meta.description}
+        </p>
+        <div class="text-center">
+          <div class="inline-flex items-center gap-4 px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow">
+            <span class="font-medium">{articles.length}</span>
+            <span class="text-gray-500 dark:text-gray-400">Articles</span>
+            <span class="text-gray-300 dark:text-gray-600">•</span>
+            <span class="font-medium">{sortedSubcategories.length}</span>
+            <span class="text-gray-500 dark:text-gray-400">Subcategories</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+      {articles.length === 0 ? (
+        <div class="text-center py-20">
+          <div class="text-6xl mb-6">📭</div>
+          <h2 class="text-2xl font-bold mb-4">No Articles Found</h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-8">
+            No articles have been published for this pillar yet.
+          </p>
+          <a
+            href="/blog"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+          >
+            ← Back to All Pillars
+          </a>
+        </div>
+      ) : (
+        <>
+          <!-- Subcategories Navigation -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">Browse by Subcategory</h2>
+            <div class="flex flex-wrap gap-3">
+              {sortedSubcategories.map(subcategory => (
+                <a
+                  href={`#${subcategory}`}
+                  class="px-4 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-500 dark:hover:border-blue-400 hover:shadow transition"
+                >
+                  {subcategory.replace(/-/g, ' ').toUpperCase()}
+                  <span class="ml-2 text-sm text-gray-500">
+                    ({groupedArticles[subcategory].length})
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <!-- Articles by Subcategory -->
+          <div class="space-y-16">
+            {sortedSubcategories.map(subcategory => {
+              const articlesInSubcategory = groupedArticles[subcategory];
+              return (
+                <section id={subcategory} class="scroll-mt-20">
+                  <div class="flex items-center gap-4 mb-8">
+                    <h2 class="text-2xl font-bold">
+                      {subcategory.replace(/-/g, ' ').toUpperCase()}
+                    </h2>
+                    <span class="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-800 rounded-full">
+                      {articlesInSubcategory.length} articles
+                    </span>
+                  </div>
+
+                  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {articlesInSubcategory.map(article => (
+                      <a
+                        href={`/blog/${pillar}/${subcategory}/${article.slug}`}
+                        class="group block p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl hover:shadow-xl hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300"
+                      >
+                        <h3 class="text-lg font-semibold mb-3 line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                          {article.data.title}
+                        </h3>
+
+                        {article.data.description && (
+                          <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
+                            {article.data.description}
+                          </p>
+                        )}
+
+                        <div class="flex flex-wrap gap-3 text-xs">
+                          {article.data.state && (
+                            <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded">
+                              {article.data.state.toUpperCase()}
+                            </span>
+                          )}
+                          {article.data.date && (
+                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded">
+                              {new Date(article.data.date).toLocaleDateString('en-US', {
+                                year: 'numeric',
+                                month: 'short',
+                                day: 'numeric'
+                              })}
+                            </span>
+                          )}
+                          {article.data.tags && article.data.tags.slice(0, 2).map(tag => (
+                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded">
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </section>
+              );
+            })}
+          </div>
+
+          <!-- Back to all pillars -->
+          <div class="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
+            <a
+              href="/blog"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              View All Pillars
+            </a>
+          </div>
+        </>
+      )}
+    </div>
+  </div>
+</Base>

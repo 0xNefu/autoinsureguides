@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content';
+import { VALID_PILLARS } from '@/content/config';
+
+export async function getStaticPaths() {
+  const paths = [];
+
+  for (const pillarRaw of VALID_PILLARS) {
+    const pillar = String(pillarRaw).trim().toLowerCase();
+    if (!pillar) {
+      console.warn(`Invalid pillar skipped: ${pillarRaw}`);
+      continue;
+    }
+
+    try {
+      const articles = await getCollection(pillar);
+      console.log(`Loaded ${articles.length} articles for pillar "${pillar}"`);
+
+      for (const article of articles) {
+        const subRaw = article.data.subcategory;
+        const subcategory = typeof subRaw === 'string' ? subRaw.trim().toLowerCase() : '';
+
+        const slug = typeof article.slug === 'string' ? article.slug.trim().toLowerCase() : '';
+
+        // Skip if any required part is missing
+        if (!pillar || !subcategory || !slug) {
+          console.warn(
+            `Skipped invalid article "${article.id || article.slug || 'unknown'}" ` +
+            `in pillar "${pillar}": subcategory=${subRaw || 'MISSING'}, slug=${slug || 'MISSING'}`
+          );
+          continue;
+        }
+
+        // Build the full path string (pillar/subcategory/slug)
+        const fullPath = [pillar, subcategory, slug].join('/');
+
+        paths.push({
+          params: { path: fullPath },
+          props: { article }
+        });
+      }
+    } catch (error) {
+      console.warn(`Failed to load collection "${pillar}": ${error.message}`);
+    }
+  }
+
+  console.log(`Final valid paths generated: ${paths.length}`);
+  return paths;
+}
+
+const { article } = Astro.props;
+const { Content } = await article.render();
+
+// Parse the path for use in the template
+const pathParts = Astro.params.path.split('/');
+const pillar = pathParts[0];
+const subcategory = pathParts[1] || '';
+// const slug = pathParts[2]; // optional - already available via article.slug
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{article.data.title} | AutoInsureGuides</title>
+    <meta name="description" content={article.data.description || 'Expert guide for auto insurance, accidents, traffic laws, and more'} />
+    <!-- Add SEO, OG tags, etc. here if needed -->
+  </head>
+
+  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
+    <header class="py-10 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">{article.data.title}</h1>
+
+        <div class="flex flex-wrap gap-6 text-sm uppercase tracking-wide text-gray-600 dark:text-gray-400">
+          <span><strong>Pillar:</strong> {pillar.replace(/-/g, ' ').toUpperCase()}</span>
+          <span><strong>Subcategory:</strong> {subcategory.replace(/-/g, ' ')}</span>
+          {article.data.state && <span><strong>State:</strong> {article.data.state.toUpperCase()}</span>}
+          {article.data.date && (
+            <span><strong>Date:</strong> {new Date(article.data.date).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}</span>
+          )}
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 max-w-4xl prose lg:prose-xl dark:prose-invert">
+      <Content />
+    </main>
+
+    <footer class="py-8 text-center border-t border-gray-200 dark:border-gray-700">
+      <a
+        href={`/blog/${pillar}`}
+        class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+      >
+        ← Back to {pillar.replace(/-/g, ' ').toUpperCase()} section
+      </a>
+    </footer>
+  </body>
+</html>

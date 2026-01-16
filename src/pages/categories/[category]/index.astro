@@ -1,7 +1,7 @@
 ﻿---
 import { getCollection } from 'astro:content';
 import PostCard from '@/components/PostCard.astro';
-import BaseLayout from '@/layouts/Base.astro';
+import Base from '@/layouts/Base.astro';
 import { CATEGORY_HIERARCHY } from '@/lib/categories';
 
 // Prerender all category pages
@@ -51,7 +51,7 @@ console.log(`DEBUG: Found ${categoryPosts.length} posts in category "${category}
 const categoryData = CATEGORY_HIERARCHY[category];
 ---
 
-<BaseLayout>
+<Base>
   <div class="container mx-auto px-4 py-8">
     <header class="mb-12">
       <div class="flex items-center gap-4 mb-4">
@@ -92,4 +92,4 @@ const categoryData = CATEGORY_HIERARCHY[category];
       </div>
     )}
   </div>
-</BaseLayout>
+</Base>

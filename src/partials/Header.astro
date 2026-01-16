@@ -1,6 +1,6 @@
 ﻿---
 import menu from "@/data/menu.json";
-import { IoSearch } from "react-icons/io5";
+// REMOVED: import { IoSearch } from "react-icons/io5";
 
 const main = menu.main;
 ---
@@ -102,9 +102,11 @@ const main = menu.main;
         <span class="text-sm font-bold">Calculate</span>
       </a>
 
-      <!-- Search -->
+      <!-- Search - REPLACED React Icon with SVG -->
       <a href="/search" class="p-2 hover:bg-blue-50 rounded-lg transition" title="Search">
-        <IoSearch class="w-5 h-5 text-blue-700" />
+        <svg class="w-5 h-5 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
       </a>
 
       <!-- Phone (Insurance Industry Standard) -->
@@ -133,11 +135,11 @@ const main = menu.main;
             {/* Insurance Quick Actions */}
             <div class="grid grid-cols-2 gap-3 mb-8">
               <a href="/tools/calculator" class="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl p-4 text-center hover:shadow-lg transition">
-                <div class="text-2xl mb-2">ðŸ’°</div>
+                <div class="text-2xl mb-2">💰</div>
                 <div class="font-bold text-sm">Savings Calculator</div>
               </a>
               <a href="/get-quotes" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-4 text-center hover:shadow-lg transition">
-                <div class="text-2xl mb-2">ðŸš—</div>
+                <div class="text-2xl mb-2">🚗</div>
                 <div class="font-bold text-sm">Get Quotes</div>
               </a>
             </div>
@@ -163,11 +165,11 @@ const main = menu.main;
                   >
                     <div class="flex items-center gap-3">
                       <div class={`w-10 h-10 rounded-lg flex items-center justify-center ${item.name === "Get Quotes" ? 'bg-white/20' : 'bg-blue-100'}`}>
-                        {index === 0 ? 'ðŸš—' : 
-                         index === 1 ? 'ðŸ’°' : 
-                         index === 2 ? 'ðŸ“‹' : 
-                         index === 3 ? 'ðŸ—ºï¸' : 
-                         index === 4 ? 'ðŸ¢' : 'ðŸ“š'}
+                        {index === 0 ? '🚗' : 
+                         index === 1 ? '💰' : 
+                         index === 2 ? '📋' : 
+                         index === 3 ? '🗺️' : 
+                         index === 4 ? '🏆' : '📊'}
                       </div>
                       <div>
                         <div class="font-bold">{item.name}</div>

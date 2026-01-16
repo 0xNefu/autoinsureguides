@@ -3,5 +3,10 @@
     "title": "Auto Insurance Guides",
     "description": "Expert auto insurance guides and comparison tools",
     "url": "https://autoinsureguides.com"
+  },
+  "metadata": {
+    "meta_author": "AutoInsureGuides Team",
+    "meta_description": "Expert auto insurance guides, reviews, and money-saving tips. Compare rates, learn coverage basics, and save on your policy.",
+    "meta_image": "/images/default-og.jpg"
   }
 }

@@ -1,7 +1,7 @@
 ---
 // src/components/SearchBar.astro
 interface Props {
-  searchList: any[]; // ← Consider more specific type if possible, e.g. { title: string; description?: string; content?: string; url: string }[]
+  searchList: any[]; // Consider tightening later: { title: string; description?: string; content?: string; url: string }[]
 }
 
 const { searchList = [] } = Astro.props;
@@ -10,7 +10,7 @@ const { searchList = [] } = Astro.props;
 <div class="search-bar" id="search-container">
   <div class="relative">
     <input
-      type="search"                    <!-- ← Changed to type="search" for better mobile UX (shows X clear button) -->
+      type="search"
       placeholder="Start typing to search articles..."
       class="w-full p-3 border rounded-lg dark:bg-gray-800 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
       id="search-input"
@@ -29,8 +29,9 @@ const { searchList = [] } = Astro.props;
   </div>
 </div>
 
+<!-- Safe JSON data injection - using Astro expression -->
 <script is:inline>
-  window.searchIndex = JSON.stringify({{searchList | safe}});  // ← Use Astro's | safe filter instead of manual JSON.stringify (safer & cleaner)
+  window.searchIndex = JSON.stringify({searchList});
 </script>
 
 <script>
@@ -158,7 +159,7 @@ const { searchList = [] } = Astro.props;
       }
     });
 
-    // Optional: auto-focus on mount (useful for search pages)
+    // Optional: auto-focus on mount
     // searchInput.focus();
   });
 </script>

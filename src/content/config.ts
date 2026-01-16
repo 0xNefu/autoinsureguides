@@ -77,3 +77,6 @@ export const collections = {
   'traffic-laws': trafficTicketsCollection,
   'find-help': findHelpCollection,
 };
+
+// ✅ ADDED: Export VALID_PILLARS for use in pages
+export const VALID_PILLARS = ['auto-insurance', 'accidents', 'traffic-laws', 'find-help'] as const;
