@@ -1,12 +1,12 @@
 ﻿---
-// src/pages/blog/leads/index.astro
+// src/pages/blog/find-help/index.astro
 import { getCollection } from "astro:content";
 
 let articles = [];
 try {
-  articles = await getCollection("leads");
+  articles = await getCollection("Help");
 } catch (error) {
-  console.log("No leads articles yet");
+  console.log("No Help articles yet");
 }
 
 const states = [
@@ -29,12 +29,12 @@ const states = [
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insurance & Attorney Leads by State | AutoInsureGuides</title>
+  <title>Insurance & Attorney Help by State | AutoInsureGuides</title>
   <meta name="description" content="Find insurance quotes and connect with qualified attorneys in your state. State-specific resources for all 50 states + Washington DC.">
 </head>
 <body>
   <main style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
-    <h1>Insurance & Attorney Leads</h1>
+    <h1>Insurance & Attorney Help</h1>
     <p>Connect with insurance providers and qualified attorneys in your state. Get quotes and legal assistance.</p>
     
     <section style="margin-top: 3rem;">
@@ -42,7 +42,7 @@ const states = [
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem; margin-top: 1rem;">
         {states.map(state => (
           <a 
-            href={`/blog/leads/${state}`}
+            href={`/blog/find-help/${state}`}
             style="display: block; padding: 1rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; text-align: center; text-decoration: none; color: #1f2937;"
             onmouseover="this.style.backgroundColor='#f3f4f6'"
             onmouseout="this.style.backgroundColor='white'"
@@ -59,13 +59,13 @@ const states = [
       <p>Get connected with insurance providers or attorneys in your area.</p>
       <div style="display: flex; gap: 1rem; margin-top: 1rem;">
         <a 
-          href="/leads/find-attorney"
+          href="/Help/find-attorney"
           style="background: white; color: #667eea; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: bold;"
         >
           Find an Attorney
         </a>
         <a 
-          href="/leads/insurance-quotes"
+          href="/Help/insurance-quotes"
           style="background: transparent; border: 2px solid white; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: bold;"
         >
           Get Insurance Quotes
@@ -80,7 +80,7 @@ const states = [
           {articles.slice(0, 10).map(article => (
             <li style="margin: 0.5rem 0; padding: 0.5rem; border-bottom: 1px solid #e5e7eb;">
               <a 
-                href={`/blog/leads/${article.data.subcategory}/${article.slug}`}
+                href={`/blog/find-help/${article.data.subcategory}/${article.slug}`}
                 style="text-decoration: none; color: #3b82f6;"
               >
                 {article.data.title}
