@@ -17,11 +17,11 @@ const {
   meta_title = '',
   description = '',
   image = '',
-  meta_image = '',  // Primary OG image
+  meta_image = '',
   noindex = false,
   canonical = '',
   hasGatedContent = false,
-  gateType = 'partial'  // 'partial' or 'full'
+  gateType = 'partial'
 } = Astro.props;
 
 // Log gate info for debugging
@@ -43,7 +43,7 @@ if (pf) {
 // Site base URL with fallback
 const siteUrl = config.site?.base_url || config.site?.url || 'https://autoinsureguides.com';
 
-// Final OG image: meta_image > image > config fallback > hardcoded default
+// Final OG image
 const finalImage = meta_image?.trim()
   ? `${siteUrl}${meta_image.startsWith("/") ? "" : "/"}${meta_image}`
   : image?.trim()
@@ -61,8 +61,22 @@ const metaAuthor = config.metadata?.meta_author || config.site?.title || "AutoIn
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1e40af" />
+    <meta name="msapplication-TileColor" content="#1e40af" />
+    <meta name="theme-name" content="AutoInsureGuides" />
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4FBFWMB51"></script>
     <script>
@@ -71,21 +85,15 @@ const metaAuthor = config.metadata?.meta_author || config.site?.title || "AutoIn
       gtag('js', new Date());
       gtag('config', 'G-V4FBFWMB51');
     </script>
-
-    <!-- Google AdSense - Added for site-wide ads -->
+    
+    <!-- Google AdSense -->
     <script 
       async 
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6121972957488905"
       crossorigin="anonymous">
     </script>
-
-    <link rel="shortcut icon" href="/favicon.png" />
-    <meta name="theme-name" content="AutoInsureGuides" />
-    <meta name="msapplication-TileColor" content="#1e40af" />
-    <meta name="theme-color" content="#1e40af" />
-    <meta name="generator" content={Astro.generator} />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+    
+    <!-- Google Fonts -->
     <AstroFont
       config={[
         {
@@ -99,9 +107,7 @@ const metaAuthor = config.metadata?.meta_author || config.site?.title || "AutoIn
         },
       ]}
     />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-
+    
     <!-- SEO Component -->
     <SEO
       title={finalTitle}
@@ -111,14 +117,14 @@ const metaAuthor = config.metadata?.meta_author || config.site?.title || "AutoIn
       noindex={!!noindex}
       type="website"
     />
-
-    <!-- Alpine.js for mobile menu & interactive elements -->
+    
+    <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-    <!-- Schema.org markup -->
+    
+    <!-- Schema.org -->
     {title && (
       <script type="application/ld+json">
-        {
+        {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "AutoInsureGuides",
@@ -132,191 +138,149 @@ const metaAuthor = config.metadata?.meta_author || config.site?.title || "AutoIn
               "url": "https://autoinsureguides.com/images/logo1.jpg"
             }
           }
-        }
+        })}
       </script>
     )}
-
-    <!-- Article schema (only if not gated) -->
-    {hasGatedContent === false && title && description && (
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "{finalTitle}",
-          "description": "{finalDescription}",
-          "image": "{finalImage}",
-          "datePublished": "2024-01-01",
-          "dateModified": "2024-01-01",
-          "author": {
-            "@type": "Organization",
-            "name": "AutoInsureGuides"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "AutoInsureGuides",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://autoinsureguides.com/images/logo1.jpg"
-            }
-          },
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "{Astro.url.origin}{Astro.url.pathname}"
-          },
-          "isAccessibleForFree": "true",
-          "keywords": "auto insurance, car insurance, insurance guide, insurance tips"
-        }
-      </script>
-    )}
-
+    
+    <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="AutoInsureGuides RSS" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" title="AutoInsureGuides JSON Feed" href="/feed.json" />
     <meta name="author" content={metaAuthor} />
-
-    <!-- Basic ad styles for better rendering -->
-    <style>
-      .ad-unit {
-        margin: 1.5rem auto;
-        text-align: center;
-        overflow: hidden;
-        border-radius: 8px;
-        background: #f8fafc;
-        padding: 10px;
-      }
-      .ad-unit ins {
-        border: 1px solid #e5e7eb !important;
-        border-radius: 6px !important;
-      }
-      .ad-label {
-        font-size: 0.75rem;
-        color: #6b7280;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        margin-bottom: 4px;
-        display: block;
-      }
-    </style>
-
-    <!-- Premium Content Gate Styles -->
-    {hasGatedContent && (
-      <style>
-        .autoinsureguides-gate-overlay { position: fixed; inset: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); z-index: 2147483647; display: none; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.4s ease; }
-        .autoinsureguides-gate-overlay.active { opacity: 1; display: flex; }
-        .autoinsureguides-gate-modal { background: white; border: 2px solid #1e40af; box-shadow: 0 20px 60px rgba(30,64,175,0.15); padding: 3rem; max-width: 500px; width: 90%; border-radius: 16px; animation: modalSlideUp 0.6s cubic-bezier(0.16,1,0.3,1); }
-        @keyframes modalSlideUp { from { opacity: 0; transform: translateY(40px) scale(0.9); } to { opacity: 1; transform: translateY(0) scale(1); } }
-        .gate-header { margin-bottom: 2rem; }
-        .gate-icon { font-size: 3.5rem; margin-bottom: 1.5rem; color: #1e40af; display: block; }
-        .gate-title { font-size: 1.8rem; font-weight: 700; color: #1e293b; }
-        .gate-subtitle { font-size: 1.1rem; color: #4b5563; }
-        .gate-form { margin: 2rem 0; }
-        .gate-input { width: 100%; padding: 1rem 1.25rem; font-size: 1rem; border: 2px solid #d1d5db; border-radius: 12px; margin-bottom: 1rem; transition: all 0.3s ease; }
-        .gate-input:focus { border-color: #1e40af; box-shadow: 0 0 0 3px rgba(30,64,175,0.1); outline: none; }
-        .gate-button { width: 100%; padding: 1rem 1.25rem; background: linear-gradient(135deg, #1e40af, #3b82f6); color: white; border: none; border-radius: 12px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
-        .gate-button:hover { background: linear-gradient(135deg, #1e3a8a, #2563eb); transform: translateY(-2px); box-shadow: 0 10px 25px rgba(30,64,175,0.2); }
-        .gate-close { position: absolute; top: 1.2rem; right: 1.2rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 50%; width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s; }
-        .gate-close:hover { background: #e2e8f0; }
-        .gate-blur { filter: blur(12px); pointer-events: none; user-select: none; opacity: 0.5; transition: filter 0.5s ease; }
-        @media (max-width: 640px) { .autoinsureguides-gate-modal { padding: 2rem 1.5rem; width: 95%; } }
-      </style>
-    )}
-
-    <!-- Force light mode for professional look -->
+    
+    <!-- Force light mode -->
     <script>
       document.documentElement.classList.remove('dark');
-      document.documentElement.setAttribute('data-theme', 'light');
-      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#1e40af');
+      document.documentElement.classList.add('light');
     </script>
-
+    
+    <!-- Basic layout fixes -->
     <style>
-      * { transition: background-color 0.3s ease, color 0.3s ease; }
-      body { background-color: #ffffff; color: #1f2937; }
+      /* Reset some default browser styles */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      html {
+        font-size: 16px;
+        -webkit-text-size-adjust: 100%;
+      }
+      
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+      }
+      
+      /* Ensure main content takes available space */
+      main {
+        flex: 1 0 auto;
+        width: 100%;
+        max-width: 100%;
+      }
+      
+      /* Container for consistent width */
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      
+      /* Image fixes */
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      /* Logo specific fixes */
+      .logo {
+        max-width: 200px; /* Adjust based on your actual logo size */
+        height: auto;
+      }
     </style>
   </head>
 
-  <body class="bg-white text-gray-900 font-primary font-normal leading-relaxed">
+  <body class="bg-white text-gray-900 font-sans antialiased">
     <TwSizeIndicator />
-    <Header />
+    
+    <div class="container">
+      <Header />
+    </div>
 
-    <main id="main-content" class="min-h-[60vh]">
+    <main id="main-content" class="container py-8">
       <slot />
     </main>
 
     <Footer />
-
-    <!-- Premium Content Gate (only if enabled) -->
+    
+    <!-- Premium Content Gate -->
     {hasGatedContent && (
-      <div id="autoinsureguides-gate" class="autoinsureguides-gate-overlay">
-        <div class="autoinsureguides-gate-modal">
-          <button class="gate-close" aria-label="Close gate">×</button>
-
-          <div class="gate-header">
-            <span class="gate-icon">🔐</span>
-            <h2 class="gate-title">Unlock Premium Insurance Guides</h2>
-            <p class="gate-subtitle">Access expert analysis, exclusive savings strategies, and in-depth coverage guides.</p>
-          </div>
-
-          <div class="gate-form">
-            <input type="email" class="gate-input" placeholder="your.email@example.com" id="gate-email-input" required>
-            <button class="gate-button">Get Free Access</button>
-          </div>
-
-          <div class="gate-footer">
-            <p class="gate-legal">
-              By subscribing, you agree to our <a href="/privacy">Privacy Policy</a>. No spam, just valuable insurance insights.
-            </p>
+      <>
+        <style>
+          .autoinsureguides-gate-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(20px);
+            z-index: 2147483647;
+            display: none;
+            justify-content: center;
+            align-items: center;
+          }
+          .autoinsureguides-gate-overlay.active {
+            display: flex;
+          }
+          .autoinsureguides-gate-modal {
+            background: white;
+            border: 2px solid #1e40af;
+            box-shadow: 0 20px 60px rgba(30,64,175,0.15);
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            border-radius: 16px;
+            position: relative;
+          }
+          .gate-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 50%;
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+        </style>
+        
+        <div id="autoinsureguides-gate" class="autoinsureguides-gate-overlay">
+          <div class="autoinsureguides-gate-modal">
+            <button class="gate-close" aria-label="Close gate">×</button>
+            <h2>Unlock Premium Insurance Guides</h2>
+            <input type="email" placeholder="Your email" />
+            <button>Get Free Access</button>
           </div>
         </div>
-      </div>
-    )}
-
-    <!-- Gate JavaScript (condensed & safe) -->
-    {hasGatedContent && (
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const gate = document.getElementById('autoinsureguides-gate');
-          const emailInput = document.getElementById('gate-email-input');
-          const main = document.querySelector('main');
-
-          if (!gate || !emailInput || !main) return;
-
-          // Show gate after 45s or 50% scroll
-          const showGate = () => {
-            main.classList.add('gate-blur');
-            gate.classList.add('active');
-            emailInput.focus();
-          };
-
-          // Auto-show after time
-          setTimeout(showGate, 45000);
-
-          // Scroll trigger
-          window.addEventListener('scroll', () => {
-            if ((window.scrollY / (document.body.scrollHeight - window.innerHeight)) >= 0.5) {
-              showGate();
-              window.removeEventListener('scroll', arguments.callee);
-            }
-          }, { once: true });
-
-          // Unlock on submit
-          document.querySelector('.gate-button')?.addEventListener('click', (e) => {
-            e.preventDefault();
-            if (emailInput.value.includes('@')) {
-              localStorage.setItem('autoinsureguides_subscriber', 'true');
-              main.classList.remove('gate-blur');
-              gate.classList.remove('active');
-              alert('Access granted!');
-            } else {
-              alert('Please enter a valid email.');
-            }
-          });
-
-          // Close button
-          document.querySelector('.gate-close')?.addEventListener('click', () => {
-            main.classList.remove('gate-blur');
-            gate.classList.remove('active');
-          });
-        });
-      </script>
+        
+        <script>
+          // Simple gate logic
+          if (window.location.search.includes('debug')) {
+            console.log('Gate would show here');
+          }
+        </script>
+      </>
     )}
   </body>
 </html>
+
+<!-- Reference ads.txt for crawlers -->
+<link rel="ads.txt" href="/ads.txt" type="text/plain" />

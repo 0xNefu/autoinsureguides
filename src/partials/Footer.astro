@@ -1,6 +1,7 @@
 ---
 import { CATEGORY_HIERARCHY } from '@/lib/categories';
 import config from '@/config/config.json';
+import AdUnit from "@/components/AdUnit.astro"; // Added AdUnit import
 import { getCollection } from 'astro:content';
 
 // Get all posts to count - with error handling
@@ -187,6 +188,16 @@ const currentYear = new Date().getFullYear();
     {/* Divider */}
     <div class="border-t border-blue-200 my-8"></div>
     
+    {/* FOOTER BANNER AD */}
+    <div class="footer-ad-container mb-8">
+      <AdUnit 
+        slot="6533455381" 
+        layout="footer" 
+        label="Advertisement" 
+        className="max-w-4xl mx-auto"
+      />
+    </div>
+    
     {/* Bottom Bar */}
     <div class="flex flex-col md:flex-row justify-between items-center gap-4">
       {/* Copyright & Links */}
@@ -230,22 +241,7 @@ const currentYear = new Date().getFullYear();
       </p>
     </div>
     
-    {/* AdSense Footer Ad Placement */}
-    <div class="mt-8 pt-6 border-t border-blue-200">
-      <div class="text-center text-gray-500 text-xs mb-2">Advertisement</div>
-      <!-- AdSense footer ad slot -->
-      <div class="flex justify-center">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-format="fluid"
-             data-ad-layout-key="-6t+ed+2i-1n-4w"
-             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-             data-ad-slot="XXXXXXXXXX"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-    </div>
+    {/* REMOVED: Old AdSense Footer Ad Placement - Replaced with AdUnit component */}
   </div>
 </footer>
 
@@ -258,5 +254,14 @@ const currentYear = new Date().getFullYear();
   /* Professional insurance styling */
   .footer-link:hover {
     transform: translateX(4px);
+  }
+  
+  /* Footer ad styling */
+  .footer-ad-container {
+    border-top: 1px solid #dbeafe;
+    border-bottom: 1px solid #dbeafe;
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
   }
 </style>

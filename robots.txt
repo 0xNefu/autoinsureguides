@@ -1,0 +1,55 @@
+# AutoInsureGuides Robots.txt
+# https://autoinsureguides.com/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /search?q=*
+Disallow: /?q=*
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /uploads/
+
+# Allow ads.txt for verification
+Allow: /ads.txt
+
+# Allow essential files
+Allow: /sitemap.xml
+Allow: /sitemap-index.xml
+Allow: /rss.xml
+Allow: /feed.xml
+
+# Crawl delay for search engines (optional)
+Crawl-delay: 2
+
+# Sitemap files
+Sitemap: https://autoinsureguides.com/sitemap.xml
+Sitemap: https://autoinsureguides.com/sitemap-index.xml
+Sitemap: https://autoinsureguides.com/sitemap-posts.xml
+Sitemap: https://autoinsureguides.com/sitemap-pages.xml
+Sitemap: https://autoinsureguides.com/sitemap-categories.xml
+
+# Block AI crawlers (optional but recommended for content protection)
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /

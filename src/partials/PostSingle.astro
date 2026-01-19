@@ -1,6 +1,7 @@
 ---
 import SocialShare from "@/components/SocialShare.astro";
 import SimilarPosts from "@/components/SimilarPosts.astro";
+import AdUnit from "@/components/AdUnit.astro"; // Added AdUnit import
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
@@ -172,12 +173,32 @@ const readTime = calculateReadTime(post.body) || 8;
       </div>
     )}
 
+    {/* IN-ARTICLE AD #1 - After Featured Image / Before Content */}
+    <div class="mb-12">
+      <AdUnit 
+        slot="6725027078" 
+        layout="in-article" 
+        label="Advertisement" 
+        className="max-w-3xl mx-auto"
+      />
+    </div>
+
     {/* Main Content */}
     <article class="prose prose-lg max-w-none mb-16">
       <div class="content">
         <Content />
       </div>
     </article>
+
+    {/* IN-ARTICLE AD #2 - After Main Content, Before Tags */}
+    <div class="my-12">
+      <AdUnit 
+        slot="5801159348" 
+        layout="in-article" 
+        label="Sponsored Content" 
+        className="max-w-3xl mx-auto"
+      />
+    </div>
 
     {/* Tags */}
     {tags && tags.length > 0 && (
@@ -286,21 +307,7 @@ const readTime = calculateReadTime(post.body) || 8;
       </div>
     </div>
 
-    {/* AdSense Placement */}
-    <div class="mt-12 pt-8 border-t border-gray-200">
-      <div class="text-center text-gray-500 text-sm mb-4">Advertisement</div>
-      <!-- AdSense in-article ad -->
-      <ins class="adsbygoogle"
-           style="display:block; text-align:center;"
-           data-ad-layout="in-article"
-           data-ad-format="fluid"
-           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-           data-ad-slot="XXXXXXXXXX">
-      </ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
+    {/* REMOVED: Old AdSense Placement - Replaced with our AdUnit component */}
   </div>
 </section>
 

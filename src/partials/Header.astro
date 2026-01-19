@@ -1,5 +1,6 @@
 ﻿---
 import menu from "@/data/menu.json";
+import AdUnit from "@/components/AdUnit.astro"; // Added AdUnit import
 // REMOVED: import { IoSearch } from "react-icons/io5";
 
 const main = menu.main;
@@ -221,6 +222,18 @@ const main = menu.main;
     </div>
   </div>
 </header>
+
+<!-- HEADER LEADERBOARD AD -->
+<div class="header-ad-container bg-white border-b border-gray-200 py-2">
+  <div class="max-w-7xl mx-auto px-4">
+    <AdUnit 
+      slot="6589295708" 
+      layout="header" 
+      label="Advertisement" 
+      className="max-w-5xl mx-auto"
+    />
+  </div>
+</div>
 
 <!-- Trust Badge Banner -->
 <div class="trust-banner">
@@ -624,6 +637,11 @@ const main = menu.main;
     flex-shrink: 0 !important;
   }
   
+  /* HEADER AD CONTAINER */
+  .header-ad-container {
+    border-top: 1px solid #e5e7eb;
+  }
+  
   /* MOBILE MENU */
   .mobile-menu {
     display: block !important;
@@ -866,6 +884,11 @@ const main = menu.main;
     .header-container {
       padding: 1rem 0 !important;
       min-height: 72px !important;
+    }
+    
+    /* Hide header ad on mobile for better UX */
+    .header-ad-container {
+      display: none;
     }
   }
   

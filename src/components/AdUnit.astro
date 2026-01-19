@@ -1,12 +1,64 @@
 ---
-const { slot, format = "auto", responsive = true, className = "" } = Astro.props;
+const { 
+  slot, 
+  format = "auto", 
+  responsive = true, 
+  layout = "default",
+  className = "", 
+  label = "Advertisement" 
+} = Astro.props;
+
+// Determine styles based on layout
+const getStyles = () => {
+  switch(layout) {
+    case "header":
+      return "my-4";
+    case "in-article":
+      return "my-8 text-center";
+    case "sidebar":
+      return "my-6";
+    case "footer":
+      return "mt-10 mb-4";
+    default:
+      return "my-6";
+  }
+};
 ---
 
-<div class={`ad-unit ${className} my-6 text-center`}>
-  <ins class="adsbygoogle"
-       style="display:block;"
-       data-ad-client="ca-pub-6121972957488905"
-       data-ad-slot={slot}
-       data-ad-format={format}
-       data-full-width-responsive={responsive.toString()}>
-  </ins>
+<div class={`ad-unit ${getStyles()} ${className}`}>
+  {label && <span class="ad-label">{label}</span>}
+  <ins
+    class="adsbygoogle"
+    style="display:block;"
+    data-ad-client="ca-pub-6121972957488905"
+    data-ad-slot={slot}
+    data-ad-layout={layout === "in-article" ? "in-article" : undefined}
+    data-ad-format={layout === "in-article" ? "fluid" : format}
+    data-full-width-responsive={responsive.toString()}
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+<style>
+  .ad-unit {
+    overflow: hidden;
+    border-radius: 6px;
+    background: #f8fafc;
+    padding: 10px;
+  }
+  .ad-unit ins {
+    border: 1px solid #e5e7eb !important;
+    border-radius: 4px !important;
+  }
+  .ad-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+    display: block;
+    font-weight: 500;
+  }
+</style>
