@@ -72,6 +72,13 @@ const metaAuthor = config.metadata?.meta_author || config.site?.title || "AutoIn
       gtag('config', 'G-V4FBFWMB51');
     </script>
 
+    <!-- Google AdSense - Added for site-wide ads -->
+    <script 
+      async 
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6121972957488905"
+      crossorigin="anonymous">
+    </script>
+
     <link rel="shortcut icon" href="/favicon.png" />
     <meta name="theme-name" content="AutoInsureGuides" />
     <meta name="msapplication-TileColor" content="#1e40af" />
@@ -165,6 +172,30 @@ const metaAuthor = config.metadata?.meta_author || config.site?.title || "AutoIn
     <link rel="alternate" type="application/rss+xml" title="AutoInsureGuides RSS" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" title="AutoInsureGuides JSON Feed" href="/feed.json" />
     <meta name="author" content={metaAuthor} />
+
+    <!-- Basic ad styles for better rendering -->
+    <style>
+      .ad-unit {
+        margin: 1.5rem auto;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #f8fafc;
+        padding: 10px;
+      }
+      .ad-unit ins {
+        border: 1px solid #e5e7eb !important;
+        border-radius: 6px !important;
+      }
+      .ad-label {
+        font-size: 0.75rem;
+        color: #6b7280;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 4px;
+        display: block;
+      }
+    </style>
 
     <!-- Premium Content Gate Styles -->
     {hasGatedContent && (
