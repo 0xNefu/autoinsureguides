@@ -5,214 +5,215 @@ import menu from "@/data/menu.json";
 const main = menu.main;
 ---
 
-<header class="py-4 md:py-6 border-b border-gray-200 bg-white shadow-sm">
-  <div class="mx-auto px-4 md:px-6 lg:px-8 xl:px-12 max-w-7xl flex items-center justify-between gap-4 md:gap-6">
+<header class="header-container">
+  <div class="header-wrapper">
     
-    <!-- LOGO + NAME -->
-    <div class="flex-shrink-0">
-      <a href="/" class="flex items-center space-x-2 md:space-x-3 group">
-        <div class="relative">
+    <!-- LOGO + NAME - Centered vertically -->
+    <div class="logo-wrapper">
+      <a href="/" class="logo-link">
+        <div class="logo-image-container">
           <img
             src="/images/logo1.jpg"
-            alt="AutoInsureGuides - Expert Auto Insurance Advice"
-            class="w-10 h-10 md:w-12 md:h-12 rounded-xl object-cover border-2 border-blue-100 group-hover:border-blue-300 transition-all"
+            alt="AutoInsureGuides - Expert Auto Insurance Guides"
+            class="logo-image"
           />
-          <div class="absolute -bottom-1 -right-1 w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center">
-            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+          <div class="logo-badge">
+            <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
             </svg>
           </div>
         </div>
-        <div class="flex flex-col">
-          <span class="text-xl md:text-2xl font-bold text-blue-900 whitespace-nowrap">
+        <div class="logo-text">
+          <span class="logo-title">
             AutoInsureGuides
           </span>
-          <span class="text-xs text-blue-600 font-medium -mt-1">
-            Expert Insurance Advice
+          <span class="logo-subtitle">
+            Expert Insurance Guides
           </span>
         </div>
       </a>
     </div>
 
-    <!-- Desktop Navigation - Professional Insurance Style -->
-    <nav class="hidden md:flex items-center justify-center flex-1 max-w-2xl mx-4">
-      <div class="flex items-center space-x-1 lg:space-x-2 bg-blue-50/50 rounded-full px-2 py-1">
-        {main.map(item => (
-          <div class="relative group">
-            {item.dropdown ? (
-              <button class="text-sm font-semibold text-blue-900 hover:text-blue-700 transition whitespace-nowrap flex items-center gap-1 px-3 py-2 hover:bg-white rounded-full">
-                {item.name}
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                </svg>
-              </button>
-            ) : (
-              <a
-                href={item.url}
-                class={`
-                  text-sm font-semibold transition whitespace-nowrap px-3 py-2 rounded-full
-                  ${item.name === "Get Quotes" 
-                    ? "bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-md hover:shadow-lg hover:-translate-y-0.5" 
-                    : "text-blue-900 hover:text-blue-700 hover:bg-white"
-                  }
-                `}
-              >
-                {item.name}
-              </a>
-            )}
+    <!-- Desktop Navigation - Updated labels -->
+    <nav class="desktop-nav">
+      <div class="nav-container">
+        {main.map((item, index) => (
+          <div class="nav-item">
+            <button class="nav-dropdown-button">
+              {index === 0 ? "Insurance" : 
+               index === 1 ? "Coverage" : 
+               index === 2 ? "Claims" : 
+               index === 3 ? "States" : 
+               index === 4 ? "Reviews" : 
+               "More"}
+              <svg class="dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
 
-            {item.dropdown && (
-              <ul class="absolute left-1/2 -translate-x-1/2 mt-2 w-56 bg-white border border-blue-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 pt-2 overflow-hidden">
-                {item.dropdown.map(sub => (
+            <ul class="dropdown-menu">
+              <li>
+                <a href={item.url || "#"} class="dropdown-header">
+                  <div class="dropdown-header-icon">
+                    {index === 0 ? '🚗' : 
+                     index === 1 ? '🛡️' : 
+                     index === 2 ? '📋' : 
+                     index === 3 ? '🗺️' : 
+                     index === 4 ? '⭐' : '🔧'}
+                  </div>
+                  <div>
+                    <div class="dropdown-header-title">
+                      {item.name === "State Insurance Guides" ? "Insurance Guides" : 
+                       item.name === "Accident & Injury Help" ? "Accident & Injury" : 
+                       item.name}
+                    </div>
+                    <div class="dropdown-header-subtitle">
+                      {index === 0 ? "Auto Insurance Information" : 
+                       index === 1 ? "Coverage Types & Options" : 
+                       index === 2 ? "Claims Process & Help" : 
+                       index === 3 ? "State-Specific Guides" : 
+                       index === 4 ? "Company Ratings & Reviews" : 
+                       "Additional Resources"}
+                    </div>
+                  </div>
+                </a>
+              </li>
+              
+              {item.dropdown ? (
+                item.dropdown.map(sub => (
                   <li>
-                    <a
-                      href={sub.url}
-                      class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition border-b border-blue-100 last:border-b-0"
-                    >
-                      <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                          </svg>
+                    <a href={sub.url} class="dropdown-item">
+                      <div class="dropdown-icon-container">
+                        <svg class="dropdown-item-icon" fill="currentColor" viewBox="0 0 20 20">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="dropdown-item-title">
+                          {sub.name}
                         </div>
-                        <div>
-                          <div class="font-medium">{sub.name}</div>
-                          {sub.description && (
-                            <div class="text-xs text-gray-500 mt-0.5">{sub.description}</div>
-                          )}
-                        </div>
+                        {sub.description && (
+                          <div class="dropdown-item-description">{sub.description}</div>
+                        )}
                       </div>
                     </a>
                   </li>
-                ))}
-              </ul>
-            )}
+                ))
+              ) : (
+                <li>
+                  <a href={item.url} class="dropdown-item">
+                    <div class="dropdown-icon-container">
+                      <svg class="dropdown-item-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="dropdown-item-title">
+                        View All {item.name === "State Insurance Guides" ? "Insurance Guides" : 
+                                 item.name === "Accident & Injury Help" ? "Accident & Injury" : 
+                                 item.name}
+                      </div>
+                      <div class="dropdown-item-description">Browse all content in this section</div>
+                    </div>
+                  </a>
+                </li>
+              )}
+              
+              {/* "Get Quotes" special button in its dropdown */}
+              {item.name === "Get Quotes" && (
+                <li class="dropdown-quotes-container">
+                  <a href={item.url} class="dropdown-quotes-button">
+                    <svg class="quotes-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <div>
+                      <div class="quotes-title">Get Free Quotes</div>
+                      <div class="quotes-subtitle">Compare rates from top providers</div>
+                    </div>
+                  </a>
+                </li>
+              )}
+            </ul>
           </div>
         ))}
       </div>
     </nav>
 
-    <!-- Right Side Actions -->
-    <div class="flex items-center gap-3 md:gap-4 lg:gap-5 flex-shrink-0">
-      <!-- Calculator Icon -->
-      <a href="/tools/calculator" class="hidden md:flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl hover:shadow-lg hover:-translate-y-0.5 transition-all group" title="Insurance Calculator">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <!-- Right Side Actions - Fixed Calculate button -->
+    <div class="header-actions">
+      <!-- Calculator Icon - Fixed size -->
+      <a href="/tools/calculator" class="calculator-button" title="Insurance Calculator">
+        <svg class="calculator-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
         </svg>
-        <span class="text-sm font-bold">Calculate</span>
+        <span class="calculator-text">Calculate</span>
       </a>
 
-      <!-- Search - REPLACED React Icon with SVG -->
-      <a href="/search" class="p-2 hover:bg-blue-50 rounded-lg transition" title="Search">
-        <svg class="w-5 h-5 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <!-- Search -->
+      <a href="/search" class="search-button" title="Search">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
         </svg>
       </a>
 
-      <!-- Phone (Insurance Industry Standard) -->
-      <a href="tel:+1-800-555-1234" class="hidden lg:flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-xl hover:bg-blue-100 transition group" title="Call for Assistance">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-        </svg>
-        <div class="flex flex-col">
-          <span class="text-xs font-bold">Call Now</span>
-          <span class="text-xs">Free Advice</span>
-        </div>
-      </a>
-
       <!-- Mobile Hamburger -->
-      <div class="md:hidden" x-data="{ open: false }">
-        <button @click="open = !open" class="p-2 text-blue-900 z-50">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div class="mobile-menu" x-data="{ open: false }">
+        <button @click="open = !open" class="mobile-menu-button">
+          <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path :class="{ 'hidden': open, 'block': !open }" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             <path :class="{ 'hidden': !open, 'block': open }" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
 
-        <!-- Mobile Menu - Professional Insurance Style -->
-        <div x-show="open" @click.away="open = false" x-transition class="fixed inset-0 top-16 bg-white z-40 overflow-y-auto shadow-xl">
-          <div class="px-6 py-8">
-            {/* Insurance Quick Actions */}
-            <div class="grid grid-cols-2 gap-3 mb-8">
-              <a href="/tools/calculator" class="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl p-4 text-center hover:shadow-lg transition">
-                <div class="text-2xl mb-2">💰</div>
-                <div class="font-bold text-sm">Savings Calculator</div>
+        <!-- Mobile Menu -->
+        <div x-show="open" @click.away="open = false" x-transition class="mobile-menu-dropdown">
+          <div class="mobile-menu-content">
+            <div class="mobile-actions">
+              <a href="/tools/calculator" class="mobile-calculator">
+                <div class="mobile-icon">💰</div>
+                <div class="mobile-action-text">Savings Calculator</div>
               </a>
-              <a href="/get-quotes" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-4 text-center hover:shadow-lg transition">
-                <div class="text-2xl mb-2">🚗</div>
-                <div class="font-bold text-sm">Get Quotes</div>
+              <a href="/get-quotes" class="mobile-quotes">
+                <div class="mobile-icon">🚗</div>
+                <div class="mobile-action-text">Get Quotes</div>
               </a>
             </div>
 
-            {/* Navigation Links */}
-            <div class="space-y-1">
+            <div class="mobile-nav-links">
               {main.flatMap(item => item.dropdown ? [{ name: item.name, url: null, isHeader: true }, ...item.dropdown] : [item]).map((item, index) => (
                 item.isHeader ? (
-                  <div class="text-sm font-bold text-blue-900 uppercase pt-6 pb-2 border-t border-blue-100 first:border-t-0 first:pt-0">
-                    {item.name}
+                  <div class="mobile-nav-header">
+                    {item.name === "State Insurance Guides" ? "Insurance Guides" : 
+                     item.name === "Accident & Injury Help" ? "Accident & Injury" : 
+                     item.name}
                   </div>
                 ) : (
-                  <a
-                    href={item.url}
-                    class={`
-                      flex items-center justify-between p-4 rounded-xl transition
-                      ${item.name === "Get Quotes" 
-                        ? "bg-gradient-to-r from-blue-600 to-blue-800 text-white" 
-                        : "text-gray-700 hover:bg-blue-50 hover:text-blue-700"
-                      }
-                    `}
-                    @click="open = false"
-                  >
-                    <div class="flex items-center gap-3">
-                      <div class={`w-10 h-10 rounded-lg flex items-center justify-center ${item.name === "Get Quotes" ? 'bg-white/20' : 'bg-blue-100'}`}>
+                  <a href={item.url} class={item.name === "Get Quotes" ? "mobile-nav-link-quotes" : "mobile-nav-link"} @click="open = false">
+                    <div class="mobile-nav-icon-container">
+                      <div class="mobile-nav-icon">
                         {index === 0 ? '🚗' : 
                          index === 1 ? '💰' : 
                          index === 2 ? '📋' : 
                          index === 3 ? '🗺️' : 
-                         index === 4 ? '🏆' : '📊'}
-                      </div>
-                      <div>
-                        <div class="font-bold">{item.name}</div>
-                        {item.description && (
-                          <div class="text-xs opacity-75 mt-0.5">{item.description}</div>
-                        )}
+                         index === 4 ? '⭐' : '📊'}
                       </div>
                     </div>
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="mobile-nav-text">
+                      <div class="mobile-nav-title">
+                        {item.name === "State Insurance Guides" ? "Insurance Guides" : 
+                         item.name === "Accident & Injury Help" ? "Accident & Injury" : 
+                         item.name}
+                      </div>
+                      {item.description && (
+                        <div class="mobile-nav-description">{item.description}</div>
+                      )}
+                    </div>
+                    <svg class="mobile-nav-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                     </svg>
                   </a>
                 )
               ))}
-            </div>
-
-            {/* Contact & Support */}
-            <div class="mt-8 pt-6 border-t border-blue-100">
-              <div class="space-y-4">
-                <a href="tel:+1-800-555-1234" class="flex items-center gap-3 p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition">
-                  <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <div class="font-bold text-blue-900">Call for Assistance</div>
-                    <div class="text-sm text-blue-700">1-800-555-1234</div>
-                  </div>
-                </a>
-
-                <a href="/contact" class="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition">
-                  <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <div class="font-bold text-gray-900">Contact Support</div>
-                    <div class="text-sm text-gray-600">Email our insurance experts</div>
-                  </div>
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -222,74 +223,717 @@ const main = menu.main;
 </header>
 
 <!-- Trust Badge Banner -->
-<div class="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-2 px-4">
-  <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-4 md:gap-8 text-sm">
-    <div class="flex items-center gap-2">
-      <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+<div class="trust-banner">
+  <div class="trust-banner-content">
+    <div class="trust-item">
+      <svg class="trust-icon" fill="currentColor" viewBox="0 0 20 20">
         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
       </svg>
-      <span>Unbiased Insurance Advice</span>
+      <span>Expert Insurance Guides</span>
     </div>
-    <div class="hidden md:flex items-center gap-2">
-      <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+    <div class="trust-item hidden-md">
+      <svg class="trust-icon" fill="currentColor" viewBox="0 0 20 20">
         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
       </svg>
-      <span>No Commission Fees</span>
+      <span>Money-Saving Tips</span>
     </div>
-    <div class="flex items-center gap-2">
-      <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+    <div class="trust-item">
+      <svg class="trust-icon" fill="currentColor" viewBox="0 0 20 20">
         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
       </svg>
-      <span>Helped 15,000+ Save Money</span>
+      <span>Unbiased Information</span>
     </div>
   </div>
 </div>
 
-<script>
-  // Simple theme toggle removed since we're using light mode only for professional insurance site
-  // Trust badge animation
-  document.addEventListener('DOMContentLoaded', function() {
-    const trustBadges = document.querySelectorAll('.bg-gradient-to-r');
+<style>
+  /* RESET ANY CONFLICTING STYLES */
+  .header-container * {
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .header-container {
+    position: relative !important;
+    width: 100% !important;
+    padding: 1.25rem 0 !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    background-color: white !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+    min-height: 76px !important;
+  }
+  
+  .header-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+    padding: 0 1rem !important;
+    position: relative !important;
+    height: 100% !important;
+  }
+  
+  /* LOGO - CENTERED VERTICALLY */
+  .logo-wrapper {
+    position: absolute !important;
+    left: 1rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 100 !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .logo-link {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    text-decoration: none !important;
+  }
+  
+  .logo-image-container {
+    position: relative !important;
+    width: 52px !important;
+    height: 52px !important;
+  }
+  
+  .logo-image {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0.75rem !important;
+    object-fit: cover !important;
+    border: 2px solid #dbeafe !important;
+  }
+  
+  .logo-badge {
+    position: absolute !important;
+    bottom: -4px !important;
+    right: -4px !important;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #2563eb !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .badge-icon {
+    width: 12px !important;
+    height: 12px !important;
+    color: white !important;
+  }
+  
+  .logo-text {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; /* Center text vertically */
+    height: 52px !important; /* Match image height */
+  }
+  
+  .logo-title {
+    font-size: 1.125rem !important;
+    font-weight: 800 !important;
+    color: #1e3a8a !important;
+    white-space: nowrap !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.025em !important;
+  }
+  
+  .logo-subtitle {
+    font-size: 0.813rem !important;
+    color: #2563eb !important;
+    font-weight: 600 !important;
+    margin-top: 2px !important; /* Reduced margin */
+    line-height: 1.2 !important;
+  }
+  
+  /* NAVIGATION - SHORT DROPDOWN LABELS */
+  .desktop-nav {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 50 !important;
+  }
+  
+  .nav-container {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    background-color: rgba(219, 234, 254, 0.3) !important;
+    border-radius: 9999px !important;
+    padding: 0.5rem 0.75rem !important;
+    backdrop-filter: blur(8px) !important;
+  }
+  
+  .nav-item {
+    position: relative !important;
+  }
+  
+  .nav-dropdown-button {
+    font-size: 0.938rem !important;
+    font-weight: 600 !important;
+    color: #1e3a8a !important;
+    transition: all 0.2s !important;
+    white-space: nowrap !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 9999px !important;
+    border: none !important;
+    background: none !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.375rem !important;
+    min-height: 40px !important;
+  }
+  
+  .nav-dropdown-button:hover {
+    color: #1d4ed8 !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+  
+  .dropdown-icon {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+  
+  /* DROPDOWN MENU - LARGER WITH HEADER */
+  .dropdown-menu {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-top: 0.75rem !important;
+    width: 280px !important;
+    background-color: white !important;
+    border: 1px solid #bfdbfe !important;
+    border-radius: 0.875rem !important;
+    box-shadow: 0 20px 40px -16px rgba(0, 0, 0, 0.2) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: all 0.3s !important;
+    z-index: 50 !important;
+    overflow: hidden !important;
+  }
+  
+  .nav-item:hover .dropdown-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  /* Dropdown Header */
+  .dropdown-header {
+    display: block !important;
+    padding: 1rem !important;
+    background: linear-gradient(to right, #eff6ff, #dbeafe) !important;
+    border-bottom: 1px solid #bfdbfe !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+  }
+  
+  .dropdown-header-icon {
+    font-size: 1.5rem !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    background-color: white !important;
+    border-radius: 0.75rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .dropdown-header-title {
+    font-weight: 700 !important;
+    color: #1e3a8a !important;
+    font-size: 1rem !important;
+  }
+  
+  .dropdown-header-subtitle {
+    font-size: 0.75rem !important;
+    color: #4b5563 !important;
+    margin-top: 0.125rem !important;
+  }
+  
+  /* Dropdown Items */
+  .dropdown-item {
+    display: block !important;
+    padding: 0.875rem 1rem !important;
+    font-size: 0.875rem !important;
+    color: #374151 !important;
+    text-decoration: none !important;
+    transition: background-color 0.2s !important;
+    border-bottom: 1px solid #f3f4f6 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+  }
+  
+  .dropdown-item:last-child {
+    border-bottom: none !important;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #eff6ff !important;
+    color: #1d4ed8 !important;
+  }
+  
+  .dropdown-icon-container {
+    width: 2rem !important;
+    height: 2rem !important;
+    background-color: #dbeafe !important;
+    border-radius: 0.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .dropdown-item-icon {
+    width: 1rem !important;
+    height: 1rem !important;
+    color: #2563eb !important;
+  }
+  
+  .dropdown-item-title {
+    font-weight: 600 !important;
+  }
+  
+  .dropdown-item-description {
+    font-size: 0.75rem !important;
+    color: #6b7280 !important;
+    margin-top: 0.125rem !important;
+  }
+  
+  /* Special Quotes Button in Dropdown */
+  .dropdown-quotes-container {
+    padding: 1rem !important;
+    background-color: #f8fafc !important;
+    border-top: 1px solid #e5e7eb !important;
+  }
+  
+  .dropdown-quotes-button {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    padding: 0.875rem !important;
+    background: linear-gradient(to right, #2563eb, #1e40af) !important;
+    color: white !important;
+    border-radius: 0.75rem !important;
+    text-decoration: none !important;
+    transition: all 0.2s !important;
+  }
+  
+  .dropdown-quotes-button:hover {
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3) !important;
+    transform: translateY(-2px) !important;
+  }
+  
+  .quotes-icon {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+  
+  .quotes-title {
+    font-weight: 700 !important;
+    font-size: 0.938rem !important;
+  }
+  
+  .quotes-subtitle {
+    font-size: 0.75rem !important;
+    opacity: 0.9 !important;
+    margin-top: 0.125rem !important;
+  }
+  
+  /* RIGHT ACTIONS - FIXED CALCULATE BUTTON */
+  .header-actions {
+    position: absolute !important;
+    right: 1rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    flex-shrink: 0 !important;
+    z-index: 100 !important;
+  }
+  
+  .calculator-button {
+    display: none !important;
+  }
+  
+  @media (min-width: 768px) {
+    .calculator-button {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 0.5rem !important;
+      padding: 0.625rem 1.25rem !important;
+      background: linear-gradient(to right, #22c55e, #059669) !important;
+      color: white !important;
+      border-radius: 0.75rem !important;
+      text-decoration: none !important;
+      transition: all 0.2s !important;
+      font-weight: 700 !important;
+      min-height: 44px !important;
+      min-width: 120px !important;
+      white-space: nowrap !important;
+    }
     
-    trustBadges.forEach(badge => {
-      badge.addEventListener('mouseenter', function() {
+    .calculator-button:hover {
+      box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3) !important;
+      transform: translateY(-2px) !important;
+    }
+    
+    .calculator-icon {
+      width: 1.25rem !important;
+      height: 1.25rem !important;
+      flex-shrink: 0 !important;
+    }
+    
+    .calculator-text {
+      font-size: 0.875rem !important;
+      font-weight: 700 !important;
+      flex-shrink: 0 !important;
+    }
+  }
+  
+  .search-button {
+    padding: 0.5rem !important;
+    transition: background-color 0.2s !important;
+    border-radius: 0.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 40px !important;
+    height: 40px !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .search-button:hover {
+    background-color: #eff6ff !important;
+  }
+  
+  .search-icon {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    color: #1d4ed8 !important;
+    flex-shrink: 0 !important;
+  }
+  
+  /* MOBILE MENU */
+  .mobile-menu {
+    display: block !important;
+  }
+  
+  @media (min-width: 768px) {
+    .mobile-menu {
+      display: none !important;
+    }
+  }
+  
+  .mobile-menu-button {
+    padding: 0.625rem !important;
+    color: #1e3a8a !important;
+    z-index: 50 !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .hamburger-icon {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+  
+  .mobile-menu-dropdown {
+    position: fixed !important;
+    inset: 0 !important;
+    top: 5rem !important;
+    background-color: white !important;
+    z-index: 40 !important;
+    overflow-y: auto !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .mobile-menu-content {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  .mobile-actions {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+  
+  .mobile-calculator, .mobile-quotes {
+    background: linear-gradient(to right, #22c55e, #059669) !important;
+    color: white !important;
+    border-radius: 0.875rem !important;
+    padding: 1.25rem !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    transition: box-shadow 0.2s !important;
+  }
+  
+  .mobile-quotes {
+    background: linear-gradient(to right, #2563eb, #1e40af) !important;
+  }
+  
+  .mobile-calculator:hover, .mobile-quotes:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .mobile-icon {
+    font-size: 1.75rem !important;
+    margin-bottom: 0.625rem !important;
+  }
+  
+  .mobile-action-text {
+    font-size: 0.938rem !important;
+    font-weight: 700 !important;
+  }
+  
+  .mobile-nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  
+  .mobile-nav-header {
+    font-size: 0.875rem !important;
+    font-weight: 700 !important;
+    color: #1e3a8a !important;
+    text-transform: uppercase !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 0.75rem !important;
+    border-top: 1px solid #dbeafe !important;
+    letter-spacing: 0.05em !important;
+  }
+  
+  .mobile-nav-header:first-child {
+    border-top: none !important;
+    padding-top: 0 !important;
+  }
+  
+  .mobile-nav-link, .mobile-nav-link-quotes {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 1.125rem 1rem !important;
+    border-radius: 0.875rem !important;
+    text-decoration: none !important;
+    transition: all 0.2s !important;
+  }
+  
+  .mobile-nav-link {
+    color: #374151 !important;
+  }
+  
+  .mobile-nav-link-quotes {
+    background: linear-gradient(to right, #2563eb, #1e40af) !important;
+    color: white !important;
+  }
+  
+  .mobile-nav-link:hover {
+    background-color: #eff6ff !important;
+    color: #1d4ed8 !important;
+  }
+  
+  .mobile-nav-icon-container {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.875rem !important;
+  }
+  
+  .mobile-nav-icon {
+    width: 2.75rem !important;
+    height: 2.75rem !important;
+    border-radius: 0.625rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.5rem !important;
+  }
+  
+  .mobile-nav-link .mobile-nav-icon {
+    background-color: #dbeafe !important;
+  }
+  
+  .mobile-nav-link-quotes .mobile-nav-icon {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  .mobile-nav-text {
+    flex: 1 !important;
+  }
+  
+  .mobile-nav-title {
+    font-weight: 700 !important;
+    font-size: 0.938rem !important;
+  }
+  
+  .mobile-nav-description {
+    font-size: 0.813rem !important;
+    opacity: 0.75 !important;
+    margin-top: 0.25rem !important;
+  }
+  
+  .mobile-nav-arrow {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    margin-left: 1rem !important;
+  }
+  
+  /* TRUST BANNER */
+  .trust-banner {
+    background: linear-gradient(to right, #1e3a8a, #1e40af) !important;
+    color: white !important;
+    padding: 0.75rem 1rem !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  .trust-banner-content {
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem 2.5rem !important;
+    font-size: 0.875rem !important;
+  }
+  
+  .trust-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.625rem !important;
+    font-weight: 500 !important;
+  }
+  
+  .trust-icon {
+    width: 1rem !important;
+    height: 1rem !important;
+    color: #4ade80 !important;
+  }
+  
+  .hidden-md {
+    display: none !important;
+  }
+  
+  @media (min-width: 768px) {
+    .hidden-md {
+      display: flex !important;
+    }
+  }
+  
+  /* MEDIA QUERIES */
+  @media (max-width: 767px) {
+    .desktop-nav {
+      display: none !important;
+    }
+    
+    .calculator-button {
+      display: none !important;
+    }
+    
+    .logo-wrapper {
+      position: static !important;
+      transform: none !important;
+      flex: 1 !important;
+    }
+    
+    .header-wrapper {
+      justify-content: space-between !important;
+    }
+    
+    .header-actions {
+      position: static !important;
+      transform: none !important;
+      gap: 0.5rem !important;
+    }
+    
+    .header-container {
+      padding: 1rem 0 !important;
+      min-height: 72px !important;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .header-wrapper {
+      padding: 0 1.5rem !important;
+    }
+    
+    .logo-wrapper {
+      left: 1.5rem !important;
+    }
+    
+    .header-actions {
+      right: 1.5rem !important;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .header-wrapper {
+      padding: 0 2rem !important;
+    }
+    
+    .logo-wrapper {
+      left: 2rem !important;
+    }
+    
+    .header-actions {
+      right: 2rem !important;
+    }
+    
+    .nav-container {
+      gap: 0.75rem !important;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .header-wrapper {
+      padding: 0 3rem !important;
+    }
+    
+    .logo-wrapper {
+      left: 3rem !important;
+    }
+    
+    .header-actions {
+      right: 3rem !important;
+    }
+    
+    .nav-container {
+      gap: 1rem !important;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const trustBanner = document.querySelector('.trust-banner');
+    
+    if (trustBanner) {
+      trustBanner.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-1px)';
         this.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
       });
       
-      badge.addEventListener('mouseleave', function() {
+      trustBanner.addEventListener('mouseleave', function() {
         this.style.transform = 'translateY(0)';
         this.style.boxShadow = 'none';
       });
-    });
+    }
   });
 </script>
-
-<style>
-  /* Professional insurance animations */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animate-fade-in-up {
-    animation: fadeInUp 0.3s ease-out;
-  }
-  
-  /* Smooth transitions */
-  * {
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  /* Professional shadow on hover */
-  .hover-lift:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  }
-</style>
